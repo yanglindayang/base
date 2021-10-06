@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Manage Application</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="prototype prototype_account prototype_account_product">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../marketplace/featured.html">Marketplace
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="myapps.html">MyApps
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../developer/dashboard.html">Developer
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+              <div class="adb-js-context_menu adb-context_menu">
+                <a class="adb-context_menu--trigger adb-is-selected adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  Manage
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="dashboard.html">Account</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../reseller/dashboard.html">Reseller</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../channel/marketplace/dashboard.html">Marketplace</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../corporate/customers/users.html">Corporate</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../superuser/dashboard/companies.html">Superuser</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-js-context_menu--trigger adb-context_menu--trigger adb-primary_nav--link adb-primary_nav--user" role="button">
+                  <span class="adb-id">
+                    <img class="adb-id--img adb-primary_nav--user_image" src="../../images/avatars/benDomanico-48x48.png" />
+                  </span>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="user/">My Profile</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="company/user-profile.html">My Company</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="settings.html">My Settings</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="http://ad.docs.appdirect.com">Help Center</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="/">Log out</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-secondary_nav">
+          <div class="adb-layout-default">
+            <ul class="adb-secondary_nav--items">
+              <li class="adb-secondary_nav--item adb-secondary_nav--item__breadcrumb">
+                <span class="adb-secondary_nav--content adb-secondary_nav--title">Account Manager</span>
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="dashboard.html">Dashboard
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="users.html">Users
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link adb-is-selected" href="manage.html">Products
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="assign.html">Assign Apps
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="invoices.html">Billing
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="company_settings.html">Settings
+                </a>
+        
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-container">
+            <div class="adb-container_header adb-slat">
+              <div class="adb-slat--column adb-slat--image">
+                <div class="adb-id adb-id__logo adb-id__sq_medium">
+                  <img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                </div>
+              </div>
+              <div class="adb-slat--column adb-slat--content">
+                <h2 class="adb-summary--title">Sendgrid</h2>
+                <div class="adb-summary--details">Email Delivery. Simplified.</div>
+              </div>
+              <menu class="adb-slat--toolbar adb-toolbar adb-slat--column">
+                        <a class="adb-button adb-button__medium adb-button__primary adb-toolbar--item" href="assign.html">Assign Users
+                </a>
+        
+                <button class="adb-button__emphasis adb-toolbar--item" type="button">
+                  Upgrade
+                </button>
+              </menu>
+            </div>
+          </div>
+          <nav class="adb-tabs">
+            <ul class="adb-tabs--items">
+              <li class="adb-tabs--item active">
+                <a class="adb-tabs--link" data-toggle="tab" href="#account-product-overview">
+                  Overview
+                </a>
+              </li>
+              <li class="adb-tabs--item">
+                <a class="adb-tabs--link" data-toggle="tab" href="#account-product-users">
+                  Users
+                </a>
+              </li>
+              <li class="adb-tabs--item">
+                <a class="adb-tabs--link" data-toggle="tab" href="#account-product-pricing">
+                  Edition
+                </a>
+              </li>
+              <li class="adb-tabs--item">
+                <a class="adb-tabs--link" data-toggle="tab" href="#account-product-payments">
+                  Payment History
+                </a>
+              </li>
+              <li class="adb-tabs--item">
+                <a class="adb-tabs--link" data-toggle="tab" href="#account-product-settings">
+                  Settings
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-js-tab active" id="account-product-overview">
+            <div class="adb-layout-sidebar adb-layout-column__first">
+              <div class="adb-container">
+                <div class="adb-container_header">
+                  <h5 class="adb-container_header--title adb-container_header--item">Usage</h5>
+                </div>
+                <div class="adb-container_content">
+                  <div class="adb-js-meter adb-meter" data-percent="50" data-toggle="tooltip" title="50%">
+                    <span class="adb-meter--percent">50%</span>
+                  </div>
+                  <div class="adb-caption">
+                    Last updated 4 days ago
+                  </div>
+                </div>
+                <div class="adb-container_footer">
+                          <a class="adb-button adb-button__primary adb-button__medium" href="assign.html">Assign Users
+                  </a>
+          
+                </div>
+              </div>
+              <div class="adb-container">
+                <div class="adb-container_header">
+                  <h5 class="adb-container_header--title adb-container_header--item">Owner</h5>
+                </div>
+                <div class="adb-container_content">
+                  <div class="adb-card">
+                    <div class="adb-card--image">
+                      <div class="adb-id">
+                        <img class="adb-id--img" src="../../images/avatars/benDomanico-48x48.png" />
+                      </div>
+                    </div>
+                    <div class="adb-card--content adb-summary">
+                      <h3 class="adb-summary--title">
+                        <a data-truncate="line" href="user/">Ben Domanico
+                        </a>
+                      </h3>
+                      <div class="adb-summary--details">Creative Director</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="adb-container_header">
+                  <h5 class="adb-container_header--title adb-container_header--item">Details</h5>
+                </div>
+                <div class="adb-container_content">
+                  <dl>
+                    <dt>Product Type</dt>
+                    <dd>Web App</dd>
+                    <dt>Developer</dt>
+                    <dd>Sample Company</dd>
+                    <dt>Pricing</dt>
+                    <dd>Gold Edition</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="adb-layout-content">
+              <h2>Overview</h2>
+              <div class="adb-container">
+                <dl class="adb-description_table">
+                  <table>
+                    <colgroup>
+                      <col width="15%">
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <dt>Description</dt>
+                        </td>
+                        <td>
+                          <dd>
+                            Amet qui molestiae aut iusto. sequi nihil omnis cupiditate maxime aut natus. et omnis dolorem et dolorem vero. et omnis eum quia sunt consequatur qui sit tempore voluptatibus. doloribus fugiat quas quasi est consequatur modi
+                          </dd>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <dt>Support</dt>
+                        </td>
+                        <td>
+                          <dd>
+                            <a>
+                              kaleighwatkins@mac.com
+                            </a>
+                          </dd>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="adb-js-tab" id="account-product-users">
+            <h2>Users</h2>
+            <div class="adb-container">
+              <div class="adb-filters" data-filters>
+                <menu class="adb-filters--header">
+                  <menu class="adb-filters--header_item">
+                    <button class="adb-button__inset adb-button__small adb-filters--filter_button" data-toggle="filters" type="button">
+                      Show Filters
+                    </button>
+                  </menu>
+                  <div class="adb-filters--header_item">
+                    <div class="adb-search_field adb-input_row adb-js-input_row">
+                      <div class="adb-input_row--item adb-input_row--primary">
+                        <input class="adb-search_field--input adb-text__small adb-input_row--item_content" placeholder="Search" type="search">
+                      </div>
+                      <div class="adb-input_row--item">
+                        <button class="adb-button__square_small adb-button__inset adb-input_row--item_content">
+                          <i class="adb-icon__search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </menu>
+                <menu class="adb-js-filters adb-filters--content adb-is-visually_hidden">
+                  <div class="adb-filters--filter">
+                    <label class="adb-label__small adb-label__inline" for="role-filter">
+                      Role
+                    </label>
+                    <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                      <select id="role-filter">
+                        <option>Show All</option>
+                        <option>System Admin</option>
+                        <option>Billing Admin</option>
+                        <option>User</option>
+                      </select>
+                    </div>
+                  </div>
+                </menu>
+              </div>
+              <div class="adb-table">
+                <table>
+                  <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>User</th>
+                      <th>Status</th>
+                      <th>Email Address</th>
+                      <th>System Role</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="adb-table--card">
+                        <div class="adb-table--card_image">
+                          <div class="adb-id adb-id__sq_small">
+                            <img class="adb-id--img" src="../../images/avatars/yarunLuon-72x72.png" />
+                          </div>
+                        </div>
+                        <div class="adb-table--card_text adb-summary">
+                          <h3 class="adb-summary--title">
+                            <a data-truncate="line" href="user/">Giselle Hall
+                            </a>
+                          </h3>
+                          <div class="adb-summary--details">UI Engineer</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Active
+                        </span>
+                      </td>
+                      <td>
+                        <a>
+                          skyler-walton@fastmail.com
+                        </a>
+                      </td>
+                      <td>System Admin</td>
+                      <td class="adb-table--menu">
+                        <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                          <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                            <i class="adb-icon__cog"></i>
+                          </button>
+                          <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                            <ul class="adb-stack adb-stack__small">
+                              <li class="adb-stack--item">
+                                <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </menu>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="adb-table--card">
+                        <div class="adb-table--card_image">
+                          <div class="adb-id adb-id__sq_small">
+                            <img class="adb-id--img" src="../../images/avatars/tim-72x72.png" />
+                          </div>
+                        </div>
+                        <div class="adb-table--card_text adb-summary">
+                          <h3 class="adb-summary--title">
+                            <a data-truncate="line" href="user/">Abel Bender
+                            </a>
+                          </h3>
+                          <div class="adb-summary--details">System Admin</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Active
+                        </span>
+                      </td>
+                      <td>
+                        <a>
+                          xenaweeks@mac.com
+                        </a>
+                      </td>
+                      <td>System Admin</td>
+                      <td class="adb-table--menu">
+                        <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                          <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                            <i class="adb-icon__cog"></i>
+                          </button>
+                          <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                            <ul class="adb-stack adb-stack__small">
+                              <li class="adb-stack--item">
+                                <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </menu>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="adb-table--card">
+                        <div class="adb-table--card_image">
+                          <div class="adb-id adb-id__sq_small">
+                            <img class="adb-id--img" src="../../images/avatars/sneha-72x72.png" />
+                          </div>
+                        </div>
+                        <div class="adb-table--card_text adb-summary">
+                          <h3 class="adb-summary--title">
+                            <a data-truncate="line" href="user/">Freya MacDonald
+                            </a>
+                          </h3>
+                          <div class="adb-summary--details">QA Engineer</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Active
+                        </span>
+                      </td>
+                      <td>
+                        <a>
+                          reese-choi@gmail.com
+                        </a>
+                      </td>
+                      <td>System Admin</td>
+                      <td class="adb-table--menu">
+                        <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                          <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                            <i class="adb-icon__cog"></i>
+                          </button>
+                          <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                            <ul class="adb-stack adb-stack__small">
+                              <li class="adb-stack--item">
+                                <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </menu>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="adb-table--card">
+                        <div class="adb-table--card_image">
+                          <div class="adb-id adb-id__sq_small">
+                            <img class="adb-id--img" src="../../images/avatars/rong-72x72.png" />
+                          </div>
+                        </div>
+                        <div class="adb-table--card_text adb-summary">
+                          <h3 class="adb-summary--title">
+                            <a data-truncate="line" href="user/">Jamal Heath
+                            </a>
+                          </h3>
+                          <div class="adb-summary--details">Software Engineer</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Active
+                        </span>
+                      </td>
+                      <td>
+                        <a>
+                          jean-christian@email.com
+                        </a>
+                      </td>
+                      <td>System Admin</td>
+                      <td class="adb-table--menu">
+                        <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                          <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                            <i class="adb-icon__cog"></i>
+                          </button>
+                          <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                            <ul class="adb-stack adb-stack__small">
+                              <li class="adb-stack--item">
+                                <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </menu>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="adb-table--card">
+                        <div class="adb-table--card_image">
+                          <div class="adb-id adb-id__sq_small">
+                            <img class="adb-id--img" src="../../images/avatars/nathanRomero-72x72.png" />
+                          </div>
+                        </div>
+                        <div class="adb-table--card_text adb-summary">
+                          <h3 class="adb-summary--title">
+                            <a data-truncate="line" href="user/">Abel Morse
+                            </a>
+                          </h3>
+                          <div class="adb-summary--details">Designer</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="adb-status adb-status__error">
+                          <span class="adb-status--gem"></span>
+                          Disabled
+                        </span>
+                      </td>
+                      <td>
+                        <a>
+                          jared-farrell@fastmail.com
+                        </a>
+                      </td>
+                      <td>Billing Admin</td>
+                      <td class="adb-table--menu">
+                        <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                          <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                            <i class="adb-icon__cog"></i>
+                          </button>
+                          <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                            <ul class="adb-stack adb-stack__small">
+                              <li class="adb-stack--item">
+                                <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </menu>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="adb-table--card">
+                        <div class="adb-table--card_image">
+                          <div class="adb-id adb-id__sq_small">
+                            <img class="adb-id--img" src="../../images/avatars/narayanan-72x72.png" />
+                          </div>
+                        </div>
+                        <div class="adb-table--card_text adb-summary">
+                          <h3 class="adb-summary--title">
+                            <a data-truncate="line" href="user/">Cindy Henry
+                            </a>
+                          </h3>
+                          <div class="adb-summary--details">Software Engineer</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="adb-status adb-status__error">
+                          <span class="adb-status--gem"></span>
+                          Disabled
+                        </span>
+                      </td>
+                      <td>
+                        <a>
+                          bart-kaplan@gmail.com
+                        </a>
+                      </td>
+                      <td>Billing Admin</td>
+                      <td class="adb-table--menu">
+                        <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                          <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                            <i class="adb-icon__cog"></i>
+                          </button>
+                          <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                            <ul class="adb-stack adb-stack__small">
+                              <li class="adb-stack--item">
+                                <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </menu>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="adb-table--card">
+                        <div class="adb-table--card_image">
+                          <div class="adb-id adb-id__sq_small">
+                            <img class="adb-id--img" src="../../images/avatars/mary-72x72.png" />
+                          </div>
+                        </div>
+                        <div class="adb-table--card_text adb-summary">
+                          <h3 class="adb-summary--title">
+                            <a data-truncate="line" href="user/">Eric Holmes
+                            </a>
+                          </h3>
+                          <div class="adb-summary--details">Project Manager</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="adb-status adb-status__error">
+                          <span class="adb-status--gem"></span>
+                          Disabled
+                        </span>
+                      </td>
+                      <td>
+                        <a>
+                          george_morse@live.com
+                        </a>
+                      </td>
+                      <td>Billing Admin</td>
+                      <td class="adb-table--menu">
+                        <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                          <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                            <i class="adb-icon__cog"></i>
+                          </button>
+                          <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                            <ul class="adb-stack adb-stack__small">
+                              <li class="adb-stack--item">
+                                <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </menu>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="adb-table--card">
+                        <div class="adb-table--card_image">
+                          <div class="adb-id adb-id__sq_small">
+                            <img class="adb-id--img" src="../../images/avatars/lindaYang-72x72.png" />
+                          </div>
+                        </div>
+                        <div class="adb-table--card_text adb-summary">
+                          <h3 class="adb-summary--title">
+                            <a data-truncate="line" href="user/">Alondra Steele
+                            </a>
+                          </h3>
+                          <div class="adb-summary--details">Product Designer</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="adb-status adb-status__error">
+                          <span class="adb-status--gem"></span>
+                          Disabled
+                        </span>
+                      </td>
+                      <td>
+                        <a>
+                          abel-griffin@yahoo.com
+                        </a>
+                      </td>
+                      <td>Billing Admin</td>
+                      <td class="adb-table--menu">
+                        <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                          <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                            <i class="adb-icon__cog"></i>
+                          </button>
+                          <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                            <ul class="adb-stack adb-stack__small">
+                              <li class="adb-stack--item">
+                                <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </menu>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="adb-container_footer">
+                <div class="adb-container_footer--item adb-container_footer--item__last">
+                  <nav class="adb-pagination_v1">
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__first"></a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__prev"></a>
+                    <a class="adb-pagination_v1--button">1</a>
+                    <a class="adb-pagination_v1--button">23</a>
+                    <span class="adb-pagination_v1--current">456</span>
+                    <a class="adb-pagination_v1--button">7890</a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__next"></a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__last"></a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="adb-js-tab" id="account-product-pricing">
+            <div class="adb-js-panel-target active" id="purchase-order-version1">
+              <h2>Upgrade Edition</h2>
+              <form action="" class="adb-form">
+                <fieldset class="adb-container">
+                  <table class="adb-table__actionable adb-table__multiline">
+                    <colgroup>
+                      <col span="1">
+                      <col width="30%">
+                      <col width="20%">
+                      <col width="50%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Edition</th>
+                        <th>Included</th>
+                        <th>Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="adb-js-radio">
+                        <td>
+                          <input checked id="purchase-pricing-plan1" name="purchase-pricing-plans" type="radio">
+                        </td>
+                        <td>Gold Edition</td>
+                        <td>
+                          3 users
+                          <br>
+                          25 Gigabytes
+                        </td>
+                        <td>
+                          <ul class="adb-list__feature">
+                            <li>
+                              <strong>$199.95 / user / month</strong>
+                              <span class="adb-badge adb-badge__free">Free Trial</span>
+                            </li>
+                            <li>
+                              <strong>$180.00 / month for 1-25 users</strong>
+                              <span class="adb-caption">+ $9.95.00 / email</span>
+                            </li>
+                            <li>
+                              <strong>
+                                $180.00 / month
+                                Est doloremque rerum iste at quasi dolorem ut et corporis minima itaque officia dolores impedit
+                              </strong>
+                              <span class="adb-caption">
+                                + $9.95.00 / email
+                                Ut animi et aut porro autem repellat voluptas beatae sed eius sunt cum
+                              </span>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr class="adb-js-radio">
+                        <td>
+                          <input id="purchase-pricing-plan2" name="purchase-pricing-plans" type="radio">
+                        </td>
+                        <td>Silver Edition</td>
+                        <td>2 users</td>
+                        <td>
+                          <ul class="adb-list__feature">
+                            <li>
+                              <strong>$79.95 / user / month</strong>
+                              <span class="adb-caption">+ $0.00 / email / month</span>
+                              <span class="adb-badge adb-badge__info">2-Month Contract</span>
+                            </li>
+                            <li>
+                              <strong>$199.95 / user / day</strong>
+                              <span class="adb-caption">+ $0.00 / email / month</span>
+                              <span class="adb-badge adb-badge__info">2-Day Contract</span>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr class="adb-js-radio">
+                        <td>
+                          <input id="purchase-pricing-plan3" name="purchase-pricing-plans" type="radio">
+                        </td>
+                        <td>Bronze Edition</td>
+                        <td>1 users</td>
+                        <td>
+                          <ul class="adb-list__feature">
+                            <li>
+                              <strong>$9.95 / user / month for 1-25 users</strong>
+                              <span class="adb-caption">+ $0.00 / email / month</span>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </fieldset>
+                <div class="adb-container adb-receipt">
+                  <div class="adb-container_content adb-help">
+                    <div class="adb-receipt--section">
+                      <div class="adb-receipt--line">
+                        <span class="adb-receipt--item adb-receipt--item__label">Fee Due at Checkout</span>
+                        <span class="adb-receipt--item adb-receipt--item__total">$0.00</span>
+                      </div>
+                    </div>
+                    <div class="adb-receipt--section">
+                      <div class="adb-receipt--line">
+                        <span class="adb-receipt--item adb-receipt--item__label">Total Recurring Monthly Fee as of 4/27/14</span>
+                        <span class="adb-receipt--item">$380.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="adb-footnote">
+                  Do you have questions about purchasing subscriptions to web applications?
+                  <a data-target="#purchase-order-help" data-toggle="panel">
+                    Read answers
+                  </a>
+                  to frequently asked questions.
+                </p>
+                <div class="adb-js-panel-target" id="purchase-order-help">
+                  <div class="adb-help">
+                    <div class="adb-help--row">
+                      <h4>What happens if I upgrade editions in the middle of a billing cycle?</h4>
+                      <p>You will get charged a prorated amount for the upgrade and the billing cycle resets on the upgrade checkout date. You will get immediate access to the new edition features when you upgrade.</p>
+                    </div>
+                    <div class="adb-help--row">
+                      <h4>What happens if I downgrade editions in the middle of a billing cycle?</h4>
+                      <p>You will get charged a prorated amount for the downgrade and the billing cycle resets on the downgrade checkout date. You will get immediate access to the downgraded edition.</p>
+                    </div>
+                    <div class="adb-help--row">
+                      <h4>What happens if I cancel a subscription in the middle of a billing cycle?</h4>
+                      <p>When you cancel your subscription to an application you will no longer have access to that application. We do not provide refunds on paid subscriptions.</p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="adb-js-panel-target" id="purchase-order-version2">
+              <div class="adb-layout-content adb-layout-column__first">
+                <h2>Upgrade Edition</h2>
+                <form action="" class="adb-form">
+                  <fieldset class="adb-container">
+                    <table class="adb-table__actionable adb-table__multiline">
+                      <colgroup>
+                        <col span="1">
+                        <col width="30%">
+                        <col width="20%">
+                        <col width="50%">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Edition</th>
+                          <th>Included</th>
+                          <th>Price</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="adb-js-radio">
+                          <td>
+                            <input checked id="purchase-pricing-plan1" name="purchase-pricing-plans" type="radio">
+                          </td>
+                          <td>Gold Edition</td>
+                          <td>
+                            3 users
+                            <br>
+                            25 Gigabytes
+                          </td>
+                          <td>
+                            <ul class="adb-list__feature">
+                              <li>
+                                <strong>$199.95 / user / month</strong>
+                                <span class="adb-badge adb-badge__free">Free Trial</span>
+                              </li>
+                              <li>
+                                <strong>$180.00 / month for 1-25 users</strong>
+                                <span class="adb-caption">+ $9.95.00 / email</span>
+                              </li>
+                              <li>
+                                <strong>
+                                  $180.00 / month
+                                  Aut in molestiae at aut blanditiis sed necessitatibus repellat officiis et praesentium
+                                </strong>
+                                <span class="adb-caption">
+                                  + $9.95.00 / email
+                                  Natus modi asperiores necessitatibus iure quaerat voluptas dolorum qui aperiam culpa vel culpa distinctio atque
+                                </span>
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="adb-js-radio">
+                          <td>
+                            <input id="purchase-pricing-plan2" name="purchase-pricing-plans" type="radio">
+                          </td>
+                          <td>Silver Edition</td>
+                          <td>2 users</td>
+                          <td>
+                            <ul class="adb-list__feature">
+                              <li>
+                                <strong>$79.95 / user / month</strong>
+                                <span class="adb-caption">+ $0.00 / email / month</span>
+                                <span class="adb-badge adb-badge__info">2-Month Contract</span>
+                              </li>
+                              <li>
+                                <strong>$199.95 / user / day</strong>
+                                <span class="adb-caption">+ $0.00 / email / month</span>
+                                <span class="adb-badge adb-badge__info">2-Day Contract</span>
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="adb-js-radio">
+                          <td>
+                            <input id="purchase-pricing-plan3" name="purchase-pricing-plans" type="radio">
+                          </td>
+                          <td>Bronze Edition</td>
+                          <td>1 users</td>
+                          <td>
+                            <ul class="adb-list__feature">
+                              <li>
+                                <strong>$9.95 / user / month for 1-25 users</strong>
+                                <span class="adb-caption">+ $0.00 / email / month</span>
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </fieldset>
+                </form>
+                <p class="adb-footnote">
+                  Do you have questions about purchasing subscriptions to web applications?
+                  <a data-target="#purchase-order-help" data-toggle="panel">
+                    Read answers
+                  </a>
+                  to frequently asked questions.
+                </p>
+                <div class="adb-js-panel-target" id="purchase-order-help">
+                  <div class="adb-help">
+                    <div class="adb-help--row">
+                      <h4>What happens if I upgrade editions in the middle of a billing cycle?</h4>
+                      <p>You will get charged a prorated amount for the upgrade and the billing cycle resets on the upgrade checkout date. You will get immediate access to the new edition features when you upgrade.</p>
+                    </div>
+                    <div class="adb-help--row">
+                      <h4>What happens if I downgrade editions in the middle of a billing cycle?</h4>
+                      <p>You will get charged a prorated amount for the downgrade and the billing cycle resets on the downgrade checkout date. You will get immediate access to the downgraded edition.</p>
+                    </div>
+                    <div class="adb-help--row">
+                      <h4>What happens if I cancel a subscription in the middle of a billing cycle?</h4>
+                      <p>When you cancel your subscription to an application you will no longer have access to that application. We do not provide refunds on paid subscriptions.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-sidebar">
+                <div class="adb-container adb-receipt">
+                  <div class="adb-container_header">
+                    <h3 class="adb-container_header--title adb-container_header--item">Order</h3>
+                  </div>
+                  <div class="adb-container_content">
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id adb-id__logo adb-id__sq_small">
+                          <img class="adb-id--img" src="../../images/logos/apps/sendgrid-120x120.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content adb-summary">
+                        <h4 class="adb-summary--title adb-title__large">SendGrid</h4>
+                        <div class="adb-summary--details">Email Delivery. Simplified.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-container_content adb-help">
+                    <div class="adb-receipt--section">
+                      <div class="adb-receipt--line">
+                        <span class="adb-receipt--item adb-receipt--item__label">Gold Edition</span>
+                        <span class="adb-receipt--item">$199.95</span>
+                      </div>
+                      <div class="adb-receipt--line">
+                        <span class="adb-receipt--item adb-receipt--item__label">x 2 users</span>
+                        <span class="adb-receipt--item">$399.90</span>
+                      </div>
+                      <div class="adb-receipt--line">
+                        <span class="adb-receipt--item adb-receipt--item__label">XXXXXX Discount</span>
+                        <span class="adb-receipt--item adb-receipt--item__discount">-$19.90</span>
+                      </div>
+                    </div>
+                    <div class="adb-receipt--section">
+                      <div class="adb-receipt--line">
+                        <span class="adb-receipt--item adb-receipt--item__label">
+                          Due Monthly
+                          <i class="adb-icon_alert adb-icon__question" data-toggle="tooltip" title="Starting 01/02/2015"></i>
+                        </span>
+                        <span class="adb-receipt--item adb-receipt--item__total">$380.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="adb-js-tab" id="account-product-payments">
+            <h2>Orders</h2>
+            <div class="adb-container">
+              <div class="adb-filters" data-filters>
+                <menu class="adb-filters--header">
+                  <menu class="adb-filters--header_item">
+                    <button class="adb-button__inset adb-button__small adb-filters--filter_button" data-toggle="filters" type="button">
+                      Show Filters
+                    </button>
+                  </menu>
+                  <div class="adb-filters--header_item">
+                    <div class="adb-search_field adb-input_row adb-js-input_row">
+                      <div class="adb-input_row--item adb-input_row--primary">
+                        <input class="adb-search_field--input adb-text__small adb-input_row--item_content" placeholder="Search" type="search">
+                      </div>
+                      <div class="adb-input_row--item">
+                        <button class="adb-button__square_small adb-button__inset adb-input_row--item_content">
+                          <i class="adb-icon__search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </menu>
+                <menu class="adb-js-filters adb-filters--content adb-is-visually_hidden">
+                  <div class="adb-filters--filter">
+                    <label class="adb-label__small adb-label__inline" for="status-sort">
+                      Status
+                    </label>
+                    <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                      <select id="status-sort">
+                        <option>Show All</option>
+                        <option>Started</option>
+                        <option>Failed</option>
+                        <option>Free Trial</option>
+                        <option>Free Trial Expired</option>
+                        <option>Active</option>
+                        <option>Suspended</option>
+                        <option>Canceled</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="adb-filters--filter">
+                    <label class="adb-label__small adb-label__inline">Created between</label>
+                    <input class="adb-date__small" id="date-start" name="dates" type="date">
+                    <label class="adb-label__small adb-label__inline">and</label>
+                    <input class="adb-date__small" id="date-end" name="dates" type="date">
+                  </div>
+                </menu>
+              </div>
+              <div class="adb-table adb-table__actionable">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Status</th>
+                      <th>ID</th>
+                      <th>Created</th>
+                      <th>Ended</th>
+                      <th>Edition</th>
+                      <th>Frequency</th>
+                      <th>Total Fee</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr data-target="#modal-order-edition" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Active
+                        </span>
+                      </td>
+                      <td>12345</td>
+                      <td>
+                        11/20/1994
+                      </td>
+                      <td>
+                        05/26/2000
+                      </td>
+                      <td>
+                        Gold Edition
+                      </td>
+                      <td>
+                        Monthly
+                      </td>
+                      <td>
+                        $999.99
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-order-edition" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Active
+                        </span>
+                      </td>
+                      <td>12345</td>
+                      <td>
+                        12/15/2009
+                      </td>
+                      <td>
+                        05/05/2003
+                      </td>
+                      <td>
+                        Platinum Edition
+                      </td>
+                      <td>
+                        Yearly
+                      </td>
+                      <td>
+                        $999.99
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-order-edition" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__pending">
+                          <span class="adb-status--gem"></span>
+                          Pending
+                        </span>
+                      </td>
+                      <td>12345</td>
+                      <td>
+                        06/15/1991
+                      </td>
+                      <td>
+                        05/01/1999
+                      </td>
+                      <td>
+                        Gold Edition
+                      </td>
+                      <td>
+                        Yearly
+                      </td>
+                      <td>
+                        $999.99
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-order-edition" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__error">
+                          <span class="adb-status--gem"></span>
+                          Unpaid
+                        </span>
+                      </td>
+                      <td>12345</td>
+                      <td>
+                        06/13/2005
+                      </td>
+                      <td>
+                        06/29/2001
+                      </td>
+                      <td>
+                        Silver Edition
+                      </td>
+                      <td>
+                        Daily
+                      </td>
+                      <td>
+                        $999.99
+                      </td>
+                    </tr>
+                    <tr class="adb-is-disabled" data-target="#modal-order-edition" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__disabled">
+                          <span class="adb-status--gem"></span>
+                          Canceled
+                        </span>
+                      </td>
+                      <td>12345</td>
+                      <td>
+                        03/31/2005
+                      </td>
+                      <td>
+                        12/30/1991
+                      </td>
+                      <td>
+                        Free Edition
+                      </td>
+                      <td>
+                        Daily
+                      </td>
+                      <td>
+                        $999.99
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="adb-container_footer">
+                <div class="adb-container_footer--item adb-container_footer--item__last">
+                  <nav class="adb-pagination_v1">
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__first"></a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__prev"></a>
+                    <a class="adb-pagination_v1--button">1</a>
+                    <a class="adb-pagination_v1--button">23</a>
+                    <span class="adb-pagination_v1--current">456</span>
+                    <a class="adb-pagination_v1--button">7890</a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__next"></a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__last"></a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="adb-modal adb-modal__large" id="modal-order-edition" role="menu">
+            <h3 class="adb-modal--header" data-truncate="line">
+              Order Details
+              <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+            </h3>
+            <div class="adb-modal--content">
+              <div class="adb-header">
+                <h2 class="adb-header--item">
+                  <span class="adb-status adb-status__disabled" data-toggle="tooltip" title="Canceled">
+                    <span class="adb-status--gem"></span>
+                  </span>
+                  Pierce Tech Service
+                  Order #
+                  68735
+                </h2>
+                <menu class="adb-header--item">
+                  <menu class="adb-toolbar adb-toolbar__small">
+                    <button class="adb-button__small adb-toolbar--item" type="button">
+                      Edit Order
+                    </button>
+                    <button class="adb-button__small adb-toolbar--item" type="button">
+                      View Terms &amp; Conditions
+                    </button>
+                  </menu>
+                </menu>
+              </div>
+              <div class="adb-container">
+                <table class="adb-table__multiline">
+                  <colgroup>
+                    <col class="adb-table--section" width="20%">
+                    <col width="30%">
+                    <col class="adb-table--section" width="20%">
+                    <col width="30%">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <dt>ID</dt>
+                      </td>
+                      <td>
+                        <dd>
+                          98045
+                        </dd>
+                      </td>
+                      <td>
+                        <dt>Created</dt>
+                      </td>
+                      <td>
+                        <dd>
+                          12/16/2009
+                        </dd>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <dt>User</dt>
+                      </td>
+                      <td>
+                        <dd>
+                          Jean Li
+                        </dd>
+                      </td>
+                      <td>
+                        <dt>Billing End Date</dt>
+                      </td>
+                      <td>
+                        <dd>
+                          11/25/2007
+                        </dd>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <dt>Customer ID</dt>
+                      </td>
+                      <td>
+                        <dd>
+                          1243489
+                        </dd>
+                      </td>
+                      <td>
+                        <dt>Valid Dates</dt>
+                      </td>
+                      <td>
+                        <dd>
+                          01/26/2013
+                          &minus;
+                          09/19/2005
+                        </dd>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <dt>Email Address</dt>
+                      </td>
+                      <td>
+                        <dd>
+                          <a>
+                            jean-gray@yahoo.com
+                          </a>
+                        </dd>
+                      </td>
+                      <td>
+                        <dt>Next Invoice Date</dt>
+                      </td>
+                      <td>
+                        <dd>
+                          04/05/2012
+                        </dd>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <dt>Company</dt>
+                      </td>
+                      <td>
+                        <dd>
+                          Cybernet Future Worldwide
+                        </dd>
+                      </td>
+                      <td>
+                        <dt>Total Fee</dt>
+                      </td>
+                      <td>
+                        <dd>
+                          <strong>
+                            $105.00
+                          </strong>
+                        </dd>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="adb-container adb-receipt">
+                <div class="adb-receipt--table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th class="adb-receipt--table_value">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Sed suscipit ad molestias rerum earum fuga id quo dicta sit
+                        </td>
+                        <td>2</td>
+                        <td>
+                          $209.34
+                        </td>
+                        <td class="adb-receipt--table_value">
+                          $35.87
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Ut amet aut deleniti minima suscipit suscipit est ut at officiis libero eum reprehenderit laboriosam
+                        </td>
+                        <td>2</td>
+                        <td>
+                          $605.22
+                        </td>
+                        <td class="adb-receipt--table_value">
+                          $19.52
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="adb-container_content adb-receipt--summary">
+                  <div class="adb-receipt--section">
+                    <div class="adb-receipt--line">
+                      <span class="adb-receipt--item adb-receipt--item__label">Subtotal</span>
+                      <span class="adb-receipt--item">$100.00</span>
+                    </div>
+                    <div class="adb-receipt--line">
+                      <span class="adb-receipt--item adb-receipt--item__label">5.00%  Sales Tax</span>
+                      <span class="adb-receipt--item">$5.00</span>
+                    </div>
+                  </div>
+                  <div class="adb-receipt--section">
+                    <div class="adb-receipt--line">
+                      <span class="adb-receipt--item adb-receipt--item__label">Total</span>
+                      <span class="adb-receipt--item adb-receipt--item__total">$105.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <menu class="adb-modal--footer adb-toolbar">
+              <button class="adb-button__secret adb-toolbar--item" data-dismiss="modal" type="button">
+                Close
+              </button>
+            </menu>
+          </div>
+          <div class="adb-js-tab" id="account-product-settings">
+            <div class="adb-layout-sidebar adb-layout-column__first">
+              <div class="adb-container">
+                <nav class="adb-stack">
+                  <div class="adb-stack--item">
+                    <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="#">
+                      General Settings
+                    </a>
+                  </div>
+                  <div class="adb-stack--item">
+                    <a class="adb-link__nav adb-stack--item_content" href="#">
+                      Custom Domains
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="adb-layout-content">
+              <h2>General Settings</h2>
+              <section class="adb-container">
+                <div class="adb-container_header">
+                  <h3 class="adb-container_header--title adb-container_header--item">Application Owner</h3>
+                </div>
+                <div class="adb-container_content">
+                  <div class="adb-help">
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id">
+                          <img class="adb-id--img" src="../../images/avatars/benDomanico-48x48.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content adb-summary">
+                        <h3 class="adb-summary--title">
+                          <a data-truncate="line" href="user/">Ben Domanico
+                          </a>
+                        </h3>
+                        <div class="adb-summary--details">Creative Director</div>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    Once you take ownership of a product, your account will manage subscription and payments. The current owner,
+                    <a>Ben Domanico</a>
+                    can still use it as before, but will no longer make payments or manage the subscription. For more information,
+                    <a>
+                      visit the Help Center.
+                    </a>
+                  </p>
+                  <button type="button">
+                    Take Ownership
+                  </button>
+                </div>
+              </section>
+              <section class="adb-container">
+                <div class="adb-container_header">
+                  <h3 class="adb-container_header--title adb-container_header--item">Delete Application</h3>
+                </div>
+                <div class="adb-container_content">
+                  <p>
+                    When you delete an application, you immediately lose access to the application. We do not provide refunds on paid subscriptions. For more information,
+                    <a>
+                      visit the Help Center.
+                    </a>
+                  </p>
+                  <button class="adb-button__danger" type="button">
+                    <i class="adb-icon__trash"></i>
+                    Delete Application
+                  </button>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Manage Application
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          <menu class="adb-toggle_buttons adb-toolbar--item" data-toggle="buttons-radio">
+            <button class="adb-button__inset_dark adb-toggle_buttons--button adb-button__small active" data-target="#purchase-order-version1" data-toggle="pill" type="button">
+              Version 1
+            </button>
+            <button class="adb-button__inset_dark adb-toggle_buttons--button adb-button__small" data-target="#purchase-order-version2" data-toggle="pill" type="button">
+              Version 2
+            </button>
+          </menu>
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Dashboard</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="prototype prototype_superuser prototype_superuser_dashboard prototype_superuser_dashboard_users">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../../marketplace/featured.html">Marketplace
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../../account/myapps.html">MyApps
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../../developer/dashboard.html">Developer
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+              <div class="adb-js-context_menu adb-context_menu">
+                <a class="adb-context_menu--trigger adb-is-selected adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  Manage
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/dashboard.html">Account</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../reseller/dashboard.html">Reseller</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../channel/marketplace/dashboard.html">Marketplace</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../corporate/customers/users.html">Corporate</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="companies.html">Superuser</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-js-context_menu--trigger adb-context_menu--trigger adb-primary_nav--link adb-primary_nav--user" role="button">
+                  <span class="adb-id">
+                    <img class="adb-id--img adb-primary_nav--user_image" src="../../../images/avatars/benDomanico-48x48.png" />
+                  </span>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/user/">My Profile</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/company/user-profile.html">My Company</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/settings.html">My Settings</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="http://ad.docs.appdirect.com">Help Center</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="/">Log out</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-secondary_nav">
+          <div class="adb-layout-default adb-secondary_nav--wrapper">
+            <ul class="adb-secondary_nav--items">
+              <li class="adb-secondary_nav--item adb-secondary_nav--item__breadcrumb">
+                <span class="adb-secondary_nav--content adb-secondary_nav--title">Superuser</span>
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link adb-is-selected" href="companies.html">Dashboard
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="../catalogs/network.html">Catalogs
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="../billing/pricing_items.html">Billing
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="../activity/jobs.html">Activity
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="../marketplaces/general.html">Marketplaces
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="../settings/domains.html">Settings
+                </a>
+        
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <div class="adb-stats">
+                <div class="adb-stat">
+                  <span class="adb-stat--value">45,607</span>
+                  <span class="adb-stat--unit">Companies</span>
+                </div>
+                <div class="adb-stat">
+                  <span class="adb-stat--value">1,335,345</span>
+                  <span class="adb-stat--unit">Users</span>
+                </div>
+              </div>
+            </div>
+            <div class="adb-container">
+              <div class="adb-container_header">
+                <h5 class="adb-container_header--title adb-container_header--item">Dashboard</h5>
+              </div>
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="companies.html">Companies
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="users.html">Users
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="applications.html">Applications
+                  </a>
+          
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="adb-layout-content">
+            <h1>Users</h1>
+            <div class="adb-container">
+              <div class="adb-filters" data-filters>
+                <menu class="adb-filters--header">
+                  <menu class="adb-filters--header_item">
+                    <button class="adb-button__inset adb-button__small adb-filters--filter_button" data-toggle="filters" type="button">
+                      Show Filters
+                    </button>
+                  </menu>
+                  <div class="adb-filters--header_item">
+                    <div class="adb-search_field adb-input_row adb-js-input_row">
+                      <div class="adb-input_row--item adb-input_row--primary">
+                        <input class="adb-search_field--input adb-text__small adb-input_row--item_content" placeholder="Search" type="search">
+                      </div>
+                      <div class="adb-input_row--item">
+                        <button class="adb-button__square_small adb-button__inset adb-input_row--item_content">
+                          <i class="adb-icon__search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </menu>
+                <menu class="adb-js-filters adb-filters--content adb-is-visually_hidden">
+                  <div class="adb-filters--filter">
+                    <label class="adb-selector adb-selector__small adb-selector__inline adb-js-checkbox" for="superusers-filter">
+                      <span class="adb-selector--input">
+                        <input id="superusers-filter" type="checkbox">
+                      </span>
+                      <span class="adb-selector--value">
+                        Superusers
+                      </span>
+                    </label>
+                    <label class="adb-selector adb-selector__small adb-selector__inline adb-js-checkbox" for="corporate-admins-filter">
+                      <span class="adb-selector--input">
+                        <input id="corporate-admins-filter" type="checkbox">
+                      </span>
+                      <span class="adb-selector--value">
+                        Corporate Admins
+                      </span>
+                    </label>
+                    <label class="adb-selector adb-selector__small adb-selector__inline adb-js-checkbox" for="channel-admins-filter">
+                      <span class="adb-selector--input">
+                        <input id="channel-admins-filter" type="checkbox">
+                      </span>
+                      <span class="adb-selector--value">
+                        Marketplace Admins
+                      </span>
+                    </label>
+                    <label class="adb-selector adb-selector__small adb-selector__inline adb-js-checkbox" for="vendors-filter">
+                      <span class="adb-selector--input">
+                        <input id="vendors-filter" type="checkbox">
+                      </span>
+                      <span class="adb-selector--value">
+                        Vendors
+                      </span>
+                    </label>
+                    <label class="adb-selector adb-selector__small adb-selector__inline adb-js-checkbox" for="testers-filter">
+                      <span class="adb-selector--input">
+                        <input id="testers-filter" type="checkbox">
+                      </span>
+                      <span class="adb-selector--value">
+                        Testers
+                      </span>
+                    </label>
+                    <label class="adb-selector adb-selector__small adb-selector__inline adb-js-checkbox" for="analytics-admins-filter">
+                      <span class="adb-selector--input">
+                        <input id="analytics-admins-filter" type="checkbox">
+                      </span>
+                      <span class="adb-selector--value">
+                        Analytics Admins
+                      </span>
+                    </label>
+                  </div>
+                  <div class="adb-filters--filter">
+                    <label class="adb-label__small adb-label__inline" for="partner-sort">
+                      Partner
+                    </label>
+                    <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                      <select id="partner-sort">
+                        <option>Show All</option>
+                      </select>
+                    </div>
+                  </div>
+                </menu>
+              </div>
+              <div class="adb-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th data-sort>
+                        User ID
+                      </th>
+                      <th>
+                        Company
+                      </th>
+                      <th>
+                        UUID
+                      </th>
+                      <th data-sort>
+                        Email
+                      </th>
+                      <th data-sort>
+                        First
+                      </th>
+                      <th data-sort>
+                        Last
+                      </th>
+                      <th>
+                        Partner
+                      </th>
+                      <th>
+                        Designer
+                      </th>
+                      <th>
+                        Analytics
+                      </th>
+                      <th>
+                        Tester
+                      </th>
+                      <th>
+                        Corp Admin
+                      </th>
+                      <th>
+                        User Marketplace Support
+                      </th>
+                      <th>
+                        User Marketplace Admin
+                      </th>
+                      <th>
+                        Superuser
+                      </th>
+                      <th>
+                        Impersonate
+                      </th>
+                      <th>
+                        Edit
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        15036
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          eum laboriosam
+                        </a>
+                      </td>
+                      <td>
+                        45268-1332-4442-4434-7054486
+                      </td>
+                      <td>
+                        constance-dougherty@me.com
+                      </td>
+                      <td>
+                        dolor
+                      </td>
+                      <td>
+                        molestiae
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15732
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          et earum
+                        </a>
+                      </td>
+                      <td>
+                        40170-6556-6541-1877-5506952
+                      </td>
+                      <td>
+                        kenneth_barr@live.com
+                      </td>
+                      <td>
+                        provident
+                      </td>
+                      <td>
+                        asperiores
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15015
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          sed soluta
+                        </a>
+                      </td>
+                      <td>
+                        89404-1309-1506-6828-7848323
+                      </td>
+                      <td>
+                        justicewalton@email.com
+                      </td>
+                      <td>
+                        quos
+                      </td>
+                      <td>
+                        facere
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15254
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          rem quasi
+                        </a>
+                      </td>
+                      <td>
+                        13999-3741-8759-4767-7217551
+                      </td>
+                      <td>
+                        tonia_stout@yahoo.com
+                      </td>
+                      <td>
+                        error
+                      </td>
+                      <td>
+                        nostrum
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15275
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          qui iste
+                        </a>
+                      </td>
+                      <td>
+                        47335-5807-6052-2768-8426447
+                      </td>
+                      <td>
+                        roberto_hunt@live.com
+                      </td>
+                      <td>
+                        suscipit
+                      </td>
+                      <td>
+                        est
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15783
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          ab aut
+                        </a>
+                      </td>
+                      <td>
+                        13489-3560-8430-3327-108544
+                      </td>
+                      <td>
+                        elise_monroe@mac.com
+                      </td>
+                      <td>
+                        sit
+                      </td>
+                      <td>
+                        id
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15355
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          autem delectus
+                        </a>
+                      </td>
+                      <td>
+                        35083-3657-2375-7059-1688435
+                      </td>
+                      <td>
+                        brock-hoyle@mail.com
+                      </td>
+                      <td>
+                        alias
+                      </td>
+                      <td>
+                        autem
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15745
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          architecto veniam
+                        </a>
+                      </td>
+                      <td>
+                        91670-4767-2047-2651-3393831
+                      </td>
+                      <td>
+                        madeline-wilkerson@email.com
+                      </td>
+                      <td>
+                        aut
+                      </td>
+                      <td>
+                        doloremque
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15515
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          fugiat ut
+                        </a>
+                      </td>
+                      <td>
+                        40841-3426-4999-9041-6976295
+                      </td>
+                      <td>
+                        antoinette_alexander@aol.com
+                      </td>
+                      <td>
+                        et
+                      </td>
+                      <td>
+                        dolore
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15470
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          dolores et
+                        </a>
+                      </td>
+                      <td>
+                        77860-1605-7571-2573-8701545
+                      </td>
+                      <td>
+                        javon_cross@email.com
+                      </td>
+                      <td>
+                        qui
+                      </td>
+                      <td>
+                        aut
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15184
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          maxime et
+                        </a>
+                      </td>
+                      <td>
+                        37713-6483-5231-1306-3575638
+                      </td>
+                      <td>
+                        daryl_kennedy@aol.com
+                      </td>
+                      <td>
+                        non
+                      </td>
+                      <td>
+                        porro
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15023
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          dolores et
+                        </a>
+                      </td>
+                      <td>
+                        95573-1265-6649-4598-9342299
+                      </td>
+                      <td>
+                        davion_raynor@mac.com
+                      </td>
+                      <td>
+                        voluptas
+                      </td>
+                      <td>
+                        eaque
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15345
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          molestiae et
+                        </a>
+                      </td>
+                      <td>
+                        91235-3868-5241-3707-8579665
+                      </td>
+                      <td>
+                        emiliano-robertson@hotmail.com
+                      </td>
+                      <td>
+                        voluptatibus
+                      </td>
+                      <td>
+                        consequuntur
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15988
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          et minima
+                        </a>
+                      </td>
+                      <td>
+                        45669-3986-7297-1196-3845938
+                      </td>
+                      <td>
+                        gradymelton@mac.com
+                      </td>
+                      <td>
+                        doloribus
+                      </td>
+                      <td>
+                        fugiat
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15809
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          asperiores dolorem
+                        </a>
+                      </td>
+                      <td>
+                        15150-5788-1314-6084-4841647
+                      </td>
+                      <td>
+                        emiliano-olsen@yahoo.com
+                      </td>
+                      <td>
+                        similique
+                      </td>
+                      <td>
+                        aperiam
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15731
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          odio veritatis
+                        </a>
+                      </td>
+                      <td>
+                        63841-2481-7888-3125-1460046
+                      </td>
+                      <td>
+                        alfredo-lucas@mail.com
+                      </td>
+                      <td>
+                        facere
+                      </td>
+                      <td>
+                        similique
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15121
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          sit non
+                        </a>
+                      </td>
+                      <td>
+                        30122-3935-4296-3497-7394412
+                      </td>
+                      <td>
+                        patrick_norman@hotmail.com
+                      </td>
+                      <td>
+                        qui
+                      </td>
+                      <td>
+                        libero
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15118
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          odio odit
+                        </a>
+                      </td>
+                      <td>
+                        79296-6512-9347-2533-9782220
+                      </td>
+                      <td>
+                        jamie-james@gmail.com
+                      </td>
+                      <td>
+                        et
+                      </td>
+                      <td>
+                        aut
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15368
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          aspernatur id
+                        </a>
+                      </td>
+                      <td>
+                        24051-9695-3709-6738-3159933
+                      </td>
+                      <td>
+                        eliza_moore@hotmail.com
+                      </td>
+                      <td>
+                        et
+                      </td>
+                      <td>
+                        voluptatum
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15624
+                      </td>
+                      <td>
+                        <a href="/prototype/channel/marketplace/company_detail.html">
+                          mollitia omnis
+                        </a>
+                      </td>
+                      <td>
+                        57674-6198-6278-9635-2766418
+                      </td>
+                      <td>
+                        josephine-adkins@aol.com
+                      </td>
+                      <td>
+                        odit
+                      </td>
+                      <td>
+                        ratione
+                      </td>
+                      <td>
+                        APPDIRECT
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__check"></i>
+                      </td>
+                      <td>
+                        <i class="adb-icon__no"></i>
+                      </td>
+                      <td class="adb-table--menu">
+                                        <a class="adb-button adb-button__neutral adb-button__small" href="users.html">Impersonate
+                        </a>
+        
+                      </td>
+                      <td class="adb-table--menu">
+                        <button class="adb-button adb-button__neutral adb-button__small" data-target="#modal-edit-user" data-toggle="modal">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="adb-container_footer">
+                <div class="adb-container_footer--item__last">
+                  <nav class="adb-pagination_v1">
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__first"></a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__prev"></a>
+                    <a class="adb-pagination_v1--button">1</a>
+                    <a class="adb-pagination_v1--button">23</a>
+                    <span class="adb-pagination_v1--current">456</span>
+                    <a class="adb-pagination_v1--button">7890</a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__next"></a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__last"></a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <form class="adb-modal" id="modal-edit-user" role="menu">
+          <fieldset>
+            <h3 class="adb-modal--header" data-truncate="line">
+              <legend>
+                Edit
+                Stephanie Goldstein
+              </legend>
+              <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+            </h3>
+            <div class="adb-modal--content">
+              <div class="adb-form--field">
+                <label>Company Roles</label>
+                <label class="adb-selector adb-js-checkbox" for="role-designer">
+                  <span class="adb-selector--input">
+                    <input id="role-designer" type="checkbox">
+                  </span>
+                  <span class="adb-selector--value">
+                    Designer
+                  </span>
+                </label>
+                <label class="adb-selector adb-js-checkbox" for="role-analytics">
+                  <span class="adb-selector--input">
+                    <input id="role-analytics" type="checkbox">
+                  </span>
+                  <span class="adb-selector--value">
+                    Analytics
+                  </span>
+                </label>
+                <label class="adb-selector adb-js-checkbox" for="role-tester">
+                  <span class="adb-selector--input">
+                    <input id="role-tester" type="checkbox">
+                  </span>
+                  <span class="adb-selector--value">
+                    Tester
+                  </span>
+                </label>
+                <label class="adb-selector adb-js-checkbox" for="role-corp-admin">
+                  <span class="adb-selector--input">
+                    <input checked="true" id="role-corp-admin" type="checkbox">
+                  </span>
+                  <span class="adb-selector--value">
+                    Corporate Portal Admininistrator
+                  </span>
+                </label>
+                <label class="adb-selector adb-js-checkbox" for="role-user-channel-support">
+                  <span class="adb-selector--input">
+                    <input id="role-user-channel-support" type="checkbox">
+                  </span>
+                  <span class="adb-selector--value">
+                    User Channel Support
+                  </span>
+                </label>
+                <label class="adb-selector adb-js-checkbox" for="role-user-channel-admin">
+                  <span class="adb-selector--input">
+                    <input checked="true" id="role-user-channel-admin" type="checkbox">
+                  </span>
+                  <span class="adb-selector--value">
+                    User Channel Admin
+                  </span>
+                </label>
+                <label class="adb-selector adb-js-checkbox" for="role-superuser">
+                  <span class="adb-selector--input">
+                    <input id="role-superuser" type="checkbox">
+                  </span>
+                  <span class="adb-selector--value">
+                    Superuser
+                  </span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <menu class="adb-modal--footer adb-toolbar">
+            <button class="adb-button__primary adb-toolbar--item" type="submit">
+              Save
+            </button>
+            <button class="adb-button__secret adb-toolbar--item" data-dismiss="modal" type="button">
+              Close
+            </button>
+          </menu>
+        </form>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Dashboard
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

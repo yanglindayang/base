@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Company Dashboard</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="prototype prototype_account prototype_account_dashboard">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../marketplace/featured.html">Marketplace
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="myapps.html">MyApps
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../developer/dashboard.html">Developer
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+              <div class="adb-js-context_menu adb-context_menu">
+                <a class="adb-context_menu--trigger adb-is-selected adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  Manage
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="dashboard.html">Account</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../reseller/dashboard.html">Reseller</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../channel/marketplace/dashboard.html">Marketplace</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../corporate/customers/users.html">Corporate</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../superuser/dashboard/companies.html">Superuser</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-js-context_menu--trigger adb-context_menu--trigger adb-primary_nav--link adb-primary_nav--user" role="button">
+                  <span class="adb-id">
+                    <img class="adb-id--img adb-primary_nav--user_image" src="../../images/avatars/benDomanico-48x48.png" />
+                  </span>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="user/">My Profile</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="company/user-profile.html">My Company</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="settings.html">My Settings</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="http://ad.docs.appdirect.com">Help Center</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="/">Log out</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-secondary_nav">
+          <div class="adb-layout-default">
+            <ul class="adb-secondary_nav--items">
+              <li class="adb-secondary_nav--item adb-secondary_nav--item__breadcrumb">
+                <span class="adb-secondary_nav--content adb-secondary_nav--title">Account Manager</span>
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link adb-is-selected" href="dashboard.html">Dashboard
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="users.html">Users
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="manage.html">Products
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="assign.html">Assign Apps
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="invoices.html">Billing
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="company_settings.html">Settings
+                </a>
+        
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <h1>Dashboard</h1>
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <form action="" class="adb-form">
+              <fieldset class="adb-container">
+                <div class="adb-container_header">
+                  <h3 class="adb-container_header--title adb-container_header--item">
+                    <legend>Invite Users</legend>
+                  </h3>
+                </div>
+                <div class="adb-container_content">
+                  <div class="adb-form--field">
+                    <label class="adb-is-visually_hidden" for="dashboard-invite-email">
+                      Email Address
+                    </label>
+                    <input id="dashboard-invite-email" placeholder="email@address.com" type="email">
+                  </div>
+                </div>
+                <div class="adb-container_footer">
+                  <menu class="adb-toolbar">
+                    <button class="adb-button__primary adb-toolbar--item" type="submit">
+                      Invite
+                    </button>
+                    <button class="adb-toolbar--item" data-toggle="modal" href="#modal-invite-multiple" type="button">
+                      Invite Multiple
+                    </button>
+                  </menu>
+                </div>
+              </fieldset>
+            </form>
+            <div class="adb-container">
+              <div class="adb-container_header">
+                <h3 class="adb-container_header--title adb-container_header--item">Links</h3>
+              </div>
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                            <a class="adb-link__nav adb-stack--item_content" href="assign.html"><i class="adb-icon__add adb-link__nav--icon"></i>
+                  Assign Apps
+                  </a>
+        
+                </div>
+                <div class="adb-stack--item">
+                            <a class="adb-link__nav adb-stack--item_content" href="manage.html"><i class="adb-icon__cog adb-link__nav--icon"></i>
+                  Manage Apps
+                  </a>
+        
+                </div>
+                <div class="adb-stack--item">
+                            <a class="adb-link__nav adb-stack--item_content" href="billing.html"><i class="adb-icon__tag adb-link__nav--icon"></i>
+                  Update Billing Information
+                  </a>
+        
+                </div>
+                <div class="adb-stack--item">
+                            <a class="adb-link__nav adb-stack--item_content" href="invoices.html"><i class="adb-icon__credit_card adb-link__nav--icon"></i>
+                  View Recent Invoices
+                  </a>
+        
+                </div>
+              </nav>
+            </div>
+            <div class="adb-container" id="company-grid">
+              <div class="adb-container_header adb-slat">
+                <div class="adb-slat--content adb-slat--column adb-summary">
+                  <h3 class="adb-summary--title">AppDirect</h3>
+                  <p class="adb-summary--detail">150 Members</p>
+                </div>
+              </div>
+              <div class="adb-filters" data-filters>
+                <menu class="adb-filters--header">
+                  <div class="adb-search_field adb-search_field__auto">
+                    <span class="adb-search_field--affix adb-search_field--affix__default"></span>
+                    <span class="adb-search_field--affix adb-search_field--affix__loading">
+                      <span class="adb-loading">
+                        <span class="adb-loading--text">Loading...</span>
+                      </span>
+                    </span>
+                    <input class="adb-js-auto_search--input adb-search_field--input adb-text__small" id="name-search" placeholder="Search" type="search">
+                    <a class="adb-close adb-search_field--affix adb-search_field--affix__clear adb-js-auto_search--clear"></a>
+                  </div>
+                </menu>
+              </div>
+              <div class="adb-table adb-table__actionable adb-table__fixed" id="names">
+                <table id="name-all">
+                  <tbody>
+                    <tr class="adb-table--column_heading adb-table--column_heading__small">
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>Alex Capasso</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Reese O'Brien
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Penny Bowling
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Nadia Reid
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Harriet Chang
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Geraldine Christian
+                      </td>
+                    </tr>
+                    <tr class="adb-table--column_heading adb-table--column_heading__small">
+                      <td>B</td>
+                    </tr>
+                    <tr>
+                      <td>Ben Domanico</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Andres Garrett
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Alberto Starr
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Lynette Moon
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Neil Sumner
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Aniya Reid
+                      </td>
+                    </tr>
+                    <tr class="adb-table--column_heading adb-table--column_heading__small adb-is-hidden">
+                      <td>C</td>
+                    </tr>
+                    <tr class="adb-is-hidden">
+                      <td>
+                        Courtney Goldman
+                      </td>
+                    </tr>
+                    <tr class="adb-is-hidden">
+                      <td>
+                        Jacquelyn Hobbs
+                      </td>
+                    </tr>
+                    <tr class="adb-is-hidden">
+                      <td>
+                        Kaden Sparks
+                      </td>
+                    </tr>
+                    <tr class="adb-is-hidden">
+                      <td>
+                        Emely Jones
+                      </td>
+                    </tr>
+                    <tr class="adb-is-hidden">
+                      <td>
+                        Vance Hall
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="adb-table--loading adb-is-hidden">
+                  <span class="adb-loading">
+                    <span class="adb-loading--text">Loading ...</span>
+                  </span>
+                </div>
+                <table class="adb-is-hidden" id="name-results">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <strong>Be</strong>n Domanico
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Be</strong>rnhard Schmidt
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Be</strong>tty Draper
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Mary <strong>Be</strong>cica
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Arnold <strong>Be</strong>nedict
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="adb-complex_tooltip adb-js-dialog" id="company-user1">
+              <div class="adb-complex_tooltip--card adb-card">
+                <figure class="adb-card--image">
+                  <div class="adb-id adb-id__sq_small">
+                    <img class="adb-id--img" src="../../images/avatars/danHoerr-72x72.png" />
+                  </div>
+                </figure>
+                <div class="adb-card--content adb-summary">
+                  <h3 class="adb-summary--title">Dan Hoerr</h3>
+                  <p class="adb-summary--detail">Developer</p>
+                </div>
+              </div>
+            </div>
+            <div class="adb-complex_tooltip adb-js-dialog" id="company-user2">
+              <div class="adb-complex_tooltip--card adb-card">
+                <figure class="adb-card--image">
+                  <div class="adb-id adb-id__sq_small">
+                    <img class="adb-id--img" src="../../images/avatars/lindaYang-72x72.png" />
+                  </div>
+                </figure>
+                <div class="adb-card--content adb-summary">
+                  <h3 class="adb-summary--title">Linda Yang</h3>
+                  <p class="adb-summary--detail">Product Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="adb-complex_tooltip adb-js-dialog" id="company-user3">
+              <div class="adb-complex_tooltip--card adb-card">
+                <figure class="adb-card--image">
+                  <div class="adb-id adb-id__sq_small">
+                    <img class="adb-id--img" src="../../images/avatars/benDomanico-72x72.png" />
+                  </div>
+                </figure>
+                <div class="adb-card--content adb-summary">
+                  <h3 class="adb-summary--title">Ben Domanico</h3>
+                  <p class="adb-summary--detail">Design Director</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="adb-layout-content">
+            <div class="adb-header">
+              <h3 class="adb-header--item">
+                Recent Events
+              </h3>
+              <menu class="adb-header--item">
+                <menu class="adb-toggle_buttons" data-toggle="buttons-radio">
+                  <button class="adb-toggle_buttons--button adb-button__small active" type="button">
+                    Everyone
+                  </button>
+                  <button class="adb-toggle_buttons--button adb-button__small" type="button">
+                    Me
+                  </button>
+                </menu>
+              </menu>
+            </div>
+            <div class="adb-container">
+              <div class="adb-container_header">
+                <h3 class="adb-container_header--title adb-container_header--item">Today</h3>
+              </div>
+              <div class="adb-slats adb-container_content">
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__app adb-layered_icons">
+                      <i class="adb-icon__plus adb-layered_icons--child adb-layered_icons--child__add"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Nia Black
+                      </a>
+                      assigned
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Shirley Schroeder
+                      </a>
+                      to
+                      <a>Mailchimp.</a>
+                      &nbsp;
+                    </p>
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id adb-id__logo adb-id__sq_small" data-target="#app-tooltip" data-toggle="dialog">
+                          <img class="adb-id--img" src="../../images/logos/apps/mailchimp-120x120.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content">
+                        <h4 class="adb-summary--title">
+                          <a data-truncate="line" href="product.html">Mailchimp
+                          </a>
+                        </h4>
+                        <p class="adb-summary--details">Send Better Email</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__app adb-layered_icons">
+                      <i class="adb-icon__plus adb-layered_icons--child adb-layered_icons--child__add"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      UserSync
+                      <i class="adb-icon__switch adb-icon_alert" data-target="#usersync-tooltip" data-toggle="dialog"></i>
+                      added
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Isabelle Black
+                      </a>
+                      to
+                      <a>Mailchimp.</a>
+                    </p>
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id adb-id__logo adb-id__sq_small" data-target="#app-tooltip" data-toggle="dialog">
+                          <img class="adb-id--img" src="../../images/logos/apps/mailchimp-120x120.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content">
+                        <h4 class="adb-summary--title">
+                          <a data-truncate="line" href="product.html">Mailchimp
+                          </a>
+                        </h4>
+                        <p class="adb-summary--details">Send Better Email</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__app adb-layered_icons">
+                      <i class="adb-icon__alert adb-layered_icons--child adb-layered_icons--child__change"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Alberto Chandler
+                      </a>
+                      requested access to
+                      <a>Mailchimp.</a>
+                      &nbsp;
+                    </p>
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id adb-id__logo adb-id__sq_small" data-target="#app-tooltip" data-toggle="dialog">
+                          <img class="adb-id--img" src="../../images/logos/apps/mailchimp-120x120.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content">
+                        <h4 class="adb-summary--title">
+                          <a data-truncate="line" href="product.html">Mailchimp
+                          </a>
+                        </h4>
+                        <p class="adb-summary--details">Send Better Email</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__app adb-layered_icons">
+                      <i class="adb-icon__no adb-layered_icons--child adb-layered_icons--child__remove"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Mya Sutton
+                      </a>
+                      removed
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Camila Song
+                      </a>
+                      from
+                      <a>Mailchimp.</a>
+                      &nbsp;
+                    </p>
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id adb-id__logo adb-id__sq_small" data-target="#app-tooltip" data-toggle="dialog">
+                          <img class="adb-id--img" src="../../images/logos/apps/mailchimp-120x120.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content">
+                        <h4 class="adb-summary--title">
+                          <a data-truncate="line" href="product.html">Mailchimp
+                          </a>
+                        </h4>
+                        <p class="adb-summary--details">Send Better Email</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__app adb-layered_icons">
+                      <i class="adb-icon__no adb-layered_icons--child adb-layered_icons--child__remove"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      UserSync
+                      <i class="adb-icon__switch adb-icon_alert" data-target="#usersync-tooltip" data-toggle="dialog"></i>
+                      removed
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Neil Christian
+                      </a>
+                      from
+                      <a>Mailchimp.</a>
+                    </p>
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id adb-id__logo adb-id__sq_small" data-target="#app-tooltip" data-toggle="dialog">
+                          <img class="adb-id--img" src="../../images/logos/apps/mailchimp-120x120.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content">
+                        <h4 class="adb-summary--title">
+                          <a data-truncate="line" href="product.html">Mailchimp
+                          </a>
+                        </h4>
+                        <p class="adb-summary--details">Send Better Email</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__switch adb-layered_icons">
+                      <i class="adb-icon__plus adb-layered_icons--child adb-layered_icons--child__add"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Ruben Allen
+                      </a>
+                      enabled
+                      UserSync
+                      <i class="adb-icon__switch adb-icon_alert" data-target="#usersync-tooltip" data-toggle="dialog"></i>
+                      for
+                      <a>Mailchimp.</a>
+                    </p>
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id adb-id__logo adb-id__sq_small" data-target="#app-tooltip" data-toggle="dialog">
+                          <img class="adb-id--img" src="../../images/logos/apps/mailchimp-120x120.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content">
+                        <h4 class="adb-summary--title">
+                          <a data-truncate="line" href="product.html">Mailchimp
+                          </a>
+                        </h4>
+                        <p class="adb-summary--details">Send Better Email</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__switch adb-layered_icons">
+                      <i class="adb-icon__no adb-layered_icons--child adb-layered_icons--child__remove"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Chris Black
+                      </a>
+                      disabled
+                      UserSync
+                      <i class="adb-icon__switch adb-icon_alert" data-target="#usersync-tooltip" data-toggle="dialog"></i>
+                      for
+                      <a>Mailchimp.</a>
+                    </p>
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id adb-id__logo adb-id__sq_small" data-target="#app-tooltip" data-toggle="dialog">
+                          <img class="adb-id--img" src="../../images/logos/apps/mailchimp-120x120.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content">
+                        <h4 class="adb-summary--title">
+                          <a data-truncate="line" href="product.html">Mailchimp
+                          </a>
+                        </h4>
+                        <p class="adb-summary--details">Send Better Email</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__user adb-layered_icons">
+                      <i class="adb-icon__plus adb-layered_icons--child adb-layered_icons--child__add"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Leslie Allen
+                      </a>
+                      invited
+                      courtneyweiner@mail.com
+                      to join Lorem Company.
+                    </p>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__user adb-layered_icons">
+                      <i class="adb-icon__check adb-layered_icons--child adb-layered_icons--child__add"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Harriet Becker
+                      </a>
+                      joined
+                      Lorem Company.
+                    </p>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__company adb-layered_icons">
+                      <i class="adb-icon__plus adb-layered_icons--child adb-layered_icons--child__add"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Gayle Palmer
+                      </a>
+                      created a new company,&nbsp;
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        totam sit cupiditate
+                        .
+                      </a>
+                    </p>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__company adb-layered_icons">
+                      <i class="adb-icon__check adb-layered_icons--child adb-layered_icons--child__add"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Rogelio Ross
+                      </a>
+                      activated a new company,&nbsp;
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        quo voluptate cumque
+                        .
+                      </a>
+                    </p>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__reseller adb-layered_icons">
+                      <i class="adb-icon__plus adb-layered_icons--child adb-layered_icons--child__add"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Quinn Barton
+                      </a>
+                      linked
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Bryce Gray
+                      </a>
+                      to Lorem Company as a Reseller.
+                    </p>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__reseller adb-layered_icons">
+                      <i class="adb-icon__no adb-layered_icons--child adb-layered_icons--child__remove"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Kerry Christian
+                      </a>
+                      removed
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Ruben Case
+                      </a>
+                      from Lorem Company as a Reseller.
+                    </p>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-container_header">
+                <h5 class="adb-container_header--title adb-container_header--item">This Week</h5>
+              </div>
+              <div class="adb-slats adb-container_content">
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__subscription adb-layered_icons">
+                      <i class="adb-icon__plus adb-layered_icons--child adb-layered_icons--child__add"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Dwayne Lamb
+                      </a>
+                      purchased
+                      a subscription to Mailchimp.
+                    </p>
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id adb-id__logo adb-id__sq_small" data-target="#app-tooltip" data-toggle="dialog">
+                          <img class="adb-id--img" src="../../images/logos/apps/mailchimp-120x120.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content">
+                        <h4 class="adb-summary--title">
+                          <a data-truncate="line" href="product.html">Mailchimp
+                          </a>
+                        </h4>
+                        <p class="adb-summary--details">Send Better Email</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      1 week ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__subscription adb-layered_icons">
+                      <i class="adb-icon__edit adb-layered_icons--child adb-layered_icons--child__change"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Alonzo Chandler
+                      </a>
+                      modified
+                      the subscription to MailChimp.
+                    </p>
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id adb-id__logo adb-id__sq_small" data-target="#app-tooltip" data-toggle="dialog">
+                          <img class="adb-id--img" src="../../images/logos/apps/mailchimp-120x120.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content">
+                        <h4 class="adb-summary--title">
+                          <a data-truncate="line" href="product.html">Mailchimp
+                          </a>
+                        </h4>
+                        <p class="adb-summary--details">Send Better Email</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      1 week ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__subscription adb-layered_icons">
+                      <i class="adb-icon__alert adb-layered_icons--child adb-layered_icons--child__change"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Casey Joseph
+                      </a>
+                      requested cancellation of the subscription to MailChimp.
+                    </p>
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id adb-id__logo adb-id__sq_small" data-target="#app-tooltip" data-toggle="dialog">
+                          <img class="adb-id--img" src="../../images/logos/apps/mailchimp-120x120.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content">
+                        <h4 class="adb-summary--title">
+                          <a data-truncate="line" href="product.html">Mailchimp
+                          </a>
+                        </h4>
+                        <p class="adb-summary--details">Send Better Email</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      1 week ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__subscription adb-layered_icons">
+                      <i class="adb-icon__no adb-layered_icons--child adb-layered_icons--child__remove"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Laila Teague
+                      </a>
+                      canceled
+                      the subscription to MailChimp.
+                    </p>
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id adb-id__logo adb-id__sq_small" data-target="#app-tooltip" data-toggle="dialog">
+                          <img class="adb-id--img" src="../../images/logos/apps/mailchimp-120x120.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content">
+                        <h4 class="adb-summary--title">
+                          <a data-truncate="line" href="product.html">Mailchimp
+                          </a>
+                        </h4>
+                        <p class="adb-summary--details">Send Better Email</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      1 week ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-container_header">
+                <h5 class="adb-container_header--title adb-container_header--item">This Month</h5>
+              </div>
+              <div class="adb-slats adb-container_content">
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__credit_card adb-layered_icons">
+                      <i class="adb-icon__check adb-layered_icons--child adb-layered_icons--child__add"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Connor Reid
+                      </a>
+                      completed
+                      a payment of $9.99 for Invoice 12345.
+                    </p>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 weeks ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__credit_card adb-layered_icons">
+                      <i class="adb-icon__error adb-layered_icons--child adb-layered_icons--child__remove"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Michelle Walsh
+                      </a>
+                      failed
+                      to complete a payment of $9.99 for Invoice 12345.
+                    </p>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 weeks ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat adb-is-hidden">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__app adb-layered_icons">
+                      <i class="adb-icon__plus adb-layered_icons--child adb-layered_icons--child__add"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Billy Lloyd
+                      </a>
+                      assigned
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        Danielle Gallagher
+                      </a>
+                      to
+                      <a>Mailchimp.</a>
+                      &nbsp;
+                    </p>
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id adb-id__logo adb-id__sq_small" data-target="#app-tooltip" data-toggle="dialog">
+                          <img class="adb-id--img" src="../../images/logos/apps/mailchimp-120x120.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content">
+                        <h4 class="adb-summary--title">
+                          <a data-truncate="line" href="product.html">Mailchimp
+                          </a>
+                        </h4>
+                        <p class="adb-summary--details">Send Better Email</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+                <div class="adb-slat adb-is-hidden">
+                  <div class="adb-slat--image adb-slat--column">
+                    <i class="adb-icon__app adb-layered_icons">
+                      <i class="adb-icon__plus adb-layered_icons--child adb-layered_icons--child__add"></i>
+                    </i>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column">
+                    <p>
+                      UserSync
+                      <i class="adb-icon__switch adb-icon_alert" data-target="#usersync-tooltip" data-toggle="dialog"></i>
+                      added
+                      <a data-target="#user-tooltip" data-toggle="dialog" href="#">
+                        inley Proctor
+                      </a>
+                      to
+                      <a>Mailchimp.</a>
+                    </p>
+                    <div class="adb-card">
+                      <div class="adb-card--image">
+                        <div class="adb-id adb-id__logo adb-id__sq_small" data-target="#app-tooltip" data-toggle="dialog">
+                          <img class="adb-id--img" src="../../images/logos/apps/mailchimp-120x120.png" />
+                        </div>
+                      </div>
+                      <div class="adb-card--content">
+                        <h4 class="adb-summary--title">
+                          <a data-truncate="line" href="product.html">Mailchimp
+                          </a>
+                        </h4>
+                        <p class="adb-summary--details">Send Better Email</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--toolbar adb-slat--column">
+                    <time>
+                      2 hours ago&nbsp;
+                      <i class="adb-icon__clock" data-title="March 20, 2015 2:34 PM" data-toggle="tooltip"></i>
+                    </time>
+                  </div>
+                </div>
+              </div>
+              <a class="adb-expand_link adb-expand_link__container">
+                <i class="adb-icon__angle_down"></i>
+                &nbsp;Older Updates
+              </a>
+            </div>
+            <div class="adb-complex_tooltip adb-js-dialog" id="user-tooltip">
+              <div class="adb-complex_tooltip--card adb-card">
+                <div class="adb-card--image">
+                  <div class="adb-id">
+                    <img class="adb-id--img" src="../../images/avatars/nathanRomero-48x48.png" />
+                  </div>
+                </div>
+                <div class="adb-card--content adb-summary">
+                  <h3 class="adb-summary--title">
+                    Shawn Baker
+                  </h3>
+                  <p class="adb-summary--details" data-truncate="line">
+                    brendon-abrams@mac.com
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="adb-complex_tooltip adb-js-dialog" id="app-tooltip">
+              <div class="adb-complex_tooltip--content">
+                <h3>Mailchimp</h3>
+                <p>
+                  debitis expedita molestias nulla placeat id quaerat quaerat explicabo reiciendis alias deserunt aut vero ullam doloribus deserunt omnis adipisci facilis quidem quisquam iste id rerum
+                </p>
+              </div>
+            </div>
+            <div class="adb-complex_tooltip adb-js-dialog" id="usersync-tooltip">
+              <div class="adb-complex_tooltip--content">
+                <p>
+                  <strong>UserSync</strong>
+                  allows you to sync user accounts automatically between applications and your company on the Acme marketplace.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <form action="" class="adb-modal" id="modal-invite-multiple">
+          <fieldset>
+            <h3 class="adb-modal--header" data-truncate>
+              <legend>Invite Users</legend>
+              <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+            </h3>
+            <div class="adb-modal--content">
+              <nav class="adb-tabs">
+                <ul class="adb-tabs--items">
+                  <li class="adb-tabs--item active">
+                    <a class="adb-tabs--link" data-toggle="tab" href="#add-users-manually">
+                      Add Emails
+                    </a>
+                  </li>
+                  <li class="adb-tabs--item">
+                    <a class="adb-tabs--link" data-toggle="tab" href="#upload-email-list">
+                      Upload Email List
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="adb-container adb-container__tabbed adb-js-tab" id="upload-email-list">
+                <div class="adb-container_content">
+                  <div class="adb-form--field">
+                    <label>Upload Users</label>
+                    <div class="adb-upload_field">
+                      <span class="adb-upload_field--text">
+                        <i class="adb-upload_field--icon"></i>
+                        Drag and drop file here, or
+                        <a>click here to upload.</a>
+                      </span>
+                      <input class="adb-upload_field--input" id="default-file-state" name="default-file-state" type="file    ">
+                    </div>
+                    <div class="adb-caption adb-form--caption">
+                      Accepted email format: a single column plain text file less than 2MB in size, with one email per line and 2,000 lines.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-container adb-container__tabbed adb-js-tab active" id="add-users-manually">
+                <div class="adb-container_content">
+                  <div class="adb-form--field">
+                    <div class="adb-complex_tooltip adb-js-dialog" data-placement="bottom" id="user-roles-tooltip">
+                      <div class="adb-complex_tooltip--content">
+                        <h4>Roles</h4>
+                        <p>
+                          <strong>Users</strong>
+                          can buy and manage their own products. Everyone has user privileges by default.
+                        </p>
+                        <p>
+                          <strong>Billing Admins</strong>
+                          can assign and manage company products and payments, but cannot access user data.
+                        </p>
+                        <p>
+                          <strong>System Admins</strong>
+                          can access all data and manage users within the company.
+                        </p>
+                        <p>
+                          <strong>Developers</strong>
+                          can create and publish products in the marketplace
+                        </p>
+                      </div>
+                    </div>
+                    <div class="adb-input_table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>
+                              <label>Email Address</label>
+                            </th>
+                            <th>
+                              <label>
+                                Role
+                                <a class="adb-icon_alert" data-event="click" data-target="#user-roles-tooltip" data-toggle="dialog">
+                                  <i class="adb-icon__question"></i>
+                                </a>
+                              </label>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="adb-input_table--primary">
+                              <input placeholder="email@address.com" type="email">
+                            </td>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>User</option>
+                                  <option>Billing Admin</option>
+                                  <option>System Admin</option>
+                                  <option selected>Developer</option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="adb-input_table--primary">
+                              <input placeholder="email@address.com" type="email">
+                            </td>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>User</option>
+                                  <option>Billing Admin</option>
+                                  <option>System Admin</option>
+                                  <option selected>Developer</option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="adb-input_table--primary">
+                              <input placeholder="email@address.com" type="email">
+                            </td>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>User</option>
+                                  <option>Billing Admin</option>
+                                  <option>System Admin</option>
+                                  <option selected>Developer</option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="adb-input_table--primary">
+                              <input placeholder="email@address.com" type="email">
+                            </td>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>User</option>
+                                  <option>Billing Admin</option>
+                                  <option>System Admin</option>
+                                  <option selected>Developer</option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button class="adb-button__small adb-button__secondary" type="button">
+                        <i class="adb-icon__add"></i>
+                        Add Another User
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <menu class="adb-modal--footer adb-toolbar">
+              <button class="adb-button__primary adb-toolbar--item" type="button">
+                Send Invitations
+              </button>
+              <button class="adb-button__secret adb-toolbar--item" data-dismiss="modal" type="button">
+                Cancel
+              </button>
+            </menu>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Company Dashboard
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    <script>
+      (function() {
+        $(function() {
+          $("#names").bind("scroll", function() {
+            var $container, $table;
+            $container = $(this);
+            $table = $('#name-all');
+            if ($container.scrollTop() + $container.innerHeight() >= $container[0].scrollHeight) {
+              $table.siblings('.adb-table--loading').removeClass('adb-is-hidden');
+              window.setTimeout((function() {
+                $table.siblings('.adb-table--loading').fadeOut(500, (function() {
+                  return $table.find('tr.adb-is-hidden').removeClass('adb-is-hidden');
+                }));
+              }), 1000);
+            }
+          });
+          $('#name-search').on('keyup', function() {
+            var $all, $results, $search;
+            $search = $(this).parents('.adb-search_field');
+            $results = $('#name-results');
+            $all = $('#name-all');
+            $search.addClass('adb-is-loading');
+            return window.setTimeout((function() {
+              $results.removeClass('adb-is-hidden');
+              $all.addClass('adb-is-hidden');
+              $search.removeClass('adb-is-loading').addClass('adb-is-active');
+              if ($results.outerHeight() < $results.parents('.adb-table').outerHeight()) {
+                $results.find('tr').last().css({
+                  'border-bottom-style': 'solid'
+                });
+              }
+            }), 500);
+          });
+          return $('.adb-search_field--clear').on('click', function(e) {
+            var $all, $results, $search;
+            $search = $(this).parents('.adb-search_field');
+            $results = $('#name-results');
+            $all = $('#name-all');
+            e.preventDefault();
+            $search.removeClass('adb-is-active');
+            $search.find('input').val('');
+            $results.addClass('adb-is-hidden');
+            $all.removeClass('adb-is-hidden');
+            return e.stopPropagation();
+          });
+        });
+      
+      }).call(this);
+    </script>
+  </body>
+</html>

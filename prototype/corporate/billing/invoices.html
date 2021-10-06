@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Invoices</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="prototype prototype_corporate prototype_corporate_billing prototype_corporate_billing_invoices">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../../marketplace/featured.html">Marketplace
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../../account/myapps.html">MyApps
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../../developer/dashboard.html">Developer
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+              <div class="adb-js-context_menu adb-context_menu">
+                <a class="adb-context_menu--trigger adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  Manage
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/dashboard.html">Account</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../reseller/dashboard.html">Reseller</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../channel/marketplace/dashboard.html">Marketplace</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../customers/users.html">Corporate</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../superuser/dashboard/companies.html">Superuser</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-js-context_menu--trigger adb-context_menu--trigger adb-primary_nav--link adb-primary_nav--user" role="button">
+                  <span class="adb-id">
+                    <img class="adb-id--img adb-primary_nav--user_image" src="../../../images/avatars/benDomanico-48x48.png" />
+                  </span>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/user/">My Profile</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/company/user-profile.html">My Company</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/settings.html">My Settings</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="http://ad.docs.appdirect.com">Help Center</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="/">Log out</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-secondary_nav">
+          <div class="adb-layout-default">
+            <ul class="adb-secondary_nav--items">
+              <li class="adb-secondary_nav--item adb-secondary_nav--item__breadcrumb">
+                <span class="adb-secondary_nav--content adb-secondary_nav--title">Corporate Portal</span>
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="../customers/users.html">Customers
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link adb-is-selected" href="orders.html">Billing
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="../events/event_logs.html">Events
+                </a>
+        
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <div class="adb-container_header">
+                <h5 class="adb-container_header--title adb-container_header--item">Billing</h5>
+              </div>
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="orders.html">Orders
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="invoices.html">Invoices
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="payments.html">Payments
+                  </a>
+          
+                </div>
+              </nav>
+            </div>
+            <div class="adb-container">
+              <div class="adb-container_header">
+                <h5 class="adb-container_header--title adb-container_header--item">Reconciliation</h5>
+              </div>
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="revenue_shares.html">Revenue Shares
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="vendor_recon.html">Vendor Reconciliation
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="channel_recon.html">Marketplace Reconciliation
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="payouts.html">Payouts
+                  </a>
+          
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="adb-layout-content">
+            <h1>Invoices</h1>
+            <section class="adb-container">
+              <div class="adb-filters" data-filters>
+                <menu class="adb-filters--header">
+                  <menu class="adb-filters--header_item">
+                    <button class="adb-button__inset adb-button__small adb-filters--filter_button" data-toggle="filters" type="button">
+                      Show Filters
+                    </button>
+                    <button class="adb-button__inset adb-button__small adb-filters--download_button" type="button">
+                      Download CSV
+                    </button>
+                  </menu>
+                  <div class="adb-filters--header_item">
+                    <div class="adb-search_field adb-input_row adb-js-input_row">
+                      <div class="adb-input_row--item adb-input_row--primary">
+                        <input class="adb-search_field--input adb-text__small adb-input_row--item_content" placeholder="Search" type="search">
+                      </div>
+                      <div class="adb-input_row--item">
+                        <button class="adb-button__square_small adb-button__inset adb-input_row--item_content">
+                          <i class="adb-icon__search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </menu>
+                <menu class="adb-js-filters adb-filters--content adb-is-visually_hidden">
+                  <div class="adb-filters--filter">
+                    <label class="adb-label__small adb-label__inline" for="product-status-filter">
+                      Status
+                    </label>
+                    <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                      <select id="product-status-filter">
+                        <option>Show All</option>
+                        <option>Active</option>
+                        <option>Inactive</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="adb-filters--filter">
+                    <label class="adb-label__small adb-label__inline" for="product-channel-filter">
+                      Marketplace
+                    </label>
+                    <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                      <select id="product-channel-filter">
+                        <option>Show All</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="adb-filters--filter">
+                    <label class="adb-selector adb-selector__small adb-selector__inline adb-js-checkbox" for="free-filter">
+                      <span class="adb-selector--input">
+                        <input id="free-filter" type="checkbox">
+                      </span>
+                      <span class="adb-selector--value">
+                        Exclude Free
+                      </span>
+                    </label>
+                  </div>
+                  <div class="adb-filters--filter">
+                    <label class="adb-label__small adb-label__inline">Created between</label>
+                    <input class="adb-date__small" id="date-start" name="dates" type="date">
+                    <label class="adb-label__small adb-label__inline">and</label>
+                    <input class="adb-date__small" id="date-end" name="dates" type="date">
+                  </div>
+                </menu>
+              </div>
+              <div class="adb-table adb-table__actionable">
+                <table>
+                  <thead>
+                    <tr>
+                      <th data-sort>
+                        Status
+                      </th>
+                      <th data-sort>
+                        ID
+                      </th>
+                      <th data-sort>
+                        Created
+                      </th>
+                      <th data-sort>
+                        Customer
+                      </th>
+                      <th data-sort>
+                        Marketplace
+                      </th>
+                      <th data-sort>
+                        Total
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        614862
+                      </td>
+                      <td>
+                        10/09/2008
+                      </td>
+                      <td>
+                        Corporis Culpa
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        510199
+                      </td>
+                      <td>
+                        04/09/1998
+                      </td>
+                      <td>
+                        Aut Sed
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        688878
+                      </td>
+                      <td>
+                        09/29/1992
+                      </td>
+                      <td>
+                        Velit Saepe
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        395406
+                      </td>
+                      <td>
+                        04/24/1997
+                      </td>
+                      <td>
+                        Enim Debitis
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        852357
+                      </td>
+                      <td>
+                        04/18/1998
+                      </td>
+                      <td>
+                        Reprehenderit Perspiciatis
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        781193
+                      </td>
+                      <td>
+                        03/19/1996
+                      </td>
+                      <td>
+                        Et Eos
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        710926
+                      </td>
+                      <td>
+                        09/30/1996
+                      </td>
+                      <td>
+                        Odio Repellendus
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        737450
+                      </td>
+                      <td>
+                        01/16/2008
+                      </td>
+                      <td>
+                        Dolorem Reiciendis
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        939121
+                      </td>
+                      <td>
+                        04/23/1997
+                      </td>
+                      <td>
+                        Quam Dolorem
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        887522
+                      </td>
+                      <td>
+                        04/19/2002
+                      </td>
+                      <td>
+                        Et Reiciendis
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        857507
+                      </td>
+                      <td>
+                        09/06/1995
+                      </td>
+                      <td>
+                        Eos Atque
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        120789
+                      </td>
+                      <td>
+                        12/09/1990
+                      </td>
+                      <td>
+                        Veritatis Commodi
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        210402
+                      </td>
+                      <td>
+                        05/19/1998
+                      </td>
+                      <td>
+                        Voluptatem Est
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        237718
+                      </td>
+                      <td>
+                        03/09/1990
+                      </td>
+                      <td>
+                        Est Laudantium
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        372206
+                      </td>
+                      <td>
+                        07/12/1998
+                      </td>
+                      <td>
+                        Qui Pariatur
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        853574
+                      </td>
+                      <td>
+                        07/24/2004
+                      </td>
+                      <td>
+                        Vel Odit
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        668020
+                      </td>
+                      <td>
+                        05/04/1991
+                      </td>
+                      <td>
+                        Laboriosam Et
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        305009
+                      </td>
+                      <td>
+                        03/07/2000
+                      </td>
+                      <td>
+                        Enim Alias
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        261070
+                      </td>
+                      <td>
+                        04/05/1999
+                      </td>
+                      <td>
+                        Et Consequatur
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                    <tr data-target="#modal-invoice" data-toggle="modal">
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Paid
+                        </span>
+                      </td>
+                      <td>
+                        897168
+                      </td>
+                      <td>
+                        06/01/2008
+                      </td>
+                      <td>
+                        Fugit Ipsam
+                      </td>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        $10.63
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="adb-container_footer">
+                <div class="adb-container_footer--item adb-container_footer--item__last">
+                  <nav class="adb-pagination_v1">
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__first"></a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__prev"></a>
+                    <a class="adb-pagination_v1--button">1</a>
+                    <a class="adb-pagination_v1--button">23</a>
+                    <span class="adb-pagination_v1--current">456</span>
+                    <a class="adb-pagination_v1--button">7890</a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__next"></a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__last"></a>
+                  </nav>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+        <div class="adb-modal adb-modal__large" id="modal-invoice" role="menu">
+          <h3 class="adb-modal--header" data-truncate="line">
+            Invoice Details
+            <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+          </h3>
+          <div class="adb-modal--content">
+            <div class="adb-header">
+              <div class="adb-header--item">
+                <img src="../../../images/logos/appdirect/1-color/appdirect-logo-1c-light-xsmall.png" />
+              </div>
+              <menu class="adb-header--item">
+                <button type="button">Do Something</button>
+              </menu>
+            </div>
+            <div class="adb-local_alert adb-local_alert__success">
+              <div class="adb-local_alert--content">
+                <p>
+                  <strong>Paid</strong>
+                </p>
+              </div>
+            </div>
+            <div class="adb-container adb-receipt">
+              <div class="adb-receipt--table">
+                <table>
+                  <colgroup>
+                    <col class="adb-table--section" width="50%">
+                    <col class="adb-table--section" width="50%">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <strong>Lucius Fox</strong>
+                        <br>
+                        50 Grove St.
+                        <br>
+                        Gotham City, NY
+                        <br>
+                        <a>
+                          alonzo_barton@gmail.com
+                        </a>
+                      </td>
+                      <td>
+                        <div class="adb-receipt--line">
+                          <span class="adb-receipt--item adb-receipt--item__label">Invoice ID</span>
+                          <span class="adb-receipt--item">12345</span>
+                        </div>
+                        <div class="adb-receipt--line">
+                          <span class="adb-receipt--item adb-receipt--item__label">Invoice Date</span>
+                          <span class="adb-receipt--item">05/24/2014</span>
+                        </div>
+                        <div class="adb-receipt--line">
+                          <span class="adb-receipt--item adb-receipt--item__label">Due Date</span>
+                          <span class="adb-receipt--item">05/24/2014</span>
+                        </div>
+                        <div class="adb-receipt--line">
+                          <span class="adb-receipt--item adb-receipt--item__label">Total Due</span>
+                          <span class="adb-receipt--item">
+                            <strong>$0.00</strong>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h3>Charges</h3>
+            <div class="adb-container adb-receipt">
+              <div class="adb-receipt--table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Description</th>
+                      <th>Quantity</th>
+                      <th>Price</th>
+                      <th class="adb-receipt--table_value">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Id vel saepe tempora eaque autem totam eveniet impedit dolorem cumque error maxime laborum
+                      </td>
+                      <td>2</td>
+                      <td>$999.99</td>
+                      <td class="adb-receipt--table_value">$999.99</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Rem vitae voluptatem nisi aperiam sunt magnam maxime cumque error ut ea
+                      </td>
+                      <td>2</td>
+                      <td>$999.99</td>
+                      <td class="adb-receipt--table_value">$999.99</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="adb-container_content adb-help">
+                <div class="adb-receipt--section">
+                  <div class="adb-receipt--line">
+                    <span class="adb-receipt--item adb-receipt--item__label">Subtotal</span>
+                    <span class="adb-receipt--item">$380.00</span>
+                  </div>
+                  <div class="adb-receipt--line">
+                    <span class="adb-receipt--item adb-receipt--item__label">8.75%  Sales Tax</span>
+                    <span class="adb-receipt--item">$0.00</span>
+                  </div>
+                  <div class="adb-receipt--line">
+                    <span class="adb-receipt--item adb-receipt--item__label">Total Paid</span>
+                    <span class="adb-receipt--item adb-receipt--item__success">-$10.00</span>
+                  </div>
+                  <div class="adb-receipt--line">
+                    <span class="adb-receipt--item adb-receipt--item__label">Outstanding Balance</span>
+                    <span class="adb-receipt--item">$380.00</span>
+                  </div>
+                </div>
+                <div class="adb-receipt--section">
+                  <div class="adb-receipt--line">
+                    <span class="adb-receipt--item adb-receipt--item__label">Total Due</span>
+                    <span class="adb-receipt--item adb-receipt--item__total">$380.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3>Payments</h3>
+            <div class="adb-container">
+              <div class="adb-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="adb-is-active" data-sort data-sort-order="descending">Status</th>
+                      <th>ID</th>
+                      <th>Created</th>
+                      <th>Method</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Completed
+                        </span>
+                      </td>
+                      <td>12345</td>
+                      <td>01/01/2011</td>
+                      <td>Visa ending in 1111</td>
+                      <td>$999.99</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Completed
+                        </span>
+                      </td>
+                      <td>12345</td>
+                      <td>01/01/2011</td>
+                      <td>Visa ending in 1111</td>
+                      <td>$999.99</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <menu class="adb-modal--footer adb-toolbar">
+            <button class="adb-button__primary adb-toolbar--item" type="button">
+              <i class="adb-icon__download"></i>
+              Download PDF
+            </button>
+            <button class="adb-button__secret adb-toolbar--item" data-dismiss="modal" type="button">
+              Close
+            </button>
+          </menu>
+        </div>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Invoices
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

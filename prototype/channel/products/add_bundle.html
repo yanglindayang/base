@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Add Bundle</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="prototype prototype_channel prototype_channel_products prototype_channel_products_add_bundle">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <div class="adb-global_alert adb-global_alert__info adb-is-hidden" id="toggle-test-data-alert">
+          <div class="adb-global_alert--content adb-layout-default">
+            <p>
+              <strong>Test Environment:</strong>
+              Changes do not affect the production environment.
+            </p>
+          </div>
+        </div>
+        <div class="adb-modal adb-modal__prompt" id="modal-test-confirm" role="menu">
+          <h3 class="adb-modal--header" data-truncate>
+            Switch to Test Environment
+            <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+          </h3>
+          <div class="adb-modal--content">
+            <p>
+              You are about to enter the test environment. Your changes in this environment will not affect data in the live environment. You can export your data from the test environment.
+            </p>
+          </div>
+          <menu class="adb-modal--footer adb-toolbar">
+            <button class="adb-toolbar--item adb-button__primary" data-dismiss="modal" type="button">
+              Continue to Test
+            </button>
+            <button class="adb-toolbar--item adb-button__secret">
+              Cancel
+            </button>
+          </menu>
+        </div>
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../../marketplace/featured.html">Marketplace
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../../account/myapps.html">MyApps
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../../developer/dashboard.html">Developer
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+              <div class="adb-js-context_menu adb-context_menu">
+                <a class="adb-context_menu--trigger adb-is-selected adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  Manage
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/dashboard.html">Account</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../reseller/dashboard.html">Reseller</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../marketplace/dashboard.html">Marketplace</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../corporate/customers/users.html">Corporate</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../superuser/dashboard/companies.html">Superuser</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-js-context_menu--trigger adb-context_menu--trigger adb-primary_nav--link adb-primary_nav--user" role="button">
+                  <span class="adb-id">
+                    <img class="adb-id--img adb-primary_nav--user_image" src="../../../images/avatars/benDomanico-48x48.png" />
+                  </span>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/user/">My Profile</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/company/user-profile.html">My Company</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/settings.html">My Settings</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="http://ad.docs.appdirect.com">Help Center</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="/">Log out</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-secondary_nav">
+          <div class="adb-layout-default adb-secondary_nav--wrapper">
+            <ul class="adb-secondary_nav--items">
+              <li class="adb-secondary_nav--item adb-secondary_nav--item__breadcrumb">
+                <span class="adb-secondary_nav--content adb-secondary_nav--title">Marketplace Manager</span>
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="../marketplace/dashboard.html">Marketplace
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link adb-is-selected" href="catalog.html">Products
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="../settings/general.html">Settings
+                </a>
+        
+              </li>
+            </ul>
+            <div class="adb-secondary_nav--controls">
+              <menu class="adb-toggle_buttons" data-toggle="buttons-radio">
+                <button class="adb-toggle_buttons--button adb-button__small adb-button__inset active" data-environment="live" type="button">Live</button>
+                <button class="adb-toggle_buttons--button adb-button__small adb-button__inset" data-environment="test" type="button">Test</button>
+              </menu>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <div class="adb-container_header">
+                <h5 class="adb-container_header--title adb-container_header--item">Catalog</h5>
+              </div>
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content adb-stack--item_content__nesting" href="catalog.html">Product Catalog
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="products.html">Edit Acme Products
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="integrations.html">Vendor Integrations
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="api_tests.html">API Tests
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="sliders.html">Sliders
+                  </a>
+          
+                </div>
+              </nav>
+              <div class="adb-container_header">
+                <h5 class="adb-container_header--title adb-container_header--item">Promotions</h5>
+              </div>
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="bundles.html">Bundles
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="discounts.html">Discounts
+                  </a>
+          
+                </div>
+              </nav>
+              <div class="adb-container_header">
+                <h5 class="adb-container_header--title adb-container_header--item">Product Groups</h5>
+              </div>
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="product_groups.html">Product Groups
+                  </a>
+          
+                </div>
+              </nav>
+              <div class="adb-container_header">
+                <h5 class="adb-container_header--title adb-container_header--item">Product Content</h5>
+              </div>
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="media_sources.html">Media Sources
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="top_customers.html">Top Customers
+                  </a>
+          
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="adb-layout-content">
+            <h1>Add Bundle</h1>
+            <form class="adb-form">
+              <fieldset class="adb-container">
+                <div class="adb-container_header">
+                  <h2 class="adb-container_header--title adb-container_header--item">
+                    <legend>Bundle Information</legend>
+                  </h2>
+                </div>
+                <div class="adb-container_content">
+                  <div class="adb-form--field">
+                    <label class="adb-label__required" for="bundle-name">
+                      Bundle Name
+                    </label>
+                    <input id="bundle-name" name="bundle-name" type="text">
+                    <div class="adb-caption adb-form--caption">
+                      A maximum of 5 words is recommended for the bundle title.
+                    </div>
+                  </div>
+                  <div class="adb-form--field">
+                    <label class="adb-label__required" for="company-name">
+                      Company Name
+                    </label>
+                    <input id="company-name" name="company-name" type="text">
+                    <div class="adb-caption adb-form--caption">
+                      Your company name. Can be customized per bundle if you wish.
+                    </div>
+                  </div>
+                  <div class="adb-form--field">
+                    <label class="adb-label__required" for="bundle-blurb">
+                      Bundle Blurb
+                    </label>
+                    <input id="bundle-blurb" name="bundle-blurb" type="text">
+                    <div class="adb-caption adb-form--caption">
+                      Allows customers to quickly identify your value proposition on the listing. A maximum of 5 words is recommended.
+                    </div>
+                  </div>
+                  <div class="adb-form--field">
+                    <label class="adb-label__required" for="description">
+                      Description
+                    </label>
+                    <textarea id="description"></textarea>
+                    <div class="adb-caption adb-form--caption">
+                      The bundle description appears on the bundle profile and listing in your marketplace. We recommend keeping it around 150 words.
+                    </div>
+                  </div>
+                  <div class="adb-form--field">
+                    <label class="adb-label__required" for="description">
+                      Billing Frequency
+                    </label>
+                    <div class="adb-js-dropdown adb-dropdown">
+                      <select id="type-filter">
+                        <option>Monthly</option>
+                      </select>
+                    </div>
+                    <div class="adb-caption adb-form--caption">
+                      The products you choose for a bundle must all have the same billing frequency.
+                    </div>
+                  </div>
+                  <div class="adb-form--field">
+                    <label class="adb-label__required">
+                      Bundle Listing Logo (62px x 62px)
+                    </label>
+                    <div class="adb-upload_field">
+                      <span class="adb-upload_field--text">
+                        <i class="adb-upload_field--icon"></i>
+                        Drag and drop file here, or
+                        <a>click here to upload.</a>
+                      </span>
+                      <input class="adb-upload_field--input" id="default-file-state" name="default-file-state" type="file">
+                    </div>
+                    <div class="adb-caption adb-form--caption">
+                      Small logo that brands your bundle on the marketplace listing. Recommended size: 62px by 62px.
+                    </div>
+                  </div>
+                  <div class="adb-form--field">
+                    <label class="adb-label__required">
+                      Overview Image (350px x 315px)
+                    </label>
+                    <div class="adb-upload_field">
+                      <span class="adb-upload_field--text">
+                        <i class="adb-upload_field--icon"></i>
+                        Drag and drop file here, or
+                        <a>click here to upload.</a>
+                      </span>
+                      <input class="adb-upload_field--input" id="default-file-state" name="default-file-state" type="file">
+                    </div>
+                    <div class="adb-caption adb-form--caption">
+                      A large preview image of your product. Should be your most descriptive screenshot. Recommended size: 350px by 315px.
+                    </div>
+                  </div>
+                  <div class="adb-form--field">
+                    <label>Contract Terms</label>
+                    <label class="adb-selector adb-selector__inline adb-js-radio" for="bundle-contract-option1">
+                      <span class="adb-selector--input">
+                        <input data-toggle="panel" id="bundle-contract-option1" name="bundle-contract" type="radio" value="#bundle-contract-enable">
+                      </span>
+                      <span class="adb-selector--value">
+                        Enable
+                      </span>
+                    </label>
+                    <label class="adb-selector adb-selector__inline adb-js-radio" for="bundle-contract-option2">
+                      <span class="adb-selector--input">
+                        <input checked data-toggle="panel" id="bundle-contract-option2" name="bundle-contract" type="radio" value="#bundle-contract-disable">
+                      </span>
+                      <span class="adb-selector--value">
+                        Disable
+                      </span>
+                    </label>
+                    <div class="adb-js-panel-target adb-is-active" id="bundle-contract-disable"></div>
+                    <div class="adb-js-panel-target adb-form--nested_fields" id="bundle-contract-enable">
+                      <div class="adb-form--field">
+                        <label class="adb-label__required" for="bundle-min-duration">
+                          Minimum Contract Duration
+                        </label>
+                        <input id="bundle-min-duration" min="0" name="bundle-min-duration" type="number" value="0">
+                        <span class="adb-affix">Month(s)</span>
+                        <div class="adb-caption adb-form--caption">
+                          If customers cancel their subscription before this period, they will be charged the termination fee.
+                        </div>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="bundle-grace-period">Grace Period</label>
+                        <input id="bundle-grace-period" min="0" name="bundle-grace-period" type="number" value="0">
+                        <div class="adb-js-dropdown adb-dropdown">
+                          <select id="revenue-model">
+                            <option>Day(s)</option>
+                            <option>Month(s)</option>
+                          </select>
+                        </div>
+                        <div class="adb-caption adb-form--caption">
+                          Customers will not be charged a termination fee within the grace period.
+                        </div>
+                      </div>
+                      <div class="adb-form--field">
+                        <label>Termination Fee</label>
+                        <label class="adb-selector adb-js-radio" for="bundle-termination-a">
+                          <span class="adb-selector--input">
+                            <input checked data-toggle="panel" id="bundle-termination-a" name="bundle-termination" type="radio" value="#bundle-termination-none">
+                          </span>
+                          <span class="adb-selector--value">
+                            No termination fee
+                          </span>
+                        </label>
+                        <div class="adb-js-panel-target adb-is-active" id="bundle-termination-none"></div>
+                        <label class="adb-selector adb-js-radio" for="bundle-termination-b">
+                          <span class="adb-selector--input">
+                            <input data-toggle="panel" id="bundle-termination-b" name="bundle-termination" type="radio" value="#bundle-termination-percentage">
+                          </span>
+                          <span class="adb-selector--value">
+                            Percentage of remaining subscription
+                          </span>
+                        </label>
+                        <div class="adb-js-panel-target adb-form--nested_fields" id="bundle-termination-flat">
+                          <div class="adb-form--field">
+                            <label class="adb-label__required">
+                              Termination Fee
+                            </label>
+                            <div class="adb-form--inline_fields">
+                              <div class="adb-form--inline_field">
+                                <label class="adb-subtitle">USD</label>
+                                <input min="0" placeholder="0.00" step="any" type="number">
+                              </div>
+                              <div class="adb-form--inline_field">
+                                <label class="adb-subtitle">CAD</label>
+                                <input min="0" placeholder="0.00" step="any" type="number">
+                              </div>
+                              <div class="adb-form--inline_field">
+                                <label class="adb-subtitle">EUR</label>
+                                <input min="0" placeholder="0.00" step="any" type="number">
+                              </div>
+                              <div class="adb-form--inline_field">
+                                <label class="adb-subtitle">CHF</label>
+                                <input min="0" placeholder="0.00" step="any" type="number">
+                              </div>
+                              <div class="adb-form--inline_field">
+                                <label class="adb-subtitle">SEK</label>
+                                <input min="0" placeholder="0.00" step="any" type="number">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="adb-form--field">
+                            <label class="adb-label__required" for="bundle-termination-fee-description1">
+                              Termination Fee Description
+                            </label>
+                            <textarea id="bundle-termination-fee-description1"></textarea>
+                            <div class="adb-caption adb-form--caption">
+                              This description appears as a line item on Customers' invoices.
+                            </div>
+                          </div>
+                        </div>
+                        <label class="adb-selector adb-js-radio" for="bundle-termination-c">
+                          <span class="adb-selector--input">
+                            <input data-toggle="panel" id="bundle-termination-c" name="bundle-termination" type="radio" value="#bundle-termination-flat">
+                          </span>
+                          <span class="adb-selector--value">
+                            Flat termination fee
+                          </span>
+                        </label>
+                        <div class="adb-js-panel-target adb-form--nested_fields" id="bundle-termination-percentage">
+                          <div class="adb-form--field">
+                            <label class="adb-label__required">
+                              Termination Fee
+                            </label>
+                            <input id="bundle-termination-fee-percentage" min="0" name="bundle-termination-fee-percentage" type="number" value="0">
+                            <span class="adb-affix">% of remaining subscription</span>
+                          </div>
+                          <div class="adb-form--field">
+                            <label class="adb-label__required" for="bundle-termination-fee-description2">
+                              Termination Fee Description
+                            </label>
+                            <textarea id="bundle-termination-fee-description2"></textarea>
+                            <div class="adb-caption adb-form--caption">
+                              This description appears as a line item on Customers' invoices.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="adb-form--field">
+                          <label for="bundle-cancel-limit">Cancellation Period Limit</label>
+                          <input id="bundle-cancel-limit" min="0" name="cancel-limit" type="number" value="0">
+                          <span class="adb-affix">Day(s)</span>
+                          <div class="adb-caption adb-form--caption">
+                            If 30 days limit period set, the customer has to cancel the contract 30 days before the end of the contract otherwise the contract will be extended automatically by the same contract.
+                          </div>
+                        </div>
+                        <div class="adb-form--field">
+                          <label class="adb-selector adb-js-checkbox" for="bundle-block-upgrades">
+                            <span class="adb-selector--input">
+                              <input id="bundle-block-upgrades" type="checkbox">
+                            </span>
+                            <span class="adb-selector--value">
+                              Block edition upgrades for subscriptions with active contracts
+                            </span>
+                          </label>
+                          <label class="adb-selector adb-js-checkbox" for="bundle-block-downgrades">
+                            <span class="adb-selector--input">
+                              <input id="bundle-block-downgrades" type="checkbox">
+                            </span>
+                            <span class="adb-selector--value">
+                              Block edition downgrades for subscriptions with active contracts
+                            </span>
+                          </label>
+                          <label class="adb-selector adb-js-checkbox" for="bundle-block-switch">
+                            <span class="adb-selector--input">
+                              <input id="bundle-block-switch" type="checkbox">
+                            </span>
+                            <span class="adb-selector--value">
+                              Block switch to shorter contract
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="adb-container">
+                <div class="adb-container_header">
+                  <h2 class="adb-container_header--title adb-container_header--item">
+                    <legend>Applications</legend>
+                  </h2>
+                </div>
+                <div class="adb-container_content">
+                  <p>You must choose 2-4 products and their relevant editions. Please contact <a href="#">Support</a> if you would like more than 4 products supported in a bundle.</p>
+                  <div class="adb-form--field">
+                    <label>Add Applications to Bundle</label>
+                    <div class="adb-input_table adb-input_table__full_width">
+                      <table>
+                        <colgroup>
+                          <col width="60%">
+                          <col width="40%">
+                          <col span="1">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>Sample Application</option>
+                                  <option>Sample Application</option>
+                                  <option>Sample Application</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>Basic Edition</option>
+                                  <option>Professional Edition</option>
+                                  <option>Enterprise Edition</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td>
+                              <button class="adb-button__square adb-button__secret" type="button">
+                                <i class="adb-icon__trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>Sample Application</option>
+                                  <option>Sample Application</option>
+                                  <option>Sample Application</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>Basic Edition</option>
+                                  <option>Professional Edition</option>
+                                  <option>Enterprise Edition</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td>
+                              <button class="adb-button__square adb-button__secret" type="button">
+                                <i class="adb-icon__trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>Sample Application</option>
+                                  <option>Sample Application</option>
+                                  <option>Sample Application</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>Basic Edition</option>
+                                  <option>Professional Edition</option>
+                                  <option>Enterprise Edition</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td>
+                              <button class="adb-button__square adb-button__secret" type="button">
+                                <i class="adb-icon__trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <button class="adb-button__small adb-button__secondary" type="button">
+                      <i class="adb-icon__add"></i>
+                      Add Application to Bundle
+                    </button>
+                  </div>
+                  <div class="adb-container adb-receipt">
+                    <div class="adb-container_content adb-help">
+                      <div class="adb-receipt--section">
+                        <div class="adb-receipt--line">
+                          <span class="adb-receipt--item adb-receipt--item__label">Sample Application - Basic Edition</span>
+                          <span class="adb-receipt--item">$1.00</span>
+                        </div>
+                        <div class="adb-receipt--line">
+                          <span class="adb-receipt--item adb-receipt--item__label">Sample Application - Professional Edition</span>
+                          <span class="adb-receipt--item">$2.00</span>
+                        </div>
+                        <div class="adb-receipt--line">
+                          <span class="adb-receipt--item adb-receipt--item__label">Sample Application - Enterprise Edition</span>
+                          <span class="adb-receipt--item">$3.00</span>
+                        </div>
+                      </div>
+                      <div class="adb-receipt--section">
+                        <div class="adb-receipt--line">
+                          <span class="adb-receipt--item adb-receipt--item__label">Total Price</span>
+                          <span class="adb-receipt--item adb-receipt--item__total">$6.00</span>
+                        </div>
+                      </div>
+                      <div class="adb-receipt--section">
+                        <div class="adb-receipt--line">
+                          <span class="adb-receipt--item adb-receipt--item__label">Free Trial Period</span>
+                          <span class="adb-receipt--item">8 days</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="adb-footnote">
+                    The bundle price is calculated from the editions you selected. The trial period is determined from the lowest common trial period of the products you have chosen.
+                  </p>
+                </div>
+              </fieldset>
+            </form>
+            <menu class="adb-toolbar">
+              <button class="adb-button__primary adb-toolbar--item" type="submit">
+                Save
+              </button>
+              <button class="adb-toolbar--item" type="button">
+                Save &amp; Preview
+              </button>
+            </menu>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Add Bundle
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    <script>
+      (function() {
+        $('[data-environment]').on('click', function() {
+          if ($(this).data('environment') === "test") {
+            $('#modal-test-confirm').modal('show');
+            $('#toggle-test-data-alert').hide().removeClass('adb-is-hidden').slideDown();
+            return $('.adb-page').addClass('adb-page__test');
+          } else {
+            $('#toggle-test-data-alert').show().addClass('adb-is-hidden').slideUp();
+            return $('.adb-page').removeClass('adb-page__test');
+          }
+        });
+      
+      }).call(this);
+    </script>
+  </body>
+</html>

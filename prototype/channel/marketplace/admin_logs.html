@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | App Usage Logs</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="prototype prototype_channel prototype_channel_marketplace prototype_channel_marketplace_admin_logs">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <div class="adb-global_alert adb-global_alert__info adb-is-hidden" id="toggle-test-data-alert">
+          <div class="adb-global_alert--content adb-layout-default">
+            <p>
+              <strong>Test Environment:</strong>
+              Changes do not affect the production environment.
+            </p>
+          </div>
+        </div>
+        <div class="adb-modal adb-modal__prompt" id="modal-test-confirm" role="menu">
+          <h3 class="adb-modal--header" data-truncate>
+            Switch to Test Environment
+            <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+          </h3>
+          <div class="adb-modal--content">
+            <p>
+              You are about to enter the test environment. Your changes in this environment will not affect data in the live environment. You can export your data from the test environment.
+            </p>
+          </div>
+          <menu class="adb-modal--footer adb-toolbar">
+            <button class="adb-toolbar--item adb-button__primary" data-dismiss="modal" type="button">
+              Continue to Test
+            </button>
+            <button class="adb-toolbar--item adb-button__secret">
+              Cancel
+            </button>
+          </menu>
+        </div>
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../../marketplace/featured.html">Marketplace
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../../account/myapps.html">MyApps
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../../developer/dashboard.html">Developer
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+              <div class="adb-js-context_menu adb-context_menu">
+                <a class="adb-context_menu--trigger adb-is-selected adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  Manage
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/dashboard.html">Account</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../reseller/dashboard.html">Reseller</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="dashboard.html">Marketplace</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../corporate/customers/users.html">Corporate</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../superuser/dashboard/companies.html">Superuser</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-js-context_menu--trigger adb-context_menu--trigger adb-primary_nav--link adb-primary_nav--user" role="button">
+                  <span class="adb-id">
+                    <img class="adb-id--img adb-primary_nav--user_image" src="../../../images/avatars/benDomanico-48x48.png" />
+                  </span>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/user/">My Profile</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/company/user-profile.html">My Company</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../account/settings.html">My Settings</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="http://ad.docs.appdirect.com">Help Center</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="/">Log out</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-secondary_nav">
+          <div class="adb-layout-default adb-secondary_nav--wrapper">
+            <ul class="adb-secondary_nav--items">
+              <li class="adb-secondary_nav--item adb-secondary_nav--item__breadcrumb">
+                <span class="adb-secondary_nav--content adb-secondary_nav--title">Marketplace Manager</span>
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link adb-is-selected" href="dashboard.html">Marketplace
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="../products/catalog.html">Products
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="../settings/general.html">Settings
+                </a>
+        
+              </li>
+            </ul>
+            <div class="adb-secondary_nav--controls">
+              <menu class="adb-toggle_buttons" data-toggle="buttons-radio">
+                <button class="adb-toggle_buttons--button adb-button__small adb-button__inset active" data-environment="live" type="button">Live</button>
+                <button class="adb-toggle_buttons--button adb-button__small adb-button__inset" data-environment="test" type="button">Test</button>
+              </menu>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <div class="adb-container_header">
+                <h5 class="adb-container_header--title adb-container_header--item">Home</h5>
+              </div>
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="dashboard.html">Dashboard
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content  adb-stack--item_content__nesting" href="companies.html">Customers
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="reports.html">Reports
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="reviews.html">Reviews & Questions
+                  </a>
+          
+                </div>
+              </nav>
+              <div class="adb-container_header">
+                <h5 class="adb-container_header--title adb-container_header--item">Billing</h5>
+              </div>
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="orders.html">Orders
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="invoices.html">Invoices
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="payments.html">Payments
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="reconciliation.html">Reconciliation
+                  </a>
+          
+                </div>
+              </nav>
+              <div class="adb-container_header">
+                <h5 class="adb-container_header--title adb-container_header--item">Events</h5>
+              </div>
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="/prototype/channel/marketplace/event_logs.html">
+                    Event Logs
+                  </a>
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" href="usage_logs.html">App Usage Logs
+                  </a>
+          
+                </div>
+                <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="admin_logs.html">Admin Logs
+                  </a>
+          
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="adb-layout-content">
+            <h1>Admin Logs</h1>
+            <div class="adb-container">
+              <div class="adb-filters" data-filters>
+                <menu class="adb-filters--header">
+                  <menu class="adb-filters--header_item">
+                    <button class="adb-button__inset adb-button__small adb-filters--filter_button" data-toggle="filters" type="button">
+                      Show Filters
+                    </button>
+                  </menu>
+                  <div class="adb-filters--header_item">
+                    <div class="adb-search_field adb-search_field__small">
+                      <input class="adb-search_field--input" placeholder="Search" type="search">
+                    </div>
+                  </div>
+                </menu>
+                <menu class="adb-js-filters adb-filters--content adb-is-visually_hidden">
+                  <div class="adb-filters--filter">
+                    <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                      <select>
+                        <option>Option</option>
+                        <option>Another option</option>
+                      </select>
+                    </div>
+                  </div>
+                </menu>
+              </div>
+              <div class="adb-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="adb-is-active" data-sort data-sort-order="descending">
+                        Date
+                      </th>
+                      <th>Event</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        06/25/2007, 12:00 PDT
+                      </td>
+                      <td>
+                        <a>
+                          Michelle Hatcher
+                        </a>
+                        purchased
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        07/24/1997, 12:00 PDT
+                      </td>
+                      <td>
+                        <a>
+                          Angelo Olsen
+                        </a>
+                        canceled
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        11/13/1997, 12:00 PST
+                      </td>
+                      <td>
+                        <a>
+                          Byron Perkins
+                        </a>
+                        invited
+                        <a>
+                          kendrick-love@hotmail.com
+                        </a>
+                        to
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        01/01/2005, 12:00 PST
+                      </td>
+                      <td>
+                        <a>
+                          Niall Reid
+                        </a>
+                        removed
+                        <a>
+                          Rylee Branch
+                        </a>
+                        from
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        12/24/1990, 12:00 PST
+                      </td>
+                      <td>
+                        <a>
+                          Nia Adkins
+                        </a>
+                        paid $999.99 for
+                        <a>
+                          Invoice #12345.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        11/04/1993, 12:00 PST
+                      </td>
+                      <td>
+                        <a>
+                          inley Dunn
+                        </a>
+                        purchased
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        09/30/1999, 12:00 PDT
+                      </td>
+                      <td>
+                        <a>
+                          Clinton Petersen
+                        </a>
+                        canceled
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        12/12/1998, 12:00 PST
+                      </td>
+                      <td>
+                        <a>
+                          Nadia Weiner
+                        </a>
+                        invited
+                        <a>
+                          courtney_gallagher@live.com
+                        </a>
+                        to
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        07/02/2003, 12:00 PDT
+                      </td>
+                      <td>
+                        <a>
+                          Deana Proctor
+                        </a>
+                        removed
+                        <a>
+                          Reese Walsh
+                        </a>
+                        from
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        08/04/1997, 12:00 PDT
+                      </td>
+                      <td>
+                        <a>
+                          Lexi Scarborough
+                        </a>
+                        paid $999.99 for
+                        <a>
+                          Invoice #12345.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        05/02/2000, 12:00 PDT
+                      </td>
+                      <td>
+                        <a>
+                          Allen Sykes
+                        </a>
+                        purchased
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        04/22/1994, 12:00 PDT
+                      </td>
+                      <td>
+                        <a>
+                          Geraldine Watkins
+                        </a>
+                        canceled
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        09/09/1992, 12:00 PDT
+                      </td>
+                      <td>
+                        <a>
+                          Kellie Morgan
+                        </a>
+                        invited
+                        <a>
+                          jackiechandler@mac.com
+                        </a>
+                        to
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        12/25/2006, 12:00 PST
+                      </td>
+                      <td>
+                        <a>
+                          Bart Hanna
+                        </a>
+                        removed
+                        <a>
+                          Skylar Desai
+                        </a>
+                        from
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        11/16/1992, 12:00 PST
+                      </td>
+                      <td>
+                        <a>
+                          inn Vick
+                        </a>
+                        paid $999.99 for
+                        <a>
+                          Invoice #12345.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        02/20/1993, 12:00 PST
+                      </td>
+                      <td>
+                        <a>
+                          Quinn Mangum
+                        </a>
+                        purchased
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        09/25/2004, 12:00 PDT
+                      </td>
+                      <td>
+                        <a>
+                          Alexa Bowman
+                        </a>
+                        canceled
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        09/11/2002, 12:00 PDT
+                      </td>
+                      <td>
+                        <a>
+                          Harriet Christian
+                        </a>
+                        invited
+                        <a>
+                          lorenzo-bowling@yahoo.com
+                        </a>
+                        to
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        11/19/2004, 12:00 PST
+                      </td>
+                      <td>
+                        <a>
+                          Harriet Sinclair
+                        </a>
+                        removed
+                        <a>
+                          Wendell Fischer
+                        </a>
+                        from
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        02/17/1998, 12:00 PST
+                      </td>
+                      <td>
+                        <a>
+                          Dora Chung
+                        </a>
+                        paid $999.99 for
+                        <a>
+                          Invoice #12345.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        03/28/1992, 12:00 PST
+                      </td>
+                      <td>
+                        <a>
+                          Kerry Conner
+                        </a>
+                        purchased
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        12/18/1997, 12:00 PST
+                      </td>
+                      <td>
+                        <a>
+                          Carly Branch
+                        </a>
+                        canceled
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        05/26/2005, 12:00 PDT
+                      </td>
+                      <td>
+                        <a>
+                          Alfredo Adkins
+                        </a>
+                        invited
+                        <a>
+                          carmen_watts@mail.com
+                        </a>
+                        to
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        06/23/1991, 12:00 PDT
+                      </td>
+                      <td>
+                        <a>
+                          Yvonne Adkins
+                        </a>
+                        removed
+                        <a>
+                          Sheryl Adkins
+                        </a>
+                        from
+                        <a>
+                          Sample Application.
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        02/15/2006, 12:00 PST
+                      </td>
+                      <td>
+                        <a>
+                          Noel Davidson
+                        </a>
+                        paid $999.99 for
+                        <a>
+                          Invoice #12345.
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="adb-container_footer">
+                <div class="adb-container_footer--item">
+                  <menu>
+                    <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                      <select>
+                        <option>25 Results</option>
+                        <option>50 Results</option>
+                        <option>100 Results</option>
+                        <option>All Results</option>
+                      </select>
+                    </div>
+                  </menu>
+                </div>
+                <div class="adb-container_footer--item adb-container_footer--item__last">
+                  <nav class="adb-pagination_v1">
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__first"></a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__prev"></a>
+                    <a class="adb-pagination_v1--button">1</a>
+                    <a class="adb-pagination_v1--button">23</a>
+                    <span class="adb-pagination_v1--current">456</span>
+                    <a class="adb-pagination_v1--button">7890</a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__next"></a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__last"></a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              App Usage Logs
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    <script>
+      (function() {
+        $('[data-environment]').on('click', function() {
+          if ($(this).data('environment') === "test") {
+            $('#modal-test-confirm').modal('show');
+            $('#toggle-test-data-alert').hide().removeClass('adb-is-hidden').slideDown();
+            return $('.adb-page').addClass('adb-page__test');
+          } else {
+            $('#toggle-test-data-alert').show().addClass('adb-is-hidden').slideUp();
+            return $('.adb-page').removeClass('adb-page__test');
+          }
+        });
+      
+      }).call(this);
+    </script>
+  </body>
+</html>

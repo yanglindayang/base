@@ -1,0 +1,1985 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | My Apps</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    <style>
+      /* line 1, (__TEMPLATE__) */
+      .radial-progress {
+        background-color: #cbcbcb;
+        border-radius: 50%; }
+        /* line 14, (__TEMPLATE__) */
+        .radial-progress .circle .mask, .radial-progress .circle .fill, .radial-progress .circle .shadow {
+          width: 84px;
+          height: 84px;
+          position: absolute;
+          border-radius: 50%; }
+        /* line 20, (__TEMPLATE__) */
+        .radial-progress .circle .shadow {
+          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2) inset; }
+        /* line 23, (__TEMPLATE__) */
+        .radial-progress .circle .mask, .radial-progress .circle .fill {
+          -webkit-backface-visibility: hidden;
+          transition: -webkit-transform 1s;
+          transition: -ms-transform 1s;
+          transition: transform 1s;
+          border-radius: 50%; }
+        /* line 30, (__TEMPLATE__) */
+        .radial-progress .circle .mask {
+          clip: rect(0px, 84px, 84px, 42px); }
+          /* line 32, (__TEMPLATE__) */
+          .radial-progress .circle .mask .fill {
+            clip: rect(0px, 42px, 84px, 0px);
+            background-color: #006080; }
+        /* line 38, (__TEMPLATE__) */
+        .radial-progress .inset {
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          margin-left: 12px;
+          margin-top: 12px;
+          background-color: #fbfbfb;
+          border-radius: 50%;
+          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2); }
+          /* line 48, (__TEMPLATE__) */
+          .radial-progress .inset .number {
+            color: #9c9c9c;
+            font-size: 20px;
+            line-height: 1em;
+            top: 50%;
+            position: absolute;
+            margin-top: -0.5em;
+            width: 100%; }
+        /* line 59, (__TEMPLATE__) */
+        .radial-progress .circle .mask.full, .radial-progress .circle .fill {
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+        /* line 64, (__TEMPLATE__) */
+        .radial-progress .circle .fill.fix {
+          -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+    </style>
+    <style>
+      /* line 1, (__TEMPLATE__) */
+      .radial-progress {
+        background-color: #cbcbcb;
+        border-radius: 50%; }
+        /* line 14, (__TEMPLATE__) */
+        .radial-progress .circle .mask, .radial-progress .circle .fill, .radial-progress .circle .shadow {
+          width: 84px;
+          height: 84px;
+          position: absolute;
+          border-radius: 50%; }
+        /* line 20, (__TEMPLATE__) */
+        .radial-progress .circle .shadow {
+          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2) inset; }
+        /* line 23, (__TEMPLATE__) */
+        .radial-progress .circle .mask, .radial-progress .circle .fill {
+          -webkit-backface-visibility: hidden;
+          transition: -webkit-transform 1s;
+          transition: -ms-transform 1s;
+          transition: transform 1s;
+          border-radius: 50%; }
+        /* line 30, (__TEMPLATE__) */
+        .radial-progress .circle .mask {
+          clip: rect(0px, 84px, 84px, 42px); }
+          /* line 32, (__TEMPLATE__) */
+          .radial-progress .circle .mask .fill {
+            clip: rect(0px, 42px, 84px, 0px);
+            background-color: #006080; }
+        /* line 38, (__TEMPLATE__) */
+        .radial-progress .inset {
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          margin-left: 12px;
+          margin-top: 12px;
+          background-color: #fbfbfb;
+          border-radius: 50%;
+          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2); }
+          /* line 48, (__TEMPLATE__) */
+          .radial-progress .inset .number {
+            color: #9c9c9c;
+            font-size: 20px;
+            line-height: 1em;
+            top: 50%;
+            position: absolute;
+            margin-top: -0.5em;
+            width: 100%; }
+        /* line 59, (__TEMPLATE__) */
+        .radial-progress .circle .mask.full, .radial-progress .circle .fill {
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+        /* line 64, (__TEMPLATE__) */
+        .radial-progress .circle .fill.fix {
+          -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+    </style>
+    <style>
+      /* line 1, (__TEMPLATE__) */
+      .radial-progress {
+        background-color: #cbcbcb;
+        border-radius: 50%; }
+        /* line 14, (__TEMPLATE__) */
+        .radial-progress .circle .mask, .radial-progress .circle .fill, .radial-progress .circle .shadow {
+          width: 84px;
+          height: 84px;
+          position: absolute;
+          border-radius: 50%; }
+        /* line 20, (__TEMPLATE__) */
+        .radial-progress .circle .shadow {
+          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2) inset; }
+        /* line 23, (__TEMPLATE__) */
+        .radial-progress .circle .mask, .radial-progress .circle .fill {
+          -webkit-backface-visibility: hidden;
+          transition: -webkit-transform 1s;
+          transition: -ms-transform 1s;
+          transition: transform 1s;
+          border-radius: 50%; }
+        /* line 30, (__TEMPLATE__) */
+        .radial-progress .circle .mask {
+          clip: rect(0px, 84px, 84px, 42px); }
+          /* line 32, (__TEMPLATE__) */
+          .radial-progress .circle .mask .fill {
+            clip: rect(0px, 42px, 84px, 0px);
+            background-color: #006080; }
+        /* line 38, (__TEMPLATE__) */
+        .radial-progress .inset {
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          margin-left: 12px;
+          margin-top: 12px;
+          background-color: #fbfbfb;
+          border-radius: 50%;
+          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2); }
+          /* line 48, (__TEMPLATE__) */
+          .radial-progress .inset .number {
+            color: #9c9c9c;
+            font-size: 20px;
+            line-height: 1em;
+            top: 50%;
+            position: absolute;
+            margin-top: -0.5em;
+            width: 100%; }
+        /* line 59, (__TEMPLATE__) */
+        .radial-progress .circle .mask.full, .radial-progress .circle .fill {
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+        /* line 64, (__TEMPLATE__) */
+        .radial-progress .circle .fill.fix {
+          -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+    </style>
+  </head>
+  <body class="prototype prototype_account prototype_account_myapps">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item" data-event="load" data-group="1" data-order="1" data-target="#guided-marketplace" data-toggle="guided">
+                    <a class="adb-primary_nav--link" href="../marketplace/featured.html">Marketplace
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item" data-event="load" data-group="1" data-order="2" data-target="#guided-apps" data-toggle="guided">
+                    <a class="adb-primary_nav--link adb-is-selected" href="myapps.html">MyApps
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../developer/dashboard.html">Developer
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item" data-event="load" data-group="1" data-order="3" data-target="#guided-account" data-toggle="guided">
+              <div class="adb-js-context_menu adb-context_menu">
+                <a class="adb-js-context_menu--trigger adb-context_menu--trigger adb-primary_nav--link" role="button">
+                  Manage
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="dashboard.html">Account</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../channel/marketplace/dashboard.html">Marketplace</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-js-context_menu--trigger adb-context_menu--trigger adb-primary_nav--link adb-primary_nav--user" role="button">
+                  <span class="adb-id">
+                    <img class="adb-id--img adb-primary_nav--user_image" src="../../images/avatars/benDomanico-48x48.png" />
+                  </span>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="user/">My Profile</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="company/user-profile.html">My Company</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="settings.html">My Settings</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="http://ad.docs.appdirect.com">Help Center</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="/">Log out</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <div class="adb-layout-default adb-layout-row">
+          <h1>Apps</h1>
+          <div class="adb-js-pill-target" id="apps-none">
+            <div class="adb-tiles adb-myapps">
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile" data-target="#myapps-setup" data-toggle="modal">
+                  <div class="radial-progress adb-id--img" data-progress="0">
+                    <div class="circle">
+                      <div class="mask full">
+                        <div class="fill"></div>
+                      </div>
+                      <div class="mask half">
+                        <div class="fill"></div>
+                        <div class="fill fix"></div>
+                      </div>
+                      <div class="shadow"></div>
+                    </div>
+                    <div class="inset">
+                      <div class="percentage">
+                        <div class="number">50%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <menu class="adb-myapp--menu">
+                    <button class="adb-button__square_small adb-button__secret" type="button">
+                      <i class="adb-icon__trash"></i>
+                    </button>
+                  </menu>
+                </div>
+                <p class="adb-myapp--content">Getting Started</p>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                  <img class="adb-id--img" src="../../images/assets/vault-icon.png" />
+                </div>
+                <p class="adb-myapp--content">Password Manager</p>
+              </div>
+              <div class="adb-tile adb-myapp"></div>
+              <div class="adb-tile adb-myapp"></div>
+              <div class="adb-tile adb-myapp"></div>
+              <div class="adb-tile adb-myapp"></div>
+            </div>
+          </div>
+          <div class="adb-js-pill-target" id="apps-few">
+            <div class="adb-tiles adb-myapps">
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile" data-target="#myapps-setup" data-toggle="modal">
+                  <div class="radial-progress adb-id--img" data-progress="0">
+                    <div class="circle">
+                      <div class="mask full">
+                        <div class="fill"></div>
+                      </div>
+                      <div class="mask half">
+                        <div class="fill"></div>
+                        <div class="fill fix"></div>
+                      </div>
+                      <div class="shadow"></div>
+                    </div>
+                    <div class="inset">
+                      <div class="percentage">
+                        <div class="number">50%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <menu class="adb-myapp--menu">
+                    <button class="adb-button__square_small adb-button__secret" type="button">
+                      <i class="adb-icon__trash"></i>
+                    </button>
+                  </menu>
+                </div>
+                <p class="adb-myapp--content">Getting Started</p>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="app-active adb-js-panel-target active">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-id__branded adb-id__ms_office">
+                    <img class="adb-id--img" src="../../images/logos/apps/msoffice-light-120x120.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    Office 365
+                  </p>
+                </div>
+                <div class="app-custom adb-js-panel-target">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-id__branded adb-id__ms_office">
+                    <img class="adb-id--img" src="../../images/logos/apps/msoffice-light-120x120.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    <i class="adb-icon__alert adb-icon_alert adb-icon_alert__info"></i>
+                    &nbsp;Office 365
+                    <br>
+                    <a>View Setup Instructions</a>
+                  </p>
+                </div>
+                <div class="app-suggested adb-js-panel-target">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-id__branded adb-id__ms_office">
+                    <img class="adb-id--img" src="../../images/logos/apps/msoffice-light-120x120.png" />
+                    <menu class="adb-myapp--menu">
+                      <button class="adb-button__square_small adb-button__secret" type="button">
+                        <i class="adb-icon__trash"></i>
+                      </button>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    Office 365
+                    <br>
+                    <span class="adb-badge adb-badge__promo">Suggested</span>
+                  </p>
+                </div>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="app-active adb-js-panel-target active">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-id__branded">
+                    <i class="adb-icon__graph_line adb-id--placeholder"></i>
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    Leftronic
+                  </p>
+                </div>
+                <div class="app-suggested adb-js-panel-target">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-id__branded">
+                    <i class="adb-icon__graph_line adb-id--placeholder"></i>
+                    <menu class="adb-myapp--menu">
+                      <button class="adb-button__square_small adb-button__secret" type="button">
+                        <i class="adb-icon__trash"></i>
+                      </button>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    Leftronic
+                    <br>
+                    <span class="adb-badge adb-badge__promo">Suggested</span>
+                  </p>
+                </div>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="app-active adb-js-panel-target active">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                    <img class="adb-id--img" src="../../images/logos/apps/formstack.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">Formstack</p>
+                </div>
+                <div class="app-expiring adb-js-panel-target" data-target="#myapp-expiring-tooltip" data-toggle="dialog">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                    <img class="adb-id--img" src="../../images/logos/apps/formstack.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Renew Subscription
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    <i class="adb-icon__alert adb-icon_alert adb-icon_alert__warning"></i>
+                    &nbsp;Formstack
+                    <br>
+                    <a>Renew Subscription</a>
+                  </p>
+                </div>
+                <div class="app-expired adb-js-panel-target" data-target="#myapp-expired-tooltip" data-toggle="dialog">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-is-disabled">
+                    <img class="adb-id--img" src="../../images/logos/apps/formstack.png" />
+                    <menu class="adb-myapp--menu">
+                      <button class="adb-button__square_small adb-button__secret" type="button">
+                        <i class="adb-icon__trash"></i>
+                      </button>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    <i class="adb-icon__error adb-icon_alert adb-icon_alert__error"></i>
+                    &nbsp;Formstack
+                    <br>
+                    <a>Renew Subscription</a>
+                  </p>
+                </div>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="app-active adb-js-panel-target active">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                    <img class="adb-id--img" src="../../images/logos/apps/github.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Remove App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">Github</p>
+                </div>
+                <div class="app-pending adb-js-panel-target" data-target="#myapp-pending-tooltip" data-toggle="dialog">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-is-disabled">
+                    <img class="adb-id--img" src="../../images/logos/apps/github.png" />
+                    <menu class="adb-myapp--menu">
+                      <button class="adb-button__square_small adb-button__secret" type="button">
+                        <i class="adb-icon__trash"></i>
+                      </button>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    <i class="adb-icon__clock adb-icon_alert"></i>
+                    &nbsp;Github
+                  </p>
+                </div>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                  <img class="adb-id--img" src="../../images/assets/vault-icon.png" />
+                </div>
+                <p class="adb-myapp--content">Password Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="adb-js-pill-target active" id="apps-many">
+            <div class="adb-local_alerts app-custom adb-js-panel-target">
+              <div class="adb-local_alert adb-local_alert__info">
+                <div class="adb-local_alert--content">
+                  <h2>Get Started with Office 365 Home</h2>
+                  <p>
+                    Thank you for purchasing Office 365 Home from Staples. Download and activate your new software now.
+                    <a class="adb-local_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                  </p>
+                </div>
+                <div class="adb-local_alert--buttons">
+                  <button class="adb-button__primary">
+                    Set up Office 365
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="adb-tiles adb-myapps">
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile" data-target="#myapps-setup" data-toggle="modal">
+                  <div class="radial-progress adb-id--img" data-progress="0">
+                    <div class="circle">
+                      <div class="mask full">
+                        <div class="fill"></div>
+                      </div>
+                      <div class="mask half">
+                        <div class="fill"></div>
+                        <div class="fill fix"></div>
+                      </div>
+                      <div class="shadow"></div>
+                    </div>
+                    <div class="inset">
+                      <div class="percentage">
+                        <div class="number">50%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <menu class="adb-myapp--menu">
+                    <button class="adb-button__square_small adb-button__secret" type="button">
+                      <i class="adb-icon__trash"></i>
+                    </button>
+                  </menu>
+                </div>
+                <p class="adb-myapp--content">Getting Started</p>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="app-active adb-js-panel-target active">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-id__branded adb-id__ms_office">
+                    <img class="adb-id--img" src="../../images/logos/apps/msoffice-light-120x120.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    Office 365
+                  </p>
+                </div>
+                <div class="app-custom adb-js-panel-target">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-id__branded adb-id__ms_office">
+                    <img class="adb-id--img" src="../../images/logos/apps/msoffice-light-120x120.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    <i class="adb-icon__alert adb-icon_alert adb-icon_alert__info"></i>
+                    &nbsp;Office 365
+                    <br>
+                    <a>View Setup Instructions</a>
+                  </p>
+                </div>
+                <div class="app-suggested adb-js-panel-target">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-id__branded adb-id__ms_office">
+                    <img class="adb-id--img" src="../../images/logos/apps/msoffice-light-120x120.png" />
+                    <menu class="adb-myapp--menu">
+                      <button class="adb-button__square_small adb-button__secret" type="button">
+                        <i class="adb-icon__trash"></i>
+                      </button>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    Office 365
+                    <br>
+                    <span class="adb-badge adb-badge__promo">Suggested</span>
+                  </p>
+                </div>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="app-active adb-js-panel-target active">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-id__branded">
+                    <i class="adb-icon__graph_line adb-id--placeholder"></i>
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    Leftronic
+                  </p>
+                </div>
+                <div class="app-suggested adb-js-panel-target">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-id__branded">
+                    <i class="adb-icon__graph_line adb-id--placeholder"></i>
+                    <menu class="adb-myapp--menu">
+                      <button class="adb-button__square_small adb-button__secret" type="button">
+                        <i class="adb-icon__trash"></i>
+                      </button>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    Leftronic
+                    <br>
+                    <span class="adb-badge adb-badge__promo">Suggested</span>
+                  </p>
+                </div>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="app-active adb-js-panel-target active">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                    <img class="adb-id--img" src="../../images/logos/apps/formstack.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">Formstack</p>
+                </div>
+                <div class="app-expiring adb-js-panel-target" data-target="#myapp-expiring-tooltip" data-toggle="dialog">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                    <img class="adb-id--img" src="../../images/logos/apps/formstack.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Renew Subscription
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    <i class="adb-icon__alert adb-icon_alert adb-icon_alert__warning"></i>
+                    &nbsp;Formstack
+                    <br>
+                    <a>Renew Subscription</a>
+                  </p>
+                </div>
+                <div class="app-expired adb-js-panel-target" data-target="#myapp-expired-tooltip" data-toggle="dialog">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-is-disabled">
+                    <img class="adb-id--img" src="../../images/logos/apps/formstack.png" />
+                    <menu class="adb-myapp--menu">
+                      <button class="adb-button__square_small adb-button__secret" type="button">
+                        <i class="adb-icon__trash"></i>
+                      </button>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    <i class="adb-icon__error adb-icon_alert adb-icon_alert__error"></i>
+                    &nbsp;Formstack
+                    <br>
+                    <a>Renew Subscription</a>
+                  </p>
+                </div>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                  <img class="adb-id--img" src="../../images/logos/apps/box-120x120.png" />
+                  <menu class="adb-myapp--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                      <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Assign Users
+                            </a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Manage App
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </menu>
+                </div>
+                <p class="adb-myapp--content">Box</p>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                  <img class="adb-id--img" src="../../images/logos/apps/chowNow.png" />
+                  <menu class="adb-myapp--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                      <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Assign Users
+                            </a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Manage App
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </menu>
+                </div>
+                <p class="adb-myapp--content">ChowNow</p>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                  <img class="adb-id--img" src="../../images/logos/apps/cakemail-120x120.png" />
+                  <menu class="adb-myapp--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                      <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Assign Users
+                            </a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Manage App
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </menu>
+                </div>
+                <p class="adb-myapp--content">CakeMail</p>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="app-active adb-js-panel-target active">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                    <img class="adb-id--img" src="../../images/logos/apps/mcaffee-120x120.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">McAfee Security</p>
+                </div>
+                <div class="app-blocked adb-js-panel-target" data-target="#myapp-blocked-tooltip" data-toggle="dialog">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-is-disabled">
+                    <img class="adb-id--img" src="../../images/logos/apps/mcaffee-120x120.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Add Credentials
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Remove App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    <i class="adb-icon__error adb-icon_alert adb-icon_alert__error"></i>
+                    &nbsp;McAfee Security
+                    <br>
+                    <a>Install Extension</a>
+                  </p>
+                </div>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                  <img class="adb-id--img" src="../../images/logos/apps/newrelic-245x245.png" />
+                  <menu class="adb-myapp--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                      <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Assign Users
+                            </a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Manage App
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </menu>
+                </div>
+                <p class="adb-myapp--content">New Relic</p>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                  <img class="adb-id--img" src="../../images/logos/apps/symantec-120x120.png" />
+                  <menu class="adb-myapp--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                      <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Assign Users
+                            </a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Manage App
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </menu>
+                </div>
+                <p class="adb-myapp--content">Symantec Antivirus</p>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                  <img class="adb-id--img" src="../../images/assets/api-icon.png" />
+                  <menu class="adb-myapp--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                      <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Remove App
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </menu>
+                </div>
+                <p class="adb-myapp--content">API Monitor</p>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-id__branded adb-id__mailchimp">
+                  <img class="adb-id--img" src="../../images/logos/apps/mailchimp-120x120.png" />
+                  <menu class="adb-myapp--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                      <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Assign Users
+                            </a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Manage App
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </menu>
+                </div>
+                <p class="adb-myapp--content">MailChimp</p>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                  <img class="adb-id--img" src="../../images/logos/apps/lucidchart-120x120.png" />
+                  <menu class="adb-myapp--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                      <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Assign Users
+                            </a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Manage App
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </menu>
+                </div>
+                <p class="adb-myapp--content">LucidChart</p>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="app-active adb-js-panel-target active">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                    <img class="adb-id--img" src="../../images/logos/apps/googleapps-120x120.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">Google Apps</p>
+                </div>
+                <div class="app-expiring adb-js-panel-target" data-target="#myapp-expiring-tooltip" data-toggle="dialog">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                    <img class="adb-id--img" src="../../images/logos/apps/googleapps-120x120.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    <i class="adb-icon__alert adb-icon_alert adb-icon_alert__warning"></i>
+                    &nbsp;Google Apps
+                    <br>
+                    <a>Renew Subscription</a>
+                  </p>
+                </div>
+                <div class="app-expired adb-js-panel-target" data-target="#myapp-expired-tooltip" data-toggle="dialog">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-is-disabled">
+                    <img class="adb-id--img" src="../../images/logos/apps/googleapps-120x120.png" />
+                    <menu class="adb-myapp--menu">
+                      <button class="adb-button__square_small adb-button__secret" type="button">
+                        <i class="adb-icon__trash"></i>
+                      </button>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    <i class="adb-icon__error adb-icon_alert adb-icon_alert__error"></i>
+                    &nbsp;Google Apps
+                    <br>
+                    <a>Renew Subscription</a>
+                  </p>
+                </div>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-id__branded adb-id__wordpress">
+                  <img class="adb-id--img" src="../../images/logos/apps/wordpress-light-120x120.png" />
+                  <menu class="adb-myapp--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                      <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Assign Users
+                            </a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content" href="#">
+                              Manage App
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </menu>
+                </div>
+                <p class="adb-myapp--content">Wordpress</p>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="app-active adb-js-panel-target active">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                    <img class="adb-id--img" src="../../images/logos/apps/github.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Remove App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">Github</p>
+                </div>
+                <div class="app-pending adb-js-panel-target" data-target="#myapp-pending-tooltip" data-toggle="dialog">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-is-disabled">
+                    <img class="adb-id--img" src="../../images/logos/apps/github.png" />
+                    <menu class="adb-myapp--menu">
+                      <button class="adb-button__square_small adb-button__secret" type="button">
+                        <i class="adb-icon__trash"></i>
+                      </button>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    <i class="adb-icon__clock adb-icon_alert"></i>
+                    &nbsp;Github
+                  </p>
+                </div>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="app-active adb-js-panel-target active">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-id__branded adb-id__urban_airship">
+                    <img class="adb-id--img" src="../../images/logos/apps/urbanairship-120x120.png" />
+                    <menu class="adb-myapp--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-myapp--menu_item" data-placement="right">
+                        <button class="adb-button__square_small adb-button__secret adb-js-context_menu--trigger" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Assign Users
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Manage App
+                              </a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content" href="#">
+                                Remove App
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">Urban Airship</p>
+                </div>
+                <div class="app-pending adb-js-panel-target" data-target="#myapp-pending-tooltip" data-toggle="dialog">
+                  <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile adb-id__branded adb-id__urban_airship adb-is-disabled">
+                    <img class="adb-id--img" src="../../images/logos/apps/urbanairship-120x120.png" />
+                    <menu class="adb-myapp--menu">
+                      <button class="adb-button__square_small adb-button__secret" type="button">
+                        <i class="adb-icon__trash"></i>
+                      </button>
+                    </menu>
+                  </div>
+                  <p class="adb-myapp--content">
+                    <i class="adb-icon__clock adb-icon_alert"></i>
+                    &nbsp;Urban Airship
+                  </p>
+                </div>
+              </div>
+              <div class="adb-tile adb-myapp">
+                <div class="adb-id adb-id__logo adb-id__sq_xlarge adb-id__launchable adb-myapp--tile">
+                  <img class="adb-id--img" src="../../images/assets/vault-icon.png" />
+                </div>
+                <p class="adb-myapp--content">Password Manager</p>
+              </div>
+              <div class="adb-tile adb-myapp"></div>
+              <div class="adb-tile adb-myapp"></div>
+            </div>
+          </div>
+        </div>
+        <div class="adb-complex_tooltip adb-js-dialog" id="myapp-tooltip">
+          <div class="adb-complex_tooltip--content">
+            <p>
+              Soluta possimus neque neque ipsa mollitia consequuntur eligendi exercitationem. Atque at sed incidunt qui et aut similique hic perspiciatis nesciunt est ex quia ab
+            </p>
+          </div>
+        </div>
+        <div class="adb-complex_tooltip adb-js-dialog" id="myapp-pending-tooltip">
+          <div class="adb-complex_tooltip--content">
+            <p>
+              Our system is processing your purchase. Thanks for your patience.
+            </p>
+          </div>
+        </div>
+        <div class="adb-complex_tooltip adb-js-dialog" id="myapp-expiring-tooltip">
+          <div class="adb-complex_tooltip--content">
+            <p>
+              Your subscription expires in 2 days. Please renew your subscription to maintain access to Formstack.
+            </p>
+          </div>
+        </div>
+        <div class="adb-complex_tooltip adb-js-dialog" id="myapp-expired-tooltip">
+          <div class="adb-complex_tooltip--content">
+            <p>
+              Your subscription has expired. Please renew your subscription to reactivate Google Apps.
+            </p>
+          </div>
+        </div>
+        <div class="adb-complex_tooltip adb-js-dialog" id="myapp-blocked-tooltip">
+          <div class="adb-complex_tooltip--content">
+            <p>
+              To access McAfee Security with Password Manager, please install the Password Manager browser extension.
+            </p>
+          </div>
+        </div>
+        <div class="adb-guided_tooltip adb-guided_tooltip__dark adb-js-dialog" data-placement="bottom-left" id="guided-marketplace">
+          <h3 class="adb-guided_tooltip--header" data-truncate="line">
+            Find More Applications
+            <a class="adb-close" data-dismiss="dialog" href="#" title="Close"></a>
+          </h3>
+          <div class="adb-guided_tooltip--content">
+            <p>
+              Browse the App Market to discover the perfect apps for your business.
+            </p>
+          </div>
+          <div class="adb-guided_tooltip--footer">
+            <nav class="adb-pager">
+              <button class="adb-button__square_small adb-button__inset_dark adb-pager--item adb-pager--button__prev" disabled>
+                <i class="adb-icon__arrow_left"></i>
+              </button>
+              <div class="adb-pager--caption adb-pager--item"></div>
+              <button class="adb-button__square_small adb-button__inset_dark adb-pager--item adb-pager--button__next">
+                <i class="adb-icon__arrow_right"></i>
+              </button>
+            </nav>
+          </div>
+        </div>
+        <div class="adb-guided_tooltip adb-guided_tooltip__dark adb-js-dialog" data-placement="bottom-left" id="guided-apps">
+          <h3 class="adb-guided_tooltip--header" data-truncate="line">
+            Use Your Applications
+            <a class="adb-close" data-dismiss="dialog" href="#" title="Close"></a>
+          </h3>
+          <div class="adb-guided_tooltip--content">
+            <p>
+              The MyApps page is your central hub to use all of your free trials and subscriptions. Simply click an app below to launch.
+            </p>
+          </div>
+          <div class="adb-guided_tooltip--footer">
+            <nav class="adb-pager">
+              <button class="adb-button__square_small adb-button__inset_dark adb-pager--item adb-pager--button__prev">
+                <i class="adb-icon__arrow_left"></i>
+              </button>
+              <div class="adb-pager--caption adb-pager--item"></div>
+              <button class="adb-button__square_small adb-button__inset_dark adb-pager--item adb-pager--button__next">
+                <i class="adb-icon__arrow_right"></i>
+              </button>
+            </nav>
+          </div>
+        </div>
+        <div class="adb-guided_tooltip adb-guided_tooltip__dark adb-js-dialog" data-placement="bottom-left" id="guided-account">
+          <h3 class="adb-guided_tooltip--header" data-truncate="line">
+            Manage Your Account
+            <a class="adb-close" data-dismiss="dialog" href="#" title="Close"></a>
+          </h3>
+          <div class="adb-guided_tooltip--content">
+            <p>
+              Control user access, app subscriptions, and billing preferences all in one place.
+            </p>
+          </div>
+          <div class="adb-guided_tooltip--footer">
+            <nav class="adb-pager">
+              <button class="adb-button__square_small adb-button__inset_dark adb-pager--item adb-pager--button__prev">
+                <i class="adb-icon__arrow_left"></i>
+              </button>
+              <div class="adb-pager--caption adb-pager--item"></div>
+              <button class="adb-button__square_small adb-button__inset_dark adb-pager--item adb-pager--button__next" disabled>
+                <i class="adb-icon__arrow_right"></i>
+              </button>
+            </nav>
+          </div>
+        </div>
+        <form action="" class="adb-modal adb-modal__prompt" id="myapps-credentials-remove">
+          <fieldset>
+            <h3 class="adb-modal--header">
+              <legend>Remove GitHub</legend>
+              <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+            </h3>
+            <div class="adb-modal--content">
+              <p>Are you sure you want to remove <strong>GitHub</strong> from your applications?</p>
+            </div>
+            <menu class="adb-modal--footer adb-toolbar">
+              <button class="adb-button__danger adb-toolbar--item" type="submit">
+                Remove Application
+              </button>
+              <button class="adb-button__secret adb-toolbar--item" data-dismiss="modal" type="button">
+                Cancel
+              </button>
+            </menu>
+          </fieldset>
+        </form>
+        <form action="" class="adb-modal" id="myapps-credentials-first">
+          <fieldset>
+            <h3 class="adb-modal--header">
+              <legend>Log into ChowNow</legend>
+              <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+            </h3>
+            <div class="adb-modal--content">
+              <div class="adb-local_alert adb-local_alert__info">
+                <div class="adb-local_alert--content">
+                  <p>
+                    <i class="adb-icon__lock"></i>
+                    Provide your credentials below to log into ChowNow automatically. Password Vault stores your information securely and will never share it.
+                  </p>
+                </div>
+              </div>
+              <div class="adb-form--field">
+                <label for="myapps-credentials-user">Username/Email Address</label>
+                <input id="myapps-credentials-user" type="text" value="linda.yang@appdirect.com">
+              </div>
+              <div class="adb-form--field">
+                <label for="myapps-credentials-password">Password</label>
+                <input id="myapps-credentials-password" type="password">
+              </div>
+            </div>
+            <menu class="adb-modal--footer adb-toolbar">
+              <button class="adb-button__primary adb-toolbar--item" type="submit">
+                Log in &amp; Save Credentials
+              </button>
+              <button class="adb-button__secret adb-toolbar--item" data-dismiss="modal" type="button">
+                Cancel
+              </button>
+            </menu>
+          </fieldset>
+        </form>
+        <form action="" class="adb-modal" id="myapps-credentials-prefilled">
+          <fieldset>
+            <h3 class="adb-modal--header">
+              <legend>Edit GitHub Credentials</legend>
+              <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+            </h3>
+            <div class="adb-modal--content">
+              <div class="adb-form--field">
+                <label for="myapps-credentials2-company">Company ID</label>
+                <input disabled id="myapps-credentials2-company" type="text" value="12345">
+              </div>
+              <div class="adb-form--field">
+                <label for="myapps-credentials2-user">Username/Email Address</label>
+                <input disabled id="myapps-credentials2-user" type="email" value="linda.yang@appdirect.com">
+              </div>
+              <div class="adb-form--field adb-form--field__last">
+                <label for="myapps-credentials2-password1">Password</label>
+                <div class="adb-form--inline_inputs">
+                  <div class="adb-form--inline_input">
+                    <div class="adb-input_row adb-js-input_row">
+                      <div class="adb-input_row--item adb-input_row--primary">
+                        <input class="adb-input_row--item_content adb-js-panel-target adb-is-active" id="myapps-credentials2-password1" type="password" value="password">
+                        <input class="adb-input_row--item_content adb-js-panel-target" id="myapps-credentials2-password2" type="text" value="password">
+                      </div>
+                      <div class="adb-input_row--item">
+                        <button class="adb-button__square adb-button__inset adb-input_row--item_content has_tooltip" data-target="#myapps-credentials2-password2" data-toggle="panel" data-type="radio" title="Reveal Password" type="button">
+                          <i class="adb-icon__eye"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="adb-button__square adb-form--inline_input has_tooltip" title="Copy Password" type="button">
+                    <i class="adb-icon__images"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <menu class="adb-modal--footer adb-toolbar">
+              <button class="adb-button__primary adb-toolbar--item" type="submit">
+                Save
+              </button>
+              <button class="adb-button__secret adb-toolbar--item" data-dismiss="modal" type="button">
+                Cancel
+              </button>
+            </menu>
+          </fieldset>
+        </form>
+        <form action="" class="adb-modal" id="myapps-setup">
+          <h3 class="adb-modal--header">
+            Get Started with AppDirect
+            <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+          </h3>
+          <div class="adb-modal--content">
+            <div class="adb-help">
+              <h4>Setup Progress</h4>
+              <div class="adb-js-meter adb-meter adb-meter__full_width" data-percent="50" data-toggle="tooltip" title="50%">
+                <span class="adb-meter--percent">
+                  50%
+                </span>
+              </div>
+            </div>
+            <p>
+              Ut iusto ducimus est aut dolorem est
+              Set up your account and explore the AppDirect platform by completing the steps below:
+            </p>
+            <div class="adb-step_section">
+              <h4>
+                <span class="adb-step_section--number">1</span>
+                Start a free trial
+                <span class="adb-badge adb-badge__success">
+                  <i class="adb-icon__check"></i>
+                  Completed
+                </span>
+              </h4>
+            </div>
+            <div class="adb-step_section">
+              <h4>
+                <span class="adb-step_section--number">2</span>
+                <a>Assign users to applications</a>
+              </h4>
+            </div>
+            <div class="adb-step_section">
+              <h4>
+                <span class="adb-step_section--number">3</span>
+                <a>Complete your personal profile</a>
+              </h4>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              My Apps
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          <menu class="adb-toggle_buttons adb-toolbar--item" data-toggle="buttons-radio">
+            <button class="adb-button__inset_dark adb-toggle_buttons--button adb-button__small" data-target="#apps-none" data-toggle="pill" type="button">
+              None
+            </button>
+            <button class="adb-button__inset_dark adb-toggle_buttons--button adb-button__small" data-target="#apps-few" data-toggle="pill" type="button">
+              Few
+            </button>
+            <button class="adb-button__inset_dark adb-toggle_buttons--button adb-button__small active" data-target="#apps-many" data-toggle="pill" type="button">
+              Many
+            </button>
+          </menu>
+          <menu class="adb-toggle_buttons adb-toolbar--item" data-toggle="buttons-radio">
+            <button class="adb-button__inset_dark adb-toggle_buttons--button adb-button__small active" data-target="#apps-password" data-toggle="pill" type="button">
+              Password Manager
+            </button>
+            <button class="adb-button__inset_dark adb-toggle_buttons--button adb-button__small" data-target="#apps-add" data-toggle="pill" type="button">
+              Add App
+            </button>
+          </menu>
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Tile States
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small">
+                <li class="adb-stack--item">
+                  <a class="adb-link__option adb-stack--item_content" data-target=".app-active" data-toggle="pill">Active</a>
+                </li>
+                <li class="adb-stack--item">
+                  <a class="adb-link__option adb-stack--item_content" data-target=".app-suggested" data-toggle="pill">Suggested</a>
+                </li>
+                <li class="adb-stack--item">
+                  <a class="adb-link__option adb-stack--item_content" data-target=".app-custom" data-toggle="pill">Custom Integration</a>
+                </li>
+                <li class="adb-stack--item">
+                  <a class="adb-link__option adb-stack--item_content" data-target=".app-pending" data-toggle="pill">Pending</a>
+                </li>
+                <li class="adb-stack--item">
+                  <a class="adb-link__option adb-stack--item_content" data-target=".app-expiring" data-toggle="pill">Expiring</a>
+                </li>
+                <li class="adb-stack--item">
+                  <a class="adb-link__option adb-stack--item_content" data-target=".app-expired" data-toggle="pill">Expired</a>
+                </li>
+                <li class="adb-stack--item">
+                  <a class="adb-link__option adb-stack--item_content" data-target=".app-blocked" data-toggle="pill">Blocked</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    <script>
+      (function() {
+        $('.adb-tile .adb-js-panel-target').on('mouseover', function(e) {
+          var $alert, $tile;
+          $tile = $(this);
+          $alert = $tile.find('.adb-icon_alert');
+          return $alert.addClass('adb-is-active');
+        }).on('mouseleave', function(e) {
+          var $alert, $tile;
+          $tile = $(this);
+          $alert = $tile.find('.adb-icon_alert');
+          return $alert.removeClass('adb-is-active');
+        });
+      
+      }).call(this);
+    </script>
+  </body>
+</html>

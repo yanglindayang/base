@@ -1,0 +1,3899 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Manage Products</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="prototype prototype_account prototype_account_manage">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../marketplace/featured.html">Marketplace
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="myapps.html">MyApps
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../developer/dashboard.html">Developer
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+              <div class="adb-js-context_menu adb-context_menu">
+                <a class="adb-context_menu--trigger adb-is-selected adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  Manage
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="dashboard.html">Account</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../reseller/dashboard.html">Reseller</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../channel/marketplace/dashboard.html">Marketplace</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../corporate/customers/users.html">Corporate</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../superuser/dashboard/companies.html">Superuser</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-js-context_menu--trigger adb-context_menu--trigger adb-primary_nav--link adb-primary_nav--user" role="button">
+                  <span class="adb-id">
+                    <img class="adb-id--img adb-primary_nav--user_image" src="../../images/avatars/benDomanico-48x48.png" />
+                  </span>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="user/">My Profile</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="company/user-profile.html">My Company</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="settings.html">My Settings</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="http://ad.docs.appdirect.com">Help Center</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="/">Log out</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-secondary_nav">
+          <div class="adb-layout-default">
+            <ul class="adb-secondary_nav--items">
+              <li class="adb-secondary_nav--item adb-secondary_nav--item__breadcrumb">
+                <span class="adb-secondary_nav--content adb-secondary_nav--title">Account Manager</span>
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="dashboard.html">Dashboard
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="users.html">Users
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link adb-is-selected" href="manage.html">Products
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="assign.html">Assign Apps
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="invoices.html">Billing
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="company_settings.html">Settings
+                </a>
+        
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-header">
+            <h1 class="adb-header--item">
+              Manage Products&nbsp;
+              <a class="adb-icon_alert" data-event="click" data-target="#title-tooltip" data-toggle="dialog">
+                <i class="adb-icon__question"></i>
+              </a>
+            </h1>
+            <menu class="adb-header--item adb-toolbar">
+                    <a class="adb-button adb-button__secondary adb-button__medium adb-toolbar--item" title="Import your existing applications&lt;br&gt; and assign to users" data-toggle="tooltip" href="add.html"><i class="adb-icon__add"></i>
+              &nbsp;Add Product
+              </a>
+        
+            </menu>
+          </div>
+          <div class="adb-js-pill-target" id="manage-products1">
+            <section class="adb-container">
+              <div class="adb-filters" data-filters>
+                <menu class="adb-filters--header">
+                  <menu class="adb-filters--header_item">
+                    <button class="adb-button__inset adb-button__small adb-filters--filter_button" data-toggle="filters" type="button">
+                      Show Filters
+                    </button>
+                  </menu>
+                  <div class="adb-filters--header_item">
+                    <div class="adb-search_field adb-input_row adb-js-input_row">
+                      <div class="adb-input_row--item adb-input_row--primary">
+                        <input class="adb-search_field--input adb-text__small adb-input_row--item_content" placeholder="Search" type="search">
+                      </div>
+                      <div class="adb-input_row--item">
+                        <button class="adb-button__square_small adb-button__inset adb-input_row--item_content">
+                          <i class="adb-icon__search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </menu>
+                <menu class="adb-js-filters adb-filters--content adb-is-visually_hidden">
+                  <div class="adb-filters--filter">
+                    <label class="adb-label__small adb-label__inline" for="manage-apps-sort">
+                      Sort by
+                    </label>
+                    <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                      <select id="manage-apps-sort">
+                        <option>Show All</option>
+                        <option>Application Name</option>
+                        <option>Usage</option>
+                        <option>Owner Name</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="adb-filters--filter">
+                    <label class="adb-label__small adb-label__inline" for="manage-apps-billing">
+                      Billing
+                    </label>
+                    <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                      <select id="manage-apps-billing">
+                        <option>Show All</option>
+                        <option>Overdue</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="adb-filters--filter">
+                    <label class="adb-label__small adb-label__inline" for="manage-apps-usage">
+                      Usage
+                    </label>
+                    <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                      <select id="manage-apps-usage">
+                        <option>Show All</option>
+                        <option>Maxed</option>
+                        <option>Unlimited</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="adb-filters--filter">
+                    <label class="adb-label__small adb-label__inline" for="manage-apps-ownership">
+                      Ownership
+                    </label>
+                    <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                      <select id="manage-apps-ownership">
+                        <option>Show All</option>
+                        <option>Company Subscriptions</option>
+                        <option>Individual Subscriptions</option>
+                        <option>Personal Subscriptions</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="adb-filters--filter">
+                    <label class="adb-label__small adb-label__inline" for="manage-apps-type">
+                      Subscription
+                    </label>
+                    <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                      <select id="manage-apps-type">
+                        <option>Show All</option>
+                        <option>Paid</option>
+                        <option>Trial</option>
+                        <option>Free</option>
+                        <option>Imported</option>
+                      </select>
+                    </div>
+                  </div>
+                </menu>
+              </div>
+              <div class="adb-slat">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                            <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                    </a>
+            
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                      <i class="adb-icon__wrench adb-icon_alert" data-title="Preview" data-toggle="tooltip"></i>
+                      &nbsp;
+                                <a href="product.html">SendGrid
+                      </a>
+            
+                    </h3>
+                    <div class="adb-summary--details">
+                      <div class="adb-js-meter adb-meter" data-state="unlimited" data-toggle="tooltip" title="Unlimited">
+                        <span class="adb-meter--caption">Unlimited</span>
+                      </div>
+                      &nbsp;
+                      <span class="adb-caption">
+                        25 users
+                      </span>
+                    </div>
+                  </div>
+                  <div class="adb-slat--column adb-slat--toolbar">
+                    <menu class="adb-toolbar">
+                      <button class="adb-button__emphasis adb-toolbar--item" type="button">
+                        Upgrade Subscription
+                      </button>
+                      <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                          Manage
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack">
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="assign.html">Manage Application
+                              </a>
+            
+                            </li>
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Users
+                              </a>
+            
+                            </li>
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="/">View Order History
+                              </a>
+            
+                            </li>
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="/">Cancel Subscription
+                              </a>
+            
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                </div>
+                <div class="adb-slat--row">
+                  <dl class="adb-description_table">
+                    <table>
+                      <colgroup>
+                        <col width="33.33%">
+                        <col width="33.33%">
+                        <col width="33.33%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Subscription:</dt>
+                              <dd>Basic Edition</dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Fee:</dt>
+                              <dd>$199.99 / month</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Owner:</dt>
+                              <dd>
+                                <a>
+                                  Joann Hewitt
+                                </a>
+                              </dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Your Access:</dt>
+                              <dd>View, Manage</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Terms:</dt>
+                              <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </dl>
+                </div>
+              </div>
+              <div class="adb-slat">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                            <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                    </a>
+            
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                                <a href="product.html">SendGrid
+                      </a>
+            
+                    </h3>
+                    <div class="adb-summary--details">
+                      <div class="adb-js-meter adb-meter" data-state="unlimited" data-toggle="tooltip" title="Unlimited">
+                        <span class="adb-meter--caption">Unlimited</span>
+                      </div>
+                      &nbsp;
+                      <span class="adb-caption">
+                        25 users
+                      </span>
+                    </div>
+                  </div>
+                  <div class="adb-slat--column adb-slat--toolbar">
+                    <menu class="adb-toolbar">
+                      <button class="adb-button__emphasis adb-toolbar--item" type="button">
+                        Upgrade Subscription
+                      </button>
+                      <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                          Manage
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack">
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="assign.html">Manage Application
+                              </a>
+            
+                            </li>
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="product.html">Edit Application Settings
+                              </a>
+            
+                            </li>
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="/">View Order History
+                              </a>
+            
+                            </li>
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="/">Cancel Subscription
+                              </a>
+            
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                </div>
+                <div class="adb-slat--row">
+                  <dl class="adb-description_table">
+                    <table>
+                      <colgroup>
+                        <col width="33.33%">
+                        <col width="33.33%">
+                        <col width="33.33%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Subscription:</dt>
+                              <dd>Basic Edition</dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Fee:</dt>
+                              <dd>$199.99 / month</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Owner:</dt>
+                              <dd>
+                                <a>
+                                  Judith Butler
+                                </a>
+                              </dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Your Access:</dt>
+                              <dd>View, Manage</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Terms:</dt>
+                              <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </dl>
+                </div>
+              </div>
+              <div class="adb-slat">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                            <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                    </a>
+            
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                                <a href="product.html">SendGrid
+                      </a>
+            
+                    </h3>
+                    <div class="adb-summary--details">
+                      <div class="adb-js-meter adb-meter" data-state="unlimited" data-toggle="tooltip" title="Unlimited">
+                        <span class="adb-meter--caption">Unlimited</span>
+                      </div>
+                      &nbsp;
+                      <span class="adb-caption">
+                        25 users
+                      </span>
+                    </div>
+                  </div>
+                  <div class="adb-slat--column adb-slat--toolbar">
+                    <menu class="adb-toolbar">
+                      <button class="adb-button__primary adb-toolbar--item" type="button">
+                        Request Access
+                      </button>
+                    </menu>
+                  </div>
+                </div>
+                <div class="adb-slat--row">
+                  <dl class="adb-description_table">
+                    <table>
+                      <colgroup>
+                        <col width="33.33%">
+                        <col width="33.33%">
+                        <col width="33.33%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Subscription:</dt>
+                              <dd>Basic Edition</dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Fee:</dt>
+                              <dd>$19.99 / month</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Owner:</dt>
+                              <dd>
+                                <a>
+                                  Kaleigh Perkins
+                                </a>
+                              </dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Your Access:</dt>
+                              <dd>View, Manage</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Terms:</dt>
+                              <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </dl>
+                </div>
+              </div>
+              <div class="adb-slat">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                            <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                    </a>
+            
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                                <a href="product.html">SendGrid
+                      </a>
+            
+                    </h3>
+                    <div class="adb-summary--details">
+                      <div class="adb-js-meter adb-meter" data-state="unlimited" data-toggle="tooltip" title="Unlimited">
+                        <span class="adb-meter--caption">Unlimited</span>
+                      </div>
+                      &nbsp;
+                      <span class="adb-caption">
+                        25 users
+                      </span>
+                    </div>
+                  </div>
+                  <div class="adb-slat--column adb-slat--toolbar">
+                    <menu class="adb-toolbar">
+                      <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                          Manage
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack">
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="/">Cancel Subscription
+                              </a>
+            
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                </div>
+                <div class="adb-slat--row">
+                  <dl class="adb-description_table">
+                    <table>
+                      <colgroup>
+                        <col width="33.33%">
+                        <col width="33.33%">
+                        <col width="33.33%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Subscription:</dt>
+                              <dd>Free Edition</dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Fee:</dt>
+                              <dd>Free</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Owner:</dt>
+                              <dd>
+                                <a>
+                                  Raul Butler
+                                </a>
+                              </dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Your Access:</dt>
+                              <dd>View, Manage</dd>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </dl>
+                </div>
+              </div>
+              <div class="adb-slat">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                            <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                    </a>
+            
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                                <a href="product.html">SendGrid
+                      </a>
+            
+                    </h3>
+                    <div class="adb-summary--details">
+                      <div class="adb-js-meter adb-meter" data-state="unlimited" data-toggle="tooltip" title="Unlimited">
+                        <span class="adb-meter--caption">Unlimited</span>
+                      </div>
+                      &nbsp;
+                      <span class="adb-caption">
+                        25 users
+                      </span>
+                    </div>
+                  </div>
+                  <div class="adb-slat--column adb-slat--toolbar">
+                    <menu class="adb-toolbar">
+                      <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                          Manage
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack">
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="/">Remove Application
+                              </a>
+            
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                </div>
+                <div class="adb-slat--row">
+                  <dl class="adb-description_table">
+                    <table>
+                      <colgroup>
+                        <col width="33.33%">
+                        <col width="33.33%">
+                        <col width="33.33%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Subscription:</dt>
+                              <dd>Basic Edition</dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Fee:</dt>
+                              <dd>$199.99 / month</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Owner:</dt>
+                              <dd>
+                                <a>
+                                  Jadyn Woods
+                                </a>
+                              </dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Your Access:</dt>
+                              <dd>View, Manage</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Terms:</dt>
+                              <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </dl>
+                </div>
+              </div>
+              <div class="adb-slat">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                            <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                    </a>
+            
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                                <a href="product.html">SendGrid
+                      </a>
+            
+                    </h3>
+                    <div class="adb-summary--details">
+                      <div class="adb-js-meter adb-meter" data-state="unlimited" data-toggle="tooltip" title="Unlimited">
+                        <span class="adb-meter--caption">Unlimited</span>
+                      </div>
+                      &nbsp;
+                      <span class="adb-caption">
+                        25 users
+                      </span>
+                    </div>
+                  </div>
+                  <div class="adb-slat--column adb-slat--toolbar">
+                    <menu class="adb-toolbar">
+                      <button class="adb-button__primary adb-toolbar--item" type="button">
+                        Request Access
+                      </button>
+                      <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                          Manage
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack">
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="/">Remove Application
+                              </a>
+            
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                </div>
+                <div class="adb-slat--row">
+                  <dl class="adb-description_table">
+                    <table>
+                      <colgroup>
+                        <col width="33.33%">
+                        <col width="33.33%">
+                        <col width="33.33%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Subscription:</dt>
+                              <dd>Basic Edition</dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Fee:</dt>
+                              <dd>$199.99 / month</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Owner:</dt>
+                              <dd>
+                                <a>
+                                  Doris Watts
+                                </a>
+                              </dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Your Access:</dt>
+                              <dd>View, Manage</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Terms:</dt>
+                              <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </dl>
+                </div>
+              </div>
+              <div class="adb-slat">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                            <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                    </a>
+            
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                                <a href="product.html">SendGrid
+                      </a>
+            
+                    </h3>
+                    <div class="adb-summary--details">
+                      <div class="adb-js-meter adb-meter" data-percent="80" data-toggle="tooltip" title="You can assign 5 more users">
+                        <span class="adb-meter--percent">80%</span>
+                      </div>
+                      &nbsp;
+                      <span class="adb-caption">
+                        20 / 25 users
+                      </span>
+                    </div>
+                  </div>
+                  <div class="adb-slat--column adb-slat--toolbar">
+                    <menu class="adb-toolbar">
+                      <button class="adb-button__emphasis adb-toolbar--item" type="button">
+                        Upgrade Subscription
+                      </button>
+                      <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                          Manage
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack">
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="/">Manage Application
+                              </a>
+            
+                            </li>
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="/">Assign Users
+                              </a>
+            
+                            </li>
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="/">View Order History
+                              </a>
+            
+                            </li>
+                            <li class="adb-stack--item">
+                                                <a class="adb-link__option adb-stack--item_content" href="/">Cancel Subscription
+                              </a>
+            
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                </div>
+                <div class="adb-slat--row">
+                  <dl class="adb-description_table">
+                    <table>
+                      <colgroup>
+                        <col width="33.33%">
+                        <col width="33.33%">
+                        <col width="33.33%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Subscription:</dt>
+                              <dd>Basic Edition</dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Fee:</dt>
+                              <dd>$199.99 / month</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Owner:</dt>
+                              <dd>
+                                <a>
+                                  Carmen Butler
+                                </a>
+                              </dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Your Access:</dt>
+                              <dd>View, Manage</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Terms:</dt>
+                              <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </dl>
+                </div>
+              </div>
+              <div class="adb-slat">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                            <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/msoffice-72x72.png" />
+                    </a>
+            
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                                <a data-truncate="line" href="product.html">Microsoft Office 365
+                      </a>
+            
+                    </h3>
+                    <div class="adb-summary--details">
+                      <div class="adb-description_line">
+                        <span class="adb-js-meter adb-meter" data-percent="100" data-state="full" data-toggle="tooltip" title="Upgrade to assign more users">
+                          <span class="adb-meter--percent">100%</span>
+                        </span>
+                        &nbsp;
+                        <span class="adb-caption">25 / 25 users</span>
+                      </div>
+                    </div>
+                  </div>
+                  <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                    <button class="adb-button__emphasis adb-toolbar--item" type="button">
+                      Upgrade Subscription
+                    </button>
+                    <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                        Manage
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack">
+                          <li class="adb-stack--item">
+                                            <a class="adb-link__option adb-stack--item_content" href="product.html">Manage Application
+                            </a>
+            
+                          </li>
+                          <li class="adb-stack--item">
+                                            <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Users
+                            </a>
+            
+                          </li>
+                          <li class="adb-stack--item">
+                                            <a class="adb-link__option adb-stack--item_content" href="product.html">View Order History
+                            </a>
+            
+                          </li>
+                          <li class="adb-stack--item">
+                                            <a class="adb-link__option adb-stack--item_content" href="product.html">Cancel Subscription
+                            </a>
+            
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </menu>
+                </div>
+                <div class="adb-slat--row">
+                  <dl class="adb-description_table">
+                    <table>
+                      <colgroup>
+                        <col width="33.33%">
+                        <col width="33.33%">
+                        <col width="33.33%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Subscription:</dt>
+                              <dd>Professional Edition</dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Fee:</dt>
+                              <dd>$199.99 / month</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Owner:</dt>
+                              <dd>
+                                <a>
+                                  Preston Boykin
+                                </a>
+                              </dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Your Access:</dt>
+                              <dd>View, Manage</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Terms:</dt>
+                              <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </dl>
+                </div>
+              </div>
+              <div class="adb-slat">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                            <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/mcaffee-72x72.png" />
+                    </a>
+            
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                                <a data-truncate="line" href="product.html">McAfee SaaS Endpoint Protection
+                      </a>
+            
+                    </h3>
+                    <div class="adb-summary--details">
+                      <span class="adb-js-meter adb-meter" data-percent="80" data-toggle="tooltip" title="You can assign 5 more users">
+                        <span class="adb-meter--percent">80%</span>
+                      </span>
+                      &nbsp;
+                      <span class="adb-caption">20 / 25 users</span>
+                    </div>
+                    <div class="adb-complex_tooltip adb-js-dialog">
+                      <div class="adb-complex_tooltip--content">
+                        <p>
+                          Your cancel request is currently being processed. Once complete this product will be removed.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                    <button class="adb-button__primary adb-toolbar--item" type="button">
+                      Request Access
+                    </button>
+                    <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                        Manage
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack">
+                          <li class="adb-stack--item">
+                                            <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Users
+                            </a>
+            
+                          </li>
+                          <li class="adb-stack--item">
+                                            <a class="adb-link__option adb-stack--item_content" href="product.html">View Order History
+                            </a>
+            
+                          </li>
+                          <li class="adb-stack--item">
+                                            <a class="adb-link__option adb-stack--item_content" href="/">Upgrade Subscription
+                            </a>
+            
+                          </li>
+                          <li class="adb-stack--item">
+                                            <a class="adb-link__option adb-stack--item_content" data-toggle="modal" href="#modal-manage-addons">Manage Add-Ons
+                            </a>
+            
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </menu>
+                </div>
+                <div class="adb-slat--row">
+                  <dl class="adb-description_table">
+                    <table>
+                      <colgroup>
+                        <col width="33.33%">
+                        <col width="33.33%">
+                        <col width="33.33%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Subscription:</dt>
+                              <dd>Small and Medium Business Plus Edition</dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Fee:</dt>
+                              <dd>$199.99 / month</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Owner:</dt>
+                              <dd>
+                                <a>
+                                  Marsha Merritt
+                                </a>
+                              </dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Your Access:</dt>
+                              <dd>View</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Terms:</dt>
+                              <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </dl>
+                </div>
+                <div class="adb-slat--row adb-container_content">
+                  <dl class="adb-description_line">
+                    <dt>Add-Ons:</dt>
+                    <dd>
+                      Add-On Name, Add-On Name, Another Add-On
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="adb-slat">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                    <div class="adb-id adb-id__logo adb-id__sq_small">
+                      <img class="adb-id--img" src="../../images/logos/apps/newrelic-120x120.png" />
+                    </div>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                                <a data-truncate="line" href="../marketplace/bundle.html">Product with Service Plans
+                      </a>
+            
+                    </h3>
+                    <div class="adb-summary--details">
+                      <span class="adb-js-meter adb-meter" data-percent="80" data-toggle="tooltip" title="You can assign 5 more users">
+                        <span class="adb-meter--percent">80%</span>
+                      </span>
+                      &nbsp;
+                      <span class="adb-caption">20 / 25 users</span>
+                    </div>
+                  </div>
+                  <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                    <button class="adb-button__emphasis adb-toolbar--item" type="button">
+                      Upgrade Subscription
+                    </button>
+                    <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                        Manage
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack">
+                          <li class="adb-stack--item">
+                                            <a class="adb-link__option adb-stack--item_content" href="assign.html">Manage Product
+                            </a>
+            
+                          </li>
+                          <li class="adb-stack--item">
+                                            <a class="adb-link__option adb-stack--item_content" href="product.html">View Order History
+                            </a>
+            
+                          </li>
+                          <li class="adb-stack--item">
+                                            <a class="adb-link__option adb-stack--item_content" href="/">Cancel Product
+                            </a>
+            
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </menu>
+                </div>
+                <div class="adb-slat--row">
+                  <dl class="adb-description_table adb-slat--row">
+                    <table>
+                      <colgroup>
+                        <col width="33.33%">
+                        <col width="33.33%">
+                        <col width="33.33%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Subscription:</dt>
+                              <dd>Bundle Edition</dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Fee:</dt>
+                              <dd>$199.99 / month</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Owner:</dt>
+                              <dd>
+                                <a>
+                                  Marsha Hester
+                                </a>
+                              </dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Your Access:</dt>
+                              <dd>View, Manage</dd>
+                            </div>
+                          </td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </dl>
+                </div>
+                <div class="adb-slat--row">
+                  <div class="adb-container_content">
+                    <div class="adb-container">
+                      <div class="adb-slat">
+                        <div class="adb-slat--image adb-slat--column">
+                          <div class="adb-id adb-id__sq_xxsmall">
+                            <i class="adb-icon__tools adb-id--placeholder"></i>
+                          </div>
+                        </div>
+                        <div class="adb-slat--content adb-slat--column adb-summary">
+                          <h4 class="adb-summary--title">
+                            New Relic
+                            <code>xyz123</code>
+                          </h4>
+                          <div class="adb-summary--details">
+                            <dl>
+                              <div class="adb-description_line">
+                                <dt>Fee:</dt>
+                                <dd>$10.00 / month</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Connected Applications:</dt>
+                                <dd>Python, Jenkins</dd>
+                              </div>
+                            </dl>
+                          </div>
+                        </div>
+                        <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                          <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                            <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                              Manage
+                            </button>
+                            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                              <ul class="adb-stack">
+                                <li class="adb-stack--item">
+                                                        <a class="adb-link__option adb-stack--item_content" href="/">Manage Applications
+                                  </a>
+            
+                                </li>
+                                <li class="adb-stack--item">
+                                                        <a class="adb-link__option adb-stack--item_content" href="/">Upgrade Service Plan
+                                  </a>
+            
+                                </li>
+                                <li class="adb-stack--item">
+                                                        <a class="adb-link__option adb-stack--item_content" data-toggle="modal" href="#modal-remove-service">Cancel Service Plan
+                                  </a>
+            
+                                </li>
+                              </ul>
+                            </div>
+                          </menu>
+                        </menu>
+                      </div>
+                      <div class="adb-slat">
+                        <div class="adb-slat--image adb-slat--column">
+                          <div class="adb-id adb-id__sq_xxsmall">
+                            <i class="adb-icon__tools adb-id--placeholder"></i>
+                          </div>
+                        </div>
+                        <div class="adb-slat--content adb-slat--column adb-summary">
+                          <h4 class="adb-summary--title">
+                            New Relic
+                            <code>xyz123</code>
+                          </h4>
+                          <div class="adb-summary--details">
+                            <dl>
+                              <div class="adb-description_line">
+                                <dt>Fee:</dt>
+                                <dd>$10.00 / month</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Connected Applications:</dt>
+                                <dd>Python, Jenkins</dd>
+                              </div>
+                            </dl>
+                          </div>
+                        </div>
+                        <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                          <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                            <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                              Manage
+                            </button>
+                            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                              <ul class="adb-stack">
+                                <li class="adb-stack--item">
+                                                        <a class="adb-link__option adb-stack--item_content" href="/">Manage Applications
+                                  </a>
+            
+                                </li>
+                                <li class="adb-stack--item">
+                                                        <a class="adb-link__option adb-stack--item_content" href="/">Upgrade Service Plan
+                                  </a>
+            
+                                </li>
+                                <li class="adb-stack--item">
+                                                        <a class="adb-link__option adb-stack--item_content" data-toggle="modal" href="#modal-remove-service">Cancel Service Plan
+                                  </a>
+            
+                                </li>
+                              </ul>
+                            </div>
+                          </menu>
+                        </menu>
+                      </div>
+                      <div class="adb-slat">
+                        <div class="adb-slat--image adb-slat--column">
+                          <div class="adb-id adb-id__sq_xxsmall">
+                            <i class="adb-icon__tools adb-id--placeholder"></i>
+                          </div>
+                        </div>
+                        <div class="adb-slat--content adb-slat--column adb-summary">
+                          <h4 class="adb-summary--title">
+                            New Relic
+                            <code>xyz123</code>
+                          </h4>
+                          <div class="adb-summary--details">
+                            <dl>
+                              <div class="adb-description_line">
+                                <dt>Fee:</dt>
+                                <dd>$10.00 / month</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <a>Connect Applications</a>
+                              </div>
+                            </dl>
+                          </div>
+                        </div>
+                        <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                          <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                            <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                              Manage
+                            </button>
+                            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                              <ul class="adb-stack">
+                                <li class="adb-stack--item">
+                                                        <a class="adb-link__option adb-stack--item_content" href="/">Connect Applications
+                                  </a>
+            
+                                </li>
+                                <li class="adb-stack--item">
+                                                        <a class="adb-link__option adb-stack--item_content" href="/">Upgrade Service Plan
+                                  </a>
+            
+                                </li>
+                                <li class="adb-stack--item">
+                                                        <a class="adb-link__option adb-stack--item_content" data-toggle="modal" href="#modal-remove-service">Cancel Service Plan
+                                  </a>
+            
+                                </li>
+                              </ul>
+                            </div>
+                          </menu>
+                        </menu>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-slat">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                            <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/box-72x72.png" />
+                    </a>
+            
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                                <a data-truncate="line" class="adb-title--link" href="product_import/users.html">Box
+                      </a>
+            
+                      &nbsp;
+                      <span class="adb-badge adb-badge__info adb-badge__icon adb-icon_alert" data-toggle="tooltip" title="Imported">
+                        <i class="adb-icon__link"></i>
+                      </span>
+                      <span class="adb-badge adb-badge__info adb-badge__icon adb-icon_alert" data-toggle="tooltip" title="UserSync">
+                        <i class="adb-icon__switch"></i>
+                      </span>
+                    </h3>
+                    <div class="adb-summary--details">
+                      <span class="adb-caption">
+                        25 users
+                      </span>
+                    </div>
+                  </div>
+                  <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                    <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                        Manage
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack">
+                          <li class="adb-stack--item">
+                                            <a class="adb-link__option adb-stack--item_content" href="product_import/settings_general.html">Manage Application
+                            </a>
+            
+                          </li>
+                          <li class="adb-stack--item">
+                                            <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Users
+                            </a>
+            
+                          </li>
+                          <li class="adb-stack--item">
+                                            <a class="adb-link__option adb-stack--item_content" data-toggle="modal" href="#modal-remove-application">Remove Application
+                            </a>
+            
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </menu>
+                </div>
+              </div>
+              <div class="adb-slat adb-is-disabled">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                            <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/newrelic-72x72.png" />
+                    </a>
+            
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                                <a data-truncate="line" href="product.html">New Relic
+                      </a>
+            
+                    </h3>
+                    <div class="adb-summary--details">
+                      Basic Edition
+                    </div>
+                  </div>
+                </div>
+                <div class="adb-slat--row adb-container_content">
+                  <div class="adb-local_alert adb-local_alert__warning">
+                    <div class="adb-local_alert--content">
+                      <p>
+                        Processing your order. Once complete, you can use and manage this product. Please contact
+                        <a class="adb-local_alert--link">Support</a>
+                        for help.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-slat adb-is-disabled">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                            <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/newrelic-72x72.png" />
+                    </a>
+            
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                                <a data-truncate="line" href="product.html">New Relic
+                      </a>
+            
+                    </h3>
+                    <div class="adb-summary--details">
+                      <span class="adb-js-meter adb-meter" data-percent="80" data-toggle="tooltip" title="20 / 25 users">
+                        <span class="adb-meter--percent">80%</span>
+                      </span>
+                      &nbsp;
+                      <span class="adb-caption">20 / 25 users</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="adb-slat--row">
+                  <dl class="adb-description_table">
+                    <table>
+                      <colgroup>
+                        <col width="33.33%">
+                        <col width="33.33%">
+                        <col width="33.33%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Subscription:</dt>
+                              <dd>Professional Edition</dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Fee</dt>
+                              <dd>$199.99 / month</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Owner:</dt>
+                              <dd>
+                                <a>
+                                  Andres Whitehead
+                                </a>
+                              </dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Your Access:</dt>
+                              <dd>View</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Terms:</dt>
+                              <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </dl>
+                </div>
+                <div class="adb-slat--row adb-container_content">
+                  <div class="adb-local_alert adb-local_alert__warning">
+                    <div class="adb-local_alert--content">
+                      <p>
+                        Processing your cancellation request. Once complete, this product will be removed.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-slat adb-is-disabled">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                            <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/wordpress-72x72.png" />
+                    </a>
+            
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                                <a data-truncate="line" href="product.html">Wordpress
+                      </a>
+            
+                    </h3>
+                    <div class="adb-summary--details">
+                      <span class="adb-js-meter adb-meter" data-percent="80" data-state="error" data-toggle="tooltip" title="Please renew your subscription.">
+                        <span class="adb-meter--percent">80%</span>
+                      </span>
+                      &nbsp;
+                      <span class="adb-caption">20 / 25 users</span>
+                    </div>
+                  </div>
+                  <menu class="adb-slat--column adb-slat--toolbar adb-toolbar"></menu>
+                </div>
+                <div class="adb-slat--row">
+                  <dl class="adb-description_table">
+                    <table>
+                      <colgroup>
+                        <col width="33.33%">
+                        <col width="33.33%">
+                        <col width="33.33%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Subscription:</dt>
+                              <dd>Free Trial Edition</dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Fee</dt>
+                              <dd>$199.99 / month</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Owner:</dt>
+                              <dd>
+                                <a>
+                                  Peggy Chung
+                                </a>
+                              </dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Your Access:</dt>
+                              <dd>View</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Terms:</dt>
+                              <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </dl>
+                </div>
+                <div class="adb-slat--row adb-container_content">
+                  <div class="adb-local_alert adb-local_alert__error">
+                    <div class="adb-local_alert--content">
+                      <p>
+                        Your subscription expired.
+                      </p>
+                    </div>
+                    <div class="adb-local_alert--buttons adb-toolbar">
+                      <button class="adb-button__danger adb-toolbar--item" type="button">
+                        Cancel Subscription
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-slat adb-is-disabled">
+                <div class="adb-slat--row">
+                  <div class="adb-slat--image adb-slat--column">
+                            <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/wordpress-72x72.png" />
+                    </a>
+            
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                                <a data-truncate="line" href="product.html">Wordpress
+                      </a>
+            
+                    </h3>
+                    <div class="adb-summary--details">
+                      <span class="adb-js-meter adb-meter" data-percent="80" data-state="error" data-toggle="tooltip" title="Please renew your subscription.">
+                        <span class="adb-meter--percent">80%</span>
+                      </span>
+                      &nbsp;
+                      <span class="adb-caption">20 / 25 users</span>
+                    </div>
+                  </div>
+                  <menu class="adb-slat--column adb-slat--toolbar adb-toolbar"></menu>
+                </div>
+                <div class="adb-slat--row">
+                  <dl class="adb-description_table">
+                    <table>
+                      <colgroup>
+                        <col width="33.33%">
+                        <col width="33.33%">
+                        <col width="33.33%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Subscription:</dt>
+                              <dd>Free Trial Edition</dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Fee</dt>
+                              <dd>$199.99 / month</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Owner:</dt>
+                              <dd>
+                                <a>
+                                  Gayle O'Donnell
+                                </a>
+                              </dd>
+                            </div>
+                            <div class="adb-description_line">
+                              <dt>Your Access:</dt>
+                              <dd>View, Manage</dd>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="adb-description_line">
+                              <dt>Terms:</dt>
+                              <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </dl>
+                </div>
+                <div class="adb-slat--row adb-container_content">
+                  <div class="adb-local_alert adb-local_alert__error">
+                    <div class="adb-local_alert--content">
+                      <p>
+                        Your subscription expired.
+                        Please
+                        <a class="adb-local_alert--link">renew your subscription</a>
+                        to continue using this product.
+                      </p>
+                    </div>
+                    <div class="adb-local_alert--buttons adb-toolbar">
+                      <button class="adb-button__primary adb-toolbar--item" type="button">
+                        Renew Subscription
+                      </button>
+                      <button class="adb-button__danger adb-toolbar--item" type="button">
+                        Cancel Subscription
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-container_footer">
+                <div class="adb-container_footer--item adb-container_footer--item__last">
+                  <nav class="adb-pagination_v1">
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__first"></a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__prev"></a>
+                    <a class="adb-pagination_v1--button">1</a>
+                    <a class="adb-pagination_v1--button">23</a>
+                    <span class="adb-pagination_v1--current">456</span>
+                    <a class="adb-pagination_v1--button">7890</a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__next"></a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__last"></a>
+                  </nav>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="adb-js-pill-target active" id="manage-products2">
+            <div class="adb-layout-sidebar adb-layout-column__first">
+              <div class="adb-container">
+                <nav class="adb-stack">
+                  <div class="adb-stack--item adb-stack--item__nesting">
+                    <a class="adb-link__nav adb-stack--item_content adb-stack--item_content__nesting adb-is-selected" href="/">
+                      Applications
+                    </a>
+                    <ul class="adb-stack">
+                      <li class="adb-stack--item">
+                                    <a class="adb-link__nav adb-stack--item_content" href="/">Subscriptions
+                        </a>
+            
+                      </li>
+                      <li class="adb-stack--item">
+                                    <a class="adb-link__nav adb-stack--item_content" href="/">Imported
+                        </a>
+            
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="adb-stack--item">
+                    <a class="adb-link__nav adb-stack--item_content" href="/">
+                      Domains
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="adb-layout-content">
+              <section class="adb-container">
+                <div class="adb-filters" data-filters>
+                  <menu class="adb-filters--header">
+                    <menu class="adb-filters--header_item">
+                      <button class="adb-button__inset adb-button__small adb-filters--filter_button" data-toggle="filters" type="button">
+                        Show Filters
+                      </button>
+                    </menu>
+                    <div class="adb-filters--header_item">
+                      <div class="adb-search_field adb-input_row adb-js-input_row">
+                        <div class="adb-input_row--item adb-input_row--primary">
+                          <input class="adb-search_field--input adb-text__small adb-input_row--item_content" placeholder="Search" type="search">
+                        </div>
+                        <div class="adb-input_row--item">
+                          <button class="adb-button__square_small adb-button__inset adb-input_row--item_content">
+                            <i class="adb-icon__search"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </menu>
+                  <menu class="adb-js-filters adb-filters--content adb-is-visually_hidden">
+                    <div class="adb-filters--filter">
+                      <label class="adb-label__small adb-label__inline" for="manage-apps-sort">
+                        Sort by
+                      </label>
+                      <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                        <select id="manage-apps-sort">
+                          <option>Show All</option>
+                          <option>Application Name</option>
+                          <option>Usage</option>
+                          <option>Owner Name</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="adb-filters--filter">
+                      <label class="adb-label__small adb-label__inline" for="manage-apps-billing">
+                        Billing
+                      </label>
+                      <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                        <select id="manage-apps-billing">
+                          <option>Show All</option>
+                          <option>Overdue</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="adb-filters--filter">
+                      <label class="adb-label__small adb-label__inline" for="manage-apps-usage">
+                        Usage
+                      </label>
+                      <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                        <select id="manage-apps-usage">
+                          <option>Show All</option>
+                          <option>Maxed</option>
+                          <option>Unlimited</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="adb-filters--filter">
+                      <label class="adb-label__small adb-label__inline" for="manage-apps-ownership">
+                        Ownership
+                      </label>
+                      <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                        <select id="manage-apps-ownership">
+                          <option>Show All</option>
+                          <option>Company Subscriptions</option>
+                          <option>Individual Subscriptions</option>
+                          <option>Personal Subscriptions</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="adb-filters--filter">
+                      <label class="adb-label__small adb-label__inline" for="manage-apps-type">
+                        Subscription
+                      </label>
+                      <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                        <select id="manage-apps-type">
+                          <option>Show All</option>
+                          <option>Paid</option>
+                          <option>Trial</option>
+                          <option>Free</option>
+                          <option>Imported</option>
+                        </select>
+                      </div>
+                    </div>
+                  </menu>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                              <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                      </a>
+              
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                        <i class="adb-icon__wrench adb-icon_alert" data-title="Preview" data-toggle="tooltip"></i>
+                        &nbsp;
+                                  <a href="product.html">SendGrid
+                        </a>
+              
+                      </h3>
+                      <div class="adb-summary--details">
+                        <div class="adb-js-meter adb-meter" data-state="unlimited" data-toggle="tooltip" title="Unlimited">
+                          <span class="adb-meter--caption">Unlimited</span>
+                        </div>
+                        &nbsp;
+                        <span class="adb-caption">
+                          25 users
+                        </span>
+                      </div>
+                    </div>
+                    <div class="adb-slat--column adb-slat--toolbar">
+                      <menu class="adb-toolbar">
+                        <button class="adb-button__emphasis adb-toolbar--item" type="button">
+                          Upgrade Subscription
+                        </button>
+                        <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                          <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                            Manage
+                          </button>
+                          <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                            <ul class="adb-stack">
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="assign.html">Manage Application
+                                </a>
+              
+                              </li>
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Users
+                                </a>
+              
+                              </li>
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="/">View Order History
+                                </a>
+              
+                              </li>
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="/">Cancel Subscription
+                                </a>
+              
+                              </li>
+                            </ul>
+                          </div>
+                        </menu>
+                      </menu>
+                    </div>
+                  </div>
+                  <div class="adb-slat--row">
+                    <dl class="adb-description_table">
+                      <table>
+                        <colgroup>
+                          <col width="33.33%">
+                          <col width="33.33%">
+                          <col width="33.33%">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Subscription:</dt>
+                                <dd>Basic Edition</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Fee:</dt>
+                                <dd>$199.99 / month</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Owner:</dt>
+                                <dd>
+                                  <a>
+                                    Agnes Barr
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Your Access:</dt>
+                                <dd>View, Manage</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Terms:</dt>
+                                <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </dl>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                              <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                      </a>
+              
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                                  <a href="product.html">SendGrid
+                        </a>
+              
+                      </h3>
+                      <div class="adb-summary--details">
+                        <div class="adb-js-meter adb-meter" data-state="unlimited" data-toggle="tooltip" title="Unlimited">
+                          <span class="adb-meter--caption">Unlimited</span>
+                        </div>
+                        &nbsp;
+                        <span class="adb-caption">
+                          25 users
+                        </span>
+                      </div>
+                    </div>
+                    <div class="adb-slat--column adb-slat--toolbar">
+                      <menu class="adb-toolbar">
+                        <button class="adb-button__emphasis adb-toolbar--item" type="button">
+                          Upgrade Subscription
+                        </button>
+                        <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                          <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                            Manage
+                          </button>
+                          <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                            <ul class="adb-stack">
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="assign.html">Manage Application
+                                </a>
+              
+                              </li>
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="product.html">Edit Application Settings
+                                </a>
+              
+                              </li>
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="/">View Order History
+                                </a>
+              
+                              </li>
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="/">Cancel Subscription
+                                </a>
+              
+                              </li>
+                            </ul>
+                          </div>
+                        </menu>
+                      </menu>
+                    </div>
+                  </div>
+                  <div class="adb-slat--row">
+                    <dl class="adb-description_table">
+                      <table>
+                        <colgroup>
+                          <col width="33.33%">
+                          <col width="33.33%">
+                          <col width="33.33%">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Subscription:</dt>
+                                <dd>Basic Edition</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Fee:</dt>
+                                <dd>$199.99 / month</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Owner:</dt>
+                                <dd>
+                                  <a>
+                                    Manuel Lucas
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Your Access:</dt>
+                                <dd>View, Manage</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Terms:</dt>
+                                <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </dl>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                              <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                      </a>
+              
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                                  <a href="product.html">SendGrid
+                        </a>
+              
+                      </h3>
+                      <div class="adb-summary--details">
+                        <div class="adb-js-meter adb-meter" data-state="unlimited" data-toggle="tooltip" title="Unlimited">
+                          <span class="adb-meter--caption">Unlimited</span>
+                        </div>
+                        &nbsp;
+                        <span class="adb-caption">
+                          25 users
+                        </span>
+                      </div>
+                    </div>
+                    <div class="adb-slat--column adb-slat--toolbar">
+                      <menu class="adb-toolbar">
+                        <button class="adb-button__primary adb-toolbar--item" type="button">
+                          Request Access
+                        </button>
+                      </menu>
+                    </div>
+                  </div>
+                  <div class="adb-slat--row">
+                    <dl class="adb-description_table">
+                      <table>
+                        <colgroup>
+                          <col width="33.33%">
+                          <col width="33.33%">
+                          <col width="33.33%">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Subscription:</dt>
+                                <dd>Basic Edition</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Fee:</dt>
+                                <dd>$19.99 / month</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Owner:</dt>
+                                <dd>
+                                  <a>
+                                    Harvey Mangum
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Your Access:</dt>
+                                <dd>View, Manage</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Terms:</dt>
+                                <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </dl>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                              <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                      </a>
+              
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                                  <a href="product.html">SendGrid
+                        </a>
+              
+                      </h3>
+                      <div class="adb-summary--details">
+                        <div class="adb-js-meter adb-meter" data-state="unlimited" data-toggle="tooltip" title="Unlimited">
+                          <span class="adb-meter--caption">Unlimited</span>
+                        </div>
+                        &nbsp;
+                        <span class="adb-caption">
+                          25 users
+                        </span>
+                      </div>
+                    </div>
+                    <div class="adb-slat--column adb-slat--toolbar">
+                      <menu class="adb-toolbar">
+                        <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                          <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                            Manage
+                          </button>
+                          <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                            <ul class="adb-stack">
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="/">Cancel Subscription
+                                </a>
+              
+                              </li>
+                            </ul>
+                          </div>
+                        </menu>
+                      </menu>
+                    </div>
+                  </div>
+                  <div class="adb-slat--row">
+                    <dl class="adb-description_table">
+                      <table>
+                        <colgroup>
+                          <col width="33.33%">
+                          <col width="33.33%">
+                          <col width="33.33%">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Subscription:</dt>
+                                <dd>Free Edition</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Fee:</dt>
+                                <dd>Free</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Owner:</dt>
+                                <dd>
+                                  <a>
+                                    Abel Snyder
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Your Access:</dt>
+                                <dd>View, Manage</dd>
+                              </div>
+                            </td>
+                            <td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </dl>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                              <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                      </a>
+              
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                                  <a href="product.html">SendGrid
+                        </a>
+              
+                      </h3>
+                      <div class="adb-summary--details">
+                        <div class="adb-js-meter adb-meter" data-state="unlimited" data-toggle="tooltip" title="Unlimited">
+                          <span class="adb-meter--caption">Unlimited</span>
+                        </div>
+                        &nbsp;
+                        <span class="adb-caption">
+                          25 users
+                        </span>
+                      </div>
+                    </div>
+                    <div class="adb-slat--column adb-slat--toolbar">
+                      <menu class="adb-toolbar">
+                        <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                          <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                            Manage
+                          </button>
+                          <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                            <ul class="adb-stack">
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="/">Remove Application
+                                </a>
+              
+                              </li>
+                            </ul>
+                          </div>
+                        </menu>
+                      </menu>
+                    </div>
+                  </div>
+                  <div class="adb-slat--row">
+                    <dl class="adb-description_table">
+                      <table>
+                        <colgroup>
+                          <col width="33.33%">
+                          <col width="33.33%">
+                          <col width="33.33%">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Subscription:</dt>
+                                <dd>Basic Edition</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Fee:</dt>
+                                <dd>$199.99 / month</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Owner:</dt>
+                                <dd>
+                                  <a>
+                                    Dominick Adkins
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Your Access:</dt>
+                                <dd>View, Manage</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Terms:</dt>
+                                <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </dl>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                              <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                      </a>
+              
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                                  <a href="product.html">SendGrid
+                        </a>
+              
+                      </h3>
+                      <div class="adb-summary--details">
+                        <div class="adb-js-meter adb-meter" data-state="unlimited" data-toggle="tooltip" title="Unlimited">
+                          <span class="adb-meter--caption">Unlimited</span>
+                        </div>
+                        &nbsp;
+                        <span class="adb-caption">
+                          25 users
+                        </span>
+                      </div>
+                    </div>
+                    <div class="adb-slat--column adb-slat--toolbar">
+                      <menu class="adb-toolbar">
+                        <button class="adb-button__primary adb-toolbar--item" type="button">
+                          Request Access
+                        </button>
+                        <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                          <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                            Manage
+                          </button>
+                          <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                            <ul class="adb-stack">
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="/">Remove Application
+                                </a>
+              
+                              </li>
+                            </ul>
+                          </div>
+                        </menu>
+                      </menu>
+                    </div>
+                  </div>
+                  <div class="adb-slat--row">
+                    <dl class="adb-description_table">
+                      <table>
+                        <colgroup>
+                          <col width="33.33%">
+                          <col width="33.33%">
+                          <col width="33.33%">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Subscription:</dt>
+                                <dd>Basic Edition</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Fee:</dt>
+                                <dd>$199.99 / month</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Owner:</dt>
+                                <dd>
+                                  <a>
+                                    Penny Nichols
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Your Access:</dt>
+                                <dd>View, Manage</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Terms:</dt>
+                                <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </dl>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                              <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/sendgrid-72x72.png" />
+                      </a>
+              
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                                  <a href="product.html">SendGrid
+                        </a>
+              
+                      </h3>
+                      <div class="adb-summary--details">
+                        <div class="adb-js-meter adb-meter" data-percent="80" data-toggle="tooltip" title="You can assign 5 more users">
+                          <span class="adb-meter--percent">80%</span>
+                        </div>
+                        &nbsp;
+                        <span class="adb-caption">
+                          20 / 25 users
+                        </span>
+                      </div>
+                    </div>
+                    <div class="adb-slat--column adb-slat--toolbar">
+                      <menu class="adb-toolbar">
+                        <button class="adb-button__emphasis adb-toolbar--item" type="button">
+                          Upgrade Subscription
+                        </button>
+                        <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                          <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                            Manage
+                          </button>
+                          <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                            <ul class="adb-stack">
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="/">Manage Application
+                                </a>
+              
+                              </li>
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="/">Assign Users
+                                </a>
+              
+                              </li>
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="/">View Order History
+                                </a>
+              
+                              </li>
+                              <li class="adb-stack--item">
+                                                  <a class="adb-link__option adb-stack--item_content" href="/">Cancel Subscription
+                                </a>
+              
+                              </li>
+                            </ul>
+                          </div>
+                        </menu>
+                      </menu>
+                    </div>
+                  </div>
+                  <div class="adb-slat--row">
+                    <dl class="adb-description_table">
+                      <table>
+                        <colgroup>
+                          <col width="33.33%">
+                          <col width="33.33%">
+                          <col width="33.33%">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Subscription:</dt>
+                                <dd>Basic Edition</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Fee:</dt>
+                                <dd>$199.99 / month</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Owner:</dt>
+                                <dd>
+                                  <a>
+                                    Skylar McKenzie
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Your Access:</dt>
+                                <dd>View, Manage</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Terms:</dt>
+                                <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </dl>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                              <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/msoffice-72x72.png" />
+                      </a>
+              
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                                  <a data-truncate="line" href="product.html">Microsoft Office 365
+                        </a>
+              
+                      </h3>
+                      <div class="adb-summary--details">
+                        <div class="adb-description_line">
+                          <span class="adb-js-meter adb-meter" data-percent="100" data-state="full" data-toggle="tooltip" title="Upgrade to assign more users">
+                            <span class="adb-meter--percent">100%</span>
+                          </span>
+                          &nbsp;
+                          <span class="adb-caption">25 / 25 users</span>
+                        </div>
+                      </div>
+                    </div>
+                    <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                      <button class="adb-button__emphasis adb-toolbar--item" type="button">
+                        Upgrade Subscription
+                      </button>
+                      <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                          Manage
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack">
+                            <li class="adb-stack--item">
+                                              <a class="adb-link__option adb-stack--item_content" href="product.html">Manage Application
+                              </a>
+              
+                            </li>
+                            <li class="adb-stack--item">
+                                              <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Users
+                              </a>
+              
+                            </li>
+                            <li class="adb-stack--item">
+                                              <a class="adb-link__option adb-stack--item_content" href="product.html">View Order History
+                              </a>
+              
+                            </li>
+                            <li class="adb-stack--item">
+                                              <a class="adb-link__option adb-stack--item_content" href="product.html">Cancel Subscription
+                              </a>
+              
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <div class="adb-slat--row">
+                    <dl class="adb-description_table">
+                      <table>
+                        <colgroup>
+                          <col width="33.33%">
+                          <col width="33.33%">
+                          <col width="33.33%">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Subscription:</dt>
+                                <dd>Professional Edition</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Fee:</dt>
+                                <dd>$199.99 / month</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Owner:</dt>
+                                <dd>
+                                  <a>
+                                    Cara Lamb
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Your Access:</dt>
+                                <dd>View, Manage</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Terms:</dt>
+                                <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </dl>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                              <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/mcaffee-72x72.png" />
+                      </a>
+              
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                                  <a data-truncate="line" href="product.html">McAfee SaaS Endpoint Protection
+                        </a>
+              
+                      </h3>
+                      <div class="adb-summary--details">
+                        <span class="adb-js-meter adb-meter" data-percent="80" data-toggle="tooltip" title="You can assign 5 more users">
+                          <span class="adb-meter--percent">80%</span>
+                        </span>
+                        &nbsp;
+                        <span class="adb-caption">20 / 25 users</span>
+                      </div>
+                      <div class="adb-complex_tooltip adb-js-dialog">
+                        <div class="adb-complex_tooltip--content">
+                          <p>
+                            Your cancel request is currently being processed. Once complete this product will be removed.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                      <button class="adb-button__primary adb-toolbar--item" type="button">
+                        Request Access
+                      </button>
+                      <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                          Manage
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack">
+                            <li class="adb-stack--item">
+                                              <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Users
+                              </a>
+              
+                            </li>
+                            <li class="adb-stack--item">
+                                              <a class="adb-link__option adb-stack--item_content" href="product.html">View Order History
+                              </a>
+              
+                            </li>
+                            <li class="adb-stack--item">
+                                              <a class="adb-link__option adb-stack--item_content" href="/">Upgrade Subscription
+                              </a>
+              
+                            </li>
+                            <li class="adb-stack--item">
+                                              <a class="adb-link__option adb-stack--item_content" data-toggle="modal" href="#modal-manage-addons">Manage Add-Ons
+                              </a>
+              
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <div class="adb-slat--row">
+                    <dl class="adb-description_table">
+                      <table>
+                        <colgroup>
+                          <col width="33.33%">
+                          <col width="33.33%">
+                          <col width="33.33%">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Subscription:</dt>
+                                <dd>Small and Medium Business Plus Edition</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Fee:</dt>
+                                <dd>$199.99 / month</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Owner:</dt>
+                                <dd>
+                                  <a>
+                                    Virgil Monroe
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Your Access:</dt>
+                                <dd>View</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Terms:</dt>
+                                <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </dl>
+                  </div>
+                  <div class="adb-slat--row adb-container_content">
+                    <dl class="adb-description_line">
+                      <dt>Add-Ons:</dt>
+                      <dd>
+                        Add-On Name, Add-On Name, Another Add-On
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                      <div class="adb-id adb-id__logo adb-id__sq_small">
+                        <img class="adb-id--img" src="../../images/logos/apps/newrelic-120x120.png" />
+                      </div>
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                                  <a data-truncate="line" href="../marketplace/bundle.html">Product with Service Plans
+                        </a>
+              
+                      </h3>
+                      <div class="adb-summary--details">
+                        <span class="adb-js-meter adb-meter" data-percent="80" data-toggle="tooltip" title="You can assign 5 more users">
+                          <span class="adb-meter--percent">80%</span>
+                        </span>
+                        &nbsp;
+                        <span class="adb-caption">20 / 25 users</span>
+                      </div>
+                    </div>
+                    <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                      <button class="adb-button__emphasis adb-toolbar--item" type="button">
+                        Upgrade Subscription
+                      </button>
+                      <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                          Manage
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack">
+                            <li class="adb-stack--item">
+                                              <a class="adb-link__option adb-stack--item_content" href="assign.html">Manage Product
+                              </a>
+              
+                            </li>
+                            <li class="adb-stack--item">
+                                              <a class="adb-link__option adb-stack--item_content" href="product.html">View Order History
+                              </a>
+              
+                            </li>
+                            <li class="adb-stack--item">
+                                              <a class="adb-link__option adb-stack--item_content" href="/">Cancel Product
+                              </a>
+              
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                  <div class="adb-slat--row">
+                    <dl class="adb-description_table adb-slat--row">
+                      <table>
+                        <colgroup>
+                          <col width="33.33%">
+                          <col width="33.33%">
+                          <col width="33.33%">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Subscription:</dt>
+                                <dd>Bundle Edition</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Fee:</dt>
+                                <dd>$199.99 / month</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Owner:</dt>
+                                <dd>
+                                  <a>
+                                    Rogelio Chen
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Your Access:</dt>
+                                <dd>View, Manage</dd>
+                              </div>
+                            </td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </dl>
+                  </div>
+                  <div class="adb-slat--row">
+                    <div class="adb-container_content">
+                      <div class="adb-container">
+                        <div class="adb-slat">
+                          <div class="adb-slat--image adb-slat--column">
+                            <div class="adb-id adb-id__sq_xxsmall">
+                              <i class="adb-icon__tools adb-id--placeholder"></i>
+                            </div>
+                          </div>
+                          <div class="adb-slat--content adb-slat--column adb-summary">
+                            <h4 class="adb-summary--title">
+                              New Relic
+                              <code>xyz123</code>
+                            </h4>
+                            <div class="adb-summary--details">
+                              <dl>
+                                <div class="adb-description_line">
+                                  <dt>Fee:</dt>
+                                  <dd>$10.00 / month</dd>
+                                </div>
+                                <div class="adb-description_line">
+                                  <dt>Connected Applications:</dt>
+                                  <dd>Python, Jenkins</dd>
+                                </div>
+                              </dl>
+                            </div>
+                          </div>
+                          <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                            <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                              <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                                Manage
+                              </button>
+                              <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                                <ul class="adb-stack">
+                                  <li class="adb-stack--item">
+                                                          <a class="adb-link__option adb-stack--item_content" href="/">Manage Applications
+                                    </a>
+              
+                                  </li>
+                                  <li class="adb-stack--item">
+                                                          <a class="adb-link__option adb-stack--item_content" href="/">Upgrade Service Plan
+                                    </a>
+              
+                                  </li>
+                                  <li class="adb-stack--item">
+                                                          <a class="adb-link__option adb-stack--item_content" data-toggle="modal" href="#modal-remove-service">Cancel Service Plan
+                                    </a>
+              
+                                  </li>
+                                </ul>
+                              </div>
+                            </menu>
+                          </menu>
+                        </div>
+                        <div class="adb-slat">
+                          <div class="adb-slat--image adb-slat--column">
+                            <div class="adb-id adb-id__sq_xxsmall">
+                              <i class="adb-icon__tools adb-id--placeholder"></i>
+                            </div>
+                          </div>
+                          <div class="adb-slat--content adb-slat--column adb-summary">
+                            <h4 class="adb-summary--title">
+                              New Relic
+                              <code>xyz123</code>
+                            </h4>
+                            <div class="adb-summary--details">
+                              <dl>
+                                <div class="adb-description_line">
+                                  <dt>Fee:</dt>
+                                  <dd>$10.00 / month</dd>
+                                </div>
+                                <div class="adb-description_line">
+                                  <dt>Connected Applications:</dt>
+                                  <dd>Python, Jenkins</dd>
+                                </div>
+                              </dl>
+                            </div>
+                          </div>
+                          <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                            <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                              <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                                Manage
+                              </button>
+                              <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                                <ul class="adb-stack">
+                                  <li class="adb-stack--item">
+                                                          <a class="adb-link__option adb-stack--item_content" href="/">Manage Applications
+                                    </a>
+              
+                                  </li>
+                                  <li class="adb-stack--item">
+                                                          <a class="adb-link__option adb-stack--item_content" href="/">Upgrade Service Plan
+                                    </a>
+              
+                                  </li>
+                                  <li class="adb-stack--item">
+                                                          <a class="adb-link__option adb-stack--item_content" data-toggle="modal" href="#modal-remove-service">Cancel Service Plan
+                                    </a>
+              
+                                  </li>
+                                </ul>
+                              </div>
+                            </menu>
+                          </menu>
+                        </div>
+                        <div class="adb-slat">
+                          <div class="adb-slat--image adb-slat--column">
+                            <div class="adb-id adb-id__sq_xxsmall">
+                              <i class="adb-icon__tools adb-id--placeholder"></i>
+                            </div>
+                          </div>
+                          <div class="adb-slat--content adb-slat--column adb-summary">
+                            <h4 class="adb-summary--title">
+                              New Relic
+                              <code>xyz123</code>
+                            </h4>
+                            <div class="adb-summary--details">
+                              <dl>
+                                <div class="adb-description_line">
+                                  <dt>Fee:</dt>
+                                  <dd>$10.00 / month</dd>
+                                </div>
+                                <div class="adb-description_line">
+                                  <a>Connect Applications</a>
+                                </div>
+                              </dl>
+                            </div>
+                          </div>
+                          <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                            <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                              <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                                Manage
+                              </button>
+                              <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                                <ul class="adb-stack">
+                                  <li class="adb-stack--item">
+                                                          <a class="adb-link__option adb-stack--item_content" href="/">Connect Applications
+                                    </a>
+              
+                                  </li>
+                                  <li class="adb-stack--item">
+                                                          <a class="adb-link__option adb-stack--item_content" href="/">Upgrade Service Plan
+                                    </a>
+              
+                                  </li>
+                                  <li class="adb-stack--item">
+                                                          <a class="adb-link__option adb-stack--item_content" data-toggle="modal" href="#modal-remove-service">Cancel Service Plan
+                                    </a>
+              
+                                  </li>
+                                </ul>
+                              </div>
+                            </menu>
+                          </menu>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="adb-slat">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                              <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/box-72x72.png" />
+                      </a>
+              
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                                  <a data-truncate="line" class="adb-title--link" href="product_import/users.html">Box
+                        </a>
+              
+                        &nbsp;
+                        <span class="adb-badge adb-badge__info adb-badge__icon adb-icon_alert" data-toggle="tooltip" title="Imported">
+                          <i class="adb-icon__link"></i>
+                        </span>
+                        <span class="adb-badge adb-badge__info adb-badge__icon adb-icon_alert" data-toggle="tooltip" title="UserSync">
+                          <i class="adb-icon__switch"></i>
+                        </span>
+                      </h3>
+                      <div class="adb-summary--details">
+                        <span class="adb-caption">
+                          25 users
+                        </span>
+                      </div>
+                    </div>
+                    <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                      <menu class="adb-js-context_menu adb-context_menu adb-toolbar--item" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                          Manage
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack">
+                            <li class="adb-stack--item">
+                                              <a class="adb-link__option adb-stack--item_content" href="product_import/settings_general.html">Manage Application
+                              </a>
+              
+                            </li>
+                            <li class="adb-stack--item">
+                                              <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Users
+                              </a>
+              
+                            </li>
+                            <li class="adb-stack--item">
+                                              <a class="adb-link__option adb-stack--item_content" data-toggle="modal" href="#modal-remove-application">Remove Application
+                              </a>
+              
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </menu>
+                  </div>
+                </div>
+                <div class="adb-slat adb-is-disabled">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                              <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/newrelic-72x72.png" />
+                      </a>
+              
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                                  <a data-truncate="line" href="product.html">New Relic
+                        </a>
+              
+                      </h3>
+                      <div class="adb-summary--details">
+                        Basic Edition
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--row adb-container_content">
+                    <div class="adb-local_alert adb-local_alert__warning">
+                      <div class="adb-local_alert--content">
+                        <p>
+                          Processing your order. Once complete, you can use and manage this product. Please contact
+                          <a class="adb-local_alert--link">Support</a>
+                          for help.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="adb-slat adb-is-disabled">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                              <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/newrelic-72x72.png" />
+                      </a>
+              
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                                  <a data-truncate="line" href="product.html">New Relic
+                        </a>
+              
+                      </h3>
+                      <div class="adb-summary--details">
+                        <span class="adb-js-meter adb-meter" data-percent="80" data-toggle="tooltip" title="20 / 25 users">
+                          <span class="adb-meter--percent">80%</span>
+                        </span>
+                        &nbsp;
+                        <span class="adb-caption">20 / 25 users</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-slat--row">
+                    <dl class="adb-description_table">
+                      <table>
+                        <colgroup>
+                          <col width="33.33%">
+                          <col width="33.33%">
+                          <col width="33.33%">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Subscription:</dt>
+                                <dd>Professional Edition</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Fee</dt>
+                                <dd>$199.99 / month</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Owner:</dt>
+                                <dd>
+                                  <a>
+                                    Deana Hall
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Your Access:</dt>
+                                <dd>View</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Terms:</dt>
+                                <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </dl>
+                  </div>
+                  <div class="adb-slat--row adb-container_content">
+                    <div class="adb-local_alert adb-local_alert__warning">
+                      <div class="adb-local_alert--content">
+                        <p>
+                          Processing your cancellation request. Once complete, this product will be removed.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="adb-slat adb-is-disabled">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                              <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/wordpress-72x72.png" />
+                      </a>
+              
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                                  <a data-truncate="line" href="product.html">Wordpress
+                        </a>
+              
+                      </h3>
+                      <div class="adb-summary--details">
+                        <span class="adb-js-meter adb-meter" data-percent="80" data-state="error" data-toggle="tooltip" title="Please renew your subscription.">
+                          <span class="adb-meter--percent">80%</span>
+                        </span>
+                        &nbsp;
+                        <span class="adb-caption">20 / 25 users</span>
+                      </div>
+                    </div>
+                    <menu class="adb-slat--column adb-slat--toolbar adb-toolbar"></menu>
+                  </div>
+                  <div class="adb-slat--row">
+                    <dl class="adb-description_table">
+                      <table>
+                        <colgroup>
+                          <col width="33.33%">
+                          <col width="33.33%">
+                          <col width="33.33%">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Subscription:</dt>
+                                <dd>Free Trial Edition</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Fee</dt>
+                                <dd>$199.99 / month</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Owner:</dt>
+                                <dd>
+                                  <a>
+                                    Clint Joyce
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Your Access:</dt>
+                                <dd>View</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Terms:</dt>
+                                <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </dl>
+                  </div>
+                  <div class="adb-slat--row adb-container_content">
+                    <div class="adb-local_alert adb-local_alert__error">
+                      <div class="adb-local_alert--content">
+                        <p>
+                          Your subscription expired.
+                        </p>
+                      </div>
+                      <div class="adb-local_alert--buttons adb-toolbar">
+                        <button class="adb-button__danger adb-toolbar--item" type="button">
+                          Cancel Subscription
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="adb-slat adb-is-disabled">
+                  <div class="adb-slat--row">
+                    <div class="adb-slat--image adb-slat--column">
+                              <a class="adb-id adb-id__linked adb-id__logo adb-id__sq_small" href="../marketplace/product.html"><img class="adb-id--img" src="../../images/logos/apps/wordpress-72x72.png" />
+                      </a>
+              
+                    </div>
+                    <div class="adb-slat--content adb-slat--column adb-summary">
+                      <h3 class="adb-summary--title">
+                                  <a data-truncate="line" href="product.html">Wordpress
+                        </a>
+              
+                      </h3>
+                      <div class="adb-summary--details">
+                        <span class="adb-js-meter adb-meter" data-percent="80" data-state="error" data-toggle="tooltip" title="Please renew your subscription.">
+                          <span class="adb-meter--percent">80%</span>
+                        </span>
+                        &nbsp;
+                        <span class="adb-caption">20 / 25 users</span>
+                      </div>
+                    </div>
+                    <menu class="adb-slat--column adb-slat--toolbar adb-toolbar"></menu>
+                  </div>
+                  <div class="adb-slat--row">
+                    <dl class="adb-description_table">
+                      <table>
+                        <colgroup>
+                          <col width="33.33%">
+                          <col width="33.33%">
+                          <col width="33.33%">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Subscription:</dt>
+                                <dd>Free Trial Edition</dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Fee</dt>
+                                <dd>$199.99 / month</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Owner:</dt>
+                                <dd>
+                                  <a>
+                                    Melinda Walton
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="adb-description_line">
+                                <dt>Your Access:</dt>
+                                <dd>View, Manage</dd>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-description_line">
+                                <dt>Terms:</dt>
+                                <dd>Contract ends 7/22/2013 and will not be renewed.</dd>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </dl>
+                  </div>
+                  <div class="adb-slat--row adb-container_content">
+                    <div class="adb-local_alert adb-local_alert__error">
+                      <div class="adb-local_alert--content">
+                        <p>
+                          Your subscription expired.
+                          Please
+                          <a class="adb-local_alert--link">renew your subscription</a>
+                          to continue using this product.
+                        </p>
+                      </div>
+                      <div class="adb-local_alert--buttons adb-toolbar">
+                        <button class="adb-button__primary adb-toolbar--item" type="button">
+                          Renew Subscription
+                        </button>
+                        <button class="adb-button__danger adb-toolbar--item" type="button">
+                          Cancel Subscription
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="adb-container_footer">
+                  <div class="adb-container_footer--item adb-container_footer--item__last">
+                    <nav class="adb-pagination_v1">
+                      <a class="adb-pagination_v1--button adb-pagination_v1--button__first"></a>
+                      <a class="adb-pagination_v1--button adb-pagination_v1--button__prev"></a>
+                      <a class="adb-pagination_v1--button">1</a>
+                      <a class="adb-pagination_v1--button">23</a>
+                      <span class="adb-pagination_v1--current">456</span>
+                      <a class="adb-pagination_v1--button">7890</a>
+                      <a class="adb-pagination_v1--button adb-pagination_v1--button__next"></a>
+                      <a class="adb-pagination_v1--button adb-pagination_v1--button__last"></a>
+                    </nav>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+        <form action="" class="adb-modal" id="modal-remove-application">
+          <fieldset>
+            <h3 class="adb-modal--header">
+              <legend>Unassign & Remove Box</legend>
+              <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+            </h3>
+            <div class="adb-modal--content">
+              <p>Are you sure you want to remove <strong>Box</strong>? If you continue, you will unassign and remove the application from the following <strong>4 users</strong>.</p>
+              <div class="adb-container">
+                <div class="adb-table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>User</th>
+                        <th>Email Address</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="adb-table--card">
+                          <div class="adb-table--card_image">
+                            <div class="adb-id">
+                              <img class="adb-id--img" src="../../images/avatars/nathanRomero-48x48.png" />
+                            </div>
+                          </div>
+                          <div class="adb-table--card_text">
+                            <a class="adb-title__large" data-truncate="line" href="user/">Grady Welch
+                            </a>
+                            <span>Designer</span>
+                          </div>
+                        </td>
+                        <td>
+                          <a>
+                            leslie-powers@live.com
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="adb-table--card">
+                          <div class="adb-table--card_image">
+                            <div class="adb-id">
+                              <img class="adb-id--img" src="../../images/avatars/nathanRomero-48x48.png" />
+                            </div>
+                          </div>
+                          <div class="adb-table--card_text">
+                            <a class="adb-title__large" data-truncate="line" href="user/">Piper Chappell
+                            </a>
+                            <span>Designer</span>
+                          </div>
+                        </td>
+                        <td>
+                          <a>
+                            liliana_monroe@aol.com
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="adb-table--card">
+                          <div class="adb-table--card_image">
+                            <div class="adb-id">
+                              <img class="adb-id--img" src="../../images/avatars/nathanRomero-48x48.png" />
+                            </div>
+                          </div>
+                          <div class="adb-table--card_text">
+                            <a class="adb-title__large" data-truncate="line" href="user/">Alvin Cooper
+                            </a>
+                            <span>Designer</span>
+                          </div>
+                        </td>
+                        <td>
+                          <a>
+                            daryl_mcclure@aol.com
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="adb-table--card">
+                          <div class="adb-table--card_image">
+                            <div class="adb-id">
+                              <img class="adb-id--img" src="../../images/avatars/nathanRomero-48x48.png" />
+                            </div>
+                          </div>
+                          <div class="adb-table--card_text">
+                            <a class="adb-title__large" data-truncate="line" href="user/">Hudson Hamilton
+                            </a>
+                            <span>Designer</span>
+                          </div>
+                        </td>
+                        <td>
+                          <a>
+                            niall-bender@hotmail.com
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <menu class="adb-modal--footer adb-toolbar">
+              <button class="adb-toolbar--item adb-button__danger" type="submit">
+                Remove
+              </button>
+              <button class="adb-toolbar--item adb-button__secret" data-dismiss="modal" type="button">
+                Cancel
+              </button>
+            </menu>
+          </fieldset>
+        </form>
+        <div class="adb-complex_tooltip adb-js-dialog" data-placement="bottom" id="title-tooltip">
+          <div class="adb-complex_tooltip--content">
+            <h3>Complex Tooltip</h3>
+            <p>
+              Eum rerum modi aspernatur modi molestiae. Qui qui tempore eum sit error et aperiam eius fuga ut exercitationem quos
+            </p>
+          </div>
+        </div>
+        <form action="" class="adb-modal" id="modal-manage-addons">
+          <h3 class="adb-modal--header" data-truncate>
+            Manage Add-Ons
+            <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+          </h3>
+          <div class="adb-modal--content">
+            <div class="adb-container">
+              <div class="adb-slat">
+                <div class="adb-slat--image adb-slat--column">
+                  <div class="adb-id adb-id__sq_xxsmall">
+                    <i class="adb-icon__plus adb-id--placeholder"></i>
+                  </div>
+                </div>
+                <div class="adb-slat--content adb-summary adb-slat--column">
+                  <h4 class="adb-summary--title">Extra Users</h4>
+                  <div class="adb-summary--details">
+                    500 extra users are tacked onto your account with this add-on.
+                    <dl class="adb-description_line">
+                      <dt>Fee:</dt>
+                      <dd>
+                        $4.99 / month
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                  <button class="adb-button__danger adb-toolbar--item" type="button">
+                    Cancel Add-On
+                  </button>
+                </menu>
+              </div>
+              <div class="adb-slat">
+                <div class="adb-slat--image adb-slat--column">
+                  <div class="adb-id adb-id__sq_xxsmall">
+                    <i class="adb-icon__plus adb-id--placeholder"></i>
+                  </div>
+                </div>
+                <div class="adb-slat--content adb-summary adb-slat--column">
+                  <h4 class="adb-summary--title">Extra Users</h4>
+                  <div class="adb-summary--details">
+                    500 extra users are tacked onto your account with this add-on.
+                    <dl class="adb-description_line">
+                      <dt>Fee:</dt>
+                      <dd>
+                        $4.99 / month
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                  <button class="adb-button__danger adb-toolbar--item" type="button">
+                    Cancel Add-On
+                  </button>
+                </menu>
+              </div>
+              <div class="adb-slat">
+                <div class="adb-slat--image adb-slat--column">
+                  <div class="adb-id adb-id__sq_xxsmall">
+                    <i class="adb-icon__plus adb-id--placeholder"></i>
+                  </div>
+                </div>
+                <div class="adb-slat--content adb-summary adb-slat--column">
+                  <h4 class="adb-summary--title">Extra Users</h4>
+                  <div class="adb-summary--details">
+                    500 extra users are tacked onto your account with this add-on.
+                    <dl class="adb-description_line">
+                      <dt>Fee:</dt>
+                      <dd>
+                        $4.99 / month
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <menu class="adb-slat--column adb-slat--toolbar adb-toolbar">
+                  <button class="adb-button__danger adb-toolbar--item" type="button">
+                    Cancel Add-On
+                  </button>
+                </menu>
+              </div>
+            </div>
+          </div>
+          <menu class="adb-modal--footer adb-toolbar">
+            <button class="adb-button__primary adb-toolbar--item" type="button">
+              Save
+            </button>
+            <button class="adb-button__secret adb-toolbar--item" data-dismiss="modal" type="button">
+              Cancel
+            </button>
+          </menu>
+        </form>
+        <form action="" class="adb-modal adb-modal__prompt" id="modal-remove-service">
+          <h3 class="adb-modal--header" data-truncate>
+            Remove Service Plan
+            <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+          </h3>
+          <div class="adb-modal--content">
+            <p>Are you sure you want to remove this service plan?</p>
+          </div>
+          <menu class="adb-modal--footer adb-toolbar">
+            <button class="adb-button__danger adb-toolbar--item" type="button">
+              Remove
+            </button>
+            <button class="adb-button__secret adb-toolbar--item" data-dismiss="modal" type="button">
+              Cancel
+            </button>
+          </menu>
+        </form>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Manage Products
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          <menu class="adb-toggle_buttons adb-toolbar--item" data-toggle="buttons-radio">
+            <button class="adb-button__inset_dark adb-toggle_buttons--button adb-button__small" data-target="#manage-products1" data-toggle="pill" type="button">
+              Alpha
+            </button>
+            <button class="adb-button__inset_dark adb-toggle_buttons--button adb-button__small active" data-target="#manage-products2" data-toggle="pill" type="button">
+              Beta
+            </button>
+          </menu>
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

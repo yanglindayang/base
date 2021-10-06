@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Add Catalog Application</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="prototype prototype_account prototype_account_custom">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../marketplace/featured.html">Marketplace
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="myapps.html">MyApps
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../developer/dashboard.html">Developer
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+              <div class="adb-js-context_menu adb-context_menu">
+                <a class="adb-context_menu--trigger adb-is-selected adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  Manage
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="dashboard.html">Account</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../reseller/dashboard.html">Reseller</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../channel/marketplace/dashboard.html">Marketplace</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../corporate/customers/users.html">Corporate</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../superuser/dashboard/companies.html">Superuser</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-js-context_menu--trigger adb-context_menu--trigger adb-primary_nav--link adb-primary_nav--user" role="button">
+                  <span class="adb-id">
+                    <img class="adb-id--img adb-primary_nav--user_image" src="../../images/avatars/benDomanico-48x48.png" />
+                  </span>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="user/">My Profile</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="company/user-profile.html">My Company</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="settings.html">My Settings</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="http://ad.docs.appdirect.com">Help Center</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="/">Log out</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-secondary_nav">
+          <div class="adb-layout-default">
+            <ul class="adb-secondary_nav--items">
+              <li class="adb-secondary_nav--item adb-secondary_nav--item__breadcrumb">
+                <span class="adb-secondary_nav--content adb-secondary_nav--title">Account Manager</span>
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="dashboard.html">Dashboard
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="users.html">Users
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link adb-is-selected" href="manage.html">Products
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="assign.html">Assign Apps
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="invoices.html">Billing
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="company_settings.html">Settings
+                </a>
+        
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <div class="adb-js-panel-target adb-is-active" id="import-step1">
+          <section class="adb-layout-row adb-layout-default">
+            <h1>Add Custom Application</h1>
+            <nav class="adb-steps">
+              <ol class="adb-steps--items">
+                <li class="adb-steps--item adb-steps--item__current">
+                  <span class="adb-steps--content">1. Edit Application Details</span>
+                </li>
+                <li class="adb-steps--item">
+                  <span class="adb-steps--content">2. Configure Authentication</span>
+                </li>
+                <li class="adb-steps--item">
+                  <span class="adb-steps--content">3. Assign Application</span>
+                </li>
+              </ol>
+            </nav>
+            <div class="adb-layout-content adb-layout-column__first">
+              <form class="adb-form">
+                <fieldset class="adb-container">
+                  <div class="adb-container_header">
+                    <h2 class="adb-container_header--title adb-container_header--item">
+                      <legend>Basic Information</legend>
+                    </h2>
+                  </div>
+                  <div class="adb-container_content">
+                    <div class="adb-form--field">
+                      <label for="application-name">
+                        Application Name
+                      </label>
+                      <input id="application-name" type="text">
+                    </div>
+                    <div class="adb-form--field">
+                      <label>Product Listing Logo (48px x 48px)</label>
+                      <div class="adb-upload_field">
+                        <span class="adb-upload_field--text">
+                          <i class="adb-upload_field--icon"></i>
+                          Drag and drop file here, or
+                          <a>click here to upload.</a>
+                        </span>
+                        <input class="adb-upload_field--input" id="create-application-logo" name="default-file-state" type="file">
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+              <menu class="adb-toolbar adb-toolbar__polar">
+                <menu class="adb-toolbar--item"></menu>
+                <menu class="adb-toolbar--item">
+                            <a class="adb-button adb-button__secret adb-button__medium adb-toolbar--item" href="add.html">Cancel
+                  </a>
+        
+                  <button class="adb-button__primary adb-toolbar--item" data-target="#import-step2" data-toggle="panel" data-type="radio" type="button">
+                    Save &amp; Next
+                  </button>
+                </menu>
+              </menu>
+            </div>
+            <div class="adb-layout-sidebar">
+              <div class="adb-help">
+                <div class="adb-help--row">
+                  <h4>Dolor Fringilla Cursus Etiam Risus</h4>
+                  <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Donec sed odio dui.</p>
+                </div>
+                <div class="adb-help--row">
+                  <h4>Sollicitudin Tristique Venenatis Ipsum Porta</h4>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="adb-js-panel-target" id="import-step2">
+          <section class="adb-layout-row adb-layout-default">
+            <h1>Add Custom Application</h1>
+            <nav class="adb-steps">
+              <ol class="adb-steps--items">
+                <li class="adb-steps--item">
+                  <span class="adb-steps--content">1. Edit Application Details</span>
+                </li>
+                <li class="adb-steps--item adb-steps--item__current">
+                  <span class="adb-steps--content">2. Configure Authentication</span>
+                </li>
+                <li class="adb-steps--item">
+                  <span class="adb-steps--content">3. Assign Application</span>
+                </li>
+              </ol>
+            </nav>
+            <div class="adb-layout-content adb-layout-column__first">
+              <form class="adb-form">
+                <fieldset class="adb-container">
+                  <div class="adb-container_header">
+                    <h2 class="adb-container_header--title adb-container_header--item">
+                      <legend>Authentication</legend>
+                    </h2>
+                  </div>
+                  <div class="adb-container_content">
+                    <div class="adb-form--field">
+                      <label>Single Sign-On Method</label>
+                      <label class="adb-selector adb-selector__button adb-js-radio">
+                        <span class="adb-selector--input">
+                          <input checked data-toggle="panel" id="editor-starting-automatic" name="starting" type="radio" value="#import-step2-saml">
+                        </span>
+                        <span class="adb-selector--value">
+                          SAML
+                        </span>
+                        <span class="adb-selector--affix">
+                          <i class="adb-icon__users"></i>
+                        </span>
+                      </label>
+                      <label class="adb-selector adb-selector__button adb-js-radio">
+                        <span class="adb-selector--input">
+                          <input data-toggle="panel" id="editor-starting-manual" name="starting" type="radio" value="#import-step2-bookmark">
+                        </span>
+                        <span class="adb-selector--value">
+                          Bookmark Only
+                        </span>
+                        <span class="adb-selector--affix">
+                          <i class="adb-icon__app"></i>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="adb-js-panel-target adb-is-active" id="import-step2-saml">
+                  <fieldset class="adb-container">
+                    <div class="adb-container_header">
+                      <h2 class="adb-container_header--title adb-container_header--item">
+                        <legend>SAML Settings</legend>
+                      </h2>
+                    </div>
+                    <div class="adb-container_content">
+                      <div class="adb-form--field">
+                        <label for="sso-url">
+                          Single Sign-on URL
+                        </label>
+                        <input id="sso-url" placeholder="e.g. http://www.domain.com" type="url">
+                        <label class="adb-selector adb-js-checkbox" for="recipient-url">
+                          <span class="adb-selector--input">
+                            <input id="recipient-url" type="checkbox">
+                          </span>
+                          <span class="adb-selector--value">
+                            Use this for recipient url and destination url
+                          </span>
+                        </label>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="audience-uri">
+                          Audience URI (SP Entity ID)
+                        </label>
+                        <input id="audience-uri" type="text">
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="relay-state">
+                          Default RelayState
+                        </label>
+                        <input id="relay-state" type="text">
+                        <div class="adb-caption adb-form--caption">
+                          If no value is set a blank RelayState is set.
+                        </div>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="name-id-format">
+                          Name ID Format
+                        </label>
+                        <div class="adb-js-dropdown adb-dropdown">
+                          <select id="name-id-format">
+                            <option>Unspecified</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="response">
+                          Response
+                        </label>
+                        <div class="adb-js-dropdown adb-dropdown">
+                          <select id="response">
+                            <option>Signed</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="assertion">
+                          Assertion
+                        </label>
+                        <div class="adb-js-dropdown adb-dropdown">
+                          <select id="assertion">
+                            <option>Signed</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div class="adb-placeholder adb-placeholder__empty adb-placeholder__callout">
+                    <div class="adb-placeholder--content">
+                      Preview the SAML assertion generated by the information above.
+                    </div>
+                    <menu class="adb-placeholder--controls">
+                      <button type="button">
+                        <i class="adb-icon__code"></i>
+                        Preview SAML Assertion
+                      </button>
+                    </menu>
+                  </div>
+                </div>
+                <div class="adb-js-panel-target" id="import-step2-bookmark">
+                  <fieldset class="adb-container">
+                    <div class="adb-container_header">
+                      <h2 class="adb-container_header--title adb-container_header--item">
+                        <legend>Bookmark Settings</legend>
+                      </h2>
+                    </div>
+                    <div class="adb-container_content">
+                      <div class="adb-form--field">
+                        <label for="bookmark-url">
+                          Bookmark URL
+                        </label>
+                        <input id="bookmark-url" placeholder="e.g. http://www.domain.com" type="url">
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </form>
+              <menu class="adb-toolbar adb-toolbar__polar">
+                <menu class="adb-toolbar--item"></menu>
+                <menu class="adb-toolbar--item">
+                            <a class="adb-button adb-button__secret adb-button__medium adb-toolbar--item" href="add.html">Cancel
+                  </a>
+        
+                  <button class="adb-toolbar--item" data-target="#import-step1" data-toggle="panel" data-type="radio" type="button">
+                    Previous
+                  </button>
+                  <button class="adb-button__primary adb-toolbar--item" data-target="#import-step3" data-toggle="panel" data-type="radio" type="button">
+                    Save &amp; Next
+                  </button>
+                </menu>
+              </menu>
+            </div>
+            <div class="adb-layout-sidebar">
+              <div class="adb-help">
+                <div class="adb-help--row">
+                  <h4>What does this form do?</h4>
+                  <p>This form generates the xml needed for the app's SAML request.</p>
+                </div>
+                <div class="adb-help--row">
+                  <h4>Where do I find the info this form needs?</h4>
+                  <p>The app you're trying to integrate with should have its own documentation on using SAML. You'll need to find that doc, and it should outline what information you need to specify in this form.</p>
+                </div>
+                <div class="adb-help--row">
+                  <h4>AppDirect Certificate</h4>
+                  <p>Import the AppDirect certificate to your Identity Provider if required.</p>
+                  <button class="adb-button__emphasis" type="button">
+                    <i class="adb-icon__download"></i>
+                    Download Certificate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="adb-js-panel-target" id="import-step3">
+          <section class="adb-layout-row adb-layout-default">
+            <h1>Add Custom Application</h1>
+            <nav class="adb-steps">
+              <ol class="adb-steps--items">
+                <li class="adb-steps--item">
+                  <span class="adb-steps--content">1. Edit Application Details</span>
+                </li>
+                <li class="adb-steps--item">
+                  <span class="adb-steps--content">2. Configure Authentication</span>
+                </li>
+                <li class="adb-steps--item adb-steps--item__current">
+                  <span class="adb-steps--content">3. Assign Application</span>
+                </li>
+              </ol>
+            </nav>
+            <div class="adb-container adb-drawers adb-drawers__fixed">
+              <div class="adb-drawers--nav">
+                <div class="adb-container_header">
+                  <h2 class="adb-container_header--title adb-container_header--item">Applications</h2>
+                </div>
+                <div class="adb-slat adb-drawers--drawer adb-drawers--last adb-is-active" data-active="adb-is-active" data-target="#roles-user1" data-toggle="panel" data-type="radio">
+                  <div class="adb-slat--image adb-slat--column">
+                    <div class="adb-id adb-id__logo adb-id__sq_small">
+                      <img class="adb-id--img" src="../../images/logos/apps/box-72x72.png" />
+                    </div>
+                  </div>
+                  <div class="adb-slat--content adb-slat--column adb-summary">
+                    <h3 class="adb-summary--title">
+                      Box
+                    </h3>
+                    <div class="adb-summary--details">File Storage</div>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-drawers--panel">
+                <div class="adb-drawers--panel_header adb-container_header">
+                  <h2 class="adb-container_header--title adb-container_header--item">Users</h2>
+                </div>
+                <div class="adb-drawers--panel_content adb-table adb-table__actionable">
+                  <table>
+                    <colgroup>
+                      <col span="1">
+                      <col width="60%">
+                      <col width="40%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>
+                          <input checked name="app-users-all" type="checkbox">
+                        </th>
+                        <th>User</th>
+                        <th>Role</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="adb-js-checkbox">
+                        <td>
+                          <input checked name="app-users" type="checkbox">
+                        </td>
+                        <td class="adb-table--card">
+                          <div class="adb-table--card_image">
+                            <div class="adb-id adb-id__sq_small">
+                              <img class="adb-id--img" src="../../images/avatars/nathanRomero-120x120.png" />
+                            </div>
+                          </div>
+                          <div class="adb-table--card_text adb-summary">
+                            <h4 class="adb-summary--title">Nathan Romero</h4>
+                            <div class="adb-summary--details">
+                              <a>
+                                vancecain@me.com
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Channel Support</td>
+                      </tr>
+                      <tr class="adb-js-checkbox">
+                        <td>
+                          <input checked name="app-users" type="checkbox">
+                        </td>
+                        <td class="adb-table--card">
+                          <div class="adb-table--card_image">
+                            <div class="adb-id adb-id__sq_small">
+                              <img class="adb-id--img" src="../../images/avatars/benDomanico-120x120.png" />
+                            </div>
+                          </div>
+                          <div class="adb-table--card_text adb-summary">
+                            <h4 class="adb-summary--title">Ben Domanico</h4>
+                            <div class="adb-summary--details">
+                              <a>
+                                sydney_griffin@gmail.com
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Restricted Sales Support</td>
+                      </tr>
+                      <tr class="adb-js-checkbox">
+                        <td>
+                          <input checked name="app-users" type="checkbox">
+                        </td>
+                        <td class="adb-table--card">
+                          <div class="adb-table--card_image">
+                            <div class="adb-id adb-id__sq_small">
+                              <img class="adb-id--img" src="../../images/avatars/nathanRomero-120x120.png" />
+                            </div>
+                          </div>
+                          <div class="adb-table--card_text adb-summary">
+                            <h4 class="adb-summary--title">Nathan Romero</h4>
+                            <div class="adb-summary--details">
+                              <a>
+                                teddyharvey@mail.com
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Channel Support</td>
+                      </tr>
+                      <tr class="adb-js-checkbox">
+                        <td>
+                          <input checked name="app-users" type="checkbox">
+                        </td>
+                        <td class="adb-table--card">
+                          <div class="adb-table--card_image">
+                            <div class="adb-id adb-id__sq_small">
+                              <img class="adb-id--img" src="../../images/avatars/benDomanico-120x120.png" />
+                            </div>
+                          </div>
+                          <div class="adb-table--card_text adb-summary">
+                            <h4 class="adb-summary--title">Ben Domanico</h4>
+                            <div class="adb-summary--details">
+                              <a>
+                                jadyn_hoyle@email.com
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Restricted Sales Support</td>
+                      </tr>
+                      <tr class="adb-js-checkbox">
+                        <td>
+                          <input checked name="app-users" type="checkbox">
+                        </td>
+                        <td class="adb-table--card">
+                          <div class="adb-table--card_image">
+                            <div class="adb-id adb-id__sq_small">
+                              <img class="adb-id--img" src="../../images/avatars/nathanRomero-120x120.png" />
+                            </div>
+                          </div>
+                          <div class="adb-table--card_text adb-summary">
+                            <h4 class="adb-summary--title">Nathan Romero</h4>
+                            <div class="adb-summary--details">
+                              <a>
+                                nadia-barton@mac.com
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Channel Support</td>
+                      </tr>
+                      <tr class="adb-js-checkbox">
+                        <td>
+                          <input checked name="app-users" type="checkbox">
+                        </td>
+                        <td class="adb-table--card">
+                          <div class="adb-table--card_image">
+                            <div class="adb-id adb-id__sq_small">
+                              <img class="adb-id--img" src="../../images/avatars/benDomanico-120x120.png" />
+                            </div>
+                          </div>
+                          <div class="adb-table--card_text adb-summary">
+                            <h4 class="adb-summary--title">Ben Domanico</h4>
+                            <div class="adb-summary--details">
+                              <a>
+                                jadyn_thornton@me.com
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Restricted Sales Support</td>
+                      </tr>
+                      <tr class="adb-js-checkbox">
+                        <td>
+                          <input checked name="app-users" type="checkbox">
+                        </td>
+                        <td class="adb-table--card">
+                          <div class="adb-table--card_image">
+                            <div class="adb-id adb-id__sq_small">
+                              <img class="adb-id--img" src="../../images/avatars/nathanRomero-120x120.png" />
+                            </div>
+                          </div>
+                          <div class="adb-table--card_text adb-summary">
+                            <h4 class="adb-summary--title">Nathan Romero</h4>
+                            <div class="adb-summary--details">
+                              <a>
+                                connorwalton@yahoo.com
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Channel Support</td>
+                      </tr>
+                      <tr class="adb-js-checkbox">
+                        <td>
+                          <input checked name="app-users" type="checkbox">
+                        </td>
+                        <td class="adb-table--card">
+                          <div class="adb-table--card_image">
+                            <div class="adb-id adb-id__sq_small">
+                              <img class="adb-id--img" src="../../images/avatars/benDomanico-120x120.png" />
+                            </div>
+                          </div>
+                          <div class="adb-table--card_text adb-summary">
+                            <h4 class="adb-summary--title">Ben Domanico</h4>
+                            <div class="adb-summary--details">
+                              <a>
+                                samuel_gray@aol.com
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Restricted Sales Support</td>
+                      </tr>
+                      <tr class="adb-js-checkbox">
+                        <td>
+                          <input checked name="app-users" type="checkbox">
+                        </td>
+                        <td class="adb-table--card">
+                          <div class="adb-table--card_image">
+                            <div class="adb-id adb-id__sq_small">
+                              <img class="adb-id--img" src="../../images/avatars/nathanRomero-120x120.png" />
+                            </div>
+                          </div>
+                          <div class="adb-table--card_text adb-summary">
+                            <h4 class="adb-summary--title">Nathan Romero</h4>
+                            <div class="adb-summary--details">
+                              <a>
+                                antoniolane@email.com
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Channel Support</td>
+                      </tr>
+                      <tr class="adb-js-checkbox">
+                        <td>
+                          <input checked name="app-users" type="checkbox">
+                        </td>
+                        <td class="adb-table--card">
+                          <div class="adb-table--card_image">
+                            <div class="adb-id adb-id__sq_small">
+                              <img class="adb-id--img" src="../../images/avatars/benDomanico-120x120.png" />
+                            </div>
+                          </div>
+                          <div class="adb-table--card_text adb-summary">
+                            <h4 class="adb-summary--title">Ben Domanico</h4>
+                            <div class="adb-summary--details">
+                              <a>
+                                angelo_watts@live.com
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Restricted Sales Support</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="adb-container_footer adb-drawers--panel_footer">
+                  <div class="adb-container_footer--item">
+                    <p><strong>35 users</strong> assigned to <strong>Box</strong></p>
+                  </div>
+                  <div class="adb-container_footer--item adb-container_footer--item__last">
+                    <nav class="adb-pagination_v1">
+                      <a class="adb-pagination_v1--button adb-pagination_v1--button__first"></a>
+                      <a class="adb-pagination_v1--button adb-pagination_v1--button__prev"></a>
+                      <a class="adb-pagination_v1--button">1</a>
+                      <a class="adb-pagination_v1--button">23</a>
+                      <span class="adb-pagination_v1--current">456</span>
+                      <a class="adb-pagination_v1--button">7890</a>
+                      <a class="adb-pagination_v1--button adb-pagination_v1--button__next"></a>
+                      <a class="adb-pagination_v1--button adb-pagination_v1--button__last"></a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <menu class="adb-toolbar adb-toolbar__polar">
+              <menu class="adb-toolbar--item"></menu>
+              <menu class="adb-toolbar--item">
+                        <a class="adb-button adb-button__secret adb-button__medium adb-toolbar--item" href="add.html">Cancel
+                </a>
+        
+                <button class="adb-toolbar--item" data-target="#import-step2" data-toggle="panel" data-type="radio" type="button">
+                  Previous
+                </button>
+                        <a class="adb-button adb-button__primary adb-button__medium adb-toolbar--item" href="add.html">Save &amp; Finish
+                </a>
+        
+              </menu>
+            </menu>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Add Catalog Application
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

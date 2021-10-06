@@ -1,0 +1,2106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Manage Users</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    <style>
+      
+    </style>
+  </head>
+  <body class="prototype prototype_account prototype_account_users">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../marketplace/featured.html">Marketplace
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="myapps.html">MyApps
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="../developer/dashboard.html">Developer
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+              <div class="adb-js-context_menu adb-context_menu">
+                <a class="adb-context_menu--trigger adb-is-selected adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  Manage
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="dashboard.html">Account</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../reseller/dashboard.html">Reseller</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../channel/marketplace/dashboard.html">Marketplace</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../corporate/customers/users.html">Corporate</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../superuser/dashboard/companies.html">Superuser</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-js-context_menu--trigger adb-context_menu--trigger adb-primary_nav--link adb-primary_nav--user" role="button">
+                  <span class="adb-id">
+                    <img class="adb-id--img adb-primary_nav--user_image" src="../../images/avatars/benDomanico-48x48.png" />
+                  </span>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="user/">My Profile</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="company/user-profile.html">My Company</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="settings.html">My Settings</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="http://ad.docs.appdirect.com">Help Center</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="/">Log out</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-secondary_nav">
+          <div class="adb-layout-default">
+            <ul class="adb-secondary_nav--items">
+              <li class="adb-secondary_nav--item adb-secondary_nav--item__breadcrumb">
+                <span class="adb-secondary_nav--content adb-secondary_nav--title">Account Manager</span>
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="dashboard.html">Dashboard
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link adb-is-selected" href="users.html">Users
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="manage.html">Products
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="assign.html">Assign Apps
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="invoices.html">Billing
+                </a>
+        
+              </li>
+              <li class="adb-secondary_nav--item">
+                        <a class="adb-secondary_nav--link" href="company_settings.html">Settings
+                </a>
+        
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-header">
+            <h1 class="adb-header--item">
+              Manage Users
+            </h1>
+            <menu class="adb-header--item adb-toolbar">
+              <button class="adb-toolbar--item" data-target="#modal-invite-multiple" data-toggle="modal" type="button">
+                Invite Users
+              </button>
+              <button class="adb-toolbar--item" data-target="#modal-import-users" data-toggle="modal" type="button">
+                Import Users
+              </button>
+                    <a class="adb-button adb-button__neutral adb-button__medium adb-toolbar--item" href="roles.html">Manage Roles
+              </a>
+        
+            </menu>
+          </div>
+          <div class="adb-local_alerts">
+            <div class="adb-local_alert adb-local_alert__info">
+              <div class="adb-local_alert--content">
+                <p>
+                  Your company has 169 pending user invitations.
+                  <a class="adb-local_alert--link" data-toggle="modal" href="#modal-invite">
+                    Manage invitations.
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="adb-container">
+            <div class="adb-filters" data-filters>
+              <menu class="adb-filters--header">
+                <menu class="adb-filters--header_item">
+                  <button class="adb-button__inset adb-button__small adb-filters--filter_button" data-toggle="filters" type="button">
+                    Show Filters
+                  </button>
+                </menu>
+                <div class="adb-filters--header_item">
+                  <div class="adb-search_field adb-input_row adb-js-input_row">
+                    <div class="adb-input_row--item adb-input_row--primary">
+                      <input class="adb-search_field--input adb-text__small adb-input_row--item_content" placeholder="Search" type="search">
+                    </div>
+                    <div class="adb-input_row--item">
+                      <button class="adb-button__square_small adb-button__inset adb-input_row--item_content">
+                        <i class="adb-icon__search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </menu>
+              <menu class="adb-js-filters adb-filters--content adb-is-visually_hidden">
+                <div class="adb-filters--filter">
+                  <label class="adb-label__small adb-label__inline" for="role-filter">
+                    Role
+                  </label>
+                  <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                    <select id="role-filter">
+                      <option>Show All</option>
+                      <option>System Admin</option>
+                      <option>Billing Admin</option>
+                      <option>User</option>
+                    </select>
+                  </div>
+                </div>
+              </menu>
+            </div>
+            <div class="adb-table">
+              <table>
+                <colgroup>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>User</th>
+                    <th>Status</th>
+                    <th>Email Address</th>
+                    <th>Number of Apps</th>
+                    <th>Role</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="adb-table--card">
+                      <div class="adb-table--card_image">
+                        <div class="adb-id adb-id__sq_small">
+                          <img class="adb-id--img" src="../../images/avatars/yarunLuon-72x72.png" />
+                        </div>
+                      </div>
+                      <div class="adb-table--card_text adb-summary">
+                        <h3 class="adb-summary--title">
+                          <a data-truncate="line" href="user/">Virgil Pittman
+                          </a>
+                        </h3>
+                        <div class="adb-summary--details">UI Engineer</div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="adb-status adb-status__active">
+                        <span class="adb-status--gem"></span>
+                        Active
+                      </span>
+                    </td>
+                    <td>
+                      <a>
+                        staci_walton@email.com
+                      </a>
+                    </td>
+                    <td>2 Apps</td>
+                    <td>System Admin</td>
+                    <td class="adb-table--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Apps
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="roles.html">Edit Role
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Disable User</a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="adb-table--card">
+                      <div class="adb-table--card_image">
+                        <div class="adb-id adb-id__sq_small">
+                          <img class="adb-id--img" src="../../images/avatars/tim-72x72.png" />
+                        </div>
+                      </div>
+                      <div class="adb-table--card_text adb-summary">
+                        <h3 class="adb-summary--title">
+                          <a data-truncate="line" href="user/">Piper Shaffer
+                          </a>
+                        </h3>
+                        <div class="adb-summary--details">System Admin</div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="adb-status adb-status__active">
+                        <span class="adb-status--gem"></span>
+                        Active
+                      </span>
+                    </td>
+                    <td>
+                      <a>
+                        petewilkerson@gmail.com
+                      </a>
+                    </td>
+                    <td>2 Apps</td>
+                    <td>System Admin</td>
+                    <td class="adb-table--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Apps
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="roles.html">Edit Role
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Disable User</a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="adb-table--card">
+                      <div class="adb-table--card_image">
+                        <div class="adb-id adb-id__sq_small">
+                          <img class="adb-id--img" src="../../images/avatars/sneha-72x72.png" />
+                        </div>
+                      </div>
+                      <div class="adb-table--card_text adb-summary">
+                        <h3 class="adb-summary--title">
+                          <a data-truncate="line" href="user/">Dwayne Grant
+                          </a>
+                        </h3>
+                        <div class="adb-summary--details">QA Engineer</div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="adb-status adb-status__active">
+                        <span class="adb-status--gem"></span>
+                        Active
+                      </span>
+                    </td>
+                    <td>
+                      <a>
+                        pennyneal@mail.com
+                      </a>
+                    </td>
+                    <td>2 Apps</td>
+                    <td>System Admin</td>
+                    <td class="adb-table--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Apps
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="roles.html">Edit Role
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Disable User</a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="adb-table--card">
+                      <div class="adb-table--card_image">
+                        <div class="adb-id adb-id__sq_small">
+                          <img class="adb-id--img" src="../../images/avatars/rong-72x72.png" />
+                        </div>
+                      </div>
+                      <div class="adb-table--card_text adb-summary">
+                        <h3 class="adb-summary--title">
+                          <a data-truncate="line" href="user/">Noelle Walsh
+                          </a>
+                        </h3>
+                        <div class="adb-summary--details">Software Engineer</div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="adb-status adb-status__active">
+                        <span class="adb-status--gem"></span>
+                        Active
+                      </span>
+                    </td>
+                    <td>
+                      <a>
+                        luis_james@me.com
+                      </a>
+                    </td>
+                    <td>2 Apps</td>
+                    <td>System Admin</td>
+                    <td class="adb-table--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Apps
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="roles.html">Edit Role
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Disable User</a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="adb-table--card">
+                      <div class="adb-table--card_image">
+                        <div class="adb-id adb-id__sq_small">
+                          <img class="adb-id--img" src="../../images/avatars/nathanRomero-72x72.png" />
+                        </div>
+                      </div>
+                      <div class="adb-table--card_text adb-summary">
+                        <h3 class="adb-summary--title">
+                          <a data-truncate="line" href="user/">Alma Schroeder
+                          </a>
+                        </h3>
+                        <div class="adb-summary--details">Designer</div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="adb-status adb-status__error">
+                        <span class="adb-status--gem"></span>
+                        Disabled
+                      </span>
+                    </td>
+                    <td>
+                      <a>
+                        giselleadkins@aol.com
+                      </a>
+                    </td>
+                    <td>2 Apps</td>
+                    <td>Billing Admin</td>
+                    <td class="adb-table--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Apps
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="roles.html">Edit Role
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Disable User</a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="adb-table--card">
+                      <div class="adb-table--card_image">
+                        <div class="adb-id adb-id__sq_small">
+                          <img class="adb-id--img" src="../../images/avatars/narayanan-72x72.png" />
+                        </div>
+                      </div>
+                      <div class="adb-table--card_text adb-summary">
+                        <h3 class="adb-summary--title">
+                          <a data-truncate="line" href="user/">Liliana Heath
+                          </a>
+                        </h3>
+                        <div class="adb-summary--details">Software Engineer</div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="adb-status adb-status__error">
+                        <span class="adb-status--gem"></span>
+                        Disabled
+                      </span>
+                    </td>
+                    <td>
+                      <a>
+                        kristi-morse@aol.com
+                      </a>
+                    </td>
+                    <td>2 Apps</td>
+                    <td>Billing Admin</td>
+                    <td class="adb-table--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Apps
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="roles.html">Edit Role
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Disable User</a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="adb-table--card">
+                      <div class="adb-table--card_image">
+                        <div class="adb-id adb-id__sq_small">
+                          <img class="adb-id--img" src="../../images/avatars/mary-72x72.png" />
+                        </div>
+                      </div>
+                      <div class="adb-table--card_text adb-summary">
+                        <h3 class="adb-summary--title">
+                          <a data-truncate="line" href="user/">Jackie Barton
+                          </a>
+                        </h3>
+                        <div class="adb-summary--details">Project Manager</div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="adb-status adb-status__error">
+                        <span class="adb-status--gem"></span>
+                        Disabled
+                      </span>
+                    </td>
+                    <td>
+                      <a>
+                        clyde_davidson@gmail.com
+                      </a>
+                    </td>
+                    <td>2 Apps</td>
+                    <td>Billing Admin</td>
+                    <td class="adb-table--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Apps
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="roles.html">Edit Role
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Disable User</a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="adb-table--card">
+                      <div class="adb-table--card_image">
+                        <div class="adb-id adb-id__sq_small">
+                          <img class="adb-id--img" src="../../images/avatars/lindaYang-72x72.png" />
+                        </div>
+                      </div>
+                      <div class="adb-table--card_text adb-summary">
+                        <h3 class="adb-summary--title">
+                          <a data-truncate="line" href="user/">Nadia Graves
+                          </a>
+                        </h3>
+                        <div class="adb-summary--details">Product Designer</div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="adb-status adb-status__error">
+                        <span class="adb-status--gem"></span>
+                        Disabled
+                      </span>
+                    </td>
+                    <td>
+                      <a>
+                        marshathornton@live.com
+                      </a>
+                    </td>
+                    <td>2 Apps</td>
+                    <td>Billing Admin</td>
+                    <td class="adb-table--menu">
+                      <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                        <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                          <i class="adb-icon__cog"></i>
+                        </button>
+                        <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                          <ul class="adb-stack adb-stack__small">
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="assign.html">Assign Apps
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                                                    <a class="adb-link__option adb-stack--item_content" href="roles.html">Edit Role
+                              </a>
+        
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Disable User</a>
+                            </li>
+                            <li class="adb-stack--item">
+                              <a class="adb-link__option adb-stack--item_content">Remove User</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </menu>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="adb-container_footer">
+              <div class="adb-container_footer--item adb-container_footer--item__last">
+                <nav class="adb-pagination_v1">
+                  <a class="adb-pagination_v1--button adb-pagination_v1--button__first"></a>
+                  <a class="adb-pagination_v1--button adb-pagination_v1--button__prev"></a>
+                  <a class="adb-pagination_v1--button">1</a>
+                  <a class="adb-pagination_v1--button">23</a>
+                  <span class="adb-pagination_v1--current">456</span>
+                  <a class="adb-pagination_v1--button">7890</a>
+                  <a class="adb-pagination_v1--button adb-pagination_v1--button__next"></a>
+                  <a class="adb-pagination_v1--button adb-pagination_v1--button__last"></a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="adb-modal adb-modal__large" id="modal-invite" role="menu">
+          <h3 class="adb-modal--header" data-truncate>
+            Manage Invitations
+            <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+          </h3>
+          <div class="adb-filters" data-filters>
+            <menu class="adb-filters--header">
+              <menu class="adb-filters--header_item">
+                <button class="adb-button__inset adb-button__small adb-filters--filter_button" data-toggle="filters" type="button">
+                  Show Filters
+                </button>
+              </menu>
+              <div class="adb-filters--header_item">
+                <div class="adb-search_field adb-input_row adb-js-input_row">
+                  <div class="adb-input_row--item adb-input_row--primary">
+                    <input class="adb-search_field--input adb-text__small adb-input_row--item_content" placeholder="Search" type="search">
+                  </div>
+                  <div class="adb-input_row--item">
+                    <button class="adb-button__square_small adb-button__inset adb-input_row--item_content">
+                      <i class="adb-icon__search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </menu>
+            <menu class="adb-js-filters adb-filters--content adb-is-visually_hidden">
+              <div class="adb-filters--filter">
+                <label class="adb-label__small adb-label__inline">Created between</label>
+                <input class="adb-date__small" id="date-start" name="dates" type="date">
+                <label class="adb-label__small adb-label__inline">and</label>
+                <input class="adb-date__small" id="date-end" name="dates" type="date">
+              </div>
+              <div class="adb-filters--filter">
+                <label class="adb-label__small adb-label__inline">Last sent between</label>
+                <input class="adb-date__small" id="date-start" name="dates" type="date">
+                <label class="adb-label__small adb-label__inline">and</label>
+                <input class="adb-date__small" id="date-end" name="dates" type="date">
+              </div>
+            </menu>
+          </div>
+          <div class="adb-table">
+            <table>
+              <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th class="adb-is-active" data-sort data-sort-order="descending">
+                    Created
+                  </th>
+                  <th>
+                    Last Viewed
+                  </th>
+                  <th>
+                    From
+                  </th>
+                  <th>
+                    To
+                  </th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    12/23/2005
+                  </td>
+                  <td>
+                    09/14/2006
+                  </td>
+                  <td>
+                    <a>
+                      Caitlyn Lucas
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      wayneallen@mac.com
+                    </a>
+                  </td>
+                  <td class="adb-table--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Revoke</a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Resend</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    06/15/1998
+                  </td>
+                  <td>
+                    08/07/1996
+                  </td>
+                  <td>
+                    <a>
+                      Vance Pearson
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      joeyvick@mac.com
+                    </a>
+                  </td>
+                  <td class="adb-table--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Revoke</a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Resend</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    12/01/1998
+                  </td>
+                  <td>
+                    10/26/2000
+                  </td>
+                  <td>
+                    <a>
+                      Andres Hobbs
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      idahoyle@aol.com
+                    </a>
+                  </td>
+                  <td class="adb-table--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Revoke</a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Resend</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    01/29/1992
+                  </td>
+                  <td>
+                    11/28/1991
+                  </td>
+                  <td>
+                    <a>
+                      Mitzi Beasley
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      don_perkins@live.com
+                    </a>
+                  </td>
+                  <td class="adb-table--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Revoke</a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Resend</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    05/24/1995
+                  </td>
+                  <td>
+                    03/08/1999
+                  </td>
+                  <td>
+                    <a>
+                      Samuel Matthews
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      denis-barr@email.com
+                    </a>
+                  </td>
+                  <td class="adb-table--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Revoke</a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Resend</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    09/21/1993
+                  </td>
+                  <td>
+                    04/13/2007
+                  </td>
+                  <td>
+                    <a>
+                      Kelvin Woods
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      tomas_middleton@hotmail.com
+                    </a>
+                  </td>
+                  <td class="adb-table--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Revoke</a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Resend</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    12/25/1999
+                  </td>
+                  <td>
+                    03/25/2005
+                  </td>
+                  <td>
+                    <a>
+                      Niall Hodge
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      mohammed-jennings@gmail.com
+                    </a>
+                  </td>
+                  <td class="adb-table--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Revoke</a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Resend</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    09/28/2004
+                  </td>
+                  <td>
+                    11/18/2000
+                  </td>
+                  <td>
+                    <a>
+                      Deana Hunt
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      carley_scarborough@mail.com
+                    </a>
+                  </td>
+                  <td class="adb-table--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Revoke</a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Resend</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    11/24/2002
+                  </td>
+                  <td>
+                    06/07/2005
+                  </td>
+                  <td>
+                    <a>
+                      Josephine Hoyle
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      collin-chandler@mac.com
+                    </a>
+                  </td>
+                  <td class="adb-table--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Revoke</a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Resend</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    04/30/1999
+                  </td>
+                  <td>
+                    01/11/2001
+                  </td>
+                  <td>
+                    <a>
+                      Jacquelyn Joyce
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      rafael_watts@hotmail.com
+                    </a>
+                  </td>
+                  <td class="adb-table--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Revoke</a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Resend</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    12/10/2002
+                  </td>
+                  <td>
+                    06/20/2006
+                  </td>
+                  <td>
+                    <a>
+                      Dirk Henry
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      fatima-hunt@mail.com
+                    </a>
+                  </td>
+                  <td class="adb-table--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Revoke</a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Resend</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    11/04/2001
+                  </td>
+                  <td>
+                    12/30/2005
+                  </td>
+                  <td>
+                    <a>
+                      Michelle Olsen
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      justice-abbott@gmail.com
+                    </a>
+                  </td>
+                  <td class="adb-table--menu">
+                    <menu class="adb-js-context_menu adb-context_menu adb-context_menu__small" data-placement="right">
+                      <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret adb-button__small" type="button">
+                        <i class="adb-icon__cog"></i>
+                      </button>
+                      <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                        <ul class="adb-stack adb-stack__small">
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Revoke</a>
+                          </li>
+                          <li class="adb-stack--item">
+                            <a class="adb-link__option adb-stack--item_content">Resend</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </menu>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="adb-container_footer">
+            <div class="adb-container_footer--item adb-container_footer--item__last">
+              <nav class="adb-pagination_v1">
+                <a class="adb-pagination_v1--button adb-pagination_v1--button__first"></a>
+                <a class="adb-pagination_v1--button adb-pagination_v1--button__prev"></a>
+                <a class="adb-pagination_v1--button">1</a>
+                <a class="adb-pagination_v1--button">23</a>
+                <span class="adb-pagination_v1--current">456</span>
+                <a class="adb-pagination_v1--button">7890</a>
+                <a class="adb-pagination_v1--button adb-pagination_v1--button__next"></a>
+                <a class="adb-pagination_v1--button adb-pagination_v1--button__last"></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <form action="" class="adb-modal" id="modal-invite-multiple">
+          <fieldset>
+            <h3 class="adb-modal--header" data-truncate>
+              <legend>Invite Users</legend>
+              <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+            </h3>
+            <div class="adb-modal--content">
+              <nav class="adb-tabs">
+                <ul class="adb-tabs--items">
+                  <li class="adb-tabs--item active">
+                    <a class="adb-tabs--link" data-toggle="tab" href="#add-users-manually">
+                      Add Emails
+                    </a>
+                  </li>
+                  <li class="adb-tabs--item">
+                    <a class="adb-tabs--link" data-toggle="tab" href="#upload-email-list">
+                      Upload Email List
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="adb-container adb-container__tabbed adb-js-tab" id="upload-email-list">
+                <div class="adb-container_content">
+                  <div class="adb-form--field">
+                    <label>Upload Users</label>
+                    <div class="adb-upload_field">
+                      <span class="adb-upload_field--text">
+                        <i class="adb-upload_field--icon"></i>
+                        Drag and drop file here, or
+                        <a>click here to upload.</a>
+                      </span>
+                      <input class="adb-upload_field--input" id="default-file-state" name="default-file-state" type="file    ">
+                    </div>
+                    <div class="adb-caption adb-form--caption">
+                      Accepted email format: a single column plain text file less than 2MB in size, with one email per line and 2,000 lines.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-container adb-container__tabbed adb-js-tab active" id="add-users-manually">
+                <div class="adb-container_content">
+                  <div class="adb-form--field">
+                    <div class="adb-complex_tooltip adb-js-dialog" data-placement="bottom" id="user-roles-tooltip">
+                      <div class="adb-complex_tooltip--content">
+                        <h4>Roles</h4>
+                        <p>
+                          <strong>Users</strong>
+                          can buy and manage their own products. Everyone has user privileges by default.
+                        </p>
+                        <p>
+                          <strong>Billing Admins</strong>
+                          can assign and manage company products and payments, but cannot access user data.
+                        </p>
+                        <p>
+                          <strong>System Admins</strong>
+                          can access all data and manage users within the company.
+                        </p>
+                        <p>
+                          <strong>Developers</strong>
+                          can create and publish products in the marketplace
+                        </p>
+                      </div>
+                    </div>
+                    <div class="adb-input_table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>
+                              <label>Email Address</label>
+                            </th>
+                            <th>
+                              <label>
+                                Role
+                                <a class="adb-icon_alert" data-event="click" data-target="#user-roles-tooltip" data-toggle="dialog">
+                                  <i class="adb-icon__question"></i>
+                                </a>
+                              </label>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="adb-input_table--primary">
+                              <input placeholder="email@address.com" type="email">
+                            </td>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>User</option>
+                                  <option>Billing Admin</option>
+                                  <option>System Admin</option>
+                                  <option selected>Developer</option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="adb-input_table--primary">
+                              <input placeholder="email@address.com" type="email">
+                            </td>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>User</option>
+                                  <option>Billing Admin</option>
+                                  <option>System Admin</option>
+                                  <option selected>Developer</option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="adb-input_table--primary">
+                              <input placeholder="email@address.com" type="email">
+                            </td>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>User</option>
+                                  <option>Billing Admin</option>
+                                  <option>System Admin</option>
+                                  <option selected>Developer</option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="adb-input_table--primary">
+                              <input placeholder="email@address.com" type="email">
+                            </td>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>User</option>
+                                  <option>Billing Admin</option>
+                                  <option>System Admin</option>
+                                  <option selected>Developer</option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button class="adb-button__small adb-button__secondary" type="button">
+                        <i class="adb-icon__add"></i>
+                        Add Another User
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <menu class="adb-modal--footer adb-toolbar">
+              <button class="adb-button__primary adb-toolbar--item" type="button">
+                Send Invitations
+              </button>
+              <button class="adb-button__secret adb-toolbar--item" data-dismiss="modal" type="button">
+                Cancel
+              </button>
+            </menu>
+          </fieldset>
+        </form>
+        <form action="" class="adb-modal adb-modal__large" id="modal-import-users">
+          <fieldset>
+            <h3 class="adb-modal--header" data-truncate>
+              <legend>Import Users</legend>
+              <a class="adb-close" data-dismiss="modal" href="#" title="Close"></a>
+            </h3>
+            <div class="adb-modal--content">
+              <div class="adb-form--field">
+                <label for="#import-first">Search by Name</label>
+                <div class="adb-form--inline_inputs">
+                  <input class="adb-form--inline_input" id="import-first" placeholder="First Name, e.g. John" type="text">
+                  <input class="adb-form--inline_input" id="import-last" placeholder="Last Name, e.g. Smith" type="text">
+                  <button class="adb-button__primary adb-form--inline_input" id="search-name" type="button">Search</button>
+                </div>
+              </div>
+              <div class="adb-form--field">
+                <label for="#import-email">Search by Email</label>
+                <div class="adb-form--inline_inputs">
+                  <input class="adb-form--inline_input" id="import-email" placeholder="e.g., email@address.com" type="email">
+                  <button class="adb-button__primary adb-form--inline_input" id="search-email" type="button">Search</button>
+                </div>
+              </div>
+              <div class="adb-local_alert adb-local_alert__error adb-is-hidden">
+                <div class="adb-local_alert--content">
+                  <p>Too many results returned. Please try your search again.</p>
+                </div>
+              </div>
+              <div class="adb-local_alert adb-local_alert__error adb-is-hidden">
+                <div class="adb-local_alert--content">
+                  <p>Server error. Please try your search again.</p>
+                </div>
+              </div>
+              <div class="adb-container">
+                <div class="adb-container_content">
+                  <div class="adb-placeholder adb-container adb-js-placeholder">
+                    <div class="adb-placeholder--content">
+                      <figure class="adb-placeholder--image">
+                        <i class="adb-icon__users"></i>
+                      </figure>
+                      <p>Search for users to import</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="adb-container_content">
+                  <div class="adb-placeholder adb-container adb-js-placeholder adb-is-hidden">
+                    <div class="adb-placeholder--content">
+                      <figure class="adb-placeholder--image">
+                        <span class="adb-loading">
+                          <span class="adb-loading--text">Loading...</span>
+                        </span>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="adb-table adb-is-hidden">
+                  <table>
+                    <colgroup>
+                      <col width="30%">
+                      <col width="30%">
+                      <col width="40%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th class="adb-is-active" data-sort data-sort-order="descending">
+                          Name
+                        </th>
+                        <th data-sort>
+                          Email
+                        </th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Justice Tilley
+                        </td>
+                        <td>
+                          sienna-lucas@yahoo.com
+                        </td>
+                        <td class="adb-table--menu">
+                          <button class="adb-button__small adb-button__secondary" type="button">
+                            <span class="adb-loading adb-is-hidden">
+                              <span class="adb-loading--text">Loading ...</span>
+                            </span>
+                            Import
+                          </button>
+                          <menu class="adb-toolbar adb-is-hidden">
+                            <span class="adb-toolbar--item adb-inline_alert adb-inline_alert__success adb-inline_alert__small">
+                              <i class="adb-icon__success"></i>
+                              &nbsp;Imported
+                            </span>
+                            <button class="adb-toolbar--item adb-button__small adb-button__secret">
+                              <i class="adb-icon__undo"></i>
+                              &nbsp;Undo
+                            </button>
+                          </menu>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Kyla Tilley
+                        </td>
+                        <td>
+                          bianca-stevenson@live.com
+                        </td>
+                        <td class="adb-table--menu">
+                          <button class="adb-button__small adb-button__secondary" type="button">
+                            <span class="adb-loading adb-is-hidden">
+                              <span class="adb-loading--text">Loading ...</span>
+                            </span>
+                            Import
+                          </button>
+                          <menu class="adb-toolbar adb-is-hidden">
+                            <span class="adb-toolbar--item adb-inline_alert adb-inline_alert__success adb-inline_alert__small">
+                              <i class="adb-icon__success"></i>
+                              &nbsp;Imported
+                            </span>
+                            <button class="adb-toolbar--item adb-button__small adb-button__secret">
+                              <i class="adb-icon__undo"></i>
+                              &nbsp;Undo
+                            </button>
+                          </menu>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          John Pickett
+                        </td>
+                        <td>
+                          brenden-baker@aol.com
+                        </td>
+                        <td class="adb-table--menu">
+                          <button class="adb-button__small adb-button__secondary" type="button">
+                            <span class="adb-loading adb-is-hidden">
+                              <span class="adb-loading--text">Loading ...</span>
+                            </span>
+                            Import
+                          </button>
+                          <menu class="adb-toolbar adb-is-hidden">
+                            <span class="adb-toolbar--item adb-inline_alert adb-inline_alert__success adb-inline_alert__small">
+                              <i class="adb-icon__success"></i>
+                              &nbsp;Imported
+                            </span>
+                            <button class="adb-toolbar--item adb-button__small adb-button__secret">
+                              <i class="adb-icon__undo"></i>
+                              &nbsp;Undo
+                            </button>
+                          </menu>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Angelina Hall
+                        </td>
+                        <td>
+                          eliza-underwood@mac.com
+                        </td>
+                        <td class="adb-table--menu">
+                          <button class="adb-button__small adb-button__secondary" type="button">
+                            <span class="adb-loading adb-is-hidden">
+                              <span class="adb-loading--text">Loading ...</span>
+                            </span>
+                            Import
+                          </button>
+                          <menu class="adb-toolbar adb-is-hidden">
+                            <span class="adb-toolbar--item adb-inline_alert adb-inline_alert__success adb-inline_alert__small">
+                              <i class="adb-icon__success"></i>
+                              &nbsp;Imported
+                            </span>
+                            <button class="adb-toolbar--item adb-button__small adb-button__secret">
+                              <i class="adb-icon__undo"></i>
+                              &nbsp;Undo
+                            </button>
+                          </menu>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Ana Bowling
+                        </td>
+                        <td>
+                          marshabrady@aol.com
+                        </td>
+                        <td class="adb-table--menu">
+                          <button class="adb-button__small adb-button__secondary" type="button">
+                            <span class="adb-loading adb-is-hidden">
+                              <span class="adb-loading--text">Loading ...</span>
+                            </span>
+                            Import
+                          </button>
+                          <menu class="adb-toolbar adb-is-hidden">
+                            <span class="adb-toolbar--item adb-inline_alert adb-inline_alert__success adb-inline_alert__small">
+                              <i class="adb-icon__success"></i>
+                              &nbsp;Imported
+                            </span>
+                            <button class="adb-toolbar--item adb-button__small adb-button__secret">
+                              <i class="adb-icon__undo"></i>
+                              &nbsp;Undo
+                            </button>
+                          </menu>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Lori Goldstein
+                        </td>
+                        <td>
+                          kyra-joyce@email.com
+                        </td>
+                        <td class="adb-table--menu">
+                          <button class="adb-button__small adb-button__secondary" type="button">
+                            <span class="adb-loading adb-is-hidden">
+                              <span class="adb-loading--text">Loading ...</span>
+                            </span>
+                            Import
+                          </button>
+                          <menu class="adb-toolbar adb-is-hidden">
+                            <span class="adb-toolbar--item adb-inline_alert adb-inline_alert__error adb-inline_alert__small">
+                              <i class="adb-icon__error"></i>
+                              &nbsp;Connection Timeout
+                            </span>
+                            <button class="adb-toolbar--item adb-button__small">
+                              <i class="adb-icon__redo"></i>
+                              &nbsp;Retry
+                            </button>
+                          </menu>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Alfredo Brady
+                        </td>
+                        <td>
+                          lesliechappell@mac.com
+                        </td>
+                        <td class="adb-table--menu">
+                          <button class="adb-button__small adb-button__secondary" type="button">
+                            <span class="adb-loading adb-is-hidden">
+                              <span class="adb-loading--text">Loading ...</span>
+                            </span>
+                            Import
+                          </button>
+                          <menu class="adb-toolbar adb-is-hidden">
+                            <span class="adb-toolbar--item adb-inline_alert adb-inline_alert__error adb-inline_alert__small">
+                              <i class="adb-icon__error"></i>
+                              &nbsp;Connection Timeout
+                            </span>
+                            <button class="adb-toolbar--item adb-button__small">
+                              <i class="adb-icon__redo"></i>
+                              &nbsp;Retry
+                            </button>
+                          </menu>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Sydney Gross
+                        </td>
+                        <td>
+                          alvinmiddleton@mail.com
+                        </td>
+                        <td class="adb-table--menu">
+                          <button class="adb-button__small adb-button__secondary" type="button">
+                            <span class="adb-loading adb-is-hidden">
+                              <span class="adb-loading--text">Loading ...</span>
+                            </span>
+                            Import
+                          </button>
+                          <menu class="adb-toolbar adb-is-hidden">
+                            <span class="adb-toolbar--item adb-inline_alert adb-inline_alert__error adb-inline_alert__small">
+                              <i class="adb-icon__error"></i>
+                              &nbsp;Connection Timeout
+                            </span>
+                            <button class="adb-toolbar--item adb-button__small">
+                              <i class="adb-icon__redo"></i>
+                              &nbsp;Retry
+                            </button>
+                          </menu>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Noel Scarborough
+                        </td>
+                        <td>
+                          cindy_cross@yahoo.com
+                        </td>
+                        <td class="adb-table--menu">
+                          <button class="adb-button__small adb-button__secondary" type="button">
+                            <span class="adb-loading adb-is-hidden">
+                              <span class="adb-loading--text">Loading ...</span>
+                            </span>
+                            Import
+                          </button>
+                          <menu class="adb-toolbar adb-is-hidden">
+                            <span class="adb-toolbar--item adb-inline_alert adb-inline_alert__error adb-inline_alert__small">
+                              <i class="adb-icon__error"></i>
+                              &nbsp;Connection Timeout
+                            </span>
+                            <button class="adb-toolbar--item adb-button__small">
+                              <i class="adb-icon__redo"></i>
+                              &nbsp;Retry
+                            </button>
+                          </menu>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Freya Burch
+                        </td>
+                        <td>
+                          ashton_fox@me.com
+                        </td>
+                        <td class="adb-table--menu">
+                          <button class="adb-button__small adb-button__secondary" type="button">
+                            <span class="adb-loading adb-is-hidden">
+                              <span class="adb-loading--text">Loading ...</span>
+                            </span>
+                            Import
+                          </button>
+                          <menu class="adb-toolbar adb-is-hidden">
+                            <span class="adb-toolbar--item adb-inline_alert adb-inline_alert__error adb-inline_alert__small">
+                              <i class="adb-icon__error"></i>
+                              &nbsp;Connection Timeout
+                            </span>
+                            <button class="adb-toolbar--item adb-button__small">
+                              <i class="adb-icon__redo"></i>
+                              &nbsp;Retry
+                            </button>
+                          </menu>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <menu class="adb-modal--footer adb-toolbar">
+              <button class="adb-toolbar--item" data-dismiss="modal" type="button">
+                Done
+              </button>
+            </menu>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Manage Users
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    <script>
+      (function() {
+        $('#search-name').on('click', function() {
+          return $(this).parents('form').find('.adb-js-placeholder').not('.adb-is-hidden').each((function(_this) {
+            return function(i, element) {
+              var $loading, $placeholder, $target, placeholderHeight;
+              $placeholder = $(element);
+              placeholderHeight = $placeholder.height();
+              $loading = $placeholder.next();
+              $target = $loading.next();
+              return $placeholder.fadeOut(1000, function() {
+                $loading.height(placeholderHeight);
+                return $loading.hide().removeClass('adb-is-hidden').fadeIn(200, function() {
+                  return window.setTimeout((function() {
+                    $loading.fadeOut(200, function() {
+                      return $target.hide().removeClass('adb-is-hidden').fadeIn(1000);
+                    });
+                  }), 2000);
+                });
+              });
+            };
+          })(this));
+        });
+      
+        $('#search-email').on('click', function() {
+          var $input;
+          $input = $(this).siblings('input');
+          return $(this).parents('form').find('.adb-local_alert').hide().removeClass('adb-is-hidden').fadeIn(1000, function() {
+            var $alerts;
+            $alerts = $(this);
+            $input.focus();
+            return $input.on('keyup', function() {
+              return $alerts.fadeOut(1000, function() {
+                return $alerts.addClass('adb-is-hidden');
+              });
+            });
+          });
+        });
+      
+        $('#modal-import-users .adb-button__secondary').on('click', function() {
+          var $button, $loading;
+          $button = $(this);
+          $loading = $button.find('.adb-loading');
+          $button.addClass('adb-is-loading').prop('disabled', true);
+          $loading.removeClass('adb-is-hidden');
+          return window.setTimeout((function() {
+            $loading.addClass('adb-is-hidden');
+            $button.removeClass('adb-is-loading').addClass('adb-is-hidden');
+            return $button.next().removeClass('adb-is-hidden');
+          }), 1000);
+        });
+      
+      }).call(this);
+    </script>
+  </body>
+</html>
