@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Navigation Controls</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="documentation documentation_navigate documentation_navigate_navigation_controls">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Framework Foundations" data-toggle="tooltip" data-placement="bottom" href="../core/design_principles.html">Core
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Specialized Data" data-toggle="tooltip" data-placement="bottom" href="../display/alerts_and_messages.html">Display
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link adb-is-selected" title="Menus and Buttons" data-toggle="tooltip" data-placement="bottom" href="global_navigation.html">Navigate
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Form Elements" data-toggle="tooltip" data-placement="bottom" href="../modify/text_inputs.html">Modify
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Layout Patterns" data-toggle="tooltip" data-placement="bottom" href="../arrange/containers.html">Arrange
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Application Pages" data-toggle="tooltip" data-placement="bottom" href="../../prototype/">Prototype
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-context_menu--trigger adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  <i class="adb-icon__cog"></i>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="https://github.com/ad-dc/base/releases">Release Notes</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../benchmarking.html">CSS/SASS Stats</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../components.html">Preview All Components</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <section class="adb-layout-row adb-headline">
+          <div class="adb-layout-default">
+            <h5>Base by AppDirect</h5>
+            <h1>
+              Navigate
+            </h1>
+            <p class="tagline">
+              Guide users through the application
+            </p>
+          </div>
+        </section>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="global_navigation.html">Global Navigation</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="vertical_navigation.html">Vertical Navigation</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="page_navigation.html">Page Navigation</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="navigation_controls.html">Navigation Controls</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="buttons.html">Buttons</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="context_menus.html">Context Menus</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="search_fields.html">Search Fields</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <article class="adb-layout-content">
+            <h2>
+              Navigation Controls
+            </h2>
+            <section class="adb-layout-content--section" id="pagination">
+              <h3>Pagination</h3>
+              <h4>Version 1</h4>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <nav class="adb-pagination_v1">
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__first"></a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__prev"></a>
+                    <a class="adb-pagination_v1--button">1</a>
+                    <a class="adb-pagination_v1--button">23</a>
+                    <span class="adb-pagination_v1--current">456</span>
+                    <a class="adb-pagination_v1--button">7890</a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__next"></a>
+                    <a class="adb-pagination_v1--button adb-pagination_v1--button__last"></a>
+                  </nav>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__first&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__prev&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button&quot;</span><span class="nt">&gt;</span>23<span class="nt">&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--current&quot;</span><span class="nt">&gt;</span>456<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button&quot;</span><span class="nt">&gt;</span>7890<span class="nt">&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__next&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__last&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;<span class="nt">&lt;/nav&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Version 2</h4>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <nav class="adb-pagination">
+                    <a class="adb-pagination--button adb-pagination--button__prev"></a>
+                    <a class="adb-pagination--button adb-pagination--button__first">1</a>
+                    <a class="adb-pagination--button">2</a>
+                    <span class="adb-pagination--current">3</span>
+                    <a class="adb-pagination--button">45</a>
+                    <a class="adb-pagination--button adb-pagination--button__middle">678</a>
+                    <span class="adb-pagination--ellipsis"></span>
+                    <a class="adb-pagination--button adb-pagination--button__last">90</a>
+                    <a class="adb-pagination--button adb-pagination--button__next"></a>
+                  </nav>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;adb-pagination&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination--button adb-pagination--button__prev&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination--button adb-pagination--button__first&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination--button&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-pagination--current&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination--button&quot;</span><span class="nt">&gt;</span>45<span class="nt">&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination--button adb-pagination--button__middle&quot;</span><span class="nt">&gt;</span>678<span class="nt">&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-pagination--ellipsis&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination--button adb-pagination--button__last&quot;</span><span class="nt">&gt;</span>90<span class="nt">&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination--button adb-pagination--button__next&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;<span class="nt">&lt;/nav&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="next-previous">
+              <h3>Pagers</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <nav class="adb-pager">
+                    <div class="adb-pager--pagination">
+                      <span class="adb-pager--pagination_item adb-is-active"></span>
+                      <span class="adb-pager--pagination_item"></span>
+                      <span class="adb-pager--pagination_item"></span>
+                      <span class="adb-pager--pagination_item"></span>
+                    </div>
+                  </nav>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;adb-pager&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-pager--pagination&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-pager--pagination_item adb-is-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-pager--pagination_item&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-pager--pagination_item&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-pager--pagination_item&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/nav&gt;</span>&#x000A;</pre>
+                <div class="example__container--view">
+                  <nav class="adb-pager">
+                    <button class="adb-pager--item adb-pager--button__prev" type="button">
+                      <i class="adb-icon__arrow_left"></i>
+                      Previous
+                    </button>
+                    <button class="adb-pager--item adb-pager--button__next" type="button">
+                      Next
+                      <i class="adb-icon__arrow_right"></i>
+                    </button>
+                  </nav>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;adb-pager&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-pager--item adb-pager--button__prev&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__arrow_left&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;    Previous&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-pager--item adb-pager--button__next&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    Next&#x000A;    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__arrow_right&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;<span class="nt">&lt;/nav&gt;</span>&#x000A;</pre>
+                <div class="example__container--view">
+                  <nav class="adb-pager">
+                    <button class="adb-pager--item adb-pager--button__prev adb-button__square_small" type="button">
+                      <i class="adb-icon__arrow_left"></i>
+                    </button>
+                    <div class="adb-pager--pagination adb-pager--item">
+                      <span class="adb-pager--pagination_item adb-is-active"></span>
+                      <span class="adb-pager--pagination_item"></span>
+                      <span class="adb-pager--pagination_item"></span>
+                      <span class="adb-pager--pagination_item"></span>
+                    </div>
+                    <button class="adb-pager--item adb-pager--button__next adb-button__square_small" type="button">
+                      <i class="adb-icon__arrow_right"></i>
+                    </button>
+                  </nav>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;adb-pager&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-pager--item adb-pager--button__prev adb-button__square_small&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__arrow_left&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-pager--pagination adb-pager--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-pager--pagination_item adb-is-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-pager--pagination_item&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-pager--pagination_item&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-pager--pagination_item&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-pager--item adb-pager--button__next adb-button__square_small&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__arrow_right&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;<span class="nt">&lt;/nav&gt;</span>&#x000A;</pre>
+                <div class="example__container--view">
+                  <nav class="adb-pager">
+                    <button class="adb-pager--item adb-pager--button__prev adb-button__square_small" type="button">
+                      <i class="adb-icon__arrow_left"></i>
+                    </button>
+                    <div class="adb-pager--caption adb-pager--item">1 of 3</div>
+                    <button class="adb-pager--item adb-pager--button__next adb-button__square_small" type="button">
+                      <i class="adb-icon__arrow_right"></i>
+                    </button>
+                  </nav>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;adb-pager&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-pager--item adb-pager--button__prev adb-button__square_small&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__arrow_left&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-pager--caption adb-pager--item&quot;</span><span class="nt">&gt;</span>1 of 3<span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-pager--item adb-pager--button__next adb-button__square_small&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__arrow_right&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;<span class="nt">&lt;/nav&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="count_filter">
+              <h3>Count Filter</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <menu>
+                    <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small">
+                      <select>
+                        <option>25 Results</option>
+                        <option>50 Results</option>
+                        <option>100 Results</option>
+                        <option>All Results</option>
+                      </select>
+                    </div>
+                  </menu>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;menu&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown adb-dropdown__inset adb-dropdown__small&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;select&gt;</span>&#x000A;      <span class="nt">&lt;option&gt;</span>25 Results<span class="nt">&lt;/option&gt;</span>&#x000A;      <span class="nt">&lt;option&gt;</span>50 Results<span class="nt">&lt;/option&gt;</span>&#x000A;      <span class="nt">&lt;option&gt;</span>100 Results<span class="nt">&lt;/option&gt;</span>&#x000A;      <span class="nt">&lt;option&gt;</span>All Results<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;/select&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="button-toggles">
+              <h3>Button Toggles</h3>
+              <h4>Menu</h4>
+              <nav class="adb-tabs">
+                <ul class="adb-tabs--items">
+                  <li class="adb-tabs--item active">
+                    <a class="adb-tabs--link" data-toggle="tab" href="#buttons-toggle-style1">
+                      Default
+                    </a>
+                  </li>
+                  <li class="adb-tabs--item">
+                    <a class="adb-tabs--link" data-toggle="tab" href="#buttons-toggle-style2">
+                      Small Size
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="adb-js-tab active" id="buttons-toggle-style1">
+                <div class="example__tab">
+                  <div class="example__container--view">
+                    <menu class="adb-toggle_buttons" data-toggle="buttons-radio">
+                      <button class="adb-toggle_buttons--button active" type="button">Option 1</button>
+                      <button class="adb-toggle_buttons--button" type="button">Option 2</button>
+                      <button class="adb-toggle_buttons--button" type="button">Option 3</button>
+                      <button class="adb-toggle_buttons--button" type="button">Option 4</button>
+                    </menu>
+                  </div>
+                  <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toggle_buttons&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;buttons-radio&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toggle_buttons--button active&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Option 1<span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toggle_buttons--button&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Option 2<span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toggle_buttons--button&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Option 3<span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toggle_buttons--button&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Option 4<span class="nt">&lt;/button&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+                </div>
+              </div>
+              <div class="adb-js-tab" id="buttons-toggle-style2">
+                <div class="example__tab">
+                  <div class="example__container--view">
+                    <menu class="adb-toggle_buttons" data-toggle="buttons-radio">
+                      <button class="adb-toggle_buttons--button adb-button__small active" type="button">Option 1</button>
+                      <button class="adb-toggle_buttons--button adb-button__small" type="button">Option 2</button>
+                      <button class="adb-toggle_buttons--button adb-button__small" type="button">Option 3</button>
+                      <button class="adb-toggle_buttons--button adb-button__small" type="button">Option 4</button>
+                    </menu>
+                  </div>
+                  <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toggle_buttons&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;buttons-radio&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toggle_buttons--button adb-button__small active&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Option 1<span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toggle_buttons--button adb-button__small&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Option 2<span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toggle_buttons--button adb-button__small&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Option 3<span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toggle_buttons--button adb-button__small&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Option 4<span class="nt">&lt;/button&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+                </div>
+              </div>
+              <br>
+              <h4>Single Button</h4>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <button class="adb-toggle_button" data-label-active="Hide Settings" data-label-init="Show Settings" data-target="#" data-toggle="panel" type="button">
+                    Show Settings
+                  </button>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toggle_button&quot;</span> <span class="na">data-label-active=</span><span class="s">&quot;Hide Settings&quot;</span> <span class="na">data-label-init=</span><span class="s">&quot;Show Settings&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;  Show Settings&#x000A;<span class="nt">&lt;/button&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="tags">
+              <h3>Tags</h3>
+              <nav class="adb-tabs">
+                <ul class="adb-tabs--items">
+                  <li class="adb-tabs--item active">
+                    <a class="adb-tabs--link" data-toggle="tab" href="#tags-style1">
+                      Default
+                    </a>
+                  </li>
+                  <li class="adb-tabs--item">
+                    <a class="adb-tabs--link" data-toggle="tab" href="#tags-style2">
+                      Within container
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="adb-js-tab active" id="tags-style1">
+                <div class="example__tab">
+                  <div class="example__container--view">
+                    <div class="adb-tag">
+                      <span class="adb-tag--text">
+                        facilis incidunt soluta
+                      </span>
+                      <a class="adb-tag--remove" href="#" title="Remove"></a>
+                    </div>
+                    <div class="adb-tag">
+                      <span class="adb-tag--text">
+                        sunt atque similique
+                      </span>
+                      <a class="adb-tag--remove" href="#" title="Remove"></a>
+                    </div>
+                    <div class="adb-tag">
+                      <span class="adb-tag--text">
+                        rerum aut autem
+                      </span>
+                      <a class="adb-tag--remove" href="#" title="Remove"></a>
+                    </div>
+                    <div class="adb-tag">
+                      <span class="adb-tag--text">
+                        impedit rerum aut
+                      </span>
+                      <a class="adb-tag--remove" href="#" title="Remove"></a>
+                    </div>
+                    <div class="adb-tag">
+                      <span class="adb-tag--text">
+                        repellat itaque enim
+                      </span>
+                      <a class="adb-tag--remove" href="#" title="Remove"></a>
+                    </div>
+                    <div class="adb-tag">
+                      <span class="adb-tag--text">
+                        iure possimus architecto
+                      </span>
+                      <a class="adb-tag--remove" href="#" title="Remove"></a>
+                    </div>
+                    <div class="adb-tag">
+                      <span class="adb-tag--text">
+                        ut eligendi tempore
+                      </span>
+                      <a class="adb-tag--remove" href="#" title="Remove"></a>
+                    </div>
+                    <div class="adb-tag">
+                      <span class="adb-tag--text">
+                        voluptatum dicta est
+                      </span>
+                      <a class="adb-tag--remove" href="#" title="Remove"></a>
+                    </div>
+                    <div class="adb-tag">
+                      <span class="adb-tag--text">
+                        quia unde natus
+                      </span>
+                      <a class="adb-tag--remove" href="#" title="Remove"></a>
+                    </div>
+                    <div class="adb-tag">
+                      <span class="adb-tag--text">
+                        dolores ut ratione
+                      </span>
+                      <a class="adb-tag--remove" href="#" title="Remove"></a>
+                    </div>
+                  </div>
+                  <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;    sunt dolor recusandae&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;    sed et atque&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;    vitae corrupti facere&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;    dolorum et ut&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;    laborum harum voluptatem&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;    qui accusantium expedita&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;    nemo non et&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;    et ut eum&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;    praesentium sequi assumenda&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;    cumque asperiores ipsum&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                </div>
+              </div>
+              <div class="adb-js-tab" id="tags-style2">
+                <div class="example__tab">
+                  <div class="example__container--view">
+                    <div class="adb-container adb-tags">
+                      <div class="adb-tag">
+                        <span class="adb-tag--text">
+                          veritatis aliquid hic
+                        </span>
+                        <a class="adb-tag--remove" href="#" title="Remove"></a>
+                      </div>
+                      <div class="adb-tag">
+                        <span class="adb-tag--text">
+                          ipsum recusandae perspiciatis
+                        </span>
+                        <a class="adb-tag--remove" href="#" title="Remove"></a>
+                      </div>
+                      <div class="adb-tag">
+                        <span class="adb-tag--text">
+                          possimus eligendi suscipit
+                        </span>
+                        <a class="adb-tag--remove" href="#" title="Remove"></a>
+                      </div>
+                      <div class="adb-tag">
+                        <span class="adb-tag--text">
+                          cum quo atque
+                        </span>
+                        <a class="adb-tag--remove" href="#" title="Remove"></a>
+                      </div>
+                      <div class="adb-tag">
+                        <span class="adb-tag--text">
+                          iusto et tempora
+                        </span>
+                        <a class="adb-tag--remove" href="#" title="Remove"></a>
+                      </div>
+                      <div class="adb-tag">
+                        <span class="adb-tag--text">
+                          qui impedit voluptatem
+                        </span>
+                        <a class="adb-tag--remove" href="#" title="Remove"></a>
+                      </div>
+                      <div class="adb-tag">
+                        <span class="adb-tag--text">
+                          inventore quia voluptatem
+                        </span>
+                        <a class="adb-tag--remove" href="#" title="Remove"></a>
+                      </div>
+                      <div class="adb-tag">
+                        <span class="adb-tag--text">
+                          repudiandae at vero
+                        </span>
+                        <a class="adb-tag--remove" href="#" title="Remove"></a>
+                      </div>
+                      <div class="adb-tag">
+                        <span class="adb-tag--text">
+                          nam tempore voluptas
+                        </span>
+                        <a class="adb-tag--remove" href="#" title="Remove"></a>
+                      </div>
+                      <div class="adb-tag">
+                        <span class="adb-tag--text">
+                          architecto adipisci dolores
+                        </span>
+                        <a class="adb-tag--remove" href="#" title="Remove"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-tags&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;      optio a doloribus&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;      tempora culpa nobis&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;      dolorum libero laudantium&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;      dolorem ipsa dolor&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;      dicta voluptatum consequatur&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;      nostrum explicabo sit&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;      perferendis culpa qui&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;      in eligendi fuga&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;      sunt placeat nesciunt&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tag&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tag--text&quot;</span><span class="nt">&gt;</span>&#x000A;      nulla ab est&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tag--remove&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Remove&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                </div>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="videos">
+              <h3>Videos</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <div class="adb-video">
+                    <img class="adb-video--screenshot" src="../../images/content/sendgrid-preview.png" />
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-video&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;adb-video--screenshot&quot;</span> <span class="na">src=</span><span class="s">&quot;../../images/content/sendgrid-preview.png&quot;</span> <span class="nt">/&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="sticky">
+              <h3>Sticky</h3>
+            </section>
+            <section class="adb-layout-content--section" id="close">
+              <h3>Close</h3>
+            </section>
+          </article>
+        </section>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="global_navigation.html">Navigate</a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Navigation Controls
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

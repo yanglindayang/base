@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Form Layout</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="documentation documentation_modify documentation_modify_form_layout">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Framework Foundations" data-toggle="tooltip" data-placement="bottom" href="../core/design_principles.html">Core
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Specialized Data" data-toggle="tooltip" data-placement="bottom" href="../display/alerts_and_messages.html">Display
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Menus and Buttons" data-toggle="tooltip" data-placement="bottom" href="../navigate/global_navigation.html">Navigate
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link adb-is-selected" title="Form Elements" data-toggle="tooltip" data-placement="bottom" href="text_inputs.html">Modify
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Layout Patterns" data-toggle="tooltip" data-placement="bottom" href="../arrange/containers.html">Arrange
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Application Pages" data-toggle="tooltip" data-placement="bottom" href="../../prototype/">Prototype
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-context_menu--trigger adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  <i class="adb-icon__cog"></i>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="https://github.com/ad-dc/base/releases">Release Notes</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../benchmarking.html">CSS/SASS Stats</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../components.html">Preview All Components</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <section class="adb-layout-row adb-headline">
+          <div class="adb-layout-default">
+            <h5>Base by AppDirect</h5>
+            <h1>
+              Modify
+            </h1>
+            <p class="tagline">
+              Help users add and edit data
+            </p>
+          </div>
+        </section>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="text_inputs.html">Text Inputs</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="option_selectors.html">Option Selectors</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="upload.html">Upload</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="form_layout.html">Form Layout</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="form_types.html">Form Types</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="errors_and_validation.html">Errors &amp; Validation</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <article class="adb-layout-content">
+            <h2>
+              Form Layout
+            </h2>
+            <section class="adb-layout-content--section" id="general-guidelines">
+              <h3>
+                General Guidelines
+              </h3>
+              <ul>
+              <li>Include <code>&lt;legend&gt;</code> for each <code>&lt;fieldset&gt;</code> even if you have to apply <code>.visuallyhidden</code> class.</li>
+              <li>Use <code>&lt;label&gt;</code> to label every form field, especially for radio and checkbox selectors. Couple <code>&lt;label&gt;</code> with <code>&lt;input&gt;</code> tags with <code>for</code> attribute.</li>
+              <li>Set default options for radio and checkbox selectors.</li>
+              <li>Use <code>&lt;fieldset&gt;</code> and <code>&lt;optgroup&gt;</code> to organize input fields and options</li>
+              <li>Use <code>placeholder</code> attribute to give the user hints about input format or content. Do not use <code>value</code> attribute.</li>
+              </ul>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <form action="" class="adb-form">
+                    <fieldset>
+                      <h3>
+                        <legend>Sign up</legend>
+                      </h3>
+                      <div class="adb-form--field">
+                        <label for="input-name">
+                          Name
+                        </label>
+                        <input id="input-name" placeholder="e.g., Albert Einstein" type="text">
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="input-email">
+                          Email Address
+                        </label>
+                        <input id="input-email" placeholder="email@address.com" type="email">
+                      </div>
+                    </fieldset>
+                    <menu class="adb-toolbar">
+                      <button class="adb-button__primary adb-toolbar--item" type="submit">
+                        Sign up
+                      </button>
+                      <button class="adb-button__secret adb-toolbar--item" type="button">
+                        Cancel
+                      </button>
+                    </menu>
+                  </form>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;&quot;</span> <span class="na">class=</span><span class="s">&quot;adb-form&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;fieldset&gt;</span>&#x000A;    <span class="nt">&lt;h3&gt;</span>&#x000A;      <span class="nt">&lt;legend&gt;</span>Sign up<span class="nt">&lt;/legend&gt;</span>&#x000A;    <span class="nt">&lt;/h3&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;input-name&quot;</span><span class="nt">&gt;</span>&#x000A;        Name&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;input-name&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;e.g., Albert Einstein&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;input-email&quot;</span><span class="nt">&gt;</span>&#x000A;        Email Address&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;input-email&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;email@address.com&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/fieldset&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__primary adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>&#x000A;      Sign up&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__secret adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Cancel&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;<span class="nt">&lt;/form&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="contained-set">
+              <h3>Contained Set of Fields</h3>
+              <p>In the event that a form contains numerous inputs, organize related sets of fields within containers.</p>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <form class="adb-form">
+                    <fieldset class="adb-container">
+                      <div class="adb-container_header">
+                        <h3 class="adb-container_header--title adb-container_header--item">
+                          <legend>Reviews &amp; Questions</legend>
+                        </h3>
+                      </div>
+                      <div class="adb-container_content">
+                        <div class="adb-form--field">
+                          <label>Purchase Required</label>
+                          <label class="adb-selector adb-js-checkbox" for="purchase-required">
+                            <span class="adb-selector--input">
+                              <input checked id="purchase-required" name="purchase-required" type="checkbox">
+                            </span>
+                            <span class="adb-selector--value">
+                              A customer must purchase a product in order to review it
+                            </span>
+                          </label>
+                          <div class="adb-caption adb-form--caption">
+                            If checked, customers will see messaging that the product must be purchased in order to be reviewed.
+                          </div>
+                        </div>
+                        <div class="adb-form--field">
+                          <label>Questions</label>
+                          <label class="adb-selector adb-js-checkbox" for="questions">
+                            <span class="adb-selector--input">
+                              <input checked id="questions" name="questions" type="checkbox">
+                            </span>
+                            <span class="adb-selector--value">Hide "Questions" content for all products</span>
+                          </label>
+                        </div>
+                        <div class="adb-form--field">
+                          <label>User Content</label>
+                          <label class="adb-selector adb-js-checkbox" for="user-content">
+                            <span class="adb-selector--input">
+                              <input checked id="user-content" name="user-content" type="checkbox">
+                            </span>
+                            <span class="adb-selector--value">
+                              Manually approve all user posts to the marketplace
+                            </span>
+                          </label>
+                          <div class="adb-caption adb-form--caption">
+                            All user generated content such as reviews, questions, comments, etc need to be approved by a Marketplace Administrator before they are published.
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;adb-form&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">&quot;adb-container&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_header&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;adb-container_header--title adb-container_header--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;legend&gt;</span>Reviews <span class="ni">&amp;amp;</span> Questions<span class="nt">&lt;/legend&gt;</span>&#x000A;      <span class="nt">&lt;/h3&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_content&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;label&gt;</span>Purchase Required<span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;purchase-required&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;purchase-required&quot;</span> <span class="na">name=</span><span class="s">&quot;purchase-required&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            A customer must purchase a product in order to review it&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-caption adb-form--caption&quot;</span><span class="nt">&gt;</span>&#x000A;          If checked, customers will see messaging that the product must be purchased in order to be reviewed.&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;label&gt;</span>Questions<span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;questions&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;questions&quot;</span> <span class="na">name=</span><span class="s">&quot;questions&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>Hide &quot;Questions&quot; content for all products<span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;label&gt;</span>User Content<span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;user-content&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;user-content&quot;</span> <span class="na">name=</span><span class="s">&quot;user-content&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Manually approve all user posts to the marketplace&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-caption adb-form--caption&quot;</span><span class="nt">&gt;</span>&#x000A;          All user generated content such as reviews, questions, comments, etc need to be approved by a Marketplace Administrator before they are published.&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/fieldset&gt;</span>&#x000A;<span class="nt">&lt;/form&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="inline-fields">
+              <h3>Inline Fields</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <form class="adb-form">
+                    <fieldset>
+                      <h3>
+                        <legend>Shipping Information</legend>
+                      </h3>
+                      <div class="adb-form--field">
+                        <label for="address-street">Billing Address</label>
+                        <div class="adb-form--inline_inputs">
+                          <input class="adb-form--inline_input" id="address-street" name="address-street" placeholder="1234 Main St." type="text">
+                          <input class="adb-form--inline_input" name="address-street2" placeholder="Apt. 5" type="text">
+                        </div>
+                      </div>
+                      <div class="adb-form--inline_fields">
+                        <div class="adb-form--inline_field">
+                          <label for="address-city">City</label>
+                          <input id="address-city" name="address-city" placeholder="San Francisco" type="text">
+                        </div>
+                        <div class="adb-form--inline_field">
+                          <label for="address-state">State</label>
+                          <div class="adb-js-dropdown adb-dropdown">
+                            <select id="address-state" name="address-state">
+                              <option>AL</option>
+                              <option>DL</option>
+                              <option selected>CA</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="address-country">Country</label>
+                        <div class="adb-js-dropdown adb-dropdown">
+                          <select id="address-country" name="address-country">
+                            <option>Armenia</option>
+                            <option>Canada</option>
+                            <option selected>United States</option>
+                          </select>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;address-street&quot;</span><span class="nt">&gt;</span>Billing Address<span class="nt">&lt;/label&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_inputs&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_input&quot;</span> <span class="na">id=</span><span class="s">&quot;address-street&quot;</span> <span class="na">name=</span><span class="s">&quot;address-street&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;1234 Main St.&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_input&quot;</span> <span class="na">name=</span><span class="s">&quot;address-street2&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Apt. 5&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_fields&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;address-city&quot;</span><span class="nt">&gt;</span>City<span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;address-city&quot;</span> <span class="na">name=</span><span class="s">&quot;address-city&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;San Francisco&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;address-state&quot;</span><span class="nt">&gt;</span>State<span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;address-state&quot;</span> <span class="na">name=</span><span class="s">&quot;address-state&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;option&gt;</span>AL<span class="nt">&lt;/option&gt;</span>&#x000A;        <span class="nt">&lt;option&gt;</span>DL<span class="nt">&lt;/option&gt;</span>&#x000A;        <span class="nt">&lt;option</span> <span class="na">selected</span><span class="nt">&gt;</span>CA<span class="nt">&lt;/option&gt;</span>&#x000A;      <span class="nt">&lt;/select&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;address-country&quot;</span><span class="nt">&gt;</span>Country<span class="nt">&lt;/label&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;address-country&quot;</span> <span class="na">name=</span><span class="s">&quot;address-country&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;option&gt;</span>Armenia<span class="nt">&lt;/option&gt;</span>&#x000A;      <span class="nt">&lt;option&gt;</span>Canada<span class="nt">&lt;/option&gt;</span>&#x000A;      <span class="nt">&lt;option</span> <span class="na">selected</span><span class="nt">&gt;</span>United States<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;/select&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                <div class="example__container--view">
+                  <form class="adb-form">
+                    <fieldset>
+                      <h3>
+                        <legend>Billing Information</legend>
+                      </h3>
+                      <div class="adb-form--inline_fields">
+                        <div class="adb-form--inline_field">
+                          <label for="credit-number">Credit Card Number</label>
+                          <div class="adb-input_row adb-js-input_row">
+                            <div class="adb-input_row--item adb-input_row--primary">
+                              <input class="adb-input_row--item_content" id="credit-number" name="credit-number" placeholder="1234-2345-3456-4567" type="text" value="4111-1111-1111-1111">
+                            </div>
+                            <div class="adb-input_row--item adb-input_row--label">
+                              <span class="adb-input_row--item_content adb-form--credit_cards">
+                                <img class="adb-form--credit_card" src="../../images/assets/visa.svg" />
+                                <img class="adb-form--credit_card" src="../../images/assets/mastercard.svg" />
+                                <img class="adb-form--credit_card" src="../../images/assets/amex.svg" />
+                                <img class="adb-form--credit_card" src="../../images/assets/discover.svg" />
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="adb-form--inline_field">
+                          <label for="credit-expiration">Expiration Date</label>
+                          <input id="credit-expiration" name="credit-expiration" type="date">
+                        </div>
+                      </div>
+                      <div class="adb-form--inline_fields">
+                        <div class="adb-form--inline_field">
+                          <label for="credit-name">Credit Card Owner</label>
+                          <input id="credit-name" name="credit-name" placeholder="Full Name" type="text">
+                          <div class="adb-form--caption">
+                            Enter the name exactly as it appears on card.
+                          </div>
+                        </div>
+                        <div class="adb-form--inline_field">
+                          <label for="credit-security">
+                            Security Code
+                          </label>
+                          <input class="adb-text__number" id="credit-security" name="credit-security" placeholder="XXX" type="text">
+                          <span class="adb-affix" data-toggle="dialog">
+                            <img height="36px" src="../../images/assets/card-security.png" />
+                          </span>
+                          <div class="adb-complex_tooltip adb-js-dialog">
+                            <div class="adb-complex_tooltip--content">
+                              The security code is the last 3 digits on the back of your credit card.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_fields&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;credit-number&quot;</span><span class="nt">&gt;</span>Credit Card Number<span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row adb-js-input_row&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--primary&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">id=</span><span class="s">&quot;credit-number&quot;</span> <span class="na">name=</span><span class="s">&quot;credit-number&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;1234-2345-3456-4567&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">value=</span><span class="s">&quot;4111-1111-1111-1111&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--label&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content adb-form--credit_cards&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;adb-form--credit_card&quot;</span> <span class="na">src=</span><span class="s">&quot;../../images/assets/visa.svg&quot;</span> <span class="nt">/&gt;</span>&#x000A;          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;adb-form--credit_card&quot;</span> <span class="na">src=</span><span class="s">&quot;../../images/assets/mastercard.svg&quot;</span> <span class="nt">/&gt;</span>&#x000A;          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;adb-form--credit_card&quot;</span> <span class="na">src=</span><span class="s">&quot;../../images/assets/amex.svg&quot;</span> <span class="nt">/&gt;</span>&#x000A;          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;adb-form--credit_card&quot;</span> <span class="na">src=</span><span class="s">&quot;../../images/assets/discover.svg&quot;</span> <span class="nt">/&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;credit-expiration&quot;</span><span class="nt">&gt;</span>Expiration Date<span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;credit-expiration&quot;</span> <span class="na">name=</span><span class="s">&quot;credit-expiration&quot;</span> <span class="na">type=</span><span class="s">&quot;date&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_fields&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;credit-name&quot;</span><span class="nt">&gt;</span>Credit Card Owner<span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;credit-name&quot;</span> <span class="na">name=</span><span class="s">&quot;credit-name&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Full Name&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--caption&quot;</span><span class="nt">&gt;</span>&#x000A;      Enter the name exactly as it appears on card.&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;credit-security&quot;</span><span class="nt">&gt;</span>&#x000A;      Security Code&#x000A;    <span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-text__number&quot;</span> <span class="na">id=</span><span class="s">&quot;credit-security&quot;</span> <span class="na">name=</span><span class="s">&quot;credit-security&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;XXX&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-affix&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;dialog&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;img</span> <span class="na">height=</span><span class="s">&quot;36px&quot;</span> <span class="na">src=</span><span class="s">&quot;../../images/assets/card-security.png&quot;</span> <span class="nt">/&gt;</span>&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-complex_tooltip adb-js-dialog&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-complex_tooltip--content&quot;</span><span class="nt">&gt;</span>&#x000A;        The security code is the last 3 digits on the back of your credit card.&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <div class="adb-form--inline_fields">
+                    <div class="adb-form--inline_field">
+                      <label class="adb-subtitle">USD</label>
+                      <input min="0" placeholder="0.00" step="any" type="number">
+                    </div>
+                    <div class="adb-form--inline_field">
+                      <label class="adb-subtitle">CAD</label>
+                      <input min="0" placeholder="0.00" step="any" type="number">
+                    </div>
+                    <div class="adb-form--inline_field">
+                      <label class="adb-subtitle">EUR</label>
+                      <input min="0" placeholder="0.00" step="any" type="number">
+                    </div>
+                    <div class="adb-form--inline_field">
+                      <label class="adb-subtitle">CHF</label>
+                      <input min="0" placeholder="0.00" step="any" type="number">
+                    </div>
+                    <div class="adb-form--inline_field">
+                      <label class="adb-subtitle">SEK</label>
+                      <input min="0" placeholder="0.00" step="any" type="number">
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_fields&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-subtitle&quot;</span><span class="nt">&gt;</span>USD<span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">min=</span><span class="s">&quot;0&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;0.00&quot;</span> <span class="na">step=</span><span class="s">&quot;any&quot;</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-subtitle&quot;</span><span class="nt">&gt;</span>CAD<span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">min=</span><span class="s">&quot;0&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;0.00&quot;</span> <span class="na">step=</span><span class="s">&quot;any&quot;</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-subtitle&quot;</span><span class="nt">&gt;</span>EUR<span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">min=</span><span class="s">&quot;0&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;0.00&quot;</span> <span class="na">step=</span><span class="s">&quot;any&quot;</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-subtitle&quot;</span><span class="nt">&gt;</span>CHF<span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">min=</span><span class="s">&quot;0&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;0.00&quot;</span> <span class="na">step=</span><span class="s">&quot;any&quot;</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-subtitle&quot;</span><span class="nt">&gt;</span>SEK<span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">min=</span><span class="s">&quot;0&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;0.00&quot;</span> <span class="na">step=</span><span class="s">&quot;any&quot;</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                <div class="example__container--view">
+                  <div class="adb-form--inline_fields">
+                    <div class="adb-form--inline_field">
+                      <label class="adb-subtitle" for="vendor-share">Vendor</label>
+                      <input id="vendor-share" min="0" placeholder="0" step="any" type="number">
+                      <span class="adb-affix">&nbsp;+</span>
+                    </div>
+                    <div class="adb-form--inline_field">
+                      <label class="adb-subtitle" for="marketplace-share">Marketplace</label>
+                      <input id="marketplace-share" min="0" placeholder="0" step="any" type="number">
+                      <span class="adb-affix">&nbsp;+</span>
+                    </div>
+                    <div class="adb-form--inline_field">
+                      <label class="adb-subtitle" for="appdirect-share">AppDirect</label>
+                      <input id="appdirect-share" min="0" placeholder="0" step="any" type="number">
+                      <span class="adb-affix">= 100 %</span>
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_fields&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-subtitle&quot;</span> <span class="na">for=</span><span class="s">&quot;vendor-share&quot;</span><span class="nt">&gt;</span>Vendor<span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;vendor-share&quot;</span> <span class="na">min=</span><span class="s">&quot;0&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;0&quot;</span> <span class="na">step=</span><span class="s">&quot;any&quot;</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-affix&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;nbsp;</span>+<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-subtitle&quot;</span> <span class="na">for=</span><span class="s">&quot;marketplace-share&quot;</span><span class="nt">&gt;</span>Marketplace<span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;marketplace-share&quot;</span> <span class="na">min=</span><span class="s">&quot;0&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;0&quot;</span> <span class="na">step=</span><span class="s">&quot;any&quot;</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-affix&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;nbsp;</span>+<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--inline_field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-subtitle&quot;</span> <span class="na">for=</span><span class="s">&quot;appdirect-share&quot;</span><span class="nt">&gt;</span>AppDirect<span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;appdirect-share&quot;</span> <span class="na">min=</span><span class="s">&quot;0&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;0&quot;</span> <span class="na">step=</span><span class="s">&quot;any&quot;</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-affix&quot;</span><span class="nt">&gt;</span>= 100 %<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="input_rows">
+              <h3>Input Rows</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <div class="adb-input_row adb-js-input_row">
+                    <div class="adb-input_row--item adb-input_row--label">
+                      <label class="adb-input_row--item_content" for="company-url4">http://</label>
+                    </div>
+                    <div class="adb-input_row--item adb-input_row--primary">
+                      <input class="adb-input_row--item_content" id="company-url4" placeholder="www.company.com" type="url">
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row adb-js-input_row&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--label&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">for=</span><span class="s">&quot;company-url4&quot;</span><span class="nt">&gt;</span>http://<span class="nt">&lt;/label&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--primary&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">id=</span><span class="s">&quot;company-url4&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;www.company.com&quot;</span> <span class="na">type=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                <div class="example__container--view">
+                  <div class="adb-input_row adb-js-input_row">
+                    <div class="adb-input_row--item adb-input_row--primary">
+                      <input class="adb-input_row--item_content" id="company-email" placeholder="email" type="email">
+                    </div>
+                    <div class="adb-input_row--item adb-input_row--label">
+                      <label class="adb-input_row--item_content" for="company-email">@address.com</label>
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row adb-js-input_row&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--primary&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">id=</span><span class="s">&quot;company-email&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;email&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--label&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">for=</span><span class="s">&quot;company-email&quot;</span><span class="nt">&gt;</span>@address.com<span class="nt">&lt;/label&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+              <div class="adb-layout-content--subsection">
+                <h4>Sizes</h4>
+                <nav class="adb-tabs">
+                  <ul class="adb-tabs--items">
+                    <li class="adb-tabs--item active">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#input_row-size1">
+                        Default
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#input_row-size2">
+                        Full-Width
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="adb-js-tab active" id="input_row-size1">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <form class="adb-form">
+                        <fieldset>
+                          <h4>
+                            <legend>Input Row</legend>
+                          </h4>
+                          <div class="adb-form--field adb-input_row adb-js-input_row">
+                            <div class="adb-input_row--item adb-input_row--primary">
+                              <input class="adb-input_row--item_content" type="text">
+                            </div>
+                            <div class="adb-input_row--item">
+                              <button class="adb-input_row--item_content" type="submit">Submit</button>
+                            </div>
+                          </div>
+                        </fieldset>
+                        <fieldset>
+                          <h4>
+                            <legend>Input Row with Dropdown Selector</legend>
+                          </h4>
+                          <div class="adb-form--field adb-input_row adb-js-input_row">
+                            <div class="adb-input_row--item">
+                              <div class="adb-input_row--item_content adb-js-dropdown adb-dropdown adb-dropdown__inset">
+                                <select>
+                                  <option>All Categories</option>
+                                  <option>Lorem ipsum category</option>
+                                  <option>Lorem ipsum category</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="adb-input_row--item adb-input_row--primary">
+                              <input class="adb-input_row--item_content" type="text">
+                            </div>
+                            <div class="adb-input_row--item">
+                              <button class="adb-input_row--item_content" type="submit">Submit</button>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;adb-form&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;fieldset&gt;</span>&#x000A;    <span class="nt">&lt;h4&gt;</span>&#x000A;      <span class="nt">&lt;legend&gt;</span>Input Row<span class="nt">&lt;/legend&gt;</span>&#x000A;    <span class="nt">&lt;/h4&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field adb-input_row adb-js-input_row&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--primary&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/fieldset&gt;</span>&#x000A;  <span class="nt">&lt;fieldset&gt;</span>&#x000A;    <span class="nt">&lt;h4&gt;</span>&#x000A;      <span class="nt">&lt;legend&gt;</span>Input Row with Dropdown Selector<span class="nt">&lt;/legend&gt;</span>&#x000A;    <span class="nt">&lt;/h4&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field adb-input_row adb-js-input_row&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content adb-js-dropdown adb-dropdown adb-dropdown__inset&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;select&gt;</span>&#x000A;            <span class="nt">&lt;option&gt;</span>All Categories<span class="nt">&lt;/option&gt;</span>&#x000A;            <span class="nt">&lt;option&gt;</span>Lorem ipsum category<span class="nt">&lt;/option&gt;</span>&#x000A;            <span class="nt">&lt;option&gt;</span>Lorem ipsum category<span class="nt">&lt;/option&gt;</span>&#x000A;          <span class="nt">&lt;/select&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--primary&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/fieldset&gt;</span>&#x000A;<span class="nt">&lt;/form&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="input_row-size2">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <form class="adb-form">
+                        <fieldset>
+                          <h4>
+                            <legend>Input Row</legend>
+                          </h4>
+                          <div class="adb-form--field">
+                            <div class="adb-input_row adb-input_row__full_width adb-js-input_row">
+                              <div class="adb-input_row--item adb-input_row--primary">
+                                <input class="adb-input_row--item_content" type="text">
+                              </div>
+                              <div class="adb-input_row--item">
+                                <button class="adb-input_row--item_content" type="submit">Submit</button>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                        <fieldset>
+                          <h4>
+                            <legend>Input Row with Dropdown Selector</legend>
+                          </h4>
+                          <div class="adb-form--field">
+                            <div class="adb-input_row adb-input_row__full_width adb-js-input_row">
+                              <div class="adb-input_row--item">
+                                <div class="adb-input_row--item_content adb-js-dropdown adb-dropdown adb-dropdown__inset">
+                                  <select>
+                                    <option>All Categories</option>
+                                    <option>Lorem ipsum category</option>
+                                    <option>Lorem ipsum category</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="adb-input_row--item adb-input_row--primary">
+                                <input class="adb-input_row--item_content" type="text">
+                              </div>
+                              <div class="adb-input_row--item">
+                                <button class="adb-input_row--item_content" type="submit">Submit</button>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;adb-form&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;fieldset&gt;</span>&#x000A;    <span class="nt">&lt;h4&gt;</span>&#x000A;      <span class="nt">&lt;legend&gt;</span>Input Row<span class="nt">&lt;/legend&gt;</span>&#x000A;    <span class="nt">&lt;/h4&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row adb-input_row__full_width adb-js-input_row&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--primary&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/fieldset&gt;</span>&#x000A;  <span class="nt">&lt;fieldset&gt;</span>&#x000A;    <span class="nt">&lt;h4&gt;</span>&#x000A;      <span class="nt">&lt;legend&gt;</span>Input Row with Dropdown Selector<span class="nt">&lt;/legend&gt;</span>&#x000A;    <span class="nt">&lt;/h4&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row adb-input_row__full_width adb-js-input_row&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content adb-js-dropdown adb-dropdown adb-dropdown__inset&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;select&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>All Categories<span class="nt">&lt;/option&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Lorem ipsum category<span class="nt">&lt;/option&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Lorem ipsum category<span class="nt">&lt;/option&gt;</span>&#x000A;            <span class="nt">&lt;/select&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--primary&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/fieldset&gt;</span>&#x000A;<span class="nt">&lt;/form&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-content--subsection">
+                <div class="adb-header">
+                  <h4 class="adb-header--item">
+                    States
+                  </h4>
+                  <menu class="adb-header--item">
+                    <menu class="adb-toggle_buttons" data-toggle="buttons-radio">
+                      <button class="adb-toggle_buttons--button adb-button__small active" data-target="#input-affixed-state1" data-toggle="pill" type="button">Default</button>
+                      <button class="adb-toggle_buttons--button adb-button__small" data-target="#input-affixed-state2" data-toggle="pill" type="button">Error</button>
+                      <button class="adb-toggle_buttons--button adb-button__small" data-target="#input-affixed-state3" data-toggle="pill" type="button">Disabled</button>
+                    </menu>
+                  </menu>
+                </div>
+                <div class="adb-js-pill-target active" id="input-affixed-state1">
+                  <div class="example__container">
+                    <div class="example__container--view">
+                      <div class="adb-input_row adb-js-input_row">
+                        <div class="adb-input_row--item adb-input_row--label">
+                          <label class="adb-input_row--item_content" for="company-url1">http://</label>
+                        </div>
+                        <div class="adb-input_row--item adb-input_row--primary">
+                          <input class="adb-input_row--item_content" id="company-url1" placeholder="company.com" type="url">
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row adb-js-input_row&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--label&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">for=</span><span class="s">&quot;company-url1&quot;</span><span class="nt">&gt;</span>http://<span class="nt">&lt;/label&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--primary&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">id=</span><span class="s">&quot;company-url1&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;company.com&quot;</span> <span class="na">type=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-pill-target" id="input-affixed-state2">
+                  <div class="example__container">
+                    <div class="example__container--view">
+                      <div class="adb-input_row adb-js-input_row adb-is-error">
+                        <div class="adb-input_row--item adb-input_row--label">
+                          <label class="adb-input_row--item_content" for="company-url3">http://</label>
+                        </div>
+                        <div class="adb-input_row--item adb-input_row--primary">
+                          <input class="adb-input_row--item_content" id="company-url3" placeholder="company.com" type="url">
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row adb-js-input_row adb-is-error&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--label&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">for=</span><span class="s">&quot;company-url3&quot;</span><span class="nt">&gt;</span>http://<span class="nt">&lt;/label&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--primary&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">id=</span><span class="s">&quot;company-url3&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;company.com&quot;</span> <span class="na">type=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-pill-target" id="input-affixed-state3">
+                  <div class="example__container">
+                    <div class="example__container--view">
+                      <div class="adb-input_row adb-js-input_row">
+                        <div class="adb-input_row--item adb-input_row--label">
+                          <label class="adb-input_row--item_content" for="company-url2">http://</label>
+                        </div>
+                        <div class="adb-input_row--item adb-input_row--primary">
+                          <input class="adb-input_row--item_content" disabled id="company-url2" placeholder="company.com" type="url">
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row adb-js-input_row&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--label&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">for=</span><span class="s">&quot;company-url2&quot;</span><span class="nt">&gt;</span>http://<span class="nt">&lt;/label&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item adb-input_row--primary&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-input_row--item_content&quot;</span> <span class="na">disabled</span> <span class="na">id=</span><span class="s">&quot;company-url2&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;company.com&quot;</span> <span class="na">type=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="input_table">
+              <h3>Input Tables</h3>
+              <div class="adb-layout-content--subsection">
+                <nav class="adb-tabs">
+                  <ul class="adb-tabs--items">
+                    <li class="adb-tabs--item active">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#input_table-size1">
+                        Default
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#input_table-size2">
+                        Full-Width
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="adb-js-tab active" id="input_table-size1">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-input_table">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td class="adb-input_table--primary">
+                                <input disabled type="email" value="ben.domanico@appdirect.com">
+                              </td>
+                              <td>
+                                <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                  <select disabled>
+                                    <option>Primary Email</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td class="adb-input_table--primary">
+                                <input placeholder="email@address.com" type="email" value="ben@gmail.com">
+                              </td>
+                              <td>
+                                <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                  <select>
+                                    <option>Personal</option>
+                                    <option>Work</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td>
+                                <button class="adb-button__square adb-button__secret" type="button">
+                                  <i class="adb-icon__trash"></i>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="adb-input_table--primary">
+                                <input placeholder="email@address.com" type="email">
+                              </td>
+                              <td>
+                                <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                  <select>
+                                    <option>Personal</option>
+                                    <option>Work</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td>
+                                <button class="adb-button__square adb-button__secret" type="button">
+                                  <i class="adb-icon__trash"></i>
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <button class="adb-button__small adb-button__secondary" type="button">
+                          <i class="adb-icon__add"></i>
+                          Add Email Address
+                        </button>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_table&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;table&gt;</span>&#x000A;    <span class="nt">&lt;tbody&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-input_table--primary&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">disabled</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span> <span class="na">value=</span><span class="s">&quot;ben.domanico@appdirect.com&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown adb-input_table--content&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;select</span> <span class="na">disabled</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Primary Email<span class="nt">&lt;/option&gt;</span>&#x000A;            <span class="nt">&lt;/select&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-input_table--primary&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">&quot;email@address.com&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span> <span class="na">value=</span><span class="s">&quot;ben@gmail.com&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown adb-input_table--content&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;select&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Personal<span class="nt">&lt;/option&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Work<span class="nt">&lt;/option&gt;</span>&#x000A;            <span class="nt">&lt;/select&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__square adb-button__secret&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__trash&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;          <span class="nt">&lt;/button&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-input_table--primary&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">&quot;email@address.com&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown adb-input_table--content&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;select&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Personal<span class="nt">&lt;/option&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Work<span class="nt">&lt;/option&gt;</span>&#x000A;            <span class="nt">&lt;/select&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__square adb-button__secret&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__trash&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;          <span class="nt">&lt;/button&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;/tbody&gt;</span>&#x000A;  <span class="nt">&lt;/table&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__small adb-button__secondary&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__add&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;    Add Email Address&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="input_table-size2">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-input_table adb-input_table__full_width">
+                        <table>
+                          <colgroup>
+                            <col width="60%">
+                            <col width="40%">
+                            <col>
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <td class="adb-input_table--primary">
+                                <input class="adb-input_table--content" disabled type="email" value="ben.domanico@appdirect.com">
+                              </td>
+                              <td>
+                                <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                  <select disabled>
+                                    <option>Primary Email</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td class="adb-input_table--primary">
+                                <input class="adb-input_table--content" placeholder="email@address.com" type="email" value="ben@gmail.com">
+                              </td>
+                              <td>
+                                <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                  <select>
+                                    <option>Personal</option>
+                                    <option>Work</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td>
+                                <button class="adb-button__square adb-button__secret" type="button">
+                                  <i class="adb-icon__trash"></i>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="adb-input_table--primary">
+                                <input class="adb-input_table--content" placeholder="email@address.com" type="email">
+                              </td>
+                              <td>
+                                <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                  <select>
+                                    <option>Personal</option>
+                                    <option>Work</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td>
+                                <button class="adb-button__square adb-button__secret" type="button">
+                                  <i class="adb-icon__trash"></i>
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <button class="adb-button__small adb-button__secondary" type="button">
+                          <i class="adb-icon__add"></i>
+                          Add Email Address
+                        </button>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_table adb-input_table__full_width&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;table&gt;</span>&#x000A;    <span class="nt">&lt;colgroup&gt;</span>&#x000A;      <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;60%&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;40%&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;col&gt;</span>&#x000A;    <span class="nt">&lt;/colgroup&gt;</span>&#x000A;    <span class="nt">&lt;tbody&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-input_table--primary&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-input_table--content&quot;</span> <span class="na">disabled</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span> <span class="na">value=</span><span class="s">&quot;ben.domanico@appdirect.com&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown adb-input_table--content&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;select</span> <span class="na">disabled</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Primary Email<span class="nt">&lt;/option&gt;</span>&#x000A;            <span class="nt">&lt;/select&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-input_table--primary&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-input_table--content&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;email@address.com&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span> <span class="na">value=</span><span class="s">&quot;ben@gmail.com&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown adb-input_table--content&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;select&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Personal<span class="nt">&lt;/option&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Work<span class="nt">&lt;/option&gt;</span>&#x000A;            <span class="nt">&lt;/select&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__square adb-button__secret&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__trash&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;          <span class="nt">&lt;/button&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-input_table--primary&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-input_table--content&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;email@address.com&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown adb-input_table--content&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;select&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Personal<span class="nt">&lt;/option&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Work<span class="nt">&lt;/option&gt;</span>&#x000A;            <span class="nt">&lt;/select&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__square adb-button__secret&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__trash&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;          <span class="nt">&lt;/button&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;/tbody&gt;</span>&#x000A;  <span class="nt">&lt;/table&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__small adb-button__secondary&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__add&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;    Add Email Address&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-content--subsection">
+                <h4>Input Table with Upload Fields</h4>
+                <div class="example__container">
+                  <div class="example__container--view">
+                    <div class="adb-input_table adb-input_table__full_width">
+                      <table>
+                        <colgroup>
+                          <col width="60%">
+                          <col width="40%">
+                          <col>
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="adb-input_table--primary">
+                              <div class="adb-upload adb-input_table--content">
+                                <input class="adb-upload--text" disabled placeholder="No file chosen" type="text">
+                                <button class="adb-upload--select">
+                                  <input type="file">
+                                  <span class="adb-upload--button_text">Choose File</span>
+                                </button>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>Category</option>
+                                  <option>Category</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td>
+                              <button class="adb-button__square adb-button__secret" type="button">
+                                <i class="adb-icon__trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="adb-input_table--primary">
+                              <div class="adb-upload adb-input_table--content">
+                                <input class="adb-upload--text" disabled placeholder="No file chosen" type="text">
+                                <button class="adb-upload--select">
+                                  <input type="file">
+                                  <span class="adb-upload--button_text">Choose File</span>
+                                </button>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>Category</option>
+                                  <option>Category</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td>
+                              <button class="adb-button__square adb-button__secret" type="button">
+                                <i class="adb-icon__trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="adb-input_table--primary">
+                              <div class="adb-upload adb-input_table--content">
+                                <input class="adb-upload--text" disabled placeholder="No file chosen" type="text">
+                                <button class="adb-upload--select">
+                                  <input type="file">
+                                  <span class="adb-upload--button_text">Choose File</span>
+                                </button>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="adb-js-dropdown adb-dropdown adb-input_table--content">
+                                <select>
+                                  <option>Category</option>
+                                  <option>Category</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td>
+                              <button class="adb-button__square adb-button__secret" type="button">
+                                <i class="adb-icon__trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <button class="adb-button__small adb-button__secondary" type="button">
+                      <i class="adb-icon__add"></i>
+                      Add Category
+                    </button>
+                  </div>
+                  <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-input_table adb-input_table__full_width&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;table&gt;</span>&#x000A;    <span class="nt">&lt;colgroup&gt;</span>&#x000A;      <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;60%&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;40%&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;col&gt;</span>&#x000A;    <span class="nt">&lt;/colgroup&gt;</span>&#x000A;    <span class="nt">&lt;tbody&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-input_table--primary&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-upload adb-input_table--content&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-upload--text&quot;</span> <span class="na">disabled</span> <span class="na">placeholder=</span><span class="s">&quot;No file chosen&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-upload--select&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;file&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-upload--button_text&quot;</span><span class="nt">&gt;</span>Choose File<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/button&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown adb-input_table--content&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;select&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Category<span class="nt">&lt;/option&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Category<span class="nt">&lt;/option&gt;</span>&#x000A;            <span class="nt">&lt;/select&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__square adb-button__secret&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__trash&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;          <span class="nt">&lt;/button&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-input_table--primary&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-upload adb-input_table--content&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-upload--text&quot;</span> <span class="na">disabled</span> <span class="na">placeholder=</span><span class="s">&quot;No file chosen&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-upload--select&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;file&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-upload--button_text&quot;</span><span class="nt">&gt;</span>Choose File<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/button&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown adb-input_table--content&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;select&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Category<span class="nt">&lt;/option&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Category<span class="nt">&lt;/option&gt;</span>&#x000A;            <span class="nt">&lt;/select&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__square adb-button__secret&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__trash&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;          <span class="nt">&lt;/button&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-input_table--primary&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-upload adb-input_table--content&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-upload--text&quot;</span> <span class="na">disabled</span> <span class="na">placeholder=</span><span class="s">&quot;No file chosen&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-upload--select&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;file&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-upload--button_text&quot;</span><span class="nt">&gt;</span>Choose File<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/button&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown adb-input_table--content&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;select&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Category<span class="nt">&lt;/option&gt;</span>&#x000A;              <span class="nt">&lt;option&gt;</span>Category<span class="nt">&lt;/option&gt;</span>&#x000A;            <span class="nt">&lt;/select&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__square adb-button__secret&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__trash&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;          <span class="nt">&lt;/button&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;/tbody&gt;</span>&#x000A;  <span class="nt">&lt;/table&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__small adb-button__secondary&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__add&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;  Add Category&#x000A;<span class="nt">&lt;/button&gt;</span>&#x000A;</pre>
+                </div>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="nested-field">
+              <h3>Nested Fields</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <div class="adb-form--field">
+                    <label class="adb-label__required" for="how-redeem">
+                      Redeem Method
+                    </label>
+                    <label class="adb-selector adb-js-radio" for="how-redeem-1">
+                      <span class="adb-selector--input">
+                        <input checked data-toggle="panel" id="how-redeem-1" name="how-redeem" type="radio" value="#redeem-method1">
+                      </span>
+                      <span class="adb-selector--value">
+                        Apply automatically
+                      </span>
+                    </label>
+                    <div class="adb-caption adb-form--caption">
+                      If applied automatically, customers will see a 'discount available' flag on the product in the marketplace while the discount is valid. Discount codes are not made public on the marketplace.
+                    </div>
+                    <div class="adb-js-panel-target adb-is-active" id="redeem-method1"></div>
+                    <label class="adb-selector adb-js-radio" for="how-redeem-2">
+                      <span class="adb-selector--input">
+                        <input data-toggle="panel" id="how-redeem-2" name="how-redeem" type="radio" value="#redeem-method2">
+                      </span>
+                      <span class="adb-selector--value">
+                        Enter code at checkout
+                      </span>
+                    </label>
+                    <div class="adb-caption adb-form--caption">
+                      The discount code can be any unique combination of letters and numbers.
+                    </div>
+                    <div class="adb-js-panel-target adb-form--nested_fields" id="redeem-method2">
+                      <div class="adb-form--field">
+                        <label class="adb-selector adb-js-radio" for="code-options-1">
+                          <span class="adb-selector--input">
+                            <input checked data-toggle="panel" id="code-options-1" name="code-options" type="radio" value="#redeem-method-code1">
+                          </span>
+                          <span class="adb-selector--value">
+                            Enter a single code
+                          </span>
+                        </label>
+                        <div class="adb-js-panel-target adb-form--nested_fields adb-is-active" id="redeem-method-code1">
+                          <div class="adb-form--field">
+                            <label class="adb-label__required" for="single-code">
+                              Enter a single code
+                            </label>
+                            <input id="single-code" name="single-code" type="text">
+                          </div>
+                        </div>
+                        <label class="adb-selector adb-js-radio" for="code-options-2">
+                          <span class="adb-selector--input">
+                            <input data-toggle="panel" id="code-options-2" name="code-options" type="radio" value="#redeem-method-code2">
+                          </span>
+                          <span class="adb-selector--value">
+                            Generate multiple random codes
+                          </span>
+                        </label>
+                        <div class="adb-js-panel-target adb-form--nested_fields" id="redeem-method-code2">
+                          <div class="adb-form--field">
+                            <label class="adb-label__required" for="rand-code">
+                              Number of random codes
+                            </label>
+                            <input id="rand-code" min="0" name="rand-code" type="number">
+                            <div class="adb-caption adb-form--caption">
+                              The number of random codes that will be generated based on these settings (1-999).
+                            </div>
+                          </div>
+                        </div>
+                        <label class="adb-selector adb-js-radio" for="code-options-3">
+                          <span class="adb-selector--input">
+                            <input data-toggle="panel" id="code-options-3" name="code-options" type="radio" value="#redeem-method-code3">
+                          </span>
+                          <span class="adb-selector--value">
+                            Upload a file containing your discount codes
+                          </span>
+                        </label>
+                        <div class="adb-js-panel-target adb-form--nested_fields" id="redeem-method-code3">
+                          <div class="adb-form--field">
+                            <label class="adb-label__required">
+                              Upload file
+                            </label>
+                            <div class="adb-upload_field">
+                              <span class="adb-upload_field--text">
+                                <i class="adb-upload_field--icon"></i>
+                                Drag and drop file here, or
+                                <a>click here to upload.</a>
+                              </span>
+                              <input class="adb-upload_field--input" id="default-file-state" name="default-file-state" type="file">
+                            </div>
+                            <div class="adb-caption adb-form--caption">
+                              Upload a text file of up to 999 discount codes. Each code should be on its own line
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-form--field">
+                    <label>URL</label>
+                    <div class="adb-input_row adb-js-input_row">
+                      <div class="adb-input_row--item adb-input_row--label">
+                        <label class="adb-input_row--item_content" for="company-url4">http://</label>
+                      </div>
+                      <div class="adb-input_row--item adb-input_row--primary">
+                        <input class="adb-input_row--item_content" id="company-url4" placeholder="www.company.com" type="url">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-label__required&quot;</span> <span class="na">for=</span><span class="s">&quot;how-redeem&quot;</span><span class="nt">&gt;</span>&#x000A;    Redeem Method&#x000A;  <span class="nt">&lt;/label&gt;</span>&#x000A;  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;how-redeem-1&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">id=</span><span class="s">&quot;how-redeem-1&quot;</span> <span class="na">name=</span><span class="s">&quot;how-redeem&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">value=</span><span class="s">&quot;#redeem-method1&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;      Apply automatically&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/label&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-caption adb-form--caption&quot;</span><span class="nt">&gt;</span>&#x000A;    If applied automatically, customers will see a &#39;discount available&#39; flag on the product in the marketplace while the discount is valid. Discount codes are not made public on the marketplace.&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-panel-target adb-is-active&quot;</span> <span class="na">id=</span><span class="s">&quot;redeem-method1&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;how-redeem-2&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">id=</span><span class="s">&quot;how-redeem-2&quot;</span> <span class="na">name=</span><span class="s">&quot;how-redeem&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">value=</span><span class="s">&quot;#redeem-method2&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;      Enter code at checkout&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/label&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-caption adb-form--caption&quot;</span><span class="nt">&gt;</span>&#x000A;    The discount code can be any unique combination of letters and numbers.&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-panel-target adb-form--nested_fields&quot;</span> <span class="na">id=</span><span class="s">&quot;redeem-method2&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;code-options-1&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">id=</span><span class="s">&quot;code-options-1&quot;</span> <span class="na">name=</span><span class="s">&quot;code-options&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">value=</span><span class="s">&quot;#redeem-method-code1&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Enter a single code&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-panel-target adb-form--nested_fields adb-is-active&quot;</span> <span class="na">id=</span><span class="s">&quot;redeem-method-code1&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-label__required&quot;</span> <span class="na">for=</span><span class="s">&quot;single-code&quot;</span><span class="nt">&gt;</span>&#x000A;            Enter a single code&#x000A;          <span class="nt">&lt;/label&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;single-code&quot;</span> <span class="na">name=</span><span class="s">&quot;single-code&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;code-options-2&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">id=</span><span class="s">&quot;code-options-2&quot;</span> <span class="na">name=</span><span class="s">&quot;code-options&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">value=</span><span class="s">&quot;#redeem-method-code2&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Generate multiple random codes&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-panel-target adb-form--nested_fields&quot;</span> <span class="na">id=</span><span class="s">&quot;redeem-method-code2&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-label__required&quot;</span> <span class="na">for=</span><span class="s">&quot;rand-code&quot;</span><span class="nt">&gt;</span>&#x000A;            Number of random codes&#x000A;          <span class="nt">&lt;/label&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;rand-code&quot;</span> <span class="na">min=</span><span class="s">&quot;0&quot;</span> <span class="na">name=</span><span class="s">&quot;rand-code&quot;</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-caption adb-form--caption&quot;</span><span class="nt">&gt;</span>&#x000A;            The number of random codes that will be generated based on these settings (1-999).&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;code-options-3&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">id=</span><span class="s">&quot;code-options-3&quot;</span> <span class="na">name=</span><span class="s">&quot;code-options&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">value=</span><span class="s">&quot;#redeem-method-code3&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Upload a file containing your discount codes&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-panel-target adb-form--nested_fields&quot;</span> <span class="na">id=</span><span class="s">&quot;redeem-method-code3&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-label__required&quot;</span><span class="nt">&gt;</span>&#x000A;            Upload file&#x000A;          <span class="nt">&lt;/label&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-upload_field&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-upload_field--text&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-upload_field--icon&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;              Drag and drop file here, or&#x000A;              <span class="nt">&lt;a&gt;</span>click here to upload.<span class="nt">&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-upload_field--input&quot;</span> <span class="na">id=</span><span class="s">&quot;default-file-state&quot;</span> <span class="na">name=</span><span class="s">&quot;default-file-state&quot;</span> <span class="na">type=</span><span class="s">&quot;file&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-caption adb-form--caption&quot;</span><span class="nt">&gt;</span>&#x000A;            Upload a text file of up to 999 discount codes. Each code should be on its own line&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Nested Field with Toggle</h4>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <div class="adb-form--field">
+                    <label class="adb-toggle" for="toggle-show-category-badge">
+                      <input class="adb-toggle--input" data-toggle="panel" id="toggle-show-category-badge" name="toggle-show-category-badge" type="checkbox" value="#show-category-badge">
+                      <span class="adb-toggle--control"></span>
+                      <span class="adb-toggle--value">
+                        Use Category Badge
+                      </span>
+                    </label>
+                  </div>
+                  <div class="adb-js-panel-target adb-form--nested_fields" id="show-category-badge">
+                    <div class="adb-form--field">
+                      <label>Category Badge</label>
+                      <div class="adb-upload">
+                        <input class="adb-upload--text" disabled placeholder="No file chosen" type="text">
+                        <button class="adb-upload--select">
+                          <input type="file">
+                          <span class="adb-upload--button_text">Choose File</span>
+                        </button>
+                      </div>
+                      <p class="adb-subtitle">Badges are resized to 24px and appear on the marketplace home and search results pages.</p>
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-toggle&quot;</span> <span class="na">for=</span><span class="s">&quot;toggle-show-category-badge&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--input&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">id=</span><span class="s">&quot;toggle-show-category-badge&quot;</span> <span class="na">name=</span><span class="s">&quot;toggle-show-category-badge&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;#show-category-badge&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--control&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--value&quot;</span><span class="nt">&gt;</span>&#x000A;      Use Category Badge&#x000A;    <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/label&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-panel-target adb-form--nested_fields&quot;</span> <span class="na">id=</span><span class="s">&quot;show-category-badge&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label&gt;</span>Category Badge<span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-upload&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-upload--text&quot;</span> <span class="na">disabled</span> <span class="na">placeholder=</span><span class="s">&quot;No file chosen&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-upload--select&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;file&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-upload--button_text&quot;</span><span class="nt">&gt;</span>Choose File<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-subtitle&quot;</span><span class="nt">&gt;</span>Badges are resized to 24px and appear on the marketplace home and search results pages.<span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="form-buttons">
+              <h3>Form Buttons</h3>
+              <ul>
+              <li>Place buttons in a <code>&lt;menu&gt;</code> container element with <code>.adb-toolbar</code> class.</li>
+              <li>For form actions, group buttons together on the left by default. Add <code>.adb-toolbar--item</code> to buttons for proper spacing.
+              
+              <ul>
+              <li>Primary action buttons that allow users to complete the form or proceed to the next step, such as &quot;Submit,&quot; should use the <code>.adb-button__primary</code> class.</li>
+              <li>Secondary action buttons <code>.adb-button__secondary</code> or neutral buttons that offer a secondary choice of action should sit next to the primary action button.</li>
+              <li>Cancel buttons that allow users to leave the form or undo all edits should use the <code>.adb-button__secret</code> class.</li>
+              <li>Delete buttons should always use <code>.adb-button__danger</code> class.</li>
+              </ul></li>
+              </ul>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <menu class="adb-toolbar adb-toolbar__polar">
+                    <menu class="adb-toolbar--item">
+                      <button class="adb-button__primary adb-toolbar--item" type="button">
+                        Save
+                      </button>
+                      <button class="adb-toolbar--item" type="button">
+                        Save &amp; Preview
+                      </button>
+                      <button class="adb-button__secret adb-toolbar--item" type="button">
+                        Cancel
+                      </button>
+                    </menu>
+                    <button class="adb-button__danger adb-toolbar--item" type="button">
+                      <i class="adb-icon__trash"></i>
+                      Delete
+                    </button>
+                  </menu>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar adb-toolbar__polar&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__primary adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Save&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Save <span class="ni">&amp;amp;</span> Preview&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__secret adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Cancel&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__danger adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__trash&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;    Delete&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+              </div>
+              <p>In the event that we have two primary actions, (e.g. &quot;Save and Delete&quot;) align the second primary action (&quot;Delete&quot;) on the right by applying <code>.adb-toolbar__polar</code>. Place left and right groups of buttons inside <code>&lt;menu&gt;</code> containers with <code>.adb-toolbar--item</code>. Buttons should follow the order below with more important actions on the outside and less important actions on the inside:</p>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <menu class="adb-toolbar adb-toolbar__polar">
+                    <menu class="adb-toolbar--item">
+                      <button class="adb-button__primary adb-toolbar--item" type="button">
+                        Save
+                      </button>
+                      <button class="adb-toolbar--item" type="button">
+                        Save &amp; Preview
+                      </button>
+                      <button class="adb-button__secret adb-toolbar--item" type="button">
+                        Cancel
+                      </button>
+                    </menu>
+                    <menu class="adb-toolbar--item">
+                      <button class="adb-button__secret adb-toolbar--item" type="button">
+                        Cancel
+                      </button>
+                      <button class="adb-toolbar--item" type="button">
+                        Save &amp; Preview
+                      </button>
+                      <button class="adb-button__primary adb-toolbar--item" type="button">
+                        Save
+                      </button>
+                    </menu>
+                  </menu>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar adb-toolbar__polar&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__primary adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Save&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Save <span class="ni">&amp;amp;</span> Preview&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__secret adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Cancel&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__secret adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Cancel&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Save <span class="ni">&amp;amp;</span> Preview&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__primary adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Save&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Form Buttons for Step Flow</h4>
+              <p>Align buttons on the right when guiding users through a multi-step flow. An example of this is when your buttons say something to the effect of, &quot;Next, previous, continue, back, etc.&quot;</p>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <menu class="adb-toolbar adb-toolbar__polar">
+                    <menu class="adb-toolbar--item"></menu>
+                    <menu class="adb-toolbar--item">
+                      <button class="adb-button__secret adb-toolbar--item" type="button">
+                        Cancel
+                      </button>
+                      <button class="adb-toolbar--item" type="button">
+                        Previous Step
+                      </button>
+                      <button class="adb-button__primary adb-toolbar--item" type="button">
+                        Next Step
+                      </button>
+                    </menu>
+                  </menu>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar adb-toolbar__polar&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar--item&quot;</span><span class="nt">&gt;&lt;/menu&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__secret adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Cancel&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Previous Step&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__primary adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Next Step&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="field-labels">
+              <h3>Labels</h3>
+              <h4>Standard Labels</h4>
+              <ul>
+              <li>Use <code>&lt;label&gt;</code> to label every form field. Couple <code>&lt;label&gt;</code> with <code>&lt;input&gt;</code> tags with <code>for</code> attribute.</li>
+              <li>Labels sit above the field or group of fields and align left to     maximize readability.</li>
+              </ul>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <form class="adb-form">
+                    <fieldset>
+                      <h3>
+                        <legend>Sign up for Email</legend>
+                      </h3>
+                      <div class="adb-form--field">
+                        <label for="label-default-email">
+                          Email Address
+                        </label>
+                        <input id="label-default-email" placeholder="email@address.com" type="email">
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="label-default-checkboxes">
+                          Topics
+                        </label>
+                        <label class="adb-selector adb-js-checkbox" for="label-default-checkbox1">
+                          <span class="adb-selector--input">
+                            <input checked id="label-default-checkbox1" name="label-default-checkboxes" type="checkbox">
+                          </span>
+                          <span class="adb-selector--value">
+                            Business
+                          </span>
+                        </label>
+                        <label class="adb-selector adb-js-checkbox" for="label-default-checkbox2">
+                          <span class="adb-selector--input">
+                            <input id="label-default-checkbox2" name="label-default-checkboxes" type="checkbox">
+                          </span>
+                          <span class="adb-selector--value">
+                            Technology
+                          </span>
+                        </label>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="label-default-radios">
+                          Frequency
+                        </label>
+                        <label class="adb-selector adb-js-radio" for="label-default-radio1">
+                          <span class="adb-selector--input">
+                            <input checked id="label-default-radio1" name="label-default-radios" type="radio">
+                          </span>
+                          <span class="adb-selector--value">
+                            Daily
+                          </span>
+                        </label>
+                        <label class="adb-selector adb-js-radio" for="label-default-radio2">
+                          <span class="adb-selector--input">
+                            <input id="label-default-radio2" name="label-default-radios" type="radio">
+                          </span>
+                          <span class="adb-selector--value">
+                            Weekly
+                          </span>
+                        </label>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="label-default-dropdown">
+                          Format
+                        </label>
+                        <div class="adb-js-dropdown adb-dropdown">
+                          <select id="label-default-dropdown">
+                            <option>
+                              HTML
+                            </option>
+                            <option>
+                              Rich Text
+                            </option>
+                            <option>
+                              Plain Text
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <menu class="adb-toolbar">
+                      <button class="adb-button__primary adb-toolbar--item" type="button">
+                        Send
+                      </button>
+                      <button class="adb-button__secret adb-toolbar--item" type="button">
+                        Cancel
+                      </button>
+                    </menu>
+                  </form>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;adb-form&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;fieldset&gt;</span>&#x000A;    <span class="nt">&lt;h3&gt;</span>&#x000A;      <span class="nt">&lt;legend&gt;</span>Sign up for Email<span class="nt">&lt;/legend&gt;</span>&#x000A;    <span class="nt">&lt;/h3&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;label-default-email&quot;</span><span class="nt">&gt;</span>&#x000A;        Email Address&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;label-default-email&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;email@address.com&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;label-default-checkboxes&quot;</span><span class="nt">&gt;</span>&#x000A;        Topics&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;label-default-checkbox1&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;label-default-checkbox1&quot;</span> <span class="na">name=</span><span class="s">&quot;label-default-checkboxes&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Business&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;label-default-checkbox2&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;label-default-checkbox2&quot;</span> <span class="na">name=</span><span class="s">&quot;label-default-checkboxes&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Technology&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;label-default-radios&quot;</span><span class="nt">&gt;</span>&#x000A;        Frequency&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;label-default-radio1&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;label-default-radio1&quot;</span> <span class="na">name=</span><span class="s">&quot;label-default-radios&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Daily&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;label-default-radio2&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;label-default-radio2&quot;</span> <span class="na">name=</span><span class="s">&quot;label-default-radios&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Weekly&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;label-default-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;        Format&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;label-default-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            HTML&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            Rich Text&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            Plain Text&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;        <span class="nt">&lt;/select&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/fieldset&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__primary adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Send&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__secret adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Cancel&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;<span class="nt">&lt;/form&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Inline Labels</h4>
+              <p>The framework uses inline labels and inputs largely for filter and sort     menus.</p>
+              
+              <ul>
+              <li>Inline labels sit to the left of inline form fields.</li>
+              <li>Use <code>.inline</code> for each inline element. If it&#39;s in a <code>menu</code>, you can apply <code>.inline</code> to the menu.</li>
+              <li>Avoid using inline labels and inputs for forms or menus longer than 1 line.</li>
+              </ul>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <form class="adb-form">
+                    <fieldset>
+                      <h3>
+                        <legend>Mailing List Options</legend>
+                      </h3>
+                      <div class="adb-form--field">
+                        <label class="adb-label__inline" for="label-inline-checkboxes">
+                          View
+                        </label>
+                        <label class="adb-selector adb-selector__inline adb-js-checkbox" for="label-inline-checkbox1">
+                          <span class="adb-selector--input">
+                            <input checked id="label-inline-checkbox1" name="label-inline-checkboxes" type="checkbox">
+                          </span>
+                          <span class="adb-selector--value">
+                            Free
+                          </span>
+                        </label>
+                        <label class="adb-selector adb-selector__inline adb-js-checkbox" for="label-inline-checkbox2">
+                          <span class="adb-selector--input">
+                            <input id="label-inline-checkbox2" name="label-inline-checkboxes" type="checkbox">
+                          </span>
+                          <span class="adb-selector--value">
+                            Recommended
+                          </span>
+                        </label>
+                      </div>
+                      <div class="adb-form--field">
+                        <label class="adb-label__inline" for="label-inline-radios">
+                          Select
+                        </label>
+                        <label class="adb-selector adb-selector__inline adb-js-radio" for="label-inline-radio1">
+                          <span class="adb-selector--input">
+                            <input checked id="label-inline-radio1" name="label-inline-radios" type="radio">
+                          </span>
+                          <span class="adb-selector--value">
+                            All
+                          </span>
+                        </label>
+                        <label class="adb-selector adb-selector__inline adb-js-radio" for="label-inline-radio2">
+                          <span class="adb-selector--input">
+                            <input id="label-inline-radio2" name="label-inline-radios" type="radio">
+                          </span>
+                          <span class="adb-selector--value">
+                            None
+                          </span>
+                        </label>
+                      </div>
+                      <div class="adb-form--field">
+                        <label class="adb-label__inline" for="label-inline-dropdown">
+                          Sort by
+                        </label>
+                        <div class="adb-js-dropdown adb-dropdown">
+                          <select id="label-inline-dropdown">
+                            <option>
+                              Date
+                            </option>
+                            <option>
+                              Name
+                            </option>
+                            <option>
+                              Ratings
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="adb-form--field">
+                        <label class="adb-label__inline" for="label-inline-email">
+                          Email Address:
+                        </label>
+                        <input id="label-inline-email" placeholder="email@address.com" type="email">
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;adb-form&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;fieldset&gt;</span>&#x000A;    <span class="nt">&lt;h3&gt;</span>&#x000A;      <span class="nt">&lt;legend&gt;</span>Mailing List Options<span class="nt">&lt;/legend&gt;</span>&#x000A;    <span class="nt">&lt;/h3&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-label__inline&quot;</span> <span class="na">for=</span><span class="s">&quot;label-inline-checkboxes&quot;</span><span class="nt">&gt;</span>&#x000A;        View&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__inline adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;label-inline-checkbox1&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;label-inline-checkbox1&quot;</span> <span class="na">name=</span><span class="s">&quot;label-inline-checkboxes&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Free&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__inline adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;label-inline-checkbox2&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;label-inline-checkbox2&quot;</span> <span class="na">name=</span><span class="s">&quot;label-inline-checkboxes&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Recommended&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-label__inline&quot;</span> <span class="na">for=</span><span class="s">&quot;label-inline-radios&quot;</span><span class="nt">&gt;</span>&#x000A;        Select&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__inline adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;label-inline-radio1&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;label-inline-radio1&quot;</span> <span class="na">name=</span><span class="s">&quot;label-inline-radios&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          All&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__inline adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;label-inline-radio2&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;label-inline-radio2&quot;</span> <span class="na">name=</span><span class="s">&quot;label-inline-radios&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          None&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-label__inline&quot;</span> <span class="na">for=</span><span class="s">&quot;label-inline-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;        Sort by&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;label-inline-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            Date&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            Name&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            Ratings&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;        <span class="nt">&lt;/select&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-label__inline&quot;</span> <span class="na">for=</span><span class="s">&quot;label-inline-email&quot;</span><span class="nt">&gt;</span>&#x000A;        Email Address:&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;label-inline-email&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;email@address.com&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/fieldset&gt;</span>&#x000A;<span class="nt">&lt;/form&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Captions and Footnotes</h4>
+              <p>When labels alone do not suffice to describe an option, place a <code>.adb-caption</code> or <code>.adb-footnote</code> paragraph below.</p>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <form class="adb-form">
+                    <fieldset>
+                      <h3>
+                        <legend>Vendor Settings</legend>
+                      </h3>
+                      <div class="adb-form--field">
+                        <label>Activation</label>
+                        <label class="adb-selector adb-js-checkbox" for="activation">
+                          <span class="adb-selector--input">
+                            <input checked id="activation" name="activation" type="checkbox">
+                          </span>
+                          <span class="adb-selector--value">
+                            Customers must enter a phone number to activate their account
+                          </span>
+                        </label>
+                        <div class="adb-caption adb-form--caption">Please provide a valid, 10-digit phone number starting with the area code.</div>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="robots">
+                          Edit robots.txt
+                        </label>
+                        <textarea>User-agent: *&#x000A;Disallow: /*</textarea>
+                        <div class="adb-caption adb-form--caption">
+                          The robots.txt file informs search engine crawlers of what should be excluded from site indexing. Read more here about formatting and standard examples of robot.txt files.
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;adb-form&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;fieldset&gt;</span>&#x000A;    <span class="nt">&lt;h3&gt;</span>&#x000A;      <span class="nt">&lt;legend&gt;</span>Vendor Settings<span class="nt">&lt;/legend&gt;</span>&#x000A;    <span class="nt">&lt;/h3&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label&gt;</span>Activation<span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;activation&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;activation&quot;</span> <span class="na">name=</span><span class="s">&quot;activation&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Customers must enter a phone number to activate their account&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-caption adb-form--caption&quot;</span><span class="nt">&gt;</span>Please provide a valid, 10-digit phone number starting with the area code.<span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;robots&quot;</span><span class="nt">&gt;</span>&#x000A;        Edit robots.txt&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;textarea&gt;</span>User-agent: *<span class="ni">&amp;#x000A;</span>Disallow: /*<span class="nt">&lt;/textarea&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-caption adb-form--caption&quot;</span><span class="nt">&gt;</span>&#x000A;        The robots.txt file informs search engine crawlers of what should be excluded from site indexing. Read more here about formatting and standard examples of robot.txt files.&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/fieldset&gt;</span>&#x000A;<span class="nt">&lt;/form&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+          </article>
+        </section>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="text_inputs.html">Modify</a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Form Layout
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

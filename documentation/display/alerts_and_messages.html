@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Alerts &amp; Messages</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="documentation documentation_display documentation_display_alerts_and_messages">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Framework Foundations" data-toggle="tooltip" data-placement="bottom" href="../core/design_principles.html">Core
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link adb-is-selected" title="Specialized Data" data-toggle="tooltip" data-placement="bottom" href="alerts_and_messages.html">Display
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Menus and Buttons" data-toggle="tooltip" data-placement="bottom" href="../navigate/global_navigation.html">Navigate
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Form Elements" data-toggle="tooltip" data-placement="bottom" href="../modify/text_inputs.html">Modify
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Layout Patterns" data-toggle="tooltip" data-placement="bottom" href="../arrange/containers.html">Arrange
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Application Pages" data-toggle="tooltip" data-placement="bottom" href="../../prototype/">Prototype
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-context_menu--trigger adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  <i class="adb-icon__cog"></i>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="https://github.com/ad-dc/base/releases">Release Notes</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../benchmarking.html">CSS/SASS Stats</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../components.html">Preview All Components</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <section class="adb-layout-row adb-headline">
+          <div class="adb-layout-default">
+            <h5>Base by AppDirect</h5>
+            <h1>
+              Display
+            </h1>
+            <p class="tagline">
+              Communicate specialized information
+            </p>
+          </div>
+        </section>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="alerts_and_messages.html">Alerts &amp; Messages</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="text_patterns.html">Text Patterns</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="tooltips.html">Tooltips</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="ratings.html">Ratings</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="badges.html">Badges</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="status_and_progress.html">Status &amp; Progress</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="logos_and_avatars.html">Avatars &amp; Logos</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="myapps.html">App Tiles</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="pricing.html">Numbers &amp; Pricing</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <article class="adb-layout-content">
+            <h2>
+              Alerts &amp; Messages
+            </h2>
+            <section class="adb-layout-content--section" id="alerts-global">
+              <h3>Global Alerts</h3>
+              <div class="adb-layout-content--subsection">
+                <h4>Styles</h4>
+                <nav class="adb-tabs">
+                  <ul class="adb-tabs--items">
+                    <li class="adb-tabs--item active">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-global-style1">
+                        Link in message
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-global-style2">
+                        Action required
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="adb-js-tab active" id="alert-global-style1">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-global_alert">
+                        <div class="adb-global_alert--content adb-layout-default">
+                          <p>
+                            <strong>Alert.</strong>
+                            You should do something,
+                            <a class="adb-global_alert--link">click here.</a>
+                            <a class="adb-global_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--content adb-layout-default&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      <span class="nt">&lt;strong&gt;</span>Alert.<span class="nt">&lt;/strong&gt;</span>&#x000A;      You should do something,&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--link&quot;</span><span class="nt">&gt;</span>click here.<span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Close&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="alert-global-style2">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-global_alert">
+                        <div class="adb-global_alert--content adb-layout-default">
+                          <p>
+                            <strong>Error.</strong>
+                            You must do something,
+                            <a class="adb-global_alert--link">
+                              click here to go do it.
+                            </a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--content adb-layout-default&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      <span class="nt">&lt;strong&gt;</span>Error.<span class="nt">&lt;/strong&gt;</span>&#x000A;      You must do something,&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--link&quot;</span><span class="nt">&gt;</span>&#x000A;        click here to go do it.&#x000A;      <span class="nt">&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-content--subsection">
+                <h4>States</h4>
+                <nav class="adb-tabs">
+                  <ul class="adb-tabs--items">
+                    <li class="adb-tabs--item active">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-global-state1">
+                        Default
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-global-state2">
+                        Error
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-global-state3">
+                        Warning
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-global-state4">
+                        Success
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-global-state5">
+                        Info
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="adb-js-tab active" id="alert-global-state1">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-global_alert">
+                        <div class="adb-global_alert--content adb-layout-default">
+                          <p>
+                            <strong>FYI,</strong>
+                            here is a message for you. Feel free to dismiss me at will.
+                            <a class="adb-global_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--content adb-layout-default&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      <span class="nt">&lt;strong&gt;</span>FYI,<span class="nt">&lt;/strong&gt;</span>&#x000A;      here is a message for you. Feel free to dismiss me at will.&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Close&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="alert-global-state2">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-global_alert adb-global_alert__error">
+                        <div class="adb-global_alert--content adb-layout-default">
+                          <p>
+                            <strong>Error!</strong>
+                            Something went wrong, sorry to say.
+                            <a class="adb-global_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert adb-global_alert__error&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--content adb-layout-default&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      <span class="nt">&lt;strong&gt;</span>Error!<span class="nt">&lt;/strong&gt;</span>&#x000A;      Something went wrong, sorry to say.&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Close&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="alert-global-state3">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-global_alert adb-global_alert__warning">
+                        <div class="adb-global_alert--content adb-layout-default">
+                          <p>
+                            <strong>Warning!</strong>
+                            Just thought you might want to know about something.
+                            <a class="adb-global_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert adb-global_alert__warning&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--content adb-layout-default&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      <span class="nt">&lt;strong&gt;</span>Warning!<span class="nt">&lt;/strong&gt;</span>&#x000A;      Just thought you might want to know about something.&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Close&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="alert-global-state4">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-global_alert adb-global_alert__success">
+                        <div class="adb-global_alert--content adb-layout-default">
+                          <p>
+                            <strong>Success!</strong>
+                            You did something right for a change, good job!
+                            <a class="adb-global_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert adb-global_alert__success&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--content adb-layout-default&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      <span class="nt">&lt;strong&gt;</span>Success!<span class="nt">&lt;/strong&gt;</span>&#x000A;      You did something right for a change, good job!&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Close&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="alert-global-state5">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-global_alert adb-global_alert__info">
+                        <div class="adb-global_alert--content adb-layout-default">
+                          <p>
+                            <strong>Info:</strong>
+                            here is something you need to know. Now you can close this alert.
+                            <a class="adb-global_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert adb-global_alert__info&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--content adb-layout-default&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      <span class="nt">&lt;strong&gt;</span>Info:<span class="nt">&lt;/strong&gt;</span>&#x000A;      here is something you need to know. Now you can close this alert.&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-global_alert--close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Close&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="alerts-local">
+              <h3>Local Alerts</h3>
+              <div class="adb-layout-content--subsection">
+                <h4>Styles</h4>
+                <nav class="adb-tabs">
+                  <ul class="adb-tabs--items">
+                    <li class="adb-tabs--item active">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-local-style1">
+                        Link in message
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-local-style2">
+                        Buttons (required action)
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-local-style3">
+                        Title and message
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="adb-js-tab active" id="alert-local-style1">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-local_alert">
+                        <div class="adb-local_alert--content">
+                          <p>
+                            <strong>
+                              FYI.
+                            </strong>
+                            If you want to do that thing you want to do,
+                            <a class="adb-local_alert--link">click here.</a>
+                            <a class="adb-local_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--content&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      <span class="nt">&lt;strong&gt;</span>&#x000A;        FYI.&#x000A;      <span class="nt">&lt;/strong&gt;</span>&#x000A;      If you want to do that thing you want to do,&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--link&quot;</span><span class="nt">&gt;</span>click here.<span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Close&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="alert-local-style2">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-local_alert">
+                        <div class="adb-local_alert--content">
+                          <p>
+                            <strong>Buttons.</strong>
+                            Sometimes they make more sense for choices.
+                            <a class="adb-local_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                          </p>
+                        </div>
+                        <menu class="adb-toolbar adb-local_alert--buttons">
+                          <button class="adb-button__primary adb-toolbar--item" type="button">
+                            Invite Users
+                          </button>
+                          <button class="adb-toolbar--item" data-dismiss="alert" type="button">
+                            Do Something Else
+                          </button>
+                        </menu>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--content&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      <span class="nt">&lt;strong&gt;</span>Buttons.<span class="nt">&lt;/strong&gt;</span>&#x000A;      Sometimes they make more sense for choices.&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Close&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar adb-local_alert--buttons&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__primary adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Invite Users&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar--item&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Do Something Else&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="alert-local-style3">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-local_alert">
+                        <div class="adb-local_alert--content">
+                          <h3>
+                            Hey there big guy!
+                            <a class="adb-local_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                          </h3>
+                          <p>
+                            This notification would be great for more important of lengthier messages. It will
+                            comfortably break to two lines to accomodate longer messages.
+                            <a class="adb-local_alert--link">Click here.</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--content&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;h3&gt;</span>&#x000A;      Hey there big guy!&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Close&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/h3&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      This notification would be great for more important of lengthier messages. It will&#x000A;      comfortably break to two lines to accomodate longer messages.&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--link&quot;</span><span class="nt">&gt;</span>Click here.<span class="nt">&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-content--subsection">
+                <h4>States</h4>
+                <nav class="adb-tabs">
+                  <ul class="adb-tabs--items">
+                    <li class="adb-tabs--item active">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-local-state1">
+                        Default
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-local-state2">
+                        Error
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-local-state3">
+                        Warning
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-local-state4">
+                        Success
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#alert-local-state5">
+                        Info
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="adb-js-tab active" id="alert-local-state1">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-local_alert">
+                        <div class="adb-local_alert--content">
+                          <p>
+                            <strong>FYI,</strong>
+                            here is a message for you. Feel free to dismiss me at will.
+                            <a class="adb-local_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--content&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      <span class="nt">&lt;strong&gt;</span>FYI,<span class="nt">&lt;/strong&gt;</span>&#x000A;      here is a message for you. Feel free to dismiss me at will.&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Close&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="alert-local-state2">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-local_alert adb-local_alert__error">
+                        <div class="adb-local_alert--content">
+                          <p>
+                            <strong>Error!</strong>
+                            Something went wrong, sorry to say.
+                            <a class="adb-local_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert adb-local_alert__error&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--content&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      <span class="nt">&lt;strong&gt;</span>Error!<span class="nt">&lt;/strong&gt;</span>&#x000A;      Something went wrong, sorry to say.&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Close&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="alert-local-state3">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-local_alert adb-local_alert__warning">
+                        <div class="adb-local_alert--content">
+                          <p>
+                            <strong>Warning!</strong>
+                            Just thought you might want to know about something.
+                            <a class="adb-local_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert adb-local_alert__warning&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--content&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      <span class="nt">&lt;strong&gt;</span>Warning!<span class="nt">&lt;/strong&gt;</span>&#x000A;      Just thought you might want to know about something.&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Close&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="alert-local-state4">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-local_alert adb-local_alert__success">
+                        <div class="adb-local_alert--content">
+                          <p>
+                            <strong>Success!</strong>
+                            You did something right for a change, good job!
+                            <a class="adb-local_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert adb-local_alert__success&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--content&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      <span class="nt">&lt;strong&gt;</span>Success!<span class="nt">&lt;/strong&gt;</span>&#x000A;      You did something right for a change, good job!&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Close&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="alert-local-state5">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-local_alert adb-local_alert__info">
+                        <div class="adb-local_alert--content">
+                          <p>
+                            <strong>Info:</strong>
+                            here is something you need to know. Now you can close this alert.
+                            <a class="adb-local_alert--close" data-dismiss="alert" href="#" title="Close"></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert adb-local_alert__info&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--content&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>&#x000A;      <span class="nt">&lt;strong&gt;</span>Info:<span class="nt">&lt;/strong&gt;</span>&#x000A;      here is something you need to know. Now you can close this alert.&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-local_alert--close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Close&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="messages">
+              <h3>Help Messages</h3>
+              <p>Help messages are blocks of textual content, highlighted by a light gray background, such as help tips and frequently asked questions. You can pair them with tooltips to show/hide them.</p>
+              <div class="adb-layout-content--subsection">
+                <nav class="adb-tabs">
+                  <ul class="adb-tabs--items">
+                    <li class="adb-tabs--item active">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#help-style1">
+                        Default
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#help-style2">
+                        Titled
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#help-style3">
+                        Sections
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="adb-js-tab active" id="help-style1">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-help">
+                        <p>This is some help text.</p>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-help&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;p&gt;</span>This is some help text.<span class="nt">&lt;/p&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="help-style2">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-help">
+                        <h3>
+                          How do I buy an application through AppDirect?
+                        </h3>
+                        <p>
+                          To buy an application, visit the
+                          <a href="#">
+                            AppDirect Marketplace
+                          </a>
+                          and click on the profile of the application you would like to purchase. Then click "Buy Now" to start the purchase. &hellip;
+                          <a href="#">
+                            Read More
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-help&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;h3&gt;</span>&#x000A;    How do I buy an application through AppDirect?&#x000A;  <span class="nt">&lt;/h3&gt;</span>&#x000A;  <span class="nt">&lt;p&gt;</span>&#x000A;    To buy an application, visit the&#x000A;    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>&#x000A;      AppDirect Marketplace&#x000A;    <span class="nt">&lt;/a&gt;</span>&#x000A;    and click on the profile of the application you would like to purchase. Then click &quot;Buy Now&quot; to start the purchase. <span class="ni">&amp;hellip;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>&#x000A;      Read More&#x000A;    <span class="nt">&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;/p&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="help-style3">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-help">
+                        <div class="adb-help--row">
+                          <h4>What happens if I upgrade editions in the middle of a billing cycle?</h4>
+                          <p>You will get charged a prorated amount for the upgrade and the billing cycle resets on the upgrade checkout date. You will get immediate access to the new edition features when you upgrade.</p>
+                        </div>
+                        <div class="adb-help--row">
+                          <h4>What happens if I downgrade editions in the middle of a billing cycle?</h4>
+                          <p>You will get charged a prorated amount for the downgrade and the billing cycle resets on the downgrade checkout date. You will get immediate access to the downgraded edition.</p>
+                        </div>
+                        <div class="adb-help--row">
+                          <h4>What happens if I cancel a subscription in the middle of a billing cycle?</h4>
+                          <p>When you cancel your subscription to an application you will no longer have access to that application. We do not provide refunds on paid subscriptions.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-help&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-help--row&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;h4&gt;</span>What happens if I upgrade editions in the middle of a billing cycle?<span class="nt">&lt;/h4&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>You will get charged a prorated amount for the upgrade and the billing cycle resets on the upgrade checkout date. You will get immediate access to the new edition features when you upgrade.<span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-help--row&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;h4&gt;</span>What happens if I downgrade editions in the middle of a billing cycle?<span class="nt">&lt;/h4&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>You will get charged a prorated amount for the downgrade and the billing cycle resets on the downgrade checkout date. You will get immediate access to the downgraded edition.<span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-help--row&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;h4&gt;</span>What happens if I cancel a subscription in the middle of a billing cycle?<span class="nt">&lt;/h4&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>When you cancel your subscription to an application you will no longer have access to that application. We do not provide refunds on paid subscriptions.<span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+              </div>
+              <h4>Callout Help Messages</h4>
+              <div class="adb-layout-content--subsection">
+                <nav class="adb-tabs">
+                  <ul class="adb-tabs--items">
+                    <li class="adb-tabs--item active">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#callout-style1">
+                        Default
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#callout-style2">
+                        Title Only
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="adb-js-tab active" id="callout-style1">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-help adb-help__columned adb-help__multiline">
+                        <div class="adb-help--column">
+                          <h3>Average Rating</h3>
+                          <div class="adb-rating adb-rating__xlarge">
+                            <i class="adb-rating--icon adb-rating--icon__positive"></i>
+                            <i class="adb-rating--icon adb-rating--icon__positive"></i>
+                            <i class="adb-rating--icon adb-rating--icon__positive"></i>
+                            <i class="adb-rating--icon adb-rating--icon__positive"></i>
+                            <i class="adb-rating--icon adb-rating--icon__positive"></i>
+                          </div>
+                          <div class="adb-caption">
+                            4/5 based on 3 reviews
+                          </div>
+                        </div>
+                        <div class="adb-help--column">
+                          <h3>My Rating</h3>
+                          <div class="adb-rating adb-rating__xlarge">
+                            <i class="adb-rating--icon adb-rating--icon__unrated"></i>
+                            <i class="adb-rating--icon adb-rating--icon__unrated"></i>
+                            <i class="adb-rating--icon adb-rating--icon__unrated"></i>
+                            <i class="adb-rating--icon adb-rating--icon__unrated"></i>
+                            <i class="adb-rating--icon adb-rating--icon__unrated"></i>
+                          </div>
+                        </div>
+                        <div class="adb-help--column"></div>
+                        <div class="adb-help--column"></div>
+                        <div class="adb-help--column"></div>
+                        <menu class="adb-help--column">
+                          <button class="adb-button__primary" data-target="#modal-review" data-toggle="modal" type="button">
+                            Write a Review
+                          </button>
+                        </menu>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-help adb-help__columned adb-help__multiline&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-help--column&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;h3&gt;</span>Average Rating<span class="nt">&lt;/h3&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-rating adb-rating__xlarge&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-rating--icon adb-rating--icon__positive&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-rating--icon adb-rating--icon__positive&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-rating--icon adb-rating--icon__positive&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-rating--icon adb-rating--icon__positive&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-rating--icon adb-rating--icon__positive&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-caption&quot;</span><span class="nt">&gt;</span>&#x000A;      4/5 based on 3 reviews&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-help--column&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;h3&gt;</span>My Rating<span class="nt">&lt;/h3&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-rating adb-rating__xlarge&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-rating--icon adb-rating--icon__unrated&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-rating--icon adb-rating--icon__unrated&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-rating--icon adb-rating--icon__unrated&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-rating--icon adb-rating--icon__unrated&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-rating--icon adb-rating--icon__unrated&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-help--column&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-help--column&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-help--column&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-help--column&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__primary&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#modal-review&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;modal&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Write a Review&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="callout-style2">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-help adb-help__columned">
+                        <div class="adb-help--column">
+                          <div class="adb-title__large">
+                            <span class="adb-status adb-status__pending">
+                              <span>Status:&nbsp;</span>
+                              <span class="adb-status--gem"></span>
+                              Pending
+                            </span>
+                          </div>
+                        </div>
+                        <menu class="adb-help--column">
+                          <button class="adb-button__primary" type="button">
+                            Publish Product
+                          </button>
+                        </menu>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-help adb-help__columned&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-help--column&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-title__large&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__pending&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span&gt;</span>Status:<span class="ni">&amp;nbsp;</span><span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;        Pending&#x000A;      <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-help--column&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__primary&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Publish Product&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+        </section>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="alerts_and_messages.html">Display</a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Alerts &amp; Messages
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

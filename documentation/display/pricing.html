@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Numbers &amp; Pricing</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="documentation documentation_display documentation_display_pricing">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Framework Foundations" data-toggle="tooltip" data-placement="bottom" href="../core/design_principles.html">Core
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link adb-is-selected" title="Specialized Data" data-toggle="tooltip" data-placement="bottom" href="alerts_and_messages.html">Display
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Menus and Buttons" data-toggle="tooltip" data-placement="bottom" href="../navigate/global_navigation.html">Navigate
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Form Elements" data-toggle="tooltip" data-placement="bottom" href="../modify/text_inputs.html">Modify
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Layout Patterns" data-toggle="tooltip" data-placement="bottom" href="../arrange/containers.html">Arrange
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Application Pages" data-toggle="tooltip" data-placement="bottom" href="../../prototype/">Prototype
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-context_menu--trigger adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  <i class="adb-icon__cog"></i>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="https://github.com/ad-dc/base/releases">Release Notes</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../benchmarking.html">CSS/SASS Stats</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../components.html">Preview All Components</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <section class="adb-layout-row adb-headline">
+          <div class="adb-layout-default">
+            <h5>Base by AppDirect</h5>
+            <h1>
+              Display
+            </h1>
+            <p class="tagline">
+              Communicate specialized information
+            </p>
+          </div>
+        </section>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="alerts_and_messages.html">Alerts &amp; Messages</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="text_patterns.html">Text Patterns</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="tooltips.html">Tooltips</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="ratings.html">Ratings</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="badges.html">Badges</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="status_and_progress.html">Status &amp; Progress</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="logos_and_avatars.html">Avatars &amp; Logos</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="myapps.html">App Tiles</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="pricing.html">Numbers &amp; Pricing</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <article class="adb-layout-content">
+            <h2>
+              Numbers &amp; Pricing
+            </h2>
+            <section class="adb-layout-content--section" id="stats">
+              <h3>Stats</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <div class="adb-stat">
+                    <span class="adb-stat--value">$999.99</span>
+                    <span class="adb-stat--unit">Due Today</span>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stat&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--value&quot;</span><span class="nt">&gt;</span>$999.99<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--unit&quot;</span><span class="nt">&gt;</span>Due Today<span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Grouped</h4>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <div class="adb-layout-sidebar">
+                    <div class="adb-container">
+                      <div class="adb-stats">
+                        <div class="adb-stat">
+                          <span class="adb-stat--value">9,650</span>
+                          <span class="adb-stat--unit">Total Subscriptions</span>
+                        </div>
+                        <div class="adb-stat">
+                          <span class="adb-stat--value">8,284</span>
+                          <span class="adb-stat--unit">Total Orders</span>
+                        </div>
+                        <div class="adb-stat">
+                          <span class="adb-stat--value">$471,394.03</span>
+                          <span class="adb-stat--unit">Revenue to Date</span>
+                        </div>
+                        <div class="adb-stat">
+                          <span class="adb-stat--value">21,658</span>
+                          <span class="adb-stat--unit">Invoices Paid</span>
+                        </div>
+                        <div class="adb-stat">
+                          <span class="adb-stat--value">6,425</span>
+                          <span class="adb-stat--unit">Invoices Unpaid</span>
+                        </div>
+                        <div class="adb-stat">
+                          <span class="adb-stat--value">6,425</span>
+                          <span class="adb-stat--unit">Invoices Overdue</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stats&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stat&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--value&quot;</span><span class="nt">&gt;</span>9,650<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--unit&quot;</span><span class="nt">&gt;</span>Total Subscriptions<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stat&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--value&quot;</span><span class="nt">&gt;</span>8,284<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--unit&quot;</span><span class="nt">&gt;</span>Total Orders<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stat&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--value&quot;</span><span class="nt">&gt;</span>$471,394.03<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--unit&quot;</span><span class="nt">&gt;</span>Revenue to Date<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stat&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--value&quot;</span><span class="nt">&gt;</span>21,658<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--unit&quot;</span><span class="nt">&gt;</span>Invoices Paid<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stat&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--value&quot;</span><span class="nt">&gt;</span>6,425<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--unit&quot;</span><span class="nt">&gt;</span>Invoices Unpaid<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stat&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--value&quot;</span><span class="nt">&gt;</span>6,425<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--unit&quot;</span><span class="nt">&gt;</span>Invoices Overdue<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+              <div class="example">
+                <div class="example--view">
+                  <div class="adb-container">
+                    <div class="adb-stats adb-stats__horizontal">
+                      <div class="adb-stat">
+                        <span class="adb-stat--value">23</span>
+                        <span class="adb-stat--unit">Free Trials</span>
+                      </div>
+                      <div class="adb-stat">
+                        <span class="adb-stat--value">534</span>
+                        <span class="adb-stat--unit">Expired Trials</span>
+                      </div>
+                      <div class="adb-stat">
+                        <span class="adb-stat--value">500,384</span>
+                        <span class="adb-stat--unit">Purchased</span>
+                      </div>
+                      <div class="adb-stat">
+                        <span class="adb-stat--value">3</span>
+                        <span class="adb-stat--unit">Canceled</span>
+                      </div>
+                      <div class="adb-stat">
+                        <span class="adb-stat--value">1,493</span>
+                        <span class="adb-stat--unit">Unpaid Invoices</span>
+                      </div>
+                      <div class="adb-stat">
+                        <span class="adb-stat--value">$10M</span>
+                        <span class="adb-stat--unit">Total Spent</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stats adb-stats__horizontal&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stat&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--value&quot;</span><span class="nt">&gt;</span>23<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--unit&quot;</span><span class="nt">&gt;</span>Free Trials<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stat&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--value&quot;</span><span class="nt">&gt;</span>534<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--unit&quot;</span><span class="nt">&gt;</span>Expired Trials<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stat&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--value&quot;</span><span class="nt">&gt;</span>500,384<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--unit&quot;</span><span class="nt">&gt;</span>Purchased<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stat&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--value&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--unit&quot;</span><span class="nt">&gt;</span>Canceled<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stat&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--value&quot;</span><span class="nt">&gt;</span>1,493<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--unit&quot;</span><span class="nt">&gt;</span>Unpaid Invoices<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stat&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--value&quot;</span><span class="nt">&gt;</span>$10M<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-stat--unit&quot;</span><span class="nt">&gt;</span>Total Spent<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="sums">
+              <h3>Receipts</h3>
+              <div class="example">
+                <div class="example--view">
+                  <div class="adb-container adb-receipt">
+                    <div class="adb-receipt--table">
+                      <table>
+                        <colgroup>
+                          <col width="50%">
+                          <col width="10%">
+                          <col width="25%">
+                          <col width="15%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th class="adb-receipt--table_value">Total</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Gold Edition</td>
+                            <td>2</td>
+                            <td>$199.95 / user / month</td>
+                            <td class="adb-receipt--table_value">$399.90</td>
+                          </tr>
+                          <tr>
+                            <td>XXXXXX Discount</td>
+                            <td></td>
+                            <td>-$19.95 / month</td>
+                            <td class="adb-receipt--table_value">– $19.90</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="adb-container_content adb-help">
+                      <div class="adb-receipt--section">
+                        <div class="adb-receipt--line">
+                          <span class="adb-receipt--item adb-receipt--item__label">Subtotal</span>
+                          <span class="adb-receipt--item">$380.00</span>
+                        </div>
+                        <div class="adb-receipt--line">
+                          <span class="adb-receipt--item adb-receipt--item__label">8.75%  Sales Tax</span>
+                          <span class="adb-receipt--item">$0.00</span>
+                        </div>
+                        <div class="adb-receipt--line">
+                          <span class="adb-receipt--item adb-receipt--item__label">Total Paid</span>
+                          <span class="adb-receipt--item adb-receipt--item__success">-$10.00</span>
+                        </div>
+                        <div class="adb-receipt--line">
+                          <span class="adb-receipt--item adb-receipt--item__label">Outstanding Balance</span>
+                          <span class="adb-receipt--item">$380.00</span>
+                        </div>
+                      </div>
+                      <div class="adb-receipt--section">
+                        <div class="adb-receipt--line">
+                          <span class="adb-receipt--item adb-receipt--item__label">Total Due</span>
+                          <span class="adb-receipt--item adb-receipt--item__total">$380.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-receipt&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--table&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;table&gt;</span>&#x000A;      <span class="nt">&lt;colgroup&gt;</span>&#x000A;        <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;50%&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;10%&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;25%&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;15%&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;/colgroup&gt;</span>&#x000A;      <span class="nt">&lt;thead&gt;</span>&#x000A;        <span class="nt">&lt;tr&gt;</span>&#x000A;          <span class="nt">&lt;th&gt;</span>Item<span class="nt">&lt;/th&gt;</span>&#x000A;          <span class="nt">&lt;th&gt;</span>Quantity<span class="nt">&lt;/th&gt;</span>&#x000A;          <span class="nt">&lt;th&gt;</span>Price<span class="nt">&lt;/th&gt;</span>&#x000A;          <span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--table_value&quot;</span><span class="nt">&gt;</span>Total<span class="nt">&lt;/th&gt;</span>&#x000A;        <span class="nt">&lt;/tr&gt;</span>&#x000A;      <span class="nt">&lt;/thead&gt;</span>&#x000A;      <span class="nt">&lt;tbody&gt;</span>&#x000A;        <span class="nt">&lt;tr&gt;</span>&#x000A;          <span class="nt">&lt;td&gt;</span>Gold Edition<span class="nt">&lt;/td&gt;</span>&#x000A;          <span class="nt">&lt;td&gt;</span>2<span class="nt">&lt;/td&gt;</span>&#x000A;          <span class="nt">&lt;td&gt;</span>$199.95 / user / month<span class="nt">&lt;/td&gt;</span>&#x000A;          <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--table_value&quot;</span><span class="nt">&gt;</span>$399.90<span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;/tr&gt;</span>&#x000A;        <span class="nt">&lt;tr&gt;</span>&#x000A;          <span class="nt">&lt;td&gt;</span>XXXXXX Discount<span class="nt">&lt;/td&gt;</span>&#x000A;          <span class="nt">&lt;td&gt;&lt;/td&gt;</span>&#x000A;          <span class="nt">&lt;td&gt;</span>-$19.95 / month<span class="nt">&lt;/td&gt;</span>&#x000A;          <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--table_value&quot;</span><span class="nt">&gt;</span>– $19.90<span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;/tr&gt;</span>&#x000A;      <span class="nt">&lt;/tbody&gt;</span>&#x000A;    <span class="nt">&lt;/table&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_content adb-help&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--section&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--line&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--item adb-receipt--item__label&quot;</span><span class="nt">&gt;</span>Subtotal<span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--item&quot;</span><span class="nt">&gt;</span>$380.00<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--line&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--item adb-receipt--item__label&quot;</span><span class="nt">&gt;</span>8.75%  Sales Tax<span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--item&quot;</span><span class="nt">&gt;</span>$0.00<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--line&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--item adb-receipt--item__label&quot;</span><span class="nt">&gt;</span>Total Paid<span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--item adb-receipt--item__success&quot;</span><span class="nt">&gt;</span>-$10.00<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--line&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--item adb-receipt--item__label&quot;</span><span class="nt">&gt;</span>Outstanding Balance<span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--item&quot;</span><span class="nt">&gt;</span>$380.00<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--section&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--line&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--item adb-receipt--item__label&quot;</span><span class="nt">&gt;</span>Total Due<span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-receipt--item adb-receipt--item__total&quot;</span><span class="nt">&gt;</span>$380.00<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="pricing">
+              <h3>Pricing Editions</h3>
+              <div class="example">
+                <div class="example--view">
+                  <div class="adb-layout-row adb-subscriptions">
+                    <div class="adb-layout-content_half adb-subscription adb-subscription__emphasis">
+                      <div class="adb-container adb-subscription--container">
+                        <div class="adb-container_header adb-subscription--header">
+                          <h3>One-Time</h3>
+                        </div>
+                        <div class="adb-container_content">
+                          <div class="adb-subscription--content_section">
+                            <p class="adb-price">
+                              <span class="adb-price--value">$7.00</span>
+                              <span class="adb-price adb-price__nested">
+                                <span class="adb-price--value">$52.00</span>
+                                <span class="adb-price--unit">
+                                  /additional 1000 Contacts Block
+                                </span>
+                                <span class="adb-price--caption">For 5 - 300 Additional 1000 Contacts Block</span>
+                              </span>
+                              <span class="adb-price adb-price__nested">
+                                <span class="adb-price--value">$-2.98</span>
+                                <span class="adb-price--unit">
+                                  /Word
+                                </span>
+                                <span class="adb-price--caption">For 1000 - 50000 Words</span>
+                              </span>
+                            </p>
+                            <p class="adb-price adb-price__previous">
+                              <span class="adb-price--value">$10.00</span>
+                              <span class="adb-price--unit">
+                                /server/mo
+                              </span>
+                              <span class="adb-price adb-price__nested">
+                                <span class="adb-price--value">$55.00</span>
+                                <span class="adb-price--unit">
+                                  /additional 1000 Contacts Block
+                                </span>
+                                <span class="adb-price--caption">For 5 - 300 Additional 1000 Contacts Block</span>
+                              </span>
+                              <span class="adb-price adb-price__nested">
+                                <span class="adb-price--value">$0.02</span>
+                                <span class="adb-price--unit">
+                                  /Word
+                                </span>
+                                <span class="adb-price--caption">For 1000 - 50000 Words</span>
+                              </span>
+                            </p>
+                          </div>
+                          <div class="adb-subscription--content_section">
+                                      <a class="adb-button adb-button__medium adb-button__full_width adb-button__emphasis" href="../../prototype/marketplace/checkout/order.html">Buy Now
+                            </a>
+                  
+                          </div>
+                          <div class="adb-subscription--content_section">
+                            <h4>Included</h4>
+                            <ul class="adb-subscription--list">
+                              <li>5 Users</li>
+                              <li>0 Words</li>
+                            </ul>
+                          </div>
+                          <div class="adb-subscription--content_section">
+                            <ul class="adb-subscription--list">
+                              <li>24 Hour Customer Service</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="adb-layout-content_half adb-subscription">
+                      <div class="adb-container adb-subscription--container">
+                        <div class="adb-container_header adb-subscription--header">
+                          <h3>Metered</h3>
+                        </div>
+                        <div class="adb-container_content">
+                          <div class="adb-subscription--content_section">
+                            <p class="adb-price">
+                              <span class="adb-price--value">$10.00</span>
+                              <span class="adb-price--unit">
+                                /mo
+                              </span>
+                              <span class="adb-price adb-price__nested">
+                                <span class="adb-price--value">$5.00</span>
+                                <span class="adb-price--unit">
+                                  /invoice
+                                </span>
+                                <span class="adb-price--caption">For the first 500 Invoices</span>
+                                <span class="adb-badges">
+                                  <span class="adb-badge adb-badge__outline">
+                                    Based on Usage
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="adb-price adb-price__nested">
+                                <span class="adb-price--value">$15.00</span>
+                                <span class="adb-price--unit">
+                                  /invoice
+                                </span>
+                                <span class="adb-price--caption">For 500 invoices and above</span>
+                                <span class="adb-badges">
+                                  <span class="adb-badge adb-badge__outline">
+                                    Based on Usage
+                                  </span>
+                                </span>
+                              </span>
+                            </p>
+                            <p>
+                              <span class="adb-badge">12 month contract</span>
+                            </p>
+                            <dl class="adb-help">
+                              <dt>Contract Fee</dt>
+                              <dd>$500.00</dd>
+                            </dl>
+                          </div>
+                          <div class="adb-subscription--content_section">
+                                      <a class="adb-button adb-button__medium adb-button__full_width adb-button__primary" href="../../prototype/marketplace/checkout/order.html">Buy Now
+                            </a>
+                  
+                          </div>
+                          <div class="adb-subscription--content_section">
+                            <h4>Included</h4>
+                            <ul class="adb-subscription--list">
+                              <li>Unlimited Users</li>
+                              <li>250 Gigabytes</li>
+                            </ul>
+                          </div>
+                          <div class="adb-subscription--content_section"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="adb-layout-row adb-subscriptions">
+                    <div class="adb-layout-content_half adb-subscription">
+                      <div class="adb-container adb-subscription--container">
+                        <div class="adb-container_header adb-subscription--header">
+                          <h3>Tiered</h3>
+                        </div>
+                        <div class="adb-container_content">
+                          <div class="adb-subscription--content_section">
+                            <p class="adb-price">
+                              <span class="adb-price--value">$10.00</span>
+                              <span class="adb-price--unit">
+                                /mo
+                              </span>
+                              <span class="adb-price adb-price__nested">
+                                <span class="adb-price--value">$80.00</span>
+                                <span class="adb-price--unit">/mo</span>
+                                <span class="adb-price--caption">For Postage &amp; Print</span>
+                              </span>
+                            </p>
+                            <p class="adb-price adb-price__tier">
+                              <span class="adb-price--value">$5.00</span>
+                              <span class="adb-price--unit">/International Postage &amp; Print /Three Yr</span>
+                            </p>
+                            <dl class="adb-help">
+                              <dt>Setup Fee per International Postage &amp; Print</dt>
+                              <dd>$12.00</dd>
+                              <dt>One Time Price</dt>
+                              <dd>$50.00</dd>
+                            </dl>
+                          </div>
+                          <div class="adb-subscription--content_section">
+                                      <a class="adb-button adb-button__medium adb-button__full_width adb-button__primary" href="../../prototype/marketplace/checkout/order.html">Buy Now
+                            </a>
+                  
+                          </div>
+                          <div class="adb-subscription--content_section">
+                            <h4>Included</h4>
+                            <ul class="adb-subscription--list">
+                              <li>Unlimited Users</li>
+                              <li>500 Gigabytes</li>
+                            </ul>
+                          </div>
+                          <div class="adb-subscription--content_section"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="adb-layout-content_half adb-subscription">
+                      <div class="adb-container adb-subscription--container">
+                        <div class="adb-container_header adb-subscription--header">
+                          <h3>Tiered Unit Prices</h3>
+                        </div>
+                        <div class="adb-container_content">
+                          <div class="adb-subscription--content_section">
+                            <p class="adb-price">
+                              <span class="adb-price--value">$5.00</span>
+                              <span class="adb-price--unit">/Gigabyte /Mo</span>
+                              <span class="adb-price--caption">For 1 - 10 Gigabytes</span>
+                              <span class="adb-price adb-price__nested">
+                                <span class="adb-price--value">$8.00</span>
+                                <span class="adb-price--unit">/Gigabyte /Mo</span>
+                                <span class="adb-price--caption">For 10 - 20 Gigabytes</span>
+                              </span>
+                              <span class="adb-price adb-price__nested">
+                                <span class="adb-price--value">$14.00</span>
+                                <span class="adb-price--unit">/Gigabyte /Mo</span>
+                                <span class="adb-price--caption">For 20 - 50 Gigabytes</span>
+                              </span>
+                              <span class="adb-price adb-price__nested">
+                                <span class="adb-price--value">$20.00</span>
+                                <span class="adb-price--unit">/Gigabyte /Mo</span>
+                                <span class="adb-price--caption">For 50 Gigabytes and above</span>
+                              </span>
+                            </p>
+                          </div>
+                          <div class="adb-subscription--content_section">
+                                      <a class="adb-button adb-button__medium adb-button__full_width adb-button__primary" href="../../prototype/marketplace/checkout/order.html">Buy Now
+                            </a>
+                  
+                          </div>
+                          <div class="adb-subscription--content_section">
+                            <h4>Included</h4>
+                            <ul class="adb-subscription--list">
+                              <li>Unlimited Users</li>
+                              <li>500 Gigabytes</li>
+                            </ul>
+                          </div>
+                          <div class="adb-subscription--content_section"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-layout-row adb-subscriptions&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-layout-content_half adb-subscription adb-subscription__emphasis&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-subscription--container&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_header adb-subscription--header&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;h3&gt;</span>One-Time<span class="nt">&lt;/h3&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_content&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-price&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$7.00<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price adb-price__nested&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$52.00<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>&#x000A;                /additional 1000 Contacts Block&#x000A;              <span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--caption&quot;</span><span class="nt">&gt;</span>For 5 - 300 Additional 1000 Contacts Block<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price adb-price__nested&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$-2.98<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>&#x000A;                /Word&#x000A;              <span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--caption&quot;</span><span class="nt">&gt;</span>For 1000 - 50000 Words<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/p&gt;</span>&#x000A;          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-price adb-price__previous&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$10.00<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>&#x000A;              /server/mo&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price adb-price__nested&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$55.00<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>&#x000A;                /additional 1000 Contacts Block&#x000A;              <span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--caption&quot;</span><span class="nt">&gt;</span>For 5 - 300 Additional 1000 Contacts Block<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price adb-price__nested&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$0.02<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>&#x000A;                /Word&#x000A;              <span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--caption&quot;</span><span class="nt">&gt;</span>For 1000 - 50000 Words<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;</span>&#x000A;                    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-button adb-button__medium adb-button__full_width adb-button__emphasis&quot;</span> <span class="na">href=</span><span class="s">&quot;../../prototype/marketplace/checkout/order.html&quot;</span><span class="nt">&gt;</span>Buy Now&#x000A;          <span class="nt">&lt;/a&gt;</span>&#x000A;&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;h4&gt;</span>Included<span class="nt">&lt;/h4&gt;</span>&#x000A;          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--list&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;li&gt;</span>5 Users<span class="nt">&lt;/li&gt;</span>&#x000A;            <span class="nt">&lt;li&gt;</span>0 Words<span class="nt">&lt;/li&gt;</span>&#x000A;          <span class="nt">&lt;/ul&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--list&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;li&gt;</span>24 Hour Customer Service<span class="nt">&lt;/li&gt;</span>&#x000A;          <span class="nt">&lt;/ul&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-layout-content_half adb-subscription&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-subscription--container&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_header adb-subscription--header&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;h3&gt;</span>Metered<span class="nt">&lt;/h3&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_content&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-price&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$10.00<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>&#x000A;              /mo&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price adb-price__nested&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$5.00<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>&#x000A;                /invoice&#x000A;              <span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--caption&quot;</span><span class="nt">&gt;</span>For the first 500 Invoices<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-badges&quot;</span><span class="nt">&gt;</span>&#x000A;                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-badge adb-badge__outline&quot;</span><span class="nt">&gt;</span>&#x000A;                  Based on Usage&#x000A;                <span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price adb-price__nested&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$15.00<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>&#x000A;                /invoice&#x000A;              <span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--caption&quot;</span><span class="nt">&gt;</span>For 500 invoices and above<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-badges&quot;</span><span class="nt">&gt;</span>&#x000A;                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-badge adb-badge__outline&quot;</span><span class="nt">&gt;</span>&#x000A;                  Based on Usage&#x000A;                <span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/p&gt;</span>&#x000A;          <span class="nt">&lt;p&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-badge&quot;</span><span class="nt">&gt;</span>12 month contract<span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/p&gt;</span>&#x000A;          <span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">&quot;adb-help&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;dt&gt;</span>Contract Fee<span class="nt">&lt;/dt&gt;</span>&#x000A;            <span class="nt">&lt;dd&gt;</span>$500.00<span class="nt">&lt;/dd&gt;</span>&#x000A;          <span class="nt">&lt;/dl&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;</span>&#x000A;                    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-button adb-button__medium adb-button__full_width adb-button__primary&quot;</span> <span class="na">href=</span><span class="s">&quot;../../prototype/marketplace/checkout/order.html&quot;</span><span class="nt">&gt;</span>Buy Now&#x000A;          <span class="nt">&lt;/a&gt;</span>&#x000A;&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;h4&gt;</span>Included<span class="nt">&lt;/h4&gt;</span>&#x000A;          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--list&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;li&gt;</span>Unlimited Users<span class="nt">&lt;/li&gt;</span>&#x000A;            <span class="nt">&lt;li&gt;</span>250 Gigabytes<span class="nt">&lt;/li&gt;</span>&#x000A;          <span class="nt">&lt;/ul&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-layout-row adb-subscriptions&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-layout-content_half adb-subscription&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-subscription--container&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_header adb-subscription--header&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;h3&gt;</span>Tiered<span class="nt">&lt;/h3&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_content&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-price&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$10.00<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>&#x000A;              /mo&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price adb-price__nested&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$80.00<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>/mo<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--caption&quot;</span><span class="nt">&gt;</span>For Postage <span class="ni">&amp;amp;</span> Print<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/p&gt;</span>&#x000A;          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-price adb-price__tier&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$5.00<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>/International Postage <span class="ni">&amp;amp;</span> Print /Three Yr<span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/p&gt;</span>&#x000A;          <span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">&quot;adb-help&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;dt&gt;</span>Setup Fee per International Postage <span class="ni">&amp;amp;</span> Print<span class="nt">&lt;/dt&gt;</span>&#x000A;            <span class="nt">&lt;dd&gt;</span>$12.00<span class="nt">&lt;/dd&gt;</span>&#x000A;            <span class="nt">&lt;dt&gt;</span>One Time Price<span class="nt">&lt;/dt&gt;</span>&#x000A;            <span class="nt">&lt;dd&gt;</span>$50.00<span class="nt">&lt;/dd&gt;</span>&#x000A;          <span class="nt">&lt;/dl&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;</span>&#x000A;                    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-button adb-button__medium adb-button__full_width adb-button__primary&quot;</span> <span class="na">href=</span><span class="s">&quot;../../prototype/marketplace/checkout/order.html&quot;</span><span class="nt">&gt;</span>Buy Now&#x000A;          <span class="nt">&lt;/a&gt;</span>&#x000A;&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;h4&gt;</span>Included<span class="nt">&lt;/h4&gt;</span>&#x000A;          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--list&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;li&gt;</span>Unlimited Users<span class="nt">&lt;/li&gt;</span>&#x000A;            <span class="nt">&lt;li&gt;</span>500 Gigabytes<span class="nt">&lt;/li&gt;</span>&#x000A;          <span class="nt">&lt;/ul&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-layout-content_half adb-subscription&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-subscription--container&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_header adb-subscription--header&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;h3&gt;</span>Tiered Unit Prices<span class="nt">&lt;/h3&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_content&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-price&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$5.00<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>/Gigabyte /Mo<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--caption&quot;</span><span class="nt">&gt;</span>For 1 - 10 Gigabytes<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price adb-price__nested&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$8.00<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>/Gigabyte /Mo<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--caption&quot;</span><span class="nt">&gt;</span>For 10 - 20 Gigabytes<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price adb-price__nested&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$14.00<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>/Gigabyte /Mo<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--caption&quot;</span><span class="nt">&gt;</span>For 20 - 50 Gigabytes<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price adb-price__nested&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--value&quot;</span><span class="nt">&gt;</span>$20.00<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--unit&quot;</span><span class="nt">&gt;</span>/Gigabyte /Mo<span class="nt">&lt;/span&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-price--caption&quot;</span><span class="nt">&gt;</span>For 50 Gigabytes and above<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;</span>&#x000A;                    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-button adb-button__medium adb-button__full_width adb-button__primary&quot;</span> <span class="na">href=</span><span class="s">&quot;../../prototype/marketplace/checkout/order.html&quot;</span><span class="nt">&gt;</span>Buy Now&#x000A;          <span class="nt">&lt;/a&gt;</span>&#x000A;&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;h4&gt;</span>Included<span class="nt">&lt;/h4&gt;</span>&#x000A;          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--list&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;li&gt;</span>Unlimited Users<span class="nt">&lt;/li&gt;</span>&#x000A;            <span class="nt">&lt;li&gt;</span>500 Gigabytes<span class="nt">&lt;/li&gt;</span>&#x000A;          <span class="nt">&lt;/ul&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-subscription--content_section&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+          </article>
+        </section>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="alerts_and_messages.html">Display</a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Numbers &amp; Pricing
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

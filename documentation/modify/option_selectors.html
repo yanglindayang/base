@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Option Selectors</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="documentation documentation_modify documentation_modify_option_selectors">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Framework Foundations" data-toggle="tooltip" data-placement="bottom" href="../core/design_principles.html">Core
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Specialized Data" data-toggle="tooltip" data-placement="bottom" href="../display/alerts_and_messages.html">Display
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Menus and Buttons" data-toggle="tooltip" data-placement="bottom" href="../navigate/global_navigation.html">Navigate
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link adb-is-selected" title="Form Elements" data-toggle="tooltip" data-placement="bottom" href="text_inputs.html">Modify
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Layout Patterns" data-toggle="tooltip" data-placement="bottom" href="../arrange/containers.html">Arrange
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Application Pages" data-toggle="tooltip" data-placement="bottom" href="../../prototype/">Prototype
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-context_menu--trigger adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  <i class="adb-icon__cog"></i>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="https://github.com/ad-dc/base/releases">Release Notes</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../benchmarking.html">CSS/SASS Stats</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../components.html">Preview All Components</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <section class="adb-layout-row adb-headline">
+          <div class="adb-layout-default">
+            <h5>Base by AppDirect</h5>
+            <h1>
+              Modify
+            </h1>
+            <p class="tagline">
+              Help users add and edit data
+            </p>
+          </div>
+        </section>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="text_inputs.html">Text Inputs</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="option_selectors.html">Option Selectors</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="upload.html">Upload</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="form_layout.html">Form Layout</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="form_types.html">Form Types</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="errors_and_validation.html">Errors &amp; Validation</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <article class="adb-layout-content">
+            <h2>
+              Option Selectors
+            </h2>
+            <section class="adb-layout-content--section" id="selectors-radio">
+              <h3>Single-Option Selectors (Radio, Few Options)</h3>
+              <p>Use radio selectors when there are 6 or fewer options.</p>
+              <div class="adb-layout-content--subsection">
+                <h4>
+                  Default Styles
+                </h4>
+                <nav class="adb-tabs">
+                  <ul class="adb-tabs--items">
+                    <li class="adb-tabs--item active">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#radio-style1">
+                        Default
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#radio-style2">
+                        Inline
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#radio-style3">
+                        Options as bars
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#radio-style4">
+                        Options as bars, with symbols
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="adb-js-tab active" id="radio-style1">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <label class="adb-selector adb-js-radio" for="guide-radio-default1">
+                        <span class="adb-selector--input">
+                          <input checked id="guide-radio-default1" name="radio-default" type="radio">
+                        </span>
+                        <span class="adb-selector--value">
+                          Show as primary pricing plan
+                          Deserunt ducimus quod qui et placeat a eum ipsum consectetur. aliquam ipsam maxime qui. et hic magnam saepe atque unde voluptatem pariatur. eius nihil consequatur accusantium consectetur modi quae. quo natus placeat ratione ratione. voluptas vitae quis quidem dolorem est aut ea
+                        </span>
+                      </label>
+                      <label class="adb-selector adb-js-radio" for="guide-radio-default2">
+                        <span class="adb-selector--input">
+                          <input id="guide-radio-default2" name="radio-default" type="radio">
+                        </span>
+                        <span class="adb-selector--value">
+                          This edition will be selected when a customer chooses free trial
+                        </span>
+                      </label>
+                      <label class="adb-selector adb-js-radio" for="guide-radio-default3">
+                        <span class="adb-selector--input">
+                          <input disabled id="guide-radio-default3" name="radio-default" type="radio">
+                        </span>
+                        <span class="adb-selector--value">
+                          This edition can only be bought as a bundle.
+                        </span>
+                      </label>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-radio-default1&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;guide-radio-default1&quot;</span> <span class="na">name=</span><span class="s">&quot;radio-default&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Show as primary pricing plan&#x000A;    In sit est mollitia omnis nesciunt. repudiandae ut ad aperiam eveniet et. libero quas quod fugiat deserunt tempora esse. odio quaerat fugit quaerat magnam reprehenderit autem officia dignissimos qui nihil exercitationem est. consectetur voluptatem earum pariatur voluptate quia&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-radio-default2&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;guide-radio-default2&quot;</span> <span class="na">name=</span><span class="s">&quot;radio-default&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    This edition will be selected when a customer chooses free trial&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-radio-default3&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">disabled</span> <span class="na">id=</span><span class="s">&quot;guide-radio-default3&quot;</span> <span class="na">name=</span><span class="s">&quot;radio-default&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    This edition can only be bought as a bundle.&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="radio-style2">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <label class="adb-selector adb-selector__inline adb-js-radio" for="guide-radio-inline1">
+                        <span class="adb-selector--input">
+                          <input checked id="guide-radio-inline1" name="radio-inline" type="radio">
+                        </span>
+                        <span class="adb-selector--value">
+                          Inline option 1
+                        </span>
+                      </label>
+                      <label class="adb-selector adb-selector__inline adb-js-radio" for="guide-radio-inline2">
+                        <span class="adb-selector--input">
+                          <input id="guide-radio-inline2" name="radio-inline" type="radio">
+                        </span>
+                        <span class="adb-selector--value">
+                          Inline option 2
+                        </span>
+                      </label>
+                      <label class="adb-selector adb-selector__inline adb-js-radio" for="guide-radio-inline3">
+                        <span class="adb-selector--input">
+                          <input id="guide-radio-inline3" name="radio-inline" type="radio">
+                        </span>
+                        <span class="adb-selector--value">
+                          Inline option 3
+                        </span>
+                      </label>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__inline adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-radio-inline1&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;guide-radio-inline1&quot;</span> <span class="na">name=</span><span class="s">&quot;radio-inline&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Inline option 1&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__inline adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-radio-inline2&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;guide-radio-inline2&quot;</span> <span class="na">name=</span><span class="s">&quot;radio-inline&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Inline option 2&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__inline adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-radio-inline3&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;guide-radio-inline3&quot;</span> <span class="na">name=</span><span class="s">&quot;radio-inline&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Inline option 3&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="radio-style3">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <label class="adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-radio" for="guide-radio-bar1">
+                        <span class="adb-selector--input">
+                          <input checked id="guide-radio-bar1" name="radio-bars" type="radio">
+                        </span>
+                        <span class="adb-selector--value">
+                          Option 1
+                        </span>
+                      </label>
+                      <label class="adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-radio" for="guide-radio-bar2">
+                        <span class="adb-selector--input">
+                          <input id="guide-radio-bar2" name="radio-bars" type="radio">
+                        </span>
+                        <span class="adb-selector--value">
+                          <span>Option 2</span>
+                        </span>
+                      </label>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-radio-bar1&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;guide-radio-bar1&quot;</span> <span class="na">name=</span><span class="s">&quot;radio-bars&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Option 1&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-radio-bar2&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;guide-radio-bar2&quot;</span> <span class="na">name=</span><span class="s">&quot;radio-bars&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span&gt;</span>Option 2<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="radio-style4">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <label class="adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-radio" for="guide-radio-symbol1">
+                        <span class="adb-selector--input">
+                          <input checked id="guide-radio-symbol1" name="radio-bars-symbol" type="radio">
+                        </span>
+                        <span class="adb-selector--value">
+                          Option 1
+                        </span>
+                        <span class="adb-selector--affix">
+                          <i class="adb-icon__star"></i>
+                        </span>
+                      </label>
+                      <label class="adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-radio" for="guide-radio-symbol2">
+                        <span class="adb-selector--input">
+                          <input id="guide-radio-symbol2" name="radio-bars-symbol" type="radio">
+                        </span>
+                        <span class="adb-selector--value">
+                          Option 2
+                        </span>
+                        <span class="adb-selector--affix">
+                          <i class="adb-icon__star"></i>
+                        </span>
+                      </label>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-radio-symbol1&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;guide-radio-symbol1&quot;</span> <span class="na">name=</span><span class="s">&quot;radio-bars-symbol&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Option 1&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--affix&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__star&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-radio-symbol2&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;guide-radio-symbol2&quot;</span> <span class="na">name=</span><span class="s">&quot;radio-bars-symbol&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Option 2&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--affix&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__star&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="dropdowns">
+              <h3>Single-Option Selectors (Dropdowns, Many Options)</h3>
+              <p>Use dropdown selectors when there are more than 6 options. Functionally, dropdown selectors are different from <a href="../navigate/context_menus.html#buttons-menu">button menus</a>. Dropdown selectors allow users to select an option for a field in a form whereas action menus function as navigation, allowing users to take different actions or navigate to different pages.</p>
+              <h4>Styles</h4>
+              <div class="example__container">
+                <table class="adb-table__multiline">
+                  <thead>
+                    <tr>
+                      <th>
+                        Example
+                      </th>
+                      <th>
+                        Class
+                      </th>
+                      <th>
+                        Code
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="adb-js-dropdown adb-dropdown">
+                          <select>
+                            <option>Default first option</option>
+                            <option>Lorem ipsum option</option>
+                            <option>Lorem ipsum option</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td class="example--table_class">
+                        <code>.adb-js-dropdown.adb-dropdown</code>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;select&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Default first option<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;  <span class="nt">&lt;/select&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="adb-js-dropdown adb-dropdown adb-dropdown__inset">
+                          <select>
+                            <option>Default first option</option>
+                            <option>Lorem ipsum option</option>
+                            <option>Lorem ipsum option</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td class="example--table_class">
+                        <code>.adb-js-dropdown.adb-dropdown.adb-dropdown__inset</code>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown adb-dropdown__inset&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;select&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Default first option<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;  <span class="nt">&lt;/select&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="adb-layout-content--subsection">
+                <h4>Sizes</h4>
+                <nav class="adb-tabs">
+                  <ul class="adb-tabs--items">
+                    <li class="adb-tabs--item active">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#dropdowns-size1">
+                        Default
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#dropdowns-size2">
+                        Small
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#dropdowns-size3">
+                        Full-Width
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="adb-js-tab active" id="dropdowns-size1">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-js-dropdown adb-dropdown">
+                        <select>
+                          <option>Default first option</option>
+                          <option>Lorem ipsum option</option>
+                          <option>Lorem ipsum option</option>
+                        </select>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;select&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Default first option<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;  <span class="nt">&lt;/select&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="dropdowns-size2">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-js-dropdown adb-dropdown adb-dropdown__small">
+                        <select>
+                          <option>Default first option</option>
+                          <option>Lorem ipsum option</option>
+                          <option>Lorem ipsum option</option>
+                        </select>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown adb-dropdown__small&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;select&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Default first option<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;  <span class="nt">&lt;/select&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="dropdowns-size3">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <div class="adb-js-dropdown adb-dropdown adb-dropdown__full_width">
+                        <select>
+                          <option>Default first option</option>
+                          <option>Lorem ipsum option</option>
+                          <option>Lorem ipsum option</option>
+                        </select>
+                      </div>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown adb-dropdown__full_width&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;select&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Default first option<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;  <span class="nt">&lt;/select&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+              </div>
+              <h4>States</h4>
+              <div class="example__container">
+                <table class="adb-table__multiline">
+                  <thead>
+                    <tr>
+                      <th>
+                        Example
+                      </th>
+                      <th>
+                        Class
+                      </th>
+                      <th>
+                        Code
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="adb-js-dropdown adb-dropdown">
+                          <select>
+                            <option>Default first option</option>
+                            <option>Lorem ipsum option</option>
+                            <option>Lorem ipsum option</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td class="example--table_class">
+                        <code>.adb-js-dropdown.adb-dropdown</code>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;select&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Default first option<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;  <span class="nt">&lt;/select&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="adb-js-dropdown adb-dropdown adb-is-error">
+                          <select>
+                            <option>Default first option</option>
+                            <option>Lorem ipsum option</option>
+                            <option>Lorem ipsum option</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td class="example--table_class">
+                        <code>.adb-js-dropdown.adb-dropdown.adb-is-error</code>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown adb-is-error&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;select&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Default first option<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;    <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;  <span class="nt">&lt;/select&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h4>Fallback</h4>
+              <p>Below is a fallback option for dropdown selectors, for instances when it     is not possible to use Javascript to customize the dropdown.</p>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <select>
+                    <option>Default first option</option>
+                    <option>Lorem ipsum option</option>
+                    <option>Lorem ipsum option</option>
+                  </select>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;select&gt;</span>&#x000A;  <span class="nt">&lt;option&gt;</span>Default first option<span class="nt">&lt;/option&gt;</span>&#x000A;  <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;  <span class="nt">&lt;option&gt;</span>Lorem ipsum option<span class="nt">&lt;/option&gt;</span>&#x000A;<span class="nt">&lt;/select&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="selectors-switches">
+              <h3>Binary-Option Selector (Toggles)</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <label class="adb-toggle" for="toggle-input">
+                    <input class="adb-toggle--input" id="toggle-input" type="checkbox">
+                    <span class="adb-toggle--control"></span>
+                    <span class="adb-toggle--value">
+                      Product Visibility
+                    </span>
+                  </label>
+                  <label class="adb-toggle" for="toggle-input2">
+                    <input checked class="adb-toggle--input" id="toggle-input2" type="checkbox">
+                    <span class="adb-toggle--control"></span>
+                    <span class="adb-toggle--value">
+                      Product Visibility
+                    </span>
+                  </label>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-toggle&quot;</span> <span class="na">for=</span><span class="s">&quot;toggle-input&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--input&quot;</span> <span class="na">id=</span><span class="s">&quot;toggle-input&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--control&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Product Visibility&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-toggle&quot;</span> <span class="na">for=</span><span class="s">&quot;toggle-input2&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--input&quot;</span> <span class="na">id=</span><span class="s">&quot;toggle-input2&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--control&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Product Visibility&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="selectors-checkbox">
+              <h3>Multiple-Options Selectors (Checkboxes)</h3>
+              <div class="adb-layout-content--subsection">
+                <h4>
+                  Default Styles
+                </h4>
+                <nav class="adb-tabs">
+                  <ul class="adb-tabs--items">
+                    <li class="adb-tabs--item active">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#checkboxes-style1">
+                        Default
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#checkboxes-style2">
+                        Inline
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#checkboxes-style3">
+                        Options as bars
+                      </a>
+                    </li>
+                    <li class="adb-tabs--item">
+                      <a class="adb-tabs--link" data-toggle="tab" href="#checkboxes-style4">
+                        Options as bars, with symbols
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="adb-js-tab active" id="checkboxes-style1">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <label class="adb-selector adb-js-checkbox" for="guide-checkbox-default1">
+                        <span class="adb-selector--input">
+                          <input checked id="guide-checkbox-default1" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          Show as primary pricing plan
+                        </span>
+                      </label>
+                      <label class="adb-selector adb-js-checkbox" for="guide-checkbox-default2">
+                        <span class="adb-selector--input">
+                          <input id="guide-checkbox-default2" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          This edition will be selected when a customer chooses free trial
+                        </span>
+                      </label>
+                      <label class="adb-selector adb-js-checkbox" for="guide-checkbox-default3">
+                        <span class="adb-selector--input">
+                          <input disabled id="guide-checkbox-default3" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          This edition can only be bought as a bundle.
+                        </span>
+                      </label>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-checkbox-default1&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;guide-checkbox-default1&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Show as primary pricing plan&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-checkbox-default2&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;guide-checkbox-default2&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    This edition will be selected when a customer chooses free trial&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-checkbox-default3&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">disabled</span> <span class="na">id=</span><span class="s">&quot;guide-checkbox-default3&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    This edition can only be bought as a bundle.&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="checkboxes-style2">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <label class="adb-selector adb-selector__inline adb-js-checkbox" for="guide-checkbox-inline1">
+                        <span class="adb-selector--input">
+                          <input checked id="guide-checkbox-inline1" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          Inline option 1
+                        </span>
+                      </label>
+                      <label class="adb-selector adb-selector__inline adb-js-checkbox" for="guide-checkbox-inline2">
+                        <span class="adb-selector--input">
+                          <input id="guide-checkbox-inline2" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          Inline option 2
+                        </span>
+                      </label>
+                      <label class="adb-selector adb-selector__inline adb-js-checkbox" for="guide-checkbox-inline3">
+                        <span class="adb-selector--input">
+                          <input id="guide-checkbox-inline3" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          Inline option 3
+                        </span>
+                      </label>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__inline adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-checkbox-inline1&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;guide-checkbox-inline1&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Inline option 1&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__inline adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-checkbox-inline2&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;guide-checkbox-inline2&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Inline option 2&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__inline adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-checkbox-inline3&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;guide-checkbox-inline3&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Inline option 3&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="checkboxes-style3">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <label class="adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-checkbox" for="guide-checkbox-bar1">
+                        <span class="adb-selector--input">
+                          <input checked id="guide-checkbox-bar1" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          Option 1
+                        </span>
+                      </label>
+                      <label class="adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-checkbox" for="guide-checkbox-bar2">
+                        <span class="adb-selector--input">
+                          <input id="guide-checkbox-bar2" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          Option 2
+                        </span>
+                      </label>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-checkbox-bar1&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;guide-checkbox-bar1&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Option 1&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-checkbox-bar2&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;guide-checkbox-bar2&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Option 2&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+                <div class="adb-js-tab" id="checkboxes-style4">
+                  <div class="example__tab">
+                    <div class="example__container--view">
+                      <label class="adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-checkbox" for="guide-checkbox-symbol1">
+                        <span class="adb-selector--input">
+                          <input checked id="guide-checkbox-symbol1" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          Option 1
+                        </span>
+                        <span class="adb-selector--affix">
+                          <i class="adb-icon__star"></i>
+                        </span>
+                      </label>
+                      <label class="adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-checkbox" for="guide-checkbox-symbol2">
+                        <span class="adb-selector--input">
+                          <input id="guide-checkbox-symbol2" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          Option 2
+                        </span>
+                        <span class="adb-selector--affix">
+                          <i class="adb-icon__star"></i>
+                        </span>
+                      </label>
+                    </div>
+                    <pre class="highlight html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-checkbox-symbol1&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;guide-checkbox-symbol1&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Option 1&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--affix&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__star&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-selector__button adb-button adb-button__neutral adb-button__medium adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;guide-checkbox-symbol2&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;guide-checkbox-symbol2&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;    Option 2&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--affix&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;adb-icon__star&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/label&gt;</span>&#x000A;</pre>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="selectors-checkboxes">
+              <h3>Multi-Select Field</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <ul class="adb-js-checkboxes_field adb-checkboxes_field">
+                    <li class="adb-checkboxes_field--item">
+                      <label class="adb-selector adb-js-checkbox" for="editor-categories-category1">
+                        <span class="adb-selector--input">
+                          <input id="editor-categories-category1" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          Parent Category 1
+                        </span>
+                      </label>
+                      <ul class="adb-checkboxes_field--item_list">
+                        <li class="adb-checkboxes_field--item">
+                          <label class="adb-selector adb-js-checkbox" for="editor-categories-category6">
+                            <span class="adb-selector--input">
+                              <input id="editor-categories-category6" type="checkbox">
+                            </span>
+                            <span class="adb-selector--value">
+                              Child Category 1
+                            </span>
+                          </label>
+                        </li>
+                        <li class="adb-checkboxes_field--item">
+                          <label class="adb-selector adb-js-checkbox" for="editor-categories-category7">
+                            <span class="adb-selector--input">
+                              <input id="editor-categories-category7" type="checkbox">
+                            </span>
+                            <span class="adb-selector--value">
+                              Child Category 2
+                            </span>
+                          </label>
+                        </li>
+                        <li class="adb-checkboxes_field--item">
+                          <label class="adb-selector adb-js-checkbox" for="editor-categories-category8">
+                            <span class="adb-selector--input">
+                              <input id="editor-categories-category8" type="checkbox">
+                            </span>
+                            <span class="adb-selector--value">
+                              Child Category 3
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="adb-checkboxes_field--item">
+                      <label class="adb-selector adb-js-checkbox" for="editor-categories-category2">
+                        <span class="adb-selector--input">
+                          <input id="editor-categories-category2" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          Parent Category 2
+                        </span>
+                      </label>
+                      <ul class="adb-checkboxes_field--item_list">
+                        <li class="adb-checkboxes_field--item">
+                          <label class="adb-selector adb-js-checkbox" for="editor-categories-category9">
+                            <span class="adb-selector--input">
+                              <input id="editor-categories-category9" type="checkbox">
+                            </span>
+                            <span class="adb-selector--value">
+                              Child Category 1
+                            </span>
+                          </label>
+                        </li>
+                        <li class="adb-checkboxes_field--item">
+                          <label class="adb-selector adb-js-checkbox" for="editor-categories-category10">
+                            <span class="adb-selector--input">
+                              <input id="editor-categories-category10" type="checkbox">
+                            </span>
+                            <span class="adb-selector--value">
+                              Child Category 2
+                            </span>
+                          </label>
+                        </li>
+                        <li class="adb-checkboxes_field--item">
+                          <label class="adb-selector adb-js-checkbox" for="editor-categories-category11">
+                            <span class="adb-selector--input">
+                              <input id="editor-categories-category11" type="checkbox">
+                            </span>
+                            <span class="adb-selector--value">
+                              Child Category 3
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="adb-checkboxes_field--item">
+                      <label class="adb-selector adb-js-checkbox" for="editor-categories-category3">
+                        <span class="adb-selector--input">
+                          <input id="editor-categories-category3" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          Parent Category 3
+                        </span>
+                      </label>
+                    </li>
+                    <li class="adb-checkboxes_field--item">
+                      <label class="adb-selector adb-js-checkbox" for="editor-categories-category4">
+                        <span class="adb-selector--input">
+                          <input id="editor-categories-category4" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          Parent Category 4
+                        </span>
+                      </label>
+                    </li>
+                    <li class="adb-checkboxes_field--item">
+                      <label class="adb-selector adb-js-checkbox" for="editor-categories-category5">
+                        <span class="adb-selector--input">
+                          <input id="editor-categories-category5" type="checkbox">
+                        </span>
+                        <span class="adb-selector--value">
+                          Parent Category 5
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-js-checkboxes_field adb-checkboxes_field&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-checkboxes_field--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;editor-categories-category1&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;editor-categories-category1&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;        Parent Category 1&#x000A;      <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-checkboxes_field--item_list&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-checkboxes_field--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;editor-categories-category6&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;editor-categories-category6&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Child Category 1&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-checkboxes_field--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;editor-categories-category7&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;editor-categories-category7&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Child Category 2&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-checkboxes_field--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;editor-categories-category8&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;editor-categories-category8&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Child Category 3&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;/ul&gt;</span>&#x000A;  <span class="nt">&lt;/li&gt;</span>&#x000A;  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-checkboxes_field--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;editor-categories-category2&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;editor-categories-category2&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;        Parent Category 2&#x000A;      <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-checkboxes_field--item_list&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-checkboxes_field--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;editor-categories-category9&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;editor-categories-category9&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Child Category 1&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-checkboxes_field--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;editor-categories-category10&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;editor-categories-category10&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Child Category 2&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-checkboxes_field--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;editor-categories-category11&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;editor-categories-category11&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Child Category 3&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;/ul&gt;</span>&#x000A;  <span class="nt">&lt;/li&gt;</span>&#x000A;  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-checkboxes_field--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;editor-categories-category3&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;editor-categories-category3&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;        Parent Category 3&#x000A;      <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;/label&gt;</span>&#x000A;  <span class="nt">&lt;/li&gt;</span>&#x000A;  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-checkboxes_field--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;editor-categories-category4&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;editor-categories-category4&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;        Parent Category 4&#x000A;      <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;/label&gt;</span>&#x000A;  <span class="nt">&lt;/li&gt;</span>&#x000A;  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-checkboxes_field--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;editor-categories-category5&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;editor-categories-category5&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;        Parent Category 5&#x000A;      <span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;/label&gt;</span>&#x000A;  <span class="nt">&lt;/li&gt;</span>&#x000A;<span class="nt">&lt;/ul&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="selectors-tags">
+              <h3>Tiered Multi-Select Field</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <div class="adb-tags_field adb-js-tags_field">
+                    <div class="adb-tags_field--inputs">
+                      <ul class="adb-tags_field--categories">
+                        <li class="adb-tags_field--category adb-js-tags_field--category">
+                          <a class="adb-tags_field--category_content" data-selected="0" href="#category1" id="category1-link">
+                            Industry
+                            <span class="adb-tags_field--badge adb-js-tags_field--badge adb-badge adb-badge__number"></span>
+                          </a>
+                        </li>
+                        <li class="adb-tags_field--category adb-js-tags_field--category">
+                          <a class="adb-tags_field--category_content" data-selected="0" href="#category2" id="category2-link">
+                            Type
+                            <span class="adb-tags_field--badge adb-js-tags_field--badge adb-badge adb-badge__number"></span>
+                          </a>
+                        </li>
+                        <li class="adb-tags_field--category adb-js-tags_field--category">
+                          <a class="adb-tags_field--category_content" data-selected="0" href="#category3" id="category3-link">
+                            Attribute
+                            <span class="adb-tags_field--badge adb-js-tags_field--badge adb-badge adb-badge__number"></span>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="adb-tags_field--subcategories">
+                        <div class="adb-tags_field--subcategory adb-js-tags_field--subcategory" id="category1">
+                          <label class="adb-selector adb-js-checkbox" for="subcategory7">
+                            <span class="adb-selector--input">
+                              <input id="subcategory7" type="checkbox" value="Real Estate">
+                            </span>
+                            <span class="adb-selector--value">
+                              Real Estate
+                            </span>
+                          </label>
+                          <label class="adb-selector adb-js-checkbox" for="subcategory8">
+                            <span class="adb-selector--input">
+                              <input id="subcategory8" type="checkbox" value="Law">
+                            </span>
+                            <span class="adb-selector--value">
+                              Law
+                            </span>
+                          </label>
+                          <label class="adb-selector adb-js-checkbox" for="subcategory9">
+                            <span class="adb-selector--input">
+                              <input id="subcategory9" type="checkbox" value="Education">
+                            </span>
+                            <span class="adb-selector--value">
+                              Education
+                            </span>
+                          </label>
+                          <label class="adb-selector adb-js-checkbox" for="subcategory10">
+                            <span class="adb-selector--input">
+                              <input id="subcategory10" type="checkbox" value="Salon">
+                            </span>
+                            <span class="adb-selector--value">
+                              Salon
+                            </span>
+                          </label>
+                          <label class="adb-selector adb-js-checkbox" for="subcategory11">
+                            <span class="adb-selector--input">
+                              <input id="subcategory11" type="checkbox" value="Fitness">
+                            </span>
+                            <span class="adb-selector--value">
+                              Fitness
+                            </span>
+                          </label>
+                          <label class="adb-selector adb-js-checkbox" for="subcategory12">
+                            <span class="adb-selector--input">
+                              <input id="subcategory12" type="checkbox" value="Health Care">
+                            </span>
+                            <span class="adb-selector--value">
+                              Health Care
+                            </span>
+                          </label>
+                          <label class="adb-selector adb-js-checkbox" for="subcategory13">
+                            <span class="adb-selector--input">
+                              <input id="subcategory13" type="checkbox" value="Hotel">
+                            </span>
+                            <span class="adb-selector--value">
+                              Hotel
+                            </span>
+                          </label>
+                        </div>
+                        <div class="adb-tags_field--subcategory adb-js-tags_field--subcategory" id="category2">
+                          <label class="adb-selector adb-js-checkbox" for="subcategory3">
+                            <span class="adb-selector--input">
+                              <input id="subcategory3" type="checkbox" value="Customer Relationship Management">
+                            </span>
+                            <span class="adb-selector--value">
+                              Customer Relationship Management
+                            </span>
+                          </label>
+                          <label class="adb-selector adb-js-checkbox" for="subcategory4">
+                            <span class="adb-selector--input">
+                              <input id="subcategory4" type="checkbox" value="Call Management">
+                            </span>
+                            <span class="adb-selector--value">
+                              Call Management
+                            </span>
+                          </label>
+                          <label class="adb-selector adb-js-checkbox" for="subcategory5">
+                            <span class="adb-selector--input">
+                              <input id="subcategory5" type="checkbox" value="Live Chat">
+                            </span>
+                            <span class="adb-selector--value">
+                              Live Chat
+                            </span>
+                          </label>
+                          <label class="adb-selector adb-js-checkbox" for="subcategory6">
+                            <span class="adb-selector--input">
+                              <input id="subcategory6" type="checkbox" value="Scheduling and Appointments">
+                            </span>
+                            <span class="adb-selector--value">
+                              Scheduling and Appointments
+                            </span>
+                          </label>
+                        </div>
+                        <div class="adb-tags_field--subcategory adb-js-tags_field--subcategory" id="category3">
+                          <label class="adb-selector adb-js-checkbox" for="subcategory1">
+                            <span class="adb-selector--input">
+                              <input id="subcategory1" type="checkbox" value="Conferencing">
+                            </span>
+                            <span class="adb-selector--value">
+                              Conferencing
+                            </span>
+                          </label>
+                          <label class="adb-selector adb-js-checkbox" for="subcategory2">
+                            <span class="adb-selector--input">
+                              <input id="subcategory2" type="checkbox" value="Email">
+                            </span>
+                            <span class="adb-selector--value">
+                              Email
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="adb-tags adb-tags_field--tags adb-js-tags_field--tags"></div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field adb-js-tags_field&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--inputs&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--categories&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--category adb-js-tags_field--category&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--category_content&quot;</span> <span class="na">data-selected=</span><span class="s">&quot;0&quot;</span> <span class="na">href=</span><span class="s">&quot;#category1&quot;</span> <span class="na">id=</span><span class="s">&quot;category1-link&quot;</span><span class="nt">&gt;</span>&#x000A;          Industry&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--badge adb-js-tags_field--badge adb-badge adb-badge__number&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--category adb-js-tags_field--category&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--category_content&quot;</span> <span class="na">data-selected=</span><span class="s">&quot;0&quot;</span> <span class="na">href=</span><span class="s">&quot;#category2&quot;</span> <span class="na">id=</span><span class="s">&quot;category2-link&quot;</span><span class="nt">&gt;</span>&#x000A;          Type&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--badge adb-js-tags_field--badge adb-badge adb-badge__number&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--category adb-js-tags_field--category&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--category_content&quot;</span> <span class="na">data-selected=</span><span class="s">&quot;0&quot;</span> <span class="na">href=</span><span class="s">&quot;#category3&quot;</span> <span class="na">id=</span><span class="s">&quot;category3-link&quot;</span><span class="nt">&gt;</span>&#x000A;          Attribute&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--badge adb-js-tags_field--badge adb-badge adb-badge__number&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;/ul&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--subcategories&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--subcategory adb-js-tags_field--subcategory&quot;</span> <span class="na">id=</span><span class="s">&quot;category1&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;subcategory7&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;subcategory7&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;Real Estate&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Real Estate&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;subcategory8&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;subcategory8&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;Law&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Law&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;subcategory9&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;subcategory9&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;Education&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Education&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;subcategory10&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;subcategory10&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;Salon&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Salon&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;subcategory11&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;subcategory11&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;Fitness&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Fitness&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;subcategory12&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;subcategory12&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;Health Care&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Health Care&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;subcategory13&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;subcategory13&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;Hotel&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Hotel&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--subcategory adb-js-tags_field--subcategory&quot;</span> <span class="na">id=</span><span class="s">&quot;category2&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;subcategory3&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;subcategory3&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;Customer Relationship Management&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Customer Relationship Management&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;subcategory4&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;subcategory4&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;Call Management&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Call Management&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;subcategory5&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;subcategory5&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;Live Chat&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Live Chat&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;subcategory6&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;subcategory6&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;Scheduling and Appointments&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Scheduling and Appointments&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tags_field--subcategory adb-js-tags_field--subcategory&quot;</span> <span class="na">id=</span><span class="s">&quot;category3&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;subcategory1&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;subcategory1&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;Conferencing&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Conferencing&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;subcategory2&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;subcategory2&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;Email&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;            Email&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-tags adb-tags_field--tags adb-js-tags_field--tags&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="selectable-options">
+              <h3>Selectable Table Rows</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <div class="adb-container">
+                    <table class="adb-table__actionable adb-table__multiline">
+                      <colgroup>
+                        <col span="1">
+                        <col width="30%">
+                        <col width="20%">
+                        <col width="50%">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Edition</th>
+                          <th>Included</th>
+                          <th>Price</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="adb-js-radio">
+                          <td>
+                            <input checked id="purchase-pricing-plan1" name="purchase-pricing-plans" type="radio">
+                          </td>
+                          <td>Gold Edition</td>
+                          <td>
+                            3 users
+                            <br>
+                            25 Gigabytes
+                          </td>
+                          <td>
+                            <ul class="adb-list__feature">
+                              <li>
+                                <strong>$199.95 / user / month</strong>
+                                <span class="adb-badge adb-badge__free">Free Trial</span>
+                              </li>
+                              <li>
+                                <strong>$180.00 / month for 1-25 users</strong>
+                                <span class="adb-caption">+ $9.95.00 / email</span>
+                              </li>
+                              <li>
+                                <strong>
+                                  $180.00 / month
+                                  Quo nulla non aut vel vitae repellendus est
+                                </strong>
+                                <span class="adb-caption">
+                                  + $9.95.00 / email
+                                  Nam quae quae possimus tempore deserunt ipsum voluptatem molestias
+                                </span>
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="adb-js-radio">
+                          <td>
+                            <input id="purchase-pricing-plan2" name="purchase-pricing-plans" type="radio">
+                          </td>
+                          <td>Silver Edition</td>
+                          <td>2 users</td>
+                          <td>
+                            <ul class="adb-list__feature">
+                              <li>
+                                <strong>$79.95 / user / month</strong>
+                                <span class="adb-caption">+ $0.00 / email / month</span>
+                                <span class="adb-badge adb-badge__info">2-Month Contract</span>
+                              </li>
+                              <li>
+                                <strong>$199.95 / user / day</strong>
+                                <span class="adb-caption">+ $0.00 / email / month</span>
+                                <span class="adb-badge adb-badge__info">2-Day Contract</span>
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="adb-js-radio">
+                          <td>
+                            <input id="purchase-pricing-plan3" name="purchase-pricing-plans" type="radio">
+                          </td>
+                          <td>Bronze Edition</td>
+                          <td>1 users</td>
+                          <td>
+                            <ul class="adb-list__feature">
+                              <li>
+                                <strong>$9.95 / user / month for 1-25 users</strong>
+                                <span class="adb-caption">+ $0.00 / email / month</span>
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;adb-table__actionable adb-table__multiline&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;colgroup&gt;</span>&#x000A;    <span class="nt">&lt;col</span> <span class="na">span=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;30%&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;20%&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;50%&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;/colgroup&gt;</span>&#x000A;  <span class="nt">&lt;thead&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th&gt;&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;th&gt;</span>Edition<span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;th&gt;</span>Included<span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;th&gt;</span>Price<span class="nt">&lt;/th&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/thead&gt;</span>&#x000A;  <span class="nt">&lt;tbody&gt;</span>&#x000A;    <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;adb-js-radio&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;purchase-pricing-plan1&quot;</span> <span class="na">name=</span><span class="s">&quot;purchase-pricing-plans&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>Gold Edition<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        3 users&#x000A;        <span class="nt">&lt;br&gt;</span>&#x000A;        25 Gigabytes&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-list__feature&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;li&gt;</span>&#x000A;            <span class="nt">&lt;strong&gt;</span>$199.95 / user / month<span class="nt">&lt;/strong&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-badge adb-badge__free&quot;</span><span class="nt">&gt;</span>Free Trial<span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/li&gt;</span>&#x000A;          <span class="nt">&lt;li&gt;</span>&#x000A;            <span class="nt">&lt;strong&gt;</span>$180.00 / month for 1-25 users<span class="nt">&lt;/strong&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-caption&quot;</span><span class="nt">&gt;</span>+ $9.95.00 / email<span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/li&gt;</span>&#x000A;          <span class="nt">&lt;li&gt;</span>&#x000A;            <span class="nt">&lt;strong&gt;</span>&#x000A;              $180.00 / month&#x000A;              Distinctio nemo iusto ea minus repudiandae voluptas vel quo ut sapiente sapiente accusamus repellat&#x000A;            <span class="nt">&lt;/strong&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-caption&quot;</span><span class="nt">&gt;</span>&#x000A;              + $9.95.00 / email&#x000A;              Et earum accusamus et officiis&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/li&gt;</span>&#x000A;        <span class="nt">&lt;/ul&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;adb-js-radio&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;purchase-pricing-plan2&quot;</span> <span class="na">name=</span><span class="s">&quot;purchase-pricing-plans&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>Silver Edition<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>2 users<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-list__feature&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;li&gt;</span>&#x000A;            <span class="nt">&lt;strong&gt;</span>$79.95 / user / month<span class="nt">&lt;/strong&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-caption&quot;</span><span class="nt">&gt;</span>+ $0.00 / email / month<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-badge adb-badge__info&quot;</span><span class="nt">&gt;</span>2-Month Contract<span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/li&gt;</span>&#x000A;          <span class="nt">&lt;li&gt;</span>&#x000A;            <span class="nt">&lt;strong&gt;</span>$199.95 / user / day<span class="nt">&lt;/strong&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-caption&quot;</span><span class="nt">&gt;</span>+ $0.00 / email / month<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-badge adb-badge__info&quot;</span><span class="nt">&gt;</span>2-Day Contract<span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/li&gt;</span>&#x000A;        <span class="nt">&lt;/ul&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;adb-js-radio&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;purchase-pricing-plan3&quot;</span> <span class="na">name=</span><span class="s">&quot;purchase-pricing-plans&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>Bronze Edition<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>1 users<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-list__feature&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;li&gt;</span>&#x000A;            <span class="nt">&lt;strong&gt;</span>$9.95 / user / month for 1-25 users<span class="nt">&lt;/strong&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-caption&quot;</span><span class="nt">&gt;</span>+ $0.00 / email / month<span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/li&gt;</span>&#x000A;        <span class="nt">&lt;/ul&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/tbody&gt;</span>&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Toggleable Table Rows</h4>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <div class="adb-container">
+                    <div class="adb-table" data-toggle-rows>
+                      <table>
+                        <colgroup>
+                          <col span="1" width="40%">
+                          <col span="1" width="20%">
+                          <col span="1" width="20%">
+                          <col span="1" width="20%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th class="adb-is-active" data-sort data-sort-order="descending">
+                              Group
+                            </th>
+                            <th data-sort>
+                              Users
+                            </th>
+                            <th>Origin</th>
+                            <th>Group Membership</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="adb-summary">
+                              <h4 class="adb-summary--title">
+                                            <a data-truncate="line" href="#">Design
+                                </a>
+                    
+                              </h4>
+                              <div class="adb-summary--details">
+                                voluptatem doloribus voluptate tempora voluptatibus
+                              </div>
+                            </td>
+                            <td>
+                              24
+                            </td>
+                            <td>
+                              Internal
+                            </td>
+                            <td>
+                              <label class="adb-toggle" for="user-group1">
+                                <input checked class="adb-toggle--input" id="user-group1" type="checkbox">
+                                <span class="adb-toggle--control"></span>
+                                <span class="adb-toggle--value">
+                                  Member
+                                </span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="adb-summary">
+                              <h4 class="adb-summary--title">
+                                            <a data-truncate="line" href="#">Marketing
+                                </a>
+                    
+                              </h4>
+                              <div class="adb-summary--details">
+                                enim ducimus dolore non illum
+                              </div>
+                            </td>
+                            <td>
+                              182
+                            </td>
+                            <td>
+                              LDAP
+                            </td>
+                            <td>
+                              <label class="adb-toggle" for="user-group2">
+                                <input checked class="adb-toggle--input" id="user-group2" type="checkbox">
+                                <span class="adb-toggle--control"></span>
+                                <span class="adb-toggle--value">
+                                  Member
+                                </span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="adb-summary">
+                              <h4 class="adb-summary--title">
+                                            <a data-truncate="line" href="#">Event Planning
+                                </a>
+                    
+                              </h4>
+                              <div class="adb-summary--details">
+                                cumque exercitationem dolorum aut vitae
+                              </div>
+                            </td>
+                            <td>
+                              12
+                            </td>
+                            <td>
+                              Internal
+                            </td>
+                            <td>
+                              <label class="adb-toggle" for="user-group3">
+                                <input class="adb-toggle--input" id="user-group3" type="checkbox">
+                                <span class="adb-toggle--control"></span>
+                                <span class="adb-toggle--value">
+                                  Member
+                                </span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="adb-table--card">
+                              <div class="adb-table--card_text adb-summary">
+                                <h4 class="adb-summary--title">
+                                                <a data-truncate="line" href="#">Trump Fan Club
+                                  </a>
+                    
+                                </h4>
+                                <div class="adb-summary--details">
+                                  mollitia non et deleniti itaque
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              42
+                            </td>
+                            <td>
+                              LDAP
+                            </td>
+                            <td>
+                              <label class="adb-toggle" for="user-group4">
+                                <input class="adb-toggle--input" id="user-group4" type="checkbox">
+                                <span class="adb-toggle--control"></span>
+                                <span class="adb-toggle--value">
+                                  Member
+                                </span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="adb-table--card">
+                              <div class="adb-table--card_text adb-summary">
+                                <h4 class="adb-summary--title">
+                                                <a data-truncate="line" href="#">Ciabatto's
+                                  </a>
+                    
+                                </h4>
+                                <div class="adb-summary--details">
+                                  sunt esse eum at eum
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              8
+                            </td>
+                            <td>
+                              Internal
+                            </td>
+                            <td>
+                              <label class="adb-toggle" for="user-group5">
+                                <input class="adb-toggle--input" id="user-group5" type="checkbox">
+                                <span class="adb-toggle--control"></span>
+                                <span class="adb-toggle--value">
+                                  Member
+                                </span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="adb-table--card">
+                              <div class="adb-table--card_text adb-summary">
+                                <h4 class="adb-summary--title">
+                                                <a data-truncate="line" href="#">Engineering
+                                  </a>
+                    
+                                </h4>
+                                <div class="adb-summary--details">
+                                  voluptas eligendi recusandae ut maiores
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              8
+                            </td>
+                            <td>
+                              Internal
+                            </td>
+                            <td>
+                              <label class="adb-toggle" for="user-group6">
+                                <input class="adb-toggle--input" id="user-group6" type="checkbox">
+                                <span class="adb-toggle--control"></span>
+                                <span class="adb-toggle--value">
+                                  Member
+                                </span>
+                              </label>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-table&quot;</span> <span class="na">data-toggle-rows</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;table&gt;</span>&#x000A;    <span class="nt">&lt;colgroup&gt;</span>&#x000A;      <span class="nt">&lt;col</span> <span class="na">span=</span><span class="s">&quot;1&quot;</span> <span class="na">width=</span><span class="s">&quot;40%&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;col</span> <span class="na">span=</span><span class="s">&quot;1&quot;</span> <span class="na">width=</span><span class="s">&quot;20%&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;col</span> <span class="na">span=</span><span class="s">&quot;1&quot;</span> <span class="na">width=</span><span class="s">&quot;20%&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;col</span> <span class="na">span=</span><span class="s">&quot;1&quot;</span> <span class="na">width=</span><span class="s">&quot;20%&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/colgroup&gt;</span>&#x000A;    <span class="nt">&lt;thead&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">&quot;adb-is-active&quot;</span> <span class="na">data-sort</span> <span class="na">data-sort-order=</span><span class="s">&quot;descending&quot;</span><span class="nt">&gt;</span>&#x000A;          Group&#x000A;        <span class="nt">&lt;/th&gt;</span>&#x000A;        <span class="nt">&lt;th</span> <span class="na">data-sort</span><span class="nt">&gt;</span>&#x000A;          Users&#x000A;        <span class="nt">&lt;/th&gt;</span>&#x000A;        <span class="nt">&lt;th&gt;</span>Origin<span class="nt">&lt;/th&gt;</span>&#x000A;        <span class="nt">&lt;th&gt;</span>Group Membership<span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;/thead&gt;</span>&#x000A;    <span class="nt">&lt;tbody&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-summary&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;adb-summary--title&quot;</span><span class="nt">&gt;</span>&#x000A;                        <span class="nt">&lt;a</span> <span class="na">data-truncate=</span><span class="s">&quot;line&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Design&#x000A;            <span class="nt">&lt;/a&gt;</span>&#x000A;&#x000A;          <span class="nt">&lt;/h4&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-summary--details&quot;</span><span class="nt">&gt;</span>&#x000A;            corporis delectus dicta eveniet accusantium&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          24&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          Internal&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-toggle&quot;</span> <span class="na">for=</span><span class="s">&quot;user-group1&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--input&quot;</span> <span class="na">id=</span><span class="s">&quot;user-group1&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--control&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--value&quot;</span><span class="nt">&gt;</span>&#x000A;              Member&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-summary&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;adb-summary--title&quot;</span><span class="nt">&gt;</span>&#x000A;                        <span class="nt">&lt;a</span> <span class="na">data-truncate=</span><span class="s">&quot;line&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Marketing&#x000A;            <span class="nt">&lt;/a&gt;</span>&#x000A;&#x000A;          <span class="nt">&lt;/h4&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-summary--details&quot;</span><span class="nt">&gt;</span>&#x000A;            rerum consectetur maiores est ab&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          182&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          LDAP&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-toggle&quot;</span> <span class="na">for=</span><span class="s">&quot;user-group2&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--input&quot;</span> <span class="na">id=</span><span class="s">&quot;user-group2&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--control&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--value&quot;</span><span class="nt">&gt;</span>&#x000A;              Member&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-summary&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;adb-summary--title&quot;</span><span class="nt">&gt;</span>&#x000A;                        <span class="nt">&lt;a</span> <span class="na">data-truncate=</span><span class="s">&quot;line&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Event Planning&#x000A;            <span class="nt">&lt;/a&gt;</span>&#x000A;&#x000A;          <span class="nt">&lt;/h4&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-summary--details&quot;</span><span class="nt">&gt;</span>&#x000A;            minima aut et tenetur necessitatibus&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          12&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          Internal&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-toggle&quot;</span> <span class="na">for=</span><span class="s">&quot;user-group3&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--input&quot;</span> <span class="na">id=</span><span class="s">&quot;user-group3&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--control&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--value&quot;</span><span class="nt">&gt;</span>&#x000A;              Member&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-table--card&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-table--card_text adb-summary&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;adb-summary--title&quot;</span><span class="nt">&gt;</span>&#x000A;                            <span class="nt">&lt;a</span> <span class="na">data-truncate=</span><span class="s">&quot;line&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Trump Fan Club&#x000A;              <span class="nt">&lt;/a&gt;</span>&#x000A;&#x000A;            <span class="nt">&lt;/h4&gt;</span>&#x000A;            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-summary--details&quot;</span><span class="nt">&gt;</span>&#x000A;              accusantium quam aut optio excepturi&#x000A;            <span class="nt">&lt;/div&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          42&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          LDAP&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-toggle&quot;</span> <span class="na">for=</span><span class="s">&quot;user-group4&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--input&quot;</span> <span class="na">id=</span><span class="s">&quot;user-group4&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--control&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--value&quot;</span><span class="nt">&gt;</span>&#x000A;              Member&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-table--card&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-table--card_text adb-summary&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;adb-summary--title&quot;</span><span class="nt">&gt;</span>&#x000A;                            <span class="nt">&lt;a</span> <span class="na">data-truncate=</span><span class="s">&quot;line&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Ciabatto&#39;s&#x000A;              <span class="nt">&lt;/a&gt;</span>&#x000A;&#x000A;            <span class="nt">&lt;/h4&gt;</span>&#x000A;            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-summary--details&quot;</span><span class="nt">&gt;</span>&#x000A;              eos error exercitationem maiores adipisci&#x000A;            <span class="nt">&lt;/div&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          8&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          Internal&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-toggle&quot;</span> <span class="na">for=</span><span class="s">&quot;user-group5&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--input&quot;</span> <span class="na">id=</span><span class="s">&quot;user-group5&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--control&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--value&quot;</span><span class="nt">&gt;</span>&#x000A;              Member&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;      <span class="nt">&lt;tr&gt;</span>&#x000A;        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-table--card&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-table--card_text adb-summary&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;adb-summary--title&quot;</span><span class="nt">&gt;</span>&#x000A;                            <span class="nt">&lt;a</span> <span class="na">data-truncate=</span><span class="s">&quot;line&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Engineering&#x000A;              <span class="nt">&lt;/a&gt;</span>&#x000A;&#x000A;            <span class="nt">&lt;/h4&gt;</span>&#x000A;            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-summary--details&quot;</span><span class="nt">&gt;</span>&#x000A;              nihil eaque odit quibusdam quia&#x000A;            <span class="nt">&lt;/div&gt;</span>&#x000A;          <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          8&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          Internal&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;        <span class="nt">&lt;td&gt;</span>&#x000A;          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-toggle&quot;</span> <span class="na">for=</span><span class="s">&quot;user-group6&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--input&quot;</span> <span class="na">id=</span><span class="s">&quot;user-group6&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--control&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-toggle--value&quot;</span><span class="nt">&gt;</span>&#x000A;              Member&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;/tbody&gt;</span>&#x000A;  <span class="nt">&lt;/table&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+          </article>
+        </section>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="text_inputs.html">Modify</a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Option Selectors
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

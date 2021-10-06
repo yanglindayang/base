@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Writing Style</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="documentation documentation_core documentation_core_writing_style">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link adb-is-selected" title="Framework Foundations" data-toggle="tooltip" data-placement="bottom" href="design_principles.html">Core
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Specialized Data" data-toggle="tooltip" data-placement="bottom" href="../display/alerts_and_messages.html">Display
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Menus and Buttons" data-toggle="tooltip" data-placement="bottom" href="../navigate/global_navigation.html">Navigate
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Form Elements" data-toggle="tooltip" data-placement="bottom" href="../modify/text_inputs.html">Modify
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Layout Patterns" data-toggle="tooltip" data-placement="bottom" href="../arrange/containers.html">Arrange
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Application Pages" data-toggle="tooltip" data-placement="bottom" href="../../prototype/">Prototype
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-context_menu--trigger adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  <i class="adb-icon__cog"></i>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="https://github.com/ad-dc/base/releases">Release Notes</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../benchmarking.html">CSS/SASS Stats</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../components.html">Preview All Components</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <section class="adb-layout-row adb-headline">
+          <div class="adb-layout-default">
+            <h5>Base by AppDirect</h5>
+            <h1>
+              Core
+            </h1>
+            <p class="tagline">
+              Foundational principles, guidelines and styles
+            </p>
+          </div>
+        </section>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="design_principles.html">Design Principles</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="grid_and_layout.html">Grid and Layout</a>
+                </div>
+                <!--
+                  <div class="adb-stack--item">
+                    <a class="adb-link__nav adb-stack--item_content" href="responsive_layouts.html">Responsive Layouts</a>
+                  </div>
+                -->
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="colors.html">Colors</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="typography.html">Typography</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="iconography.html">Iconography</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="writing_style.html">Writing Style</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="coding_style.html">Coding Style</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="states.html">States</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="animations.html">Animations</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <article class="adb-layout-content">
+            <h2>
+              Writing Style
+            </h2>
+            <section class="adb-layout-content--section" id="general-guidelines">
+              <h3>General Guidelines</h3>
+              <p>The <a href="design_principles.html">design principles</a> that we follow in our visual language also apply in our verbal language. In some cases, verbal content communicates even more information than visual cues. For example, the text of an error alert informs the user about why the error occurred and how they can resolve the error. While these guidelines come from standard stylebooks and writing recommendations, please feel free to adapt them to suit the situation.</p>
+              <h4>Communicate with clarity.</h4>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p>Use short words, direct statements and <a href="writing_style.html#terminology">common terms</a>. Avoid technical jargon. Add tooltips or links if they help.</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <ul class="adb-icon_list">
+                      <li class="adb-icon_list--check">
+                        Allow sales agents to create new customers and buy products on behalf of the customers.
+                      </li>
+                      <li class="adb-icon_list--x">
+                        Enabling restricted sales support will expose the Restricted Sales Support role to marketplaces, which allows an agent to make purchases on behalf of a customer for customers they create.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p>Use active voice for verbs. Active voice makes text easier to read by identifying a clear agent and clear actions to take.</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <ul class="adb-icon_list">
+                      <li class="adb-icon_list--check">
+                        Change this product in the product settings.
+                      </li>
+                      <li class="adb-icon_list--x">
+                        This product can be changed in the product settings.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p>Describe choices as &quot;positive&quot; actions when possible, especially when it is a binary choice.</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <ul class="adb-icon_list">
+                      <li class="adb-icon_list--check">
+                        Enable API-only marketplace
+                      </li>
+                      <li class="adb-icon_list--x">
+                        Disable the marketplace for End users
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <h4>Keep it simple. Keep it short.</h4>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p>Be concise and precise. Write only what is absolutely necessary.</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <ul class="adb-icon_list">
+                      <li class="adb-icon_list--check">
+                        Update Billing Information
+                      </li>
+                      <li class="adb-icon_list--x">
+                        Change your default billing information
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <h4>Consistency is the hallmark of well-built systems.</h4>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p>Use spelling, grammar and syntax consistent with the appropriate language and region. American English is our system default.</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <ul class="adb-icon_list">
+                      <li class="adb-icon_list--check">
+                        Product Canceled
+                      </li>
+                      <li class="adb-icon_list--x">
+                        Product Cancelled
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p>Capitalize only the first word (<em>sentence case</em>) for titles longer than four words (e.g., content headings). Capitalize words longer than three letters (<em>title case</em>) for titles four words or shorter (e.g., buttons).</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <ul class="adb-icon_list">
+                      <li class="adb-icon_list--check">
+                        Add a Product
+                      </li>
+                      <li class="adb-icon_list--x">
+                        Add a product
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p>When describing a set of options or potential outcomes, use parallel sentence structure to make the choice clear.</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <ul class="adb-icon_list">
+                      <li class="adb-icon_list--check">
+                        Choose to support 1 user or multiple users.
+                      </li>
+                      <li class="adb-icon_list--x">
+                        Choose to support more than one user or not.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <h4>Respect important information.</h4>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p>Place important information first.</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <ul class="adb-icon_list">
+                      <li class="adb-icon_list--check">
+                        Sample User paid $200.00 for Invoice #21.
+                      </li>
+                      <li class="adb-icon_list--x">
+                        Sample User successfully completed a payment of $200.00.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p>Spell out acronyms and abbreviations when you first use them on a page. Never assume prior knowledge.</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <p>
+                      By default, the Single Sign-On (SSO) feature is enabled. Disable SSO for custom domains by clicking the button.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p>Use numerals for numbers and symbols for units where applicable. They stand out in the middle of sentences and leave less room for ambiguity.</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <p>
+                      You have used 20% of your storage.
+                      <br>
+                      This product has 0 users.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p>Hyphenate compound adjectives to make single concepts clear. A label platform is not white; a platform is white-label.</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <p>
+                      One-Time Purchase
+                      <br>
+                      White-Label Platform
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <h4>Proofread. Repeat.</h4>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p>To avoid <a href="writing_style.html#mistakes">common mistakes</a>, verify terms in a dictionary. The built-in Dictionary app on Mac OS X provides common spellings, regional variations, and usage rules and examples.</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <ul class="adb-icon_list">
+                      <li class="adb-icon_list--check">
+                        Inactive User
+                      </li>
+                      <li class="adb-icon_list--x">
+                        Unactivated user
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="terminology">
+              <h3>
+                Terminology
+              </h3>
+              <p>
+                This section attempts to define and elucidate common terms in the AppDirect UI.
+              </p>
+              <div class="adb-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>
+                        Term
+                      </th>
+                      <th>
+                        Definition and Rules
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        AppDirect
+                      </td>
+                      <td>
+                        "AppDirect" is one word. It must be on the same line; do not separate or hyphenate. Never abbreviate (e.g. AD, AppD, etc.).
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Marketplace
+                      </td>
+                      <td>
+                        A branded system that connects software vendors to buyers. Often labeled as "Channel."
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Vendor
+                      </td>
+                      <td>
+                        A company that sells a product in a marketplace. Vendor-facing UI often uses "Developer" instead. Never use "ISV."
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Product
+                      </td>
+                      <td>
+                        An item sold in a marketplace, including Applications (Apps), Bundles (of Applications), Add-On's, etc. Vendor-facing UI often uses "Subscriptions" to describe products with recurring charges. Paid products may charge recurring fees or a one-time fee (labeled with "One-Time Purchase" status).
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Application
+                      </td>
+                      <td>
+                        The primary component of a Product. Preferable to "App" but you can use "App" for variation after the first use.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Bundle
+                      </td>
+                      <td>
+                        A Product that is a collection of Applications and/or Add-Ons.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Add-On
+                      </td>
+                      <td>
+                        A secondary component that users can choose to add to their Product, such as a feature or additional storage. In legal contexts, Add-On's refer to additional integrations that marketplaces can add to the core product, such as billing integration, CRM (Customer Relationship Management) and Developer Center.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Edition
+                      </td>
+                      <td>
+                        A pricing plan for a Product that determines the fees charged to the user and the billing frequency.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Company
+                      </td>
+                      <td>
+                        May refer to either a company that purchases a product or a company that sells a product. In legal contexts, the "Company" is always the marketplace partner.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="mistakes">
+              <h3>Common Mistakes</h3>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p><strong>Set up</strong>, <strong>log in</strong>, <strong>sign up</strong>, etc. are examples of <a href="http://en.wikipedia.org/wiki/Phrasal_verb">phrasal verbs</a>. By contrast, <strong>setup</strong>, <strong>login</strong>, <strong>sign-up</strong> are nouns or adjectives.</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <p>
+                      Sign up for AppDirect
+                      <br>
+                      You have not completed your account setup.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p>Use <strong>because</strong> to describe causal relationships, not since. <strong>Since</strong> means &quot;from the time when.&quot;</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <p>
+                      This user is inactive because she has not logged in for six months.
+                    </p>
+                    <p>
+                      This user has not logged in since six months ago.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p><strong>That</strong> and <strong>which</strong> refer to places and things, including groups and companies, while <strong>who</strong> refers to people. You can use <strong>whose</strong> for both people and inanimate things.</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <p>
+                      The marketplace that requested this product has not added it yet.
+                    </p>
+                    <p>
+                      The administrator who purchased this product has not added any users to it yet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-content_half">
+                  <div class="example--rule">
+                    <p><strong>Less</strong> describes uncountable things while <strong>fewer</strong> describes countable things. One exception is <strong>less than</strong>, which you can use with numbers.</p>
+                  </div>
+                </div>
+                <div class="adb-layout-content_half">
+                  <div class="adb-help">
+                    <p>
+                      Fewer users
+                      <br>
+                      Less than 5 products
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+        </section>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="design_principles.html">Core</a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Writing Style
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

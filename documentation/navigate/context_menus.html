@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Context Menus</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="documentation documentation_navigate documentation_navigate_context_menus">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Framework Foundations" data-toggle="tooltip" data-placement="bottom" href="../core/design_principles.html">Core
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Specialized Data" data-toggle="tooltip" data-placement="bottom" href="../display/alerts_and_messages.html">Display
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link adb-is-selected" title="Menus and Buttons" data-toggle="tooltip" data-placement="bottom" href="global_navigation.html">Navigate
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Form Elements" data-toggle="tooltip" data-placement="bottom" href="../modify/text_inputs.html">Modify
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Layout Patterns" data-toggle="tooltip" data-placement="bottom" href="../arrange/containers.html">Arrange
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Application Pages" data-toggle="tooltip" data-placement="bottom" href="../../prototype/">Prototype
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-context_menu--trigger adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  <i class="adb-icon__cog"></i>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="https://github.com/ad-dc/base/releases">Release Notes</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../benchmarking.html">CSS/SASS Stats</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../components.html">Preview All Components</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <section class="adb-layout-row adb-headline">
+          <div class="adb-layout-default">
+            <h5>Base by AppDirect</h5>
+            <h1>
+              Navigate
+            </h1>
+            <p class="tagline">
+              Guide users through the application
+            </p>
+          </div>
+        </section>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="global_navigation.html">Global Navigation</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="vertical_navigation.html">Vertical Navigation</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="page_navigation.html">Page Navigation</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="navigation_controls.html">Navigation Controls</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="buttons.html">Buttons</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="context_menus.html">Context Menus</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="search_fields.html">Search Fields</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <article class="adb-layout-content">
+            <h2>
+              Context Menus
+            </h2>
+            <section class="adb-layout-content--section" id="buttons-menu">
+              <p>Menus are visually similar to <a href="../modify/option_selectors.html#dropdowns">dropdown selectors</a> but they are functionally different. Menus offer a list of commands or links, each of which allows the user to take an action or navigate to a different page. By contrast, dropdown selectors offer a set of options for a choice the user must make. Accordingly, the markup for menus is different from the markup for dropdown selectors.</p>
+              <h4>Styles</h4>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <menu class="adb-context_menu adb-js-context_menu">
+                    <button class="adb-context_menu--trigger adb-js-context_menu--trigger" type="button">
+                      Open Menu
+                    </button>
+                    <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                      <ul class="adb-stack">
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            iusto in perferendis
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            cumque aut pariatur
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            ex deserunt dolor
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            consequatur quidem et
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            quaerat odit ipsam
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </menu>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-context_menu adb-js-context_menu&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-context_menu--trigger adb-js-context_menu--trigger&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    Open Menu&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-context_menu--menu adb-js-context_menu--menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-stack&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          animi provident fugit&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          tenetur quia id&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          sed commodi ipsa&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          veritatis reiciendis aut&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          voluptatibus iusto non&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;/ul&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+                <div class="example__container--view">
+                  <menu class="adb-js-context_menu adb-context_menu">
+                    <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__inset" type="button">
+                      Open Menu
+                    </button>
+                    <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                      <ul class="adb-stack">
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            veritatis et earum
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            praesentium in voluptatem
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            itaque dicta et
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            sed est dicta
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            impedit est ea
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </menu>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-js-context_menu adb-context_menu&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-js-context_menu--trigger adb-context_menu--trigger adb-button__inset&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    Open Menu&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-context_menu--menu adb-js-context_menu--menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-stack&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          omnis ab non&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          facilis autem officia&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          neque cumque adipisci&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          laudantium ut beatae&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          quia cupiditate accusamus&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;/ul&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+                <div class="example__container--view">
+                  <menu class="adb-js-context_menu adb-context_menu">
+                    <button class="adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret" type="button">
+                      Open Menu
+                    </button>
+                    <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                      <ul class="adb-stack">
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            quis sapiente aut
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            vel eum rem
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            eum dolorem nihil
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            quia pariatur voluptate
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            veritatis omnis assumenda
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </menu>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-js-context_menu adb-context_menu&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-js-context_menu--trigger adb-context_menu--trigger adb-button__secret&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    Open Menu&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-context_menu--menu adb-js-context_menu--menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-stack&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          odit voluptatem asperiores&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          in harum incidunt&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          qui esse qui&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          vero totam aut&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          dignissimos autem autem&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;/ul&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Sizes</h4>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <menu class="adb-context_menu adb-js-context_menu">
+                    <button class="adb-context_menu--trigger adb-js-context_menu--trigger" type="button">
+                      Open Menu
+                    </button>
+                    <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                      <ul class="adb-stack">
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            libero ipsam quae
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            sint officiis consequatur
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            provident voluptatibus debitis
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            tenetur qui saepe
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            incidunt vitae et
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </menu>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-context_menu adb-js-context_menu&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-context_menu--trigger adb-js-context_menu--trigger&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    Open Menu&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-context_menu--menu adb-js-context_menu--menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-stack&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          maiores soluta ratione&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          vel rerum ipsam&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          aut sed dicta&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          nam odio autem&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          velit non eligendi&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;/ul&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+                <div class="example__container--view">
+                  <menu class="adb-context_menu adb-context_menu__small adb-js-context_menu">
+                    <button class="adb-button__small adb-context_menu--trigger adb-js-context_menu--trigger" type="button">
+                      Open Menu
+                    </button>
+                    <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu adb-js-context_menu--menu" role="menu">
+                      <ul class="adb-stack adb-stack__small">
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            rem sed magnam
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            alias et doloribus
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            perferendis voluptate quaerat
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            ipsam cupiditate suscipit
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            ab eum reiciendis
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </menu>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-context_menu adb-context_menu__small adb-js-context_menu&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__small adb-context_menu--trigger adb-js-context_menu--trigger&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    Open Menu&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-context_menu--menu adb-js-context_menu--menu adb-js-context_menu--menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-stack adb-stack__small&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          voluptatem aut reiciendis&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          quia explicabo reiciendis&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          voluptatum quisquam eius&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          et ipsum repellat&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          facilis sit a&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;/ul&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+                <div class="example__container--view">
+                  <menu class="adb-context_menu adb-context_menu__full_width adb-js-context_menu">
+                    <button class="adb-context_menu--trigger adb-js-context_menu--trigger" type="button">
+                      Open Menu
+                    </button>
+                    <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                      <ul class="adb-stack">
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            aut ea sit
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            qui sed voluptatem
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            accusantium qui aut
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            unde velit veritatis
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            dignissimos incidunt consequatur
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </menu>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-context_menu adb-context_menu__full_width adb-js-context_menu&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-context_menu--trigger adb-js-context_menu--trigger&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    Open Menu&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-context_menu--menu adb-js-context_menu--menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-stack&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          ipsa et in&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          sint dolorum distinctio&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          reiciendis ad sunt&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          aut temporibus id&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          et omnis vero&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;/ul&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Bottom Menu Placement</h4>
+              <p>This is the default menu placement. Use the <code>.right</code> aligned placement     when the menu is positioned within the last 4 columns (264px) of the page.</p>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <menu class="adb-context_menu adb-js-context_menu">
+                    <button class="adb-context_menu--trigger adb-js-context_menu--trigger" type="button">
+                      Open Menu
+                    </button>
+                    <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                      <ul class="adb-stack">
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            tempora autem dolores
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            deserunt voluptatem hic
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            quidem nobis similique
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            sapiente eius occaecati
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            placeat ea similique
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </menu>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-context_menu adb-js-context_menu&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-context_menu--trigger adb-js-context_menu--trigger&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    Open Menu&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-context_menu--menu adb-js-context_menu--menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-stack&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          quas illo quae&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          sunt sunt autem&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          quo voluptatibus ducimus&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          ex beatae aspernatur&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          eum deleniti et&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;/ul&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+                <div class="example__container--view">
+                  <menu class="adb-js-context_menu adb-context_menu" data-placement="right">
+                    <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                      Open Menu
+                    </button>
+                    <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                      <ul class="adb-stack">
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            at saepe iusto
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            similique nobis officia
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            expedita voluptatem voluptatem
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            deleniti aliquid reiciendis
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            tempora repudiandae totam
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </menu>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-js-context_menu adb-context_menu&quot;</span> <span class="na">data-placement=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-js-context_menu--trigger adb-context_menu--trigger&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    Open Menu&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-context_menu--menu adb-js-context_menu--menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-stack&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          omnis deleniti quam&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          soluta sed voluptatem&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          tempora laboriosam omnis&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          et eaque magni&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          et aut provident&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;/ul&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Top Menu Placement</h4>
+              <p>Top menu placement is not ideal in most scenarios and should only be used     under special circumstances. Use this menu placement when the menu is     placed at the bottom of a table or when menu options run the risk of     opening below the viewport. Use the <code>.right</code> aligned placement when the     menu is positioned within the last 4 columns (264px) of the page.</p>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <menu class="adb-js-context_menu adb-context_menu" data-placement="top">
+                    <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                      Open Menu
+                    </button>
+                    <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                      <ul class="adb-stack">
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            et qui aut
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            sit labore dolor
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            itaque vel eum
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            excepturi non error
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            omnis quisquam reiciendis
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </menu>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-js-context_menu adb-context_menu&quot;</span> <span class="na">data-placement=</span><span class="s">&quot;top&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-js-context_menu--trigger adb-context_menu--trigger&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    Open Menu&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-context_menu--menu adb-js-context_menu--menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-stack&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          architecto voluptas ipsam&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          iste libero voluptatem&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          voluptas necessitatibus aliquid&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          suscipit maiores qui&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          autem et ipsam&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;/ul&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+                <div class="example__container--view">
+                  <menu class="adb-js-context_menu adb-context_menu" data-placement="top right">
+                    <button class="adb-js-context_menu--trigger adb-context_menu--trigger" type="button">
+                      Open Menu
+                    </button>
+                    <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                      <ul class="adb-stack">
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            ut natus harum
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            in alias sint
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            et consequuntur mollitia
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            iure dolore in
+                          </a>
+                        </li>
+                        <li class="adb-stack--item">
+                          <a class="adb-link__option adb-stack--item_content">
+                            velit quibusdam qui
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </menu>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-js-context_menu adb-context_menu&quot;</span> <span class="na">data-placement=</span><span class="s">&quot;top right&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-js-context_menu--trigger adb-context_menu--trigger&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;    Open Menu&#x000A;  <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-context_menu--menu adb-js-context_menu--menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-stack&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          voluptatem tempore quasi&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          aut mollitia pariatur&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          explicabo occaecati recusandae&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          ipsam quis repellendus&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__option adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          quia facere laboriosam&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;/ul&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/menu&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+          </article>
+        </section>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="global_navigation.html">Navigate</a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Context Menus
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

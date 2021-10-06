@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Page Navigation</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="documentation documentation_navigate documentation_navigate_page_navigation">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Framework Foundations" data-toggle="tooltip" data-placement="bottom" href="../core/design_principles.html">Core
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Specialized Data" data-toggle="tooltip" data-placement="bottom" href="../display/alerts_and_messages.html">Display
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link adb-is-selected" title="Menus and Buttons" data-toggle="tooltip" data-placement="bottom" href="global_navigation.html">Navigate
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Form Elements" data-toggle="tooltip" data-placement="bottom" href="../modify/text_inputs.html">Modify
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Layout Patterns" data-toggle="tooltip" data-placement="bottom" href="../arrange/containers.html">Arrange
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Application Pages" data-toggle="tooltip" data-placement="bottom" href="../../prototype/">Prototype
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-context_menu--trigger adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  <i class="adb-icon__cog"></i>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="https://github.com/ad-dc/base/releases">Release Notes</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../benchmarking.html">CSS/SASS Stats</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../components.html">Preview All Components</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <section class="adb-layout-row adb-headline">
+          <div class="adb-layout-default">
+            <h5>Base by AppDirect</h5>
+            <h1>
+              Navigate
+            </h1>
+            <p class="tagline">
+              Guide users through the application
+            </p>
+          </div>
+        </section>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="global_navigation.html">Global Navigation</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="vertical_navigation.html">Vertical Navigation</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="page_navigation.html">Page Navigation</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="navigation_controls.html">Navigation Controls</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="buttons.html">Buttons</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="context_menus.html">Context Menus</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="search_fields.html">Search Fields</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <article class="adb-layout-content">
+            <h2>
+              Page Navigation
+            </h2>
+            <section class="adb-layout-content--section" id="tabs">
+              <h3>Tabs</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <nav class="adb-tabs">
+                    <ul class="adb-tabs--items">
+                      <li class="adb-tabs--item active">
+                        <a class="adb-tabs--link" data-toggle="tab" href="#tabs-example1">
+                          Overview
+                        </a>
+                      </li>
+                      <li class="adb-tabs--item">
+                        <a class="adb-tabs--link" data-toggle="tab" href="#tabs-example2">
+                          Features
+                        </a>
+                      </li>
+                      <li class="adb-tabs--item">
+                        <a class="adb-tabs--link" data-toggle="tab" href="#tabs-example3">
+                          Reviews
+                        </a>
+                      </li>
+                      <li class="adb-tabs--item">
+                        <a class="adb-tabs--link" data-toggle="tab" href="#tabs-example4">
+                          Editions
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <p class="adb-js-tab active" id="tabs-example1">
+                    Sint possimus similique tempora temporibus eum quia impedit rerum minima nostrum est voluptas. alias consequatur impedit deleniti ducimus quasi exercitationem aperiam. sequi eaque sed cupiditate eius voluptate quis. rem consequuntur voluptatem beatae vitae officiis cupiditate autem sint voluptatem dolores
+                  </p>
+                  <p class="adb-js-tab" id="tabs-example2">
+                    Sed cum autem consequatur vel quia qui autem aut facere consectetur ad sed. magnam praesentium voluptates repellendus quas aliquid voluptatem rerum nobis. perferendis voluptatem dolor cupiditate veritatis ut quos odio et eum dolorum vel quo distinctio impedit. possimus et cum dignissimos similique eum voluptatibus ullam minima tempora non voluptates rerum ut
+                  </p>
+                  <p class="adb-js-tab" id="tabs-example3">
+                    Soluta nihil illum iure velit. laboriosam dolorem aliquid qui. repellendus quo et ducimus. culpa assumenda fugiat illum voluptas quasi deserunt sed. aut aut adipisci vel. quaerat labore repudiandae adipisci qui dolores
+                  </p>
+                  <p class="adb-js-tab" id="tabs-example4">
+                    Quae consectetur quas explicabo est quod exercitationem nihil a repellat at. ut esse quos dolores dolores eligendi dolorum cupiditate sapiente. aut necessitatibus et natus esse ratione explicabo. qui sint labore sed molestiae cum dolor voluptatem harum est aliquid nihil
+                  </p>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;adb-tabs&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-tabs--items&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-tabs--item active&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tabs--link&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#tabs-example1&quot;</span><span class="nt">&gt;</span>&#x000A;        Overview&#x000A;      <span class="nt">&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-tabs--item&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tabs--link&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#tabs-example2&quot;</span><span class="nt">&gt;</span>&#x000A;        Features&#x000A;      <span class="nt">&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-tabs--item&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tabs--link&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#tabs-example3&quot;</span><span class="nt">&gt;</span>&#x000A;        Reviews&#x000A;      <span class="nt">&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-tabs--item&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tabs--link&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#tabs-example4&quot;</span><span class="nt">&gt;</span>&#x000A;        Editions&#x000A;      <span class="nt">&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/li&gt;</span>&#x000A;  <span class="nt">&lt;/ul&gt;</span>&#x000A;<span class="nt">&lt;/nav&gt;</span>&#x000A;<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-js-tab active&quot;</span> <span class="na">id=</span><span class="s">&quot;tabs-example1&quot;</span><span class="nt">&gt;</span>&#x000A;  Assumenda perferendis quisquam nemo unde dolorum autem reiciendis occaecati maiores temporibus animi ut nisi. laborum sed qui sed iste itaque ea aspernatur distinctio unde magni ut illum non. hic id dolorem ut vel aut pariatur aut voluptate quos harum. unde eum ducimus corrupti quae sit veritatis sed aspernatur. sed libero nemo aut natus&#x000A;<span class="nt">&lt;/p&gt;</span>&#x000A;<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-js-tab&quot;</span> <span class="na">id=</span><span class="s">&quot;tabs-example2&quot;</span><span class="nt">&gt;</span>&#x000A;  Dignissimos placeat voluptas nihil quo non iure eveniet ea laborum delectus sed nobis illo iure. voluptates pariatur autem amet sapiente corporis ad qui. ea et minima blanditiis. molestiae sint explicabo eaque occaecati. velit sunt laboriosam reiciendis non quibusdam alias omnis qui porro est&#x000A;<span class="nt">&lt;/p&gt;</span>&#x000A;<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-js-tab&quot;</span> <span class="na">id=</span><span class="s">&quot;tabs-example3&quot;</span><span class="nt">&gt;</span>&#x000A;  Illum sed debitis iste numquam. optio corrupti sed molestiae molestiae. sit delectus dicta perspiciatis officiis repellat ipsa sed rerum nihil. voluptatem sapiente consequatur aperiam dolores ut sed sequi corporis possimus maiores sunt quis autem. rerum magni architecto quis magni et deleniti nulla voluptatum voluptas rem porro minima. autem qui labore fugit sapiente similique quia sunt impedit ipsum rerum aut. nisi quos et aspernatur nobis ea molestiae quia et ex id occaecati magnam&#x000A;<span class="nt">&lt;/p&gt;</span>&#x000A;<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-js-tab&quot;</span> <span class="na">id=</span><span class="s">&quot;tabs-example4&quot;</span><span class="nt">&gt;</span>&#x000A;  Aut non earum et. nisi iure nemo illo tempore sed qui magnam a. est ullam autem suscipit sint natus&#x000A;<span class="nt">&lt;/p&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Tabbed Tables</h4>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <nav class="adb-tabs">
+                    <ul class="adb-tabs--items">
+                      <li class="adb-tabs--item active">
+                        <a class="adb-tabs--link" data-toggle="tab" href="#modal-invoice-charges">
+                          Charges
+                        </a>
+                      </li>
+                      <li class="adb-tabs--item">
+                        <a class="adb-tabs--link" data-toggle="tab" href="#modal-invoice-payments">
+                          Payments
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="adb-container adb-container__tabbed">
+                    <div class="adb-js-tab active" id="modal-invoice-charges">
+                      <div class="adb-table">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Description</th>
+                              <th>Quantity</th>
+                              <th>Price</th>
+                              <th>Total</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                Atque omnis nisi doloribus repellendus et et laudantium asperiores saepe reiciendis
+                              </td>
+                              <td>
+                                2
+                              </td>
+                              <td>
+                                $999.99
+                              </td>
+                              <td>
+                                $999.99
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Consequatur doloribus blanditiis laborum non deserunt commodi inventore hic incidunt aspernatur animi alias
+                              </td>
+                              <td>
+                                2
+                              </td>
+                              <td>
+                                $999.99
+                              </td>
+                              <td>
+                                $999.99
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="adb-js-tab" id="modal-invoice-payments">
+                      <div class="adb-table">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th class="adb-is-active" data-sort data-sort-order="descending">Status</th>
+                              <th>ID</th>
+                              <th>Created</th>
+                              <th>Method</th>
+                              <th>Total</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <span class="adb-status adb-status__active">
+                                  <span class="adb-status--gem"></span>
+                                  Completed
+                                </span>
+                              </td>
+                              <td>
+                                16171
+                              </td>
+                              <td>
+                                10/13/1990
+                              </td>
+                              <td>Visa ending in 1111</td>
+                              <td>
+                                $999.99
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="adb-status adb-status__active">
+                                  <span class="adb-status--gem"></span>
+                                  Completed
+                                </span>
+                              </td>
+                              <td>
+                                68102
+                              </td>
+                              <td>
+                                03/31/2005
+                              </td>
+                              <td>Visa ending in 1111</td>
+                              <td>
+                                $999.99
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;adb-tabs&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;adb-tabs--items&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-tabs--item active&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tabs--link&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#modal-invoice-charges&quot;</span><span class="nt">&gt;</span>&#x000A;        Charges&#x000A;      <span class="nt">&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-tabs--item&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-tabs--link&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#modal-invoice-payments&quot;</span><span class="nt">&gt;</span>&#x000A;        Payments&#x000A;      <span class="nt">&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;/li&gt;</span>&#x000A;  <span class="nt">&lt;/ul&gt;</span>&#x000A;<span class="nt">&lt;/nav&gt;</span>&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-container__tabbed&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-tab active&quot;</span> <span class="na">id=</span><span class="s">&quot;modal-invoice-charges&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-table&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;table&gt;</span>&#x000A;        <span class="nt">&lt;thead&gt;</span>&#x000A;          <span class="nt">&lt;tr&gt;</span>&#x000A;            <span class="nt">&lt;th&gt;</span>Description<span class="nt">&lt;/th&gt;</span>&#x000A;            <span class="nt">&lt;th&gt;</span>Quantity<span class="nt">&lt;/th&gt;</span>&#x000A;            <span class="nt">&lt;th&gt;</span>Price<span class="nt">&lt;/th&gt;</span>&#x000A;            <span class="nt">&lt;th&gt;</span>Total<span class="nt">&lt;/th&gt;</span>&#x000A;          <span class="nt">&lt;/tr&gt;</span>&#x000A;        <span class="nt">&lt;/thead&gt;</span>&#x000A;        <span class="nt">&lt;tbody&gt;</span>&#x000A;          <span class="nt">&lt;tr&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              Dolore consequatur velit rerum praesentium eius distinctio&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              2&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              $999.99&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              $999.99&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;          <span class="nt">&lt;/tr&gt;</span>&#x000A;          <span class="nt">&lt;tr&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              Assumenda nemo dicta mollitia eveniet debitis tempore&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              2&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              $999.99&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              $999.99&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;          <span class="nt">&lt;/tr&gt;</span>&#x000A;        <span class="nt">&lt;/tbody&gt;</span>&#x000A;      <span class="nt">&lt;/table&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-tab&quot;</span> <span class="na">id=</span><span class="s">&quot;modal-invoice-payments&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-table&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;table&gt;</span>&#x000A;        <span class="nt">&lt;thead&gt;</span>&#x000A;          <span class="nt">&lt;tr&gt;</span>&#x000A;            <span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">&quot;adb-is-active&quot;</span> <span class="na">data-sort</span> <span class="na">data-sort-order=</span><span class="s">&quot;descending&quot;</span><span class="nt">&gt;</span>Status<span class="nt">&lt;/th&gt;</span>&#x000A;            <span class="nt">&lt;th&gt;</span>ID<span class="nt">&lt;/th&gt;</span>&#x000A;            <span class="nt">&lt;th&gt;</span>Created<span class="nt">&lt;/th&gt;</span>&#x000A;            <span class="nt">&lt;th&gt;</span>Method<span class="nt">&lt;/th&gt;</span>&#x000A;            <span class="nt">&lt;th&gt;</span>Total<span class="nt">&lt;/th&gt;</span>&#x000A;          <span class="nt">&lt;/tr&gt;</span>&#x000A;        <span class="nt">&lt;/thead&gt;</span>&#x000A;        <span class="nt">&lt;tbody&gt;</span>&#x000A;          <span class="nt">&lt;tr&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__active&quot;</span><span class="nt">&gt;</span>&#x000A;                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;                Completed&#x000A;              <span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              39771&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              12/05/2003&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>Visa ending in 1111<span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              $999.99&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;          <span class="nt">&lt;/tr&gt;</span>&#x000A;          <span class="nt">&lt;tr&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__active&quot;</span><span class="nt">&gt;</span>&#x000A;                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;                Completed&#x000A;              <span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              97667&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              04/21/2006&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>Visa ending in 1111<span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;td&gt;</span>&#x000A;              $999.99&#x000A;            <span class="nt">&lt;/td&gt;</span>&#x000A;          <span class="nt">&lt;/tr&gt;</span>&#x000A;        <span class="nt">&lt;/tbody&gt;</span>&#x000A;      <span class="nt">&lt;/table&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="drawers">
+              <h3>Drawers</h3>
+              <p>Drawers are similar to tabs in that they allow you to navigate between panels of content within a page. With drawers however, both the sidebar navigation and the content panels are capable of housing more complex content. Drawers are not a replacement for or alternative to <a href="vertical_navigation.html">Vertical Navigation</a>. Content panels should contain very comparable or similar content, such as lists of users for different products or user roles for different people (see below).</p>
+              
+              <h5>Considerations</h5>
+              
+              <ol>
+              <li>The container height depends on the content height. Content panels taller than the defined maximum height become scrollable.</li>
+              <li>In some cases, there is more content in the sidebar navigation than in the visible content panel. When this happens, the sidebar navigation becomes scrollable.</li>
+              <li>Because of the complexity of the content it contains, drawers work best in full-width layouts.</li>
+              </ol>
+              <div class="example">
+                <div class="example--view">
+                  <div class="adb-container adb-drawers">
+                    <div class="adb-drawers--panel adb-drawers--sidebar adb-drawers--sidebar__category">
+                      <nav class="adb-stack">
+                        <div class="adb-stack--item adb-drawers--drawer adb-is-active" data-active="adb-is-active" data-target="#drawers-panel4" data-toggle="panel" data-type="radio">
+                          <div class="adb-stack--item_content">
+                            <span class="adb-count adb-stack--affix">2</span>
+                            Category 1
+                          </div>
+                        </div>
+                        <div class="adb-stack--item adb-drawers--drawer adb-drawers--last" data-active="adb-is-active" data-target="#drawers-panel5" data-toggle="panel" data-type="radio">
+                          <div class="adb-stack--item_content">
+                            <span class="adb-count adb-stack--affix">2</span>
+                            Category 2
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="adb-drawers--panel adb-drawers--content">
+                      <div class="adb-js-panel-target adb-is-active" id="drawers-panel4">
+                        <div class="adb-container_header adb-drawers--panel_header">
+                          <h3 class="adb-container_header--title adb-container_header--item">Content</h3>
+                        </div>
+                        <div class="adb-container_content adb-drawers--panel_content">
+                          <p>
+                            Autem dolorem earum et omnis vel doloremque iusto sapiente. inventore maxime et eum laborum neque vero voluptatibus natus ab. numquam mollitia omnis quos quasi iure voluptatum modi laboriosam deleniti earum. explicabo et officia odio facere fugit architecto id voluptas dolorum at nam esse. molestiae voluptatem reprehenderit quasi id animi veniam enim necessitatibus natus dolorem
+                          </p>
+                        </div>
+                      </div>
+                      <div class="adb-js-panel-target" id="drawers-panel5">
+                        <div class="adb-container_content adb-drawers--panel_content">
+                          <p>
+                            Dolores rerum vel aut. quisquam culpa natus tempora deserunt sed fugiat neque ullam ut et distinctio omnis necessitatibus dolor. ad provident velit ut id. maxime odit autem est aspernatur voluptatem earum eius consequatur impedit sequi mollitia
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-drawers&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-drawers--panel adb-drawers--sidebar adb-drawers--sidebar__category&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;adb-stack&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item adb-drawers--drawer adb-is-active&quot;</span> <span class="na">data-active=</span><span class="s">&quot;adb-is-active&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#drawers-panel4&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">data-type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-count adb-stack--affix&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>&#x000A;          Category 1&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item adb-drawers--drawer adb-drawers--last&quot;</span> <span class="na">data-active=</span><span class="s">&quot;adb-is-active&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#drawers-panel5&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">data-type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item_content&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-count adb-stack--affix&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>&#x000A;          Category 2&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/nav&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-drawers--panel adb-drawers--content&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-panel-target adb-is-active&quot;</span> <span class="na">id=</span><span class="s">&quot;drawers-panel4&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_header adb-drawers--panel_header&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;adb-container_header--title adb-container_header--item&quot;</span><span class="nt">&gt;</span>Content<span class="nt">&lt;/h3&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_content adb-drawers--panel_content&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Quam neque voluptates sit sapiente officia dolor ut autem reprehenderit cum est quas et eum. eum laborum aut quia ad. at occaecati voluptatem facere nihil ut sunt qui odio et explicabo. facilis repellendus voluptas porro voluptatem sapiente possimus. nesciunt ut aspernatur tenetur est excepturi omnis consequuntur veniam et nisi&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-panel-target&quot;</span> <span class="na">id=</span><span class="s">&quot;drawers-panel5&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_content adb-drawers--panel_content&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Culpa tempore totam quidem corporis quidem repudiandae adipisci amet nihil porro et aut qui. debitis cumque consectetur sint non aliquam aliquam officia et consectetur facilis nam culpa debitis. aspernatur fugiat quo enim veniam repellendus aliquid at doloribus omnis quia commodi omnis. sint officiis non cupiditate illum sunt officiis quae nobis dignissimos optio et&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Drawers with Fixed Navigation Header</h4>
+              <p>To add a fixed header element to the sidebar navigation, you must add inline CSS or use JavaScript to account for the space at the top of the sidebar navigation.</p>
+              <div class="example">
+                <div class="example--view">
+                  <div class="adb-container adb-drawers">
+                    <div class="adb-drawers--sidebar adb-drawers--panel">
+                      <div class="adb-filters">
+                        <div class="adb-search_field adb-search_field__auto">
+                          <span class="adb-search_field--affix adb-search_field--affix__default"></span>
+                          <span class="adb-search_field--affix adb-search_field--affix__loading">
+                            <span class="adb-loading">
+                              <span class="adb-loading--text">Loading...</span>
+                            </span>
+                          </span>
+                          <input class="adb-js-auto_search--input adb-search_field--input adb-text__small" id="name-search" placeholder="Search" type="search">
+                          <a class="adb-close adb-search_field--affix adb-search_field--affix__clear adb-js-auto_search--clear"></a>
+                        </div>
+                      </div>
+                      <nav class="adb-stack adb-drawers--sidebar_first">
+                        <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content adb-is-selected" data-active="adb-is-active" data-target="#drawers-panel1" data-toggle="panel" data-type="radio">Panel 1</a>
+                        </div>
+                        <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" data-active="adb-is-active" data-target="#drawers-panel2" data-toggle="panel" data-type="radio">Panel 2</a>
+                        </div>
+                        <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" data-active="adb-is-active" data-target="#drawers-panel3" data-toggle="panel" data-type="radio">Panel 3</a>
+                        </div>
+                        <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" data-active="adb-is-active" data-target="#drawers-panel2" data-toggle="panel" data-type="radio">Panel 4</a>
+                        </div>
+                        <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" data-active="adb-is-active" data-target="#drawers-panel1" data-toggle="panel" data-type="radio">Panel 5</a>
+                        </div>
+                        <div class="adb-stack--item">
+                          <a class="adb-link__nav adb-stack--item_content" data-active="adb-is-active" data-target="#drawers-panel3" data-toggle="panel" data-type="radio">Panel 6</a>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="adb-drawers--content adb-drawers--panel">
+                      <div class="adb-js-panel-target adb-is-active" id="drawers-panel1">
+                        <div class="adb-drawers--panel_header adb-filters">
+                          <div class="adb-search_field adb-search_field__auto">
+                            <span class="adb-search_field--affix adb-search_field--affix__default"></span>
+                            <span class="adb-search_field--affix adb-search_field--affix__loading">
+                              <span class="adb-loading">
+                                <span class="adb-loading--text">Loading...</span>
+                              </span>
+                            </span>
+                            <input class="adb-js-auto_search--input adb-search_field--input adb-text__small" id="name-search" placeholder="Search" type="search">
+                            <a class="adb-close adb-search_field--affix adb-search_field--affix__clear adb-js-auto_search--clear"></a>
+                          </div>
+                        </div>
+                        <div class="adb-drawers--panel_content adb-table adb-table__actionable">
+                          <table>
+                            <colgroup>
+                              <col span="1">
+                              <col width="60%">
+                              <col width="40%">
+                            </colgroup>
+                            <tbody>
+                              <tr class="adb-js-radio">
+                                <td>
+                                  <input checked id="drawers-option1" name="drawers-options" type="radio">
+                                </td>
+                                <td class="adb-table--card">
+                                  <div class="adb-table--card_image">
+                                    <div class="adb-id adb-id__logo adb-id__hz_small">
+                                      <img class="adb-id--img" src="../../images/logos/apps/tribehr-192x100.png" />
+                                    </div>
+                                  </div>
+                                  <div class="adb-table--card_text adb-summary">
+                                    <h4 class="adb-summary--title">Rackspace Cloud Servers</h4>
+                                    <div class="adb-summary--details">
+                                      <span class="adb-status adb-status__active">
+                                        <span class="adb-status--gem"></span>
+                                        Available
+                                      </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>Single Server</td>
+                              </tr>
+                              <tr class="adb-js-radio">
+                                <td>
+                                  <input id="drawers-option2" name="drawers-options" type="radio">
+                                </td>
+                                <td class="adb-table--card">
+                                  <div class="adb-table--card_image">
+                                    <div class="adb-id adb-id__logo adb-id__hz_small">
+                                      <img class="adb-id--img" src="../../images/logos/apps/sendgrid-192x100.png" />
+                                    </div>
+                                  </div>
+                                  <div class="adb-table--card_text adb-summary">
+                                    <h4 class="adb-summary--title">Rackspace Cloud Servers</h4>
+                                    <div class="adb-summary--details">
+                                      <span class="adb-status adb-status__active">
+                                        <span class="adb-status--gem"></span>
+                                        Available
+                                      </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>Single Server</td>
+                              </tr>
+                              <tr class="adb-js-radio">
+                                <td>
+                                  <input id="drawers-option3" name="drawers-options" type="radio">
+                                </td>
+                                <td class="adb-table--card">
+                                  <div class="adb-table--card_image">
+                                    <div class="adb-id adb-id__logo adb-id__hz_small">
+                                      <img class="adb-id--img" src="../../images/logos/apps/formstack-192x100.png" />
+                                    </div>
+                                  </div>
+                                  <div class="adb-table--card_text adb-summary">
+                                    <h4 class="adb-summary--title">Rackspace Cloud Servers</h4>
+                                    <div class="adb-summary--details">
+                                      <span class="adb-status adb-status__active">
+                                        <span class="adb-status--gem"></span>
+                                        Available
+                                      </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>Multiple Servers</td>
+                              </tr>
+                              <tr class="adb-js-radio adb-drawers--last">
+                                <td>
+                                  <input id="drawers-option4" name="drawers-options" type="radio">
+                                </td>
+                                <td class="adb-table--card">
+                                  <div class="adb-table--card_image">
+                                    <div class="adb-id adb-id__logo adb-id__hz_small">
+                                      <img class="adb-id--img" src="../../images/logos/apps/mcaffee-192x100.png" />
+                                    </div>
+                                  </div>
+                                  <div class="adb-table--card_text adb-summary">
+                                    <h4 class="adb-summary--title">Rackspace Cloud Servers</h4>
+                                    <div class="adb-summary--details">
+                                      <span class="adb-status adb-status__active">
+                                        <span class="adb-status--gem"></span>
+                                        Available
+                                      </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>Multiple Servers</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="adb-container_footer adb-drawers--panel_footer">
+                          <div class="adb-container_footer--item adb-container_footer--item__last">
+                            <nav class="adb-pagination_v1">
+                              <a class="adb-pagination_v1--button adb-pagination_v1--button__first"></a>
+                              <a class="adb-pagination_v1--button adb-pagination_v1--button__prev"></a>
+                              <a class="adb-pagination_v1--button">1</a>
+                              <a class="adb-pagination_v1--button">23</a>
+                              <span class="adb-pagination_v1--current">456</span>
+                              <a class="adb-pagination_v1--button">7890</a>
+                              <a class="adb-pagination_v1--button adb-pagination_v1--button__next"></a>
+                              <a class="adb-pagination_v1--button adb-pagination_v1--button__last"></a>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="adb-js-panel-target" id="drawers-panel2">
+                        <div class="adb-drawers--panel_header adb-filters">
+                          <div class="adb-search_field adb-search_field__auto">
+                            <span class="adb-search_field--affix adb-search_field--affix__default"></span>
+                            <span class="adb-search_field--affix adb-search_field--affix__loading">
+                              <span class="adb-loading">
+                                <span class="adb-loading--text">Loading...</span>
+                              </span>
+                            </span>
+                            <input class="adb-js-auto_search--input adb-search_field--input adb-text__small" id="name-search" placeholder="Search" type="search">
+                            <a class="adb-close adb-search_field--affix adb-search_field--affix__clear adb-js-auto_search--clear"></a>
+                          </div>
+                        </div>
+                        <div class="adb-container_content adb-drawers--panel_content" style="height: 200px;">
+                          <p>
+                            Eveniet reiciendis expedita veniam placeat occaecati nisi error doloremque omnis corporis. nihil porro sint autem voluptate consequatur sit officiis reiciendis quisquam placeat omnis eveniet laborum. nisi cum et fugit suscipit qui rerum est sint numquam in eaque nemo et consequatur. quibusdam dignissimos quod repellat nesciunt quis recusandae rerum est quo voluptatem eaque et fugiat modi. in officiis voluptas corrupti laudantium voluptatibus voluptatum dolorem. maiores debitis repudiandae qui recusandae corrupti laudantium facilis distinctio corrupti et. ipsum dolorem voluptas harum possimus alias sunt quam nihil
+                          </p>
+                        </div>
+                        <div class="adb-container_footer adb-drawers--panel_footer">
+                          <div class="adb-container_footer--item adb-container_footer--item__last">
+                            <nav class="adb-pagination_v1">
+                              <a class="adb-pagination_v1--button adb-pagination_v1--button__first"></a>
+                              <a class="adb-pagination_v1--button adb-pagination_v1--button__prev"></a>
+                              <a class="adb-pagination_v1--button">1</a>
+                              <a class="adb-pagination_v1--button">23</a>
+                              <span class="adb-pagination_v1--current">456</span>
+                              <a class="adb-pagination_v1--button">7890</a>
+                              <a class="adb-pagination_v1--button adb-pagination_v1--button__next"></a>
+                              <a class="adb-pagination_v1--button adb-pagination_v1--button__last"></a>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="adb-js-panel-target" id="drawers-panel3">
+                        <div class="adb-drawers--panel_header adb-filters">
+                          <div class="adb-search_field adb-search_field__auto">
+                            <span class="adb-search_field--affix adb-search_field--affix__default"></span>
+                            <span class="adb-search_field--affix adb-search_field--affix__loading">
+                              <span class="adb-loading">
+                                <span class="adb-loading--text">Loading...</span>
+                              </span>
+                            </span>
+                            <input class="adb-js-auto_search--input adb-search_field--input adb-text__small" id="name-search" placeholder="Search" type="search">
+                            <a class="adb-close adb-search_field--affix adb-search_field--affix__clear adb-js-auto_search--clear"></a>
+                          </div>
+                        </div>
+                        <div class="adb-container_content adb-drawers--panel_content" style="height: 200px;">
+                          <p>
+                            Nesciunt repellendus dolores quaerat perferendis et illo et ex architecto fuga nesciunt. sint dolores nisi recusandae eum ut esse dolores facilis totam. et dolores ut earum deleniti blanditiis consectetur sunt dolore praesentium dolore. eligendi earum nemo laboriosam provident aut atque. quia consequatur expedita molestias est non illo dolorem iure. voluptates est suscipit excepturi voluptate enim mollitia illo autem exercitationem quisquam veniam quia delectus culpa
+                          </p>
+                          <p>
+                            Cumque quis sunt nostrum deserunt. quo quaerat ipsam assumenda repudiandae nisi tenetur qui ut architecto harum amet vero. occaecati aut voluptatem omnis dolorem quia assumenda qui
+                          </p>
+                          <p>
+                            Id earum officia illum nostrum a distinctio illo et iure eum numquam impedit soluta. eaque aperiam est eum qui minima iusto non delectus ipsa voluptatibus tempora. aspernatur quis quod qui consequatur. ut ut architecto est asperiores dolorum minima
+                          </p>
+                          <p>
+                            Ullam qui accusamus aliquid et possimus tenetur repudiandae voluptate et. explicabo eos eos consectetur libero porro et omnis atque. exercitationem ea exercitationem non consequatur molestias quia et. temporibus aperiam laboriosam dolorum aliquam molestias rerum officiis quod voluptas eos minima sint hic. adipisci velit assumenda commodi ad et. sapiente adipisci ut sapiente tempore. sint at qui nihil qui dolore ex accusamus sit qui excepturi
+                          </p>
+                          <p>
+                            Aut deleniti sed aperiam corrupti. velit enim velit dicta tempore sit. quo ut voluptatem aut pariatur eos ducimus vero. ut eos nisi aut et corporis hic maxime ad ipsam sit molestiae et eaque ad. sit aspernatur quis ut aut nobis et non qui. iste enim iusto id eius itaque accusantium quia fugit praesentium est et mollitia
+                          </p>
+                          <p>
+                            Quo animi ut eius voluptas qui soluta autem labore a et et aut eos. saepe nobis omnis et similique et voluptas aliquam ipsa explicabo. et ut tempora laborum illum non est error
+                          </p>
+                          <p>
+                            Numquam maxime architecto et voluptas aut omnis reiciendis non voluptas voluptas rem omnis vero. a ea enim odit vel voluptatum adipisci fugiat hic. atque est ullam nam eaque voluptas neque voluptate iusto quibusdam. laborum velit quia odio aliquid distinctio assumenda similique recusandae nihil possimus in vel explicabo. omnis dolorem vel maxime modi illo. dolor molestias enim ut nobis ad deserunt voluptatibus rerum earum ducimus natus voluptatibus. et laboriosam nostrum autem
+                          </p>
+                          <p>
+                            Sunt voluptatum inventore est inventore. velit nulla ut sed. maiores dolores voluptatem et deserunt repellat eaque ipsam voluptatibus quas et omnis nam rerum consequatur
+                          </p>
+                          <p>
+                            A debitis ut ut. veniam et incidunt praesentium eum et est praesentium. quia omnis porro ut est eius voluptatem qui doloremque doloribus quia enim. incidunt reprehenderit laborum similique qui ullam in reiciendis sit et architecto aut quidem molestiae. ex est nulla exercitationem ducimus et. molestiae quod impedit eos ex sapiente beatae cumque. quo voluptatum eum aliquam est et quo provident quia nobis aut recusandae et est
+                          </p>
+                          <p>
+                            Aut eveniet cupiditate similique harum ut sint quibusdam sed aliquam repellendus nihil. laudantium ratione laboriosam illum asperiores quas dolore aut omnis quibusdam magni sed eius ipsam. exercitationem vero nisi animi minus quisquam eum quasi nostrum rerum. itaque sed quisquam qui dolor blanditiis
+                          </p>
+                          <p>
+                            Tempore nemo culpa beatae voluptatem quo atque quae repellendus dolore in tempora aut voluptatem. aut sit itaque velit. ex nemo et explicabo eligendi rerum et temporibus. temporibus ut sunt qui unde est molestias et vel aut non ipsam. maiores deleniti quis ea architecto enim nihil eum nobis maiores nobis eos qui rerum
+                          </p>
+                          <p>
+                            Aliquam neque velit voluptatem est corrupti labore. ab est officia nobis ut sed consequatur aspernatur. voluptatem vitae ut qui beatae ut. ducimus earum optio ipsum incidunt ad a rerum sed laborum ratione corrupti repellat voluptatem tempora
+                          </p>
+                          <p>
+                            Architecto non perferendis quibusdam. amet qui illum animi a aliquam magnam sint. aut molestias illo sequi aut molestiae hic vel ut. laudantium et similique consequatur dolorem dignissimos. ullam iusto corrupti architecto provident. officia est hic porro neque sit minus iste
+                          </p>
+                          <p>
+                            Sint cupiditate et odio ullam quam unde dolorum fugiat officia blanditiis sunt neque harum. reprehenderit dolor maiores sunt et est necessitatibus delectus commodi qui et. assumenda unde perspiciatis minima totam temporibus. est dolores saepe aut quis cumque quibusdam et ducimus eius. fuga quis voluptas dolor distinctio ullam et ipsam aut eum earum et delectus. corporis magni non velit dolor magnam inventore quo expedita praesentium et error at rerum et. sed non ut quia et possimus hic
+                          </p>
+                          <p>
+                            Et blanditiis atque et ex qui maiores temporibus assumenda maiores enim necessitatibus eos. rerum fugiat culpa explicabo qui beatae architecto magni qui pariatur ut inventore cupiditate iusto. ex et quam sequi minus. dicta harum eos quibusdam id fugiat rem architecto dolores libero voluptatum harum. quisquam quidem voluptatem autem officia voluptatum rerum porro est officiis voluptas quisquam
+                          </p>
+                          <p>
+                            Architecto vel aut aut. ut id iusto quas atque. vero eos veniam et et magnam aut omnis nulla. et voluptas nemo ratione corrupti ex error enim porro inventore nesciunt recusandae error beatae
+                          </p>
+                          <p>
+                            Sint doloribus porro qui. eligendi in dolorem nulla asperiores assumenda sit eius non eum quidem. quae aut repellendus dolorem aliquid. sit consequatur dicta tenetur. reiciendis dolore vel nemo voluptatem minima minus cupiditate laudantium molestias earum
+                          </p>
+                          <p>
+                            Sed molestias et provident iure labore perferendis dolorem illo magni. qui et porro quidem. deserunt incidunt dolor sint sed aut. ea voluptas sunt consequatur voluptates pariatur aut assumenda explicabo unde tempore. dolor omnis quo beatae quas fuga ut dolor rerum. maiores dolore aliquam quis fuga libero mollitia aliquam
+                          </p>
+                          <p>
+                            Officia quia sint provident illo voluptatem pariatur. quia libero et sed labore. est quae veniam rerum cupiditate. nemo blanditiis sequi error nemo. maiores consectetur eveniet voluptatem magni consequatur sed sunt est esse repudiandae voluptates sit recusandae animi
+                          </p>
+                          <p>
+                            Optio excepturi aliquid porro consequatur eum officiis sapiente magni omnis qui. deleniti facilis eius ipsa velit ut ducimus amet illo rem explicabo dignissimos odio. magnam ut est itaque iste eos adipisci consequatur molestiae numquam aut aliquam labore soluta aut. laudantium commodi nam delectus eligendi aperiam cupiditate consectetur commodi natus neque tempore. pariatur in quia perspiciatis molestiae nesciunt dolore velit error provident. consequuntur nostrum quibusdam facere sit corrupti ipsam sed omnis consequatur nulla consequuntur
+                          </p>
+                        </div>
+                        <div class="adb-container_footer adb-drawers--panel_footer">
+                          <div class="adb-container_footer--item adb-container_footer--item__last">
+                            <nav class="adb-pagination_v1">
+                              <a class="adb-pagination_v1--button adb-pagination_v1--button__first"></a>
+                              <a class="adb-pagination_v1--button adb-pagination_v1--button__prev"></a>
+                              <a class="adb-pagination_v1--button">1</a>
+                              <a class="adb-pagination_v1--button">23</a>
+                              <span class="adb-pagination_v1--current">456</span>
+                              <a class="adb-pagination_v1--button">7890</a>
+                              <a class="adb-pagination_v1--button adb-pagination_v1--button__next"></a>
+                              <a class="adb-pagination_v1--button adb-pagination_v1--button__last"></a>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container adb-drawers&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-drawers--sidebar adb-drawers--panel&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-filters&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-search_field adb-search_field__auto&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-search_field--affix adb-search_field--affix__default&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-search_field--affix adb-search_field--affix__loading&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading--text&quot;</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-js-auto_search--input adb-search_field--input adb-text__small&quot;</span> <span class="na">id=</span><span class="s">&quot;name-search&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Search&quot;</span> <span class="na">type=</span><span class="s">&quot;search&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-close adb-search_field--affix adb-search_field--affix__clear adb-js-auto_search--clear&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;adb-stack adb-drawers--sidebar_first&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__nav adb-stack--item_content adb-is-selected&quot;</span> <span class="na">data-active=</span><span class="s">&quot;adb-is-active&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#drawers-panel1&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">data-type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>Panel 1<span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__nav adb-stack--item_content&quot;</span> <span class="na">data-active=</span><span class="s">&quot;adb-is-active&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#drawers-panel2&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">data-type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>Panel 2<span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__nav adb-stack--item_content&quot;</span> <span class="na">data-active=</span><span class="s">&quot;adb-is-active&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#drawers-panel3&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">data-type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>Panel 3<span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__nav adb-stack--item_content&quot;</span> <span class="na">data-active=</span><span class="s">&quot;adb-is-active&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#drawers-panel2&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">data-type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>Panel 4<span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__nav adb-stack--item_content&quot;</span> <span class="na">data-active=</span><span class="s">&quot;adb-is-active&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#drawers-panel1&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">data-type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>Panel 5<span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-stack--item&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-link__nav adb-stack--item_content&quot;</span> <span class="na">data-active=</span><span class="s">&quot;adb-is-active&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#drawers-panel3&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;panel&quot;</span> <span class="na">data-type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>Panel 6<span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/nav&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-drawers--content adb-drawers--panel&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-panel-target adb-is-active&quot;</span> <span class="na">id=</span><span class="s">&quot;drawers-panel1&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-drawers--panel_header adb-filters&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-search_field adb-search_field__auto&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-search_field--affix adb-search_field--affix__default&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-search_field--affix adb-search_field--affix__loading&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading--text&quot;</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-js-auto_search--input adb-search_field--input adb-text__small&quot;</span> <span class="na">id=</span><span class="s">&quot;name-search&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Search&quot;</span> <span class="na">type=</span><span class="s">&quot;search&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-close adb-search_field--affix adb-search_field--affix__clear adb-js-auto_search--clear&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-drawers--panel_content adb-table adb-table__actionable&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;table&gt;</span>&#x000A;          <span class="nt">&lt;colgroup&gt;</span>&#x000A;            <span class="nt">&lt;col</span> <span class="na">span=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;60%&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;40%&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;/colgroup&gt;</span>&#x000A;          <span class="nt">&lt;tbody&gt;</span>&#x000A;            <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;adb-js-radio&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;td&gt;</span>&#x000A;                <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;drawers-option1&quot;</span> <span class="na">name=</span><span class="s">&quot;drawers-options&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;/td&gt;</span>&#x000A;              <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-table--card&quot;</span><span class="nt">&gt;</span>&#x000A;                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-table--card_image&quot;</span><span class="nt">&gt;</span>&#x000A;                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-id adb-id__logo adb-id__hz_small&quot;</span><span class="nt">&gt;</span>&#x000A;                    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;adb-id--img&quot;</span> <span class="na">src=</span><span class="s">&quot;../../images/logos/apps/tribehr-192x100.png&quot;</span> <span class="nt">/&gt;</span>&#x000A;                  <span class="nt">&lt;/div&gt;</span>&#x000A;                <span class="nt">&lt;/div&gt;</span>&#x000A;                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-table--card_text adb-summary&quot;</span><span class="nt">&gt;</span>&#x000A;                  <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;adb-summary--title&quot;</span><span class="nt">&gt;</span>Rackspace Cloud Servers<span class="nt">&lt;/h4&gt;</span>&#x000A;                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-summary--details&quot;</span><span class="nt">&gt;</span>&#x000A;                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__active&quot;</span><span class="nt">&gt;</span>&#x000A;                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;                      Available&#x000A;                    <span class="nt">&lt;/span&gt;</span>&#x000A;                  <span class="nt">&lt;/div&gt;</span>&#x000A;                <span class="nt">&lt;/div&gt;</span>&#x000A;              <span class="nt">&lt;/td&gt;</span>&#x000A;              <span class="nt">&lt;td&gt;</span>Single Server<span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;/tr&gt;</span>&#x000A;            <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;adb-js-radio&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;td&gt;</span>&#x000A;                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;drawers-option2&quot;</span> <span class="na">name=</span><span class="s">&quot;drawers-options&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;/td&gt;</span>&#x000A;              <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-table--card&quot;</span><span class="nt">&gt;</span>&#x000A;                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-table--card_image&quot;</span><span class="nt">&gt;</span>&#x000A;                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-id adb-id__logo adb-id__hz_small&quot;</span><span class="nt">&gt;</span>&#x000A;                    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;adb-id--img&quot;</span> <span class="na">src=</span><span class="s">&quot;../../images/logos/apps/sendgrid-192x100.png&quot;</span> <span class="nt">/&gt;</span>&#x000A;                  <span class="nt">&lt;/div&gt;</span>&#x000A;                <span class="nt">&lt;/div&gt;</span>&#x000A;                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-table--card_text adb-summary&quot;</span><span class="nt">&gt;</span>&#x000A;                  <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;adb-summary--title&quot;</span><span class="nt">&gt;</span>Rackspace Cloud Servers<span class="nt">&lt;/h4&gt;</span>&#x000A;                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-summary--details&quot;</span><span class="nt">&gt;</span>&#x000A;                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__active&quot;</span><span class="nt">&gt;</span>&#x000A;                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;                      Available&#x000A;                    <span class="nt">&lt;/span&gt;</span>&#x000A;                  <span class="nt">&lt;/div&gt;</span>&#x000A;                <span class="nt">&lt;/div&gt;</span>&#x000A;              <span class="nt">&lt;/td&gt;</span>&#x000A;              <span class="nt">&lt;td&gt;</span>Single Server<span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;/tr&gt;</span>&#x000A;            <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;adb-js-radio&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;td&gt;</span>&#x000A;                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;drawers-option3&quot;</span> <span class="na">name=</span><span class="s">&quot;drawers-options&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;/td&gt;</span>&#x000A;              <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-table--card&quot;</span><span class="nt">&gt;</span>&#x000A;                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-table--card_image&quot;</span><span class="nt">&gt;</span>&#x000A;                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-id adb-id__logo adb-id__hz_small&quot;</span><span class="nt">&gt;</span>&#x000A;                    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;adb-id--img&quot;</span> <span class="na">src=</span><span class="s">&quot;../../images/logos/apps/formstack-192x100.png&quot;</span> <span class="nt">/&gt;</span>&#x000A;                  <span class="nt">&lt;/div&gt;</span>&#x000A;                <span class="nt">&lt;/div&gt;</span>&#x000A;                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-table--card_text adb-summary&quot;</span><span class="nt">&gt;</span>&#x000A;                  <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;adb-summary--title&quot;</span><span class="nt">&gt;</span>Rackspace Cloud Servers<span class="nt">&lt;/h4&gt;</span>&#x000A;                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-summary--details&quot;</span><span class="nt">&gt;</span>&#x000A;                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__active&quot;</span><span class="nt">&gt;</span>&#x000A;                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;                      Available&#x000A;                    <span class="nt">&lt;/span&gt;</span>&#x000A;                  <span class="nt">&lt;/div&gt;</span>&#x000A;                <span class="nt">&lt;/div&gt;</span>&#x000A;              <span class="nt">&lt;/td&gt;</span>&#x000A;              <span class="nt">&lt;td&gt;</span>Multiple Servers<span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;/tr&gt;</span>&#x000A;            <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;adb-js-radio adb-drawers--last&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;td&gt;</span>&#x000A;                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;drawers-option4&quot;</span> <span class="na">name=</span><span class="s">&quot;drawers-options&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;/td&gt;</span>&#x000A;              <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;adb-table--card&quot;</span><span class="nt">&gt;</span>&#x000A;                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-table--card_image&quot;</span><span class="nt">&gt;</span>&#x000A;                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-id adb-id__logo adb-id__hz_small&quot;</span><span class="nt">&gt;</span>&#x000A;                    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;adb-id--img&quot;</span> <span class="na">src=</span><span class="s">&quot;../../images/logos/apps/mcaffee-192x100.png&quot;</span> <span class="nt">/&gt;</span>&#x000A;                  <span class="nt">&lt;/div&gt;</span>&#x000A;                <span class="nt">&lt;/div&gt;</span>&#x000A;                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-table--card_text adb-summary&quot;</span><span class="nt">&gt;</span>&#x000A;                  <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;adb-summary--title&quot;</span><span class="nt">&gt;</span>Rackspace Cloud Servers<span class="nt">&lt;/h4&gt;</span>&#x000A;                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-summary--details&quot;</span><span class="nt">&gt;</span>&#x000A;                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__active&quot;</span><span class="nt">&gt;</span>&#x000A;                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;                      Available&#x000A;                    <span class="nt">&lt;/span&gt;</span>&#x000A;                  <span class="nt">&lt;/div&gt;</span>&#x000A;                <span class="nt">&lt;/div&gt;</span>&#x000A;              <span class="nt">&lt;/td&gt;</span>&#x000A;              <span class="nt">&lt;td&gt;</span>Multiple Servers<span class="nt">&lt;/td&gt;</span>&#x000A;            <span class="nt">&lt;/tr&gt;</span>&#x000A;          <span class="nt">&lt;/tbody&gt;</span>&#x000A;        <span class="nt">&lt;/table&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_footer adb-drawers--panel_footer&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_footer--item adb-container_footer--item__last&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__first&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__prev&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button&quot;</span><span class="nt">&gt;</span>23<span class="nt">&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--current&quot;</span><span class="nt">&gt;</span>456<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button&quot;</span><span class="nt">&gt;</span>7890<span class="nt">&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__next&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__last&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;          <span class="nt">&lt;/nav&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-panel-target&quot;</span> <span class="na">id=</span><span class="s">&quot;drawers-panel2&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-drawers--panel_header adb-filters&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-search_field adb-search_field__auto&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-search_field--affix adb-search_field--affix__default&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-search_field--affix adb-search_field--affix__loading&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading--text&quot;</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-js-auto_search--input adb-search_field--input adb-text__small&quot;</span> <span class="na">id=</span><span class="s">&quot;name-search&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Search&quot;</span> <span class="na">type=</span><span class="s">&quot;search&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-close adb-search_field--affix adb-search_field--affix__clear adb-js-auto_search--clear&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_content adb-drawers--panel_content&quot;</span> <span class="na">style=</span><span class="s">&quot;height: 200px;&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Neque quia dignissimos non fugiat et ipsa voluptatem. dicta animi ad saepe praesentium sit placeat vero natus. impedit laudantium minus voluptatibus. debitis temporibus sequi sunt numquam alias reiciendis distinctio sunt sunt est. quia dolores quia iusto officiis animi vero quia eos eius et. et id maiores necessitatibus dolore delectus nesciunt ea quae consequuntur corporis&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_footer adb-drawers--panel_footer&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_footer--item adb-container_footer--item__last&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__first&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__prev&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button&quot;</span><span class="nt">&gt;</span>23<span class="nt">&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--current&quot;</span><span class="nt">&gt;</span>456<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button&quot;</span><span class="nt">&gt;</span>7890<span class="nt">&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__next&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__last&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;          <span class="nt">&lt;/nav&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-panel-target&quot;</span> <span class="na">id=</span><span class="s">&quot;drawers-panel3&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-drawers--panel_header adb-filters&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-search_field adb-search_field__auto&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-search_field--affix adb-search_field--affix__default&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-search_field--affix adb-search_field--affix__loading&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading--text&quot;</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-js-auto_search--input adb-search_field--input adb-text__small&quot;</span> <span class="na">id=</span><span class="s">&quot;name-search&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Search&quot;</span> <span class="na">type=</span><span class="s">&quot;search&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-close adb-search_field--affix adb-search_field--affix__clear adb-js-auto_search--clear&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_content adb-drawers--panel_content&quot;</span> <span class="na">style=</span><span class="s">&quot;height: 200px;&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Corporis rerum officiis quod. dolorem illum error sed repudiandae architecto voluptate accusamus id. nihil quod repudiandae vel asperiores non dolor mollitia sint omnis nesciunt qui rem ut amet. qui nobis qui corrupti et odio nihil quis qui ipsa quo id sequi sit. quos qui exercitationem enim dolor natus tempora odio occaecati a sed et ipsam. doloribus voluptatem vitae ea et sit qui eaque eaque ipsum qui ut reprehenderit. laudantium sed velit molestias cupiditate&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Laboriosam quod reprehenderit consequatur eveniet qui et voluptates aut expedita dolorem labore. magni ullam veritatis velit et consequatur qui aut quae qui odit. ut harum ut voluptate nulla recusandae nihil cum dolores cumque eum et. quia illo hic cupiditate hic repellat vero. id quia rerum ut in dignissimos dolores similique laboriosam a quisquam autem&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Rerum unde corrupti porro. in id enim facilis facere corporis. accusantium voluptatem autem reiciendis sequi voluptatem recusandae molestiae maiores id eveniet qui. itaque eum expedita aut qui dolores deserunt in recusandae. voluptas laborum reiciendis enim ex quidem ratione&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Hic quasi similique ea velit non temporibus voluptatum sint nihil a architecto amet cumque. maiores odit sunt voluptatem et quae architecto nesciunt et totam distinctio. ratione repellendus sint minima dolores id officia aut molestiae amet excepturi modi. voluptas reprehenderit nam ex placeat sequi odio vel corporis laboriosam&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Illum porro eum voluptatum quia earum ut. sed nisi consectetur voluptatem voluptates odio dolor corrupti aut. debitis ut illo ut ea est velit natus quia cumque sequi natus similique omnis. amet similique et esse velit at corrupti dolor quod nostrum tenetur&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Architecto quam ut molestias sint sit nemo hic animi qui ullam similique aperiam dolor illum. unde reprehenderit nemo dignissimos voluptas cupiditate exercitationem ea incidunt magnam et. expedita ullam aut est omnis minima. deleniti cumque et vero inventore ut. accusamus modi eius quisquam possimus cum&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Totam ad velit quia ut. officia incidunt quia sed eaque. dolorem deserunt quia voluptas. sequi magnam itaque qui placeat totam amet. omnis minus asperiores et voluptate dolor vel assumenda. quae sit dolor et. iste aliquam voluptatem doloribus&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Explicabo et sint totam cumque quis placeat nihil facere non et. quos ipsum neque voluptatem. voluptates harum neque exercitationem. repellat voluptas molestiae ut delectus perferendis animi atque rerum qui ab qui voluptatem sit tenetur. ut voluptatem sit modi voluptatum omnis voluptas. expedita quaerat fugit omnis vero qui ipsa et laboriosam corrupti excepturi. porro aut quis commodi&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Libero expedita in odio labore et nihil dolores in molestiae et mollitia nulla. facilis ut ut eveniet. exercitationem aut quis esse minima exercitationem aliquid laudantium iste vel eos porro rerum rerum a. voluptatem nam blanditiis sit distinctio saepe nesciunt aut sint ipsum minus ratione occaecati placeat accusantium. rerum ut et voluptas dolorem corrupti et similique qui numquam nulla. ea quia est eum alias et praesentium non ullam aspernatur velit omnis et quidem. architecto autem repudiandae ut suscipit nemo&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Veritatis voluptatibus et dolorum rerum qui iusto dicta. et voluptatem sed asperiores optio nulla ut repellat quia illum velit ab dolor. fugit in aperiam repellat praesentium. accusamus est quia autem quia libero ut consequatur expedita odio. est numquam dolor fugiat. eveniet autem aliquid est molestiae qui doloribus pariatur ut magnam. quasi aperiam doloribus ipsa&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Dolorum in voluptatem beatae ipsa voluptates quam accusantium nobis dolorum amet. occaecati sed non distinctio. voluptatem autem aut maxime nobis asperiores dolor tempora magnam delectus quae quibusdam. illum animi qui error voluptatem soluta ullam. et enim est nemo qui aspernatur dolorem earum dolore et. in velit aliquam consequuntur perspiciatis dolorem quo optio ut unde tenetur odio&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Dolor rerum animi corporis. voluptates molestiae rerum voluptas pariatur tempore est minima. quasi eveniet dicta quia et deleniti. quasi repudiandae quam sit quisquam neque. rerum minus aperiam omnis expedita nobis tempora et vel. veniam quaerat magni maxime&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Neque nemo enim molestiae fugiat ea id. in qui voluptatem maiores et est nihil id qui. autem error qui sapiente officiis repudiandae suscipit reiciendis sit dolorem omnis. ut debitis fugiat veniam quam sit. molestiae et voluptatem praesentium repudiandae aut fugiat tempora sapiente officiis provident. quo reiciendis nihil dolorum et quibusdam adipisci tenetur dolorem qui&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Rem a at reprehenderit vero et aut nisi qui omnis voluptatem. corrupti voluptates a at. esse quas enim qui sed. eaque corrupti harum explicabo dolorem dolore aut ut quia eligendi et. omnis possimus iusto possimus alias deleniti impedit. dignissimos quis eos aut laborum alias aliquam rerum autem consectetur consequatur. ab eum suscipit libero et at alias repudiandae&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Enim explicabo repudiandae nemo sed ea. est illo accusantium adipisci nostrum modi voluptatem dolorum numquam debitis sunt dicta. expedita provident dolorem temporibus soluta nemo&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Dolor tempora voluptas nostrum ut numquam voluptas a facere aperiam consequuntur nisi. aut autem quia recusandae numquam ipsam ipsam architecto qui qui aperiam expedita neque. maiores tempora placeat sint ea illo et aut ipsam magnam perferendis. necessitatibus omnis et qui sint ratione eius consequatur odio&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Non nihil et voluptatem iure. occaecati aperiam nulla voluptatibus tempore in in quia saepe. minima suscipit dolor doloribus aliquam autem eum sed maxime consectetur ab maiores&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Aperiam enim eos quisquam quod sit rerum unde recusandae voluptatem deleniti accusamus enim molestias. ea est aspernatur tempora fugit praesentium possimus omnis excepturi eos sequi. nihil quia non ipsa aliquam quibusdam quas sequi qui nulla. quo fuga delectus omnis quisquam numquam debitis illum autem vel. corporis unde vel enim est consequatur veniam sunt&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Nostrum nulla sapiente officia consequatur aut non non perferendis corporis aut qui qui. fugit veniam sapiente inventore reprehenderit delectus voluptas incidunt maxime officiis repudiandae voluptatum. eligendi excepturi unde iure. assumenda labore hic culpa cum provident earum. officiis fugit omnis eum id fuga ipsa. commodi quidem illo illum est quisquam quos enim ea voluptatem et&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;        <span class="nt">&lt;p&gt;</span>&#x000A;          Ratione quidem voluptas et occaecati velit qui. repudiandae ea est aut minima dolor dolorum et assumenda sint sit voluptas adipisci quos et. voluptas deserunt accusamus odit quis minus repudiandae quasi pariatur. ullam quod nihil sed provident inventore repellendus vel laborum eaque qui labore cupiditate cupiditate. ut natus amet commodi assumenda beatae voluptatem aut aut minima vitae rerum incidunt eveniet. velit corrupti repudiandae minus voluptas est non eaque et impedit voluptatem minima voluptas quaerat corrupti&#x000A;        <span class="nt">&lt;/p&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_footer adb-drawers--panel_footer&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_footer--item adb-container_footer--item__last&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__first&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__prev&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button&quot;</span><span class="nt">&gt;</span>23<span class="nt">&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--current&quot;</span><span class="nt">&gt;</span>456<span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button&quot;</span><span class="nt">&gt;</span>7890<span class="nt">&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__next&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-pagination_v1--button adb-pagination_v1--button__last&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>&#x000A;          <span class="nt">&lt;/nav&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="content-accordion">
+              <h3>Content Accordion</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <div class="adb-accordion adb-container" id="accordion-group">
+                    <div class="adb-accordion--item">
+                      <a class="adb-accordion--trigger adb-title__large open" data-parent="#accordion-group" data-toggle="collapse" href="#accordion-item1">
+                        numquam quaerat veritatis repellat saepe
+                      </a>
+                      <div class="adb-accordion--target collapse active" id="accordion-item1">
+                        Incidunt ut nihil est. quasi aut quod similique adipisci et quidem perspiciatis minus praesentium error dolor. ea sequi deleniti enim voluptatem illum et unde. quae occaecati reprehenderit placeat culpa rerum et odit delectus esse dolores reprehenderit. explicabo optio mollitia animi harum minima voluptas ut error
+                      </div>
+                    </div>
+                    <div class="adb-accordion--item">
+                      <a class="adb-accordion--trigger adb-title__large collapsed" data-parent="#accordion-group" data-toggle="collapse" href="#accordion-item2">
+                        autem fugit ea voluptatem voluptas
+                      </a>
+                      <div class="adb-accordion--target collapse" id="accordion-item2">
+                        Delectus itaque nihil veniam praesentium sint iusto. qui vel numquam et enim iure est ut. dolorem eius sed libero sequi vel
+                      </div>
+                    </div>
+                    <div class="adb-accordion--item">
+                      <a class="adb-accordion--trigger adb-title__large collapsed" data-parent="#accordion-group" data-toggle="collapse" href="#accordion-item3">
+                        et et ducimus eos quasi
+                      </a>
+                      <div class="adb-accordion--target collapse" id="accordion-item3">
+                        Voluptatem saepe fugiat autem consequatur quis nihil aut nobis ratione enim. molestiae sint fuga sit. minima fugit minus qui molestiae in rerum. est est minima quia et fugit quo repudiandae quia
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion adb-container&quot;</span> <span class="na">id=</span><span class="s">&quot;accordion-group&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--trigger adb-title__large open&quot;</span> <span class="na">data-parent=</span><span class="s">&quot;#accordion-group&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;collapse&quot;</span> <span class="na">href=</span><span class="s">&quot;#accordion-item1&quot;</span><span class="nt">&gt;</span>&#x000A;      hic enim ullam aut odio&#x000A;    <span class="nt">&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--target collapse active&quot;</span> <span class="na">id=</span><span class="s">&quot;accordion-item1&quot;</span><span class="nt">&gt;</span>&#x000A;      Recusandae odio ea et alias iste fugiat nihil qui. non corporis sed vero suscipit id. inventore rerum labore ut. vitae cumque esse accusamus aut voluptatem expedita qui dicta molestiae accusantium ab aspernatur provident et. impedit aut laborum quae omnis sit autem et in nesciunt et. odio perferendis officia dignissimos eveniet corrupti nemo exercitationem animi id et voluptatum et quidem illo&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--trigger adb-title__large collapsed&quot;</span> <span class="na">data-parent=</span><span class="s">&quot;#accordion-group&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;collapse&quot;</span> <span class="na">href=</span><span class="s">&quot;#accordion-item2&quot;</span><span class="nt">&gt;</span>&#x000A;      dignissimos rem eos ea architecto&#x000A;    <span class="nt">&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--target collapse&quot;</span> <span class="na">id=</span><span class="s">&quot;accordion-item2&quot;</span><span class="nt">&gt;</span>&#x000A;      Omnis sit nobis maxime vel dolores in voluptas molestias. provident qui beatae et esse voluptatem qui cupiditate a et veritatis suscipit aliquam. ad vel voluptas consequatur deleniti rerum. optio cupiditate ullam labore accusantium atque deserunt. et et aut rerum deserunt aut&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--trigger adb-title__large collapsed&quot;</span> <span class="na">data-parent=</span><span class="s">&quot;#accordion-group&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;collapse&quot;</span> <span class="na">href=</span><span class="s">&quot;#accordion-item3&quot;</span><span class="nt">&gt;</span>&#x000A;      neque eum et repellat ratione&#x000A;    <span class="nt">&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--target collapse&quot;</span> <span class="na">id=</span><span class="s">&quot;accordion-item3&quot;</span><span class="nt">&gt;</span>&#x000A;      Sed alias vitae perspiciatis optio modi dolorem et aliquid debitis omnis saepe. molestiae rerum doloremque ratione odio iusto vel repellat. aut consectetur sed assumenda similique exercitationem aperiam accusantium tempore voluptatem tenetur sed et possimus. non distinctio velit eum mollitia quas porro nostrum consequatur. iste omnis aut omnis aut molestiae vel quos distinctio maxime qui repudiandae sint et&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Complex Accordions</h4>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <div class="adb-accordion adb-container" id="accordion-group2">
+                    <div class="adb-accordion--item">
+                      <div class="adb-accordion--trigger open" data-parent="#accordion-group2" data-toggle="collapse" href="#accordion-item4">
+                        <h3>
+                          <span class="adb-status adb-status__active" data-toggle="tooltip" title="Completed">
+                            <span class="adb-status--gem"></span>
+                          </span>
+                          Migrate to the Distributed API
+                        </h3>
+                        <p class="adb-subtitle">
+                          All new marketplaces will  use the updated API to sell your product. Only a few small changes are ncessary.
+                        </p>
+                      </div>
+                      <div class="adb-accordion--target collapse active" id="accordion-item4">
+                        Quibusdam modi et provident est qui minus optio. accusantium eum deleniti nesciunt facere est quas non cum voluptatem harum voluptatum a maiores. cupiditate corrupti consequatur et possimus exercitationem incidunt quia et omnis consequatur et veritatis libero. consequuntur non modi maxime id ea et sit sunt libero rem aut sint quis officia. quia quo aut fugit a
+                      </div>
+                    </div>
+                    <div class="adb-accordion--item">
+                      <div class="adb-accordion--trigger collapsed" data-parent="#accordion-group2" data-toggle="collapse" href="#accordion-item5">
+                        <h3>
+                          <span class="adb-status adb-status__active" data-toggle="tooltip" title="Completed">
+                            <span class="adb-status--gem"></span>
+                          </span>
+                          Subscribe to the Application
+                        </h3>
+                        <p class="adb-subtitle">
+                          Test the Subscription Order Event.
+                        </p>
+                      </div>
+                      <div class="adb-accordion--target collapse" id="accordion-item5">
+                        Nam occaecati aut ea enim expedita voluptate corrupti quasi nostrum perspiciatis quod dicta nam. et sapiente quasi perferendis eos optio laboriosam repudiandae incidunt eos et ipsa voluptatum nihil. non et rerum sunt sit quo similique optio
+                      </div>
+                    </div>
+                    <div class="adb-accordion--item">
+                      <div class="adb-accordion--trigger collapsed" data-parent="#accordion-group2" data-toggle="collapse" href="#accordion-item6">
+                        <h3>
+                          <span class="adb-status" data-toggle="tooltip" title="Incomplete">
+                            <span class="adb-status--gem"></span>
+                          </span>
+                          Upgrade or Downgrade Editions
+                        </h3>
+                        <p class="adb-subtitle">
+                          Test the Subscription Change Event.
+                        </p>
+                      </div>
+                      <div class="adb-accordion--target collapse" id="accordion-item6">
+                        <h4>Complete the Test</h4>
+                        <ul>
+                          <li>
+                            <a>Purchase your application.</a>
+                          </li>
+                          <li>
+                            <a>Click on the "Update Subscription" tab on the "Manage Apps" page.</a>
+                          </li>
+                          <li>
+                            Select the desired plan and click "Continue."
+                          </li>
+                          <li>
+                            Complete the checkout process to upgrade/downgrade your application.
+                          </li>
+                        </ul>
+                        <label class="adb-selector adb-js-checkbox" for="accordion-complex-item3">
+                          <span class="adb-selector--input">
+                            <input id="accordion-complex-item3" type="checkbox">
+                          </span>
+                          <span class="adb-selector--value">
+                            I have verified the Subscription Change Event and completed this step.
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="adb-accordion--item">
+                      <div class="adb-accordion--trigger collapsed" data-parent="#accordion-group2" data-toggle="collapse" href="#accordion-item7">
+                        <h3>
+                          <span class="adb-status adb-status__error" data-toggle="tooltip" title="Failed">
+                            <span class="adb-status--gem"></span>
+                          </span>
+                          Cancel Subscription
+                        </h3>
+                        <p class="adb-subtitle">
+                          Test the Subscription Cancel Event.
+                        </p>
+                      </div>
+                      <div class="adb-accordion--target collapse" id="accordion-item7">
+                        Aut quisquam optio quis enim illum ipsam quam nobis nihil non porro. doloribus saepe quas ratione et omnis dolor occaecati qui sapiente dolores. et deserunt dignissimos dolores nihil magnam dolores ut veritatis molestiae quod aut. aut animi dicta quibusdam aut
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion adb-container&quot;</span> <span class="na">id=</span><span class="s">&quot;accordion-group2&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--trigger open&quot;</span> <span class="na">data-parent=</span><span class="s">&quot;#accordion-group2&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;collapse&quot;</span> <span class="na">href=</span><span class="s">&quot;#accordion-item4&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;h3&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__active&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;Completed&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        Migrate to the Distributed API&#x000A;      <span class="nt">&lt;/h3&gt;</span>&#x000A;      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-subtitle&quot;</span><span class="nt">&gt;</span>&#x000A;        All new marketplaces will  use the updated API to sell your product. Only a few small changes are ncessary.&#x000A;      <span class="nt">&lt;/p&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--target collapse active&quot;</span> <span class="na">id=</span><span class="s">&quot;accordion-item4&quot;</span><span class="nt">&gt;</span>&#x000A;      Et ipsa quisquam reprehenderit labore aut eos dolore incidunt et porro minima commodi. ut dignissimos animi voluptates enim suscipit officia saepe et harum autem. est adipisci aut deleniti architecto laboriosam eius doloremque praesentium ducimus. in optio quia quos quae est tempora ut vitae aut voluptatem&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--trigger collapsed&quot;</span> <span class="na">data-parent=</span><span class="s">&quot;#accordion-group2&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;collapse&quot;</span> <span class="na">href=</span><span class="s">&quot;#accordion-item5&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;h3&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__active&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;Completed&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        Subscribe to the Application&#x000A;      <span class="nt">&lt;/h3&gt;</span>&#x000A;      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-subtitle&quot;</span><span class="nt">&gt;</span>&#x000A;        Test the Subscription Order Event.&#x000A;      <span class="nt">&lt;/p&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--target collapse&quot;</span> <span class="na">id=</span><span class="s">&quot;accordion-item5&quot;</span><span class="nt">&gt;</span>&#x000A;      Culpa sunt omnis doloribus natus aut explicabo atque quam. quo repudiandae alias doloremque dolorem qui sunt. odit sunt nihil rerum dolor ut incidunt quam rerum ut. quod sit qui qui quia fugit dolorum culpa perferendis aut ea adipisci reiciendis. distinctio aut quia sapiente nesciunt accusantium fugit et praesentium consequatur&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--trigger collapsed&quot;</span> <span class="na">data-parent=</span><span class="s">&quot;#accordion-group2&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;collapse&quot;</span> <span class="na">href=</span><span class="s">&quot;#accordion-item6&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;h3&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;Incomplete&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        Upgrade or Downgrade Editions&#x000A;      <span class="nt">&lt;/h3&gt;</span>&#x000A;      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-subtitle&quot;</span><span class="nt">&gt;</span>&#x000A;        Test the Subscription Change Event.&#x000A;      <span class="nt">&lt;/p&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--target collapse&quot;</span> <span class="na">id=</span><span class="s">&quot;accordion-item6&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;h4&gt;</span>Complete the Test<span class="nt">&lt;/h4&gt;</span>&#x000A;      <span class="nt">&lt;ul&gt;</span>&#x000A;        <span class="nt">&lt;li&gt;</span>&#x000A;          <span class="nt">&lt;a&gt;</span>Purchase your application.<span class="nt">&lt;/a&gt;</span>&#x000A;        <span class="nt">&lt;/li&gt;</span>&#x000A;        <span class="nt">&lt;li&gt;</span>&#x000A;          <span class="nt">&lt;a&gt;</span>Click on the &quot;Update Subscription&quot; tab on the &quot;Manage Apps&quot; page.<span class="nt">&lt;/a&gt;</span>&#x000A;        <span class="nt">&lt;/li&gt;</span>&#x000A;        <span class="nt">&lt;li&gt;</span>&#x000A;          Select the desired plan and click &quot;Continue.&quot;&#x000A;        <span class="nt">&lt;/li&gt;</span>&#x000A;        <span class="nt">&lt;li&gt;</span>&#x000A;          Complete the checkout process to upgrade/downgrade your application.&#x000A;        <span class="nt">&lt;/li&gt;</span>&#x000A;      <span class="nt">&lt;/ul&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;accordion-complex-item3&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;accordion-complex-item3&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          I have verified the Subscription Change Event and completed this step.&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--item&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--trigger collapsed&quot;</span> <span class="na">data-parent=</span><span class="s">&quot;#accordion-group2&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;collapse&quot;</span> <span class="na">href=</span><span class="s">&quot;#accordion-item7&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;h3&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__error&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;Failed&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        Cancel Subscription&#x000A;      <span class="nt">&lt;/h3&gt;</span>&#x000A;      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;adb-subtitle&quot;</span><span class="nt">&gt;</span>&#x000A;        Test the Subscription Cancel Event.&#x000A;      <span class="nt">&lt;/p&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-accordion--target collapse&quot;</span> <span class="na">id=</span><span class="s">&quot;accordion-item7&quot;</span><span class="nt">&gt;</span>&#x000A;      Non ad velit enim consequatur. modi possimus impedit perspiciatis rerum odit vero voluptatibus nobis officiis illo sint. sed sed ut doloribus enim et aut. occaecati odit officiis ipsum quis dolore et dolore ut debitis&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+          </article>
+        </section>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="global_navigation.html">Navigate</a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Page Navigation
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

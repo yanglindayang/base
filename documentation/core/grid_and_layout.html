@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Grid and Layout</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="documentation documentation_core documentation_core_grid_and_layout">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link adb-is-selected" title="Framework Foundations" data-toggle="tooltip" data-placement="bottom" href="design_principles.html">Core
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Specialized Data" data-toggle="tooltip" data-placement="bottom" href="../display/alerts_and_messages.html">Display
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Menus and Buttons" data-toggle="tooltip" data-placement="bottom" href="../navigate/global_navigation.html">Navigate
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Form Elements" data-toggle="tooltip" data-placement="bottom" href="../modify/text_inputs.html">Modify
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Layout Patterns" data-toggle="tooltip" data-placement="bottom" href="../arrange/containers.html">Arrange
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Application Pages" data-toggle="tooltip" data-placement="bottom" href="../../prototype/">Prototype
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-context_menu--trigger adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  <i class="adb-icon__cog"></i>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="https://github.com/ad-dc/base/releases">Release Notes</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../benchmarking.html">CSS/SASS Stats</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../components.html">Preview All Components</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <section class="adb-layout-row adb-headline">
+          <div class="adb-layout-default">
+            <h5>Base by AppDirect</h5>
+            <h1>
+              Core
+            </h1>
+            <p class="tagline">
+              Foundational principles, guidelines and styles
+            </p>
+          </div>
+        </section>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="design_principles.html">Design Principles</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="grid_and_layout.html">Grid and Layout</a>
+                </div>
+                <!--
+                  <div class="adb-stack--item">
+                    <a class="adb-link__nav adb-stack--item_content" href="responsive_layouts.html">Responsive Layouts</a>
+                  </div>
+                -->
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="colors.html">Colors</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="typography.html">Typography</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="iconography.html">Iconography</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="writing_style.html">Writing Style</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="coding_style.html">Coding Style</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="states.html">States</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="animations.html">Animations</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <article class="adb-layout-content">
+            <h2>
+              Grid and Layout
+            </h2>
+            <section class="adb-layout-content--section" id="grid-layout">
+              <p>Our grid is a complex yet consistent system that brings horizontal harmony, vertical rhythm and visual coherence to our interfaces. On all pages, you can click the the square button in the bottom-left corner of the browser window to preview the grid and check layouts.</p>
+              <div class="adb-help">
+                <h5>Reset</h5>
+                
+                <p>We used <a href="http://necolas.github.io/normalize.css/">Normalize.css</a> and <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> as our starting point</p>
+              </div>
+              <h3>Horizontal Layout</h3>
+              
+              <p>The default grid uses <strong>16 columns</strong> by default. Responsive layouts and grids will add or subtract columns from this base.</p>
+              <blockquote>
+                <dl>
+                  <div class="adb-description_line">
+                    <dt>Column Width:</dt>
+                    <dd>48px</dd>
+                  </div>
+                  <div class="adb-description_line">
+                    <dt>Gutter Width:</dt>
+                    <dd>24px</dd>
+                  </div>
+                  <div class="adb-description_line">
+                    <dt>Total Columns:</dt>
+                    <dd>16</dd>
+                  </div>
+                  <div class="adb-description_line">
+                    <dt>Total Width:</dt>
+                    <dd>1128px</dd>
+                  </div>
+                </dl>
+              </blockquote>
+              <p>The core layout consists of a main content area that is 840px wide (12 columns) and a sidebar that is 264px wide (4 columns). The alignment of the sidebar relative to the main content area depends on its function (navigation, content details, etc.). Layouts that break out of this content + sidebar convention should have a special or specific purpose.</p>
+              <blockquote>
+                <dl>
+                  <div class="adb-description_line">
+                    <dt>Main Content:</dt>
+                    <dd>12 columns, 840px</dd>
+                  </div>
+                  <div class="adb-description_line">
+                    <dt>Sidebar:</dt>
+                    <dd>4 columns, 264px</dd>
+                  </div>
+                </dl>
+              </blockquote>
+              <p>The 12-column main content area provides a variety of flexible and complex layout options. Layouts with equal-width blocks:</p>
+              <div class="adb-layout-row">
+                <div class="adb-layout-column__12_1">
+                  <div class="adb-help">
+                    1
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_1">
+                  <div class="adb-help">
+                    1
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_1">
+                  <div class="adb-help">
+                    1
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_1">
+                  <div class="adb-help">
+                    1
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_1">
+                  <div class="adb-help">
+                    1
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_1">
+                  <div class="adb-help">
+                    1
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_1">
+                  <div class="adb-help">
+                    1
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_1">
+                  <div class="adb-help">
+                    1
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_1">
+                  <div class="adb-help">
+                    1
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_1">
+                  <div class="adb-help">
+                    1
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_1">
+                  <div class="adb-help">
+                    1
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_1">
+                  <div class="adb-help">
+                    1
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-column__12_2">
+                  <div class="adb-help">
+                    2
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_2">
+                  <div class="adb-help">
+                    2
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_2">
+                  <div class="adb-help">
+                    2
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_2">
+                  <div class="adb-help">
+                    2
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_2">
+                  <div class="adb-help">
+                    2
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_2">
+                  <div class="adb-help">
+                    2
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-column__12_3">
+                  <div class="adb-help">
+                    3
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_3">
+                  <div class="adb-help">
+                    3
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_3">
+                  <div class="adb-help">
+                    3
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_3">
+                  <div class="adb-help">
+                    3
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-column__12_4">
+                  <div class="adb-help">
+                    4
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_4">
+                  <div class="adb-help">
+                    4
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_4">
+                  <div class="adb-help">
+                    4
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-column__12_6">
+                  <div class="adb-help">
+                    6
+                  </div>
+                </div>
+                <div class="adb-layout-column__12_6">
+                  <div class="adb-help">
+                    6
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-column__12_12">
+                  <div class="adb-help">
+                    12
+                  </div>
+                </div>
+              </div>
+              <p>Alternative layouts:</p>
+              <div class="adb-layout-row">
+                <div class="adb-layout-column__14_6">
+                  <div class="adb-help">
+                    6
+                  </div>
+                </div>
+                <div class="adb-layout-column__14_4">
+                  <div class="adb-help">
+                    4
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-column__14_4">
+                  <div class="adb-help">
+                    4
+                  </div>
+                </div>
+                <div class="adb-layout-column__14_6">
+                  <div class="adb-help">
+                    6
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-column__14_2">
+                  <div class="adb-help">
+                    2
+                  </div>
+                </div>
+                <div class="adb-layout-column__14_6">
+                  <div class="adb-help">
+                    6
+                  </div>
+                </div>
+                <div class="adb-layout-column__14_2">
+                  <div class="adb-help">
+                    2
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-column__14_3">
+                  <div class="adb-help">
+                    3
+                  </div>
+                </div>
+                <div class="adb-layout-column__14_4">
+                  <div class="adb-help">
+                    4
+                  </div>
+                </div>
+                <div class="adb-layout-column__14_3">
+                  <div class="adb-help">
+                    3
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-column__14_8">
+                  <div class="adb-help">
+                    8
+                  </div>
+                </div>
+                <div class="adb-layout-column__14_2">
+                  <div class="adb-help">
+                    2
+                  </div>
+                </div>
+              </div>
+              <div class="adb-layout-row">
+                <div class="adb-layout-column__14_2">
+                  <div class="adb-help">
+                    2
+                  </div>
+                </div>
+                <div class="adb-layout-column__14_8">
+                  <div class="adb-help">
+                    8
+                  </div>
+                </div>
+              </div>
+              <p>In general, we use the <code>float</code> property only for arranging block elements in layouts. To ensure that interfaces remain consistent across pages and browsers, we define the widths of floated block elements according to the grid. Elements aligned within text, such as icons and <a href="/documentation/display/labels.html">labels</a>, should not use the <code>float</code> property because floated elements are powerful and affect the layouts of both parent and sibling elements. Use <code>display: inline-block</code> instead.</p>
+              
+              <p>For example, on the <a href="../../prototype/marketplace/results.html">Marketplace Products</a> results page, the logo, text and details for each product item are block elements that hit the grid. By contrast, the &quot;Free Trial&quot; label is an <code>inline-block</code> element; its placement changes with the length of the heading text and its width changes with the length of the text inside the label.</p>
+              <h4>Nesting and Padding</h4>
+              <p>Many times, designs require columned content in containers with padding and/or borders. The general rule followed in this framework is to subtract the left padding and border from the first element in the row and the right padding and border from the last element in the row. One example is the item blocks on the <a href="../../prototype/marketplace/results.html">Marketplace Products</a> results page. We include variables and mixins in the SASS structure to calculate widths and handle these cases.</p>
+              
+              <p>Some complex interfaces may demand imaginative ways to handle the grid. For example, on the <a href="../arrange/slats.html">card pattern</a>, company/user stats align to the grid. In general, the stats fall in the middle of 2 columns and their left/right borders fall in the middle of the gutter. The leftmost stat includes the left padding and border in its width and the rightmost stat includes the right padding and border in its width.</p>
+              
+              <p>For elements that need whitespace between text and the boundaries of its container, such as a button, the framework uses the following padding values by default:</p>
+              <div class="example__container" id="paddings">
+                <table class="adb-table__multiline">
+                  <thead>
+                    <tr>
+                      <th>
+                        Example
+                      </th>
+                      <th>
+                        CSS
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout padding-xxsmall">
+                          <span>XX-Small Padding</span>
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">padding</span><span class="o">:</span> <span class="nt">0px</span> <span class="nt">2px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout padding-xsmall">
+                          <span>X-Small Padding</span>
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">padding</span><span class="o">:</span> <span class="nt">2px</span> <span class="nt">4px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout padding-small">
+                          <span>Small Padding</span>
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">padding</span><span class="o">:</span> <span class="nt">4px</span> <span class="nt">8px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout padding-medium">
+                          <span>Medium Padding</span>
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">padding</span><span class="o">:</span> <span class="nt">6px</span> <span class="nt">12px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout padding-large">
+                          <span>Large Padding</span>
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">padding</span><span class="o">:</span> <span class="nt">8px</span> <span class="nt">16px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout padding-xlarge">
+                          <span>X-Large Padding</span>
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">padding</span><span class="o">:</span> <span class="nt">10px</span> <span class="nt">20px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout padding-xxlarge">
+                          <span>XX-Large Padding</span>
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">padding</span><span class="o">:</span> <span class="nt">12px</span> <span class="nt">24px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="vertical-spacing-alignment">
+              <h3>Vertical Spacing and Alignment</h3>
+              <p>The framework also arranges elements on the vertical axis in a systematic way. The baseline height is 14px, which is also the default font size. Most elements come with default height and margin properties that define whitespace both within and between containers.</p>
+              <blockquote>
+                <dl>
+                  <div class="adb-description_line">
+                    <dt>Baseline Height:</dt>
+                    <dd>14px</dd>
+                  </div>
+                </dl>
+              </blockquote>
+              <h4>Margin</h4>
+              <p>In general, the framework uses the following margin values for vertical spacing between block elements. However, in many cases, elements may use margin values as padding to create an even amount of vertical and horizontal space between a boxed element and its container box, such as buttons in the header of a <a href="../arrange/containers.html#table-filters-pagination">table container</a>.</p>
+              <div class="example__container" id="margins">
+                <table class="adb-table__multiline">
+                  <thead>
+                    <tr>
+                      <th>
+                        Example
+                      </th>
+                      <th>
+                        CSS
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout">
+                          <span class="margin-xxsmall">
+                            XX-Small Margin
+                          </span>
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">margin</span><span class="o">:</span> <span class="nt">4px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout">
+                          <span class="margin-xsmall">
+                            X-Small Margin
+                          </span>
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">margin</span><span class="o">:</span> <span class="nt">6px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout">
+                          <span class="margin-small">
+                            Small Margin
+                          </span>
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">margin</span><span class="o">:</span> <span class="nt">10px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout">
+                          <span class="margin-medium">
+                            Medium Margin
+                          </span>
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">margin</span><span class="o">:</span> <span class="nt">14px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout">
+                          <span class="margin-large">
+                            Large Margin
+                          </span>
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">margin</span><span class="o">:</span> <span class="nt">18px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout">
+                          <span class="margin-xlarge">
+                            X-Large Margin
+                          </span>
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">margin</span><span class="o">:</span> <span class="nt">22px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout">
+                          <span class="margin-xxlarge">
+                            XX-Large Margin
+                          </span>
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">margin</span><span class="o">:</span> <span class="nt">24px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h4>Leading and Height</h4>
+              <p>Font leading or <code>line-height</code> refers to the height of a line of text. These values affect the vertical space between lines of text. In general, we do not use <code>line-height</code> to create vertical space or to center block elements vertically. Font leading values define whitespace to maximize the readability of text and are paired to font size values. In the framework, changes in font size always include changes in font leading with the help of SASS mixins. Use <code>padding</code> or <code>margin</code> properties for vertical spacing. Vertical centering should occur on a case-by-case basis.</p>
+              <div class="example__container" id="leadings">
+                <table class="adb-table__multiline">
+                  <thead>
+                    <tr>
+                      <th>
+                        Example
+                      </th>
+                      <th>
+                        CSS
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout font-xxsmall">
+                          XX-Small Font Size and Leading
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">font-size</span><span class="o">:</span> <span class="nt">8px</span><span class="o">;</span>&#x000A;<span class="nt">line-height</span><span class="o">:</span> <span class="nt">12px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout font-xsmall">
+                          X-Small Font Size and Leading
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">font-size</span><span class="o">:</span> <span class="nt">10px</span><span class="o">;</span>&#x000A;<span class="nt">line-height</span><span class="o">:</span> <span class="nt">14px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout font-small">
+                          Small Font Size and Leading
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">font-size</span><span class="o">:</span> <span class="nt">12px</span><span class="o">;</span>&#x000A;<span class="nt">line-height</span><span class="o">:</span> <span class="nt">18px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout font-medium">
+                          Medium Font Size and Leading
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">font-size</span><span class="o">:</span> <span class="nt">14px</span><span class="o">;</span>&#x000A;<span class="nt">line-height</span><span class="o">:</span> <span class="nt">22px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout font-large">
+                          Large Font Size and Leading
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">font-size</span><span class="o">:</span> <span class="nt">16px</span><span class="o">;</span>&#x000A;<span class="nt">line-height</span><span class="o">:</span> <span class="nt">24px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout font-xlarge">
+                          X-Large Font Size and Leading
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">font-size</span><span class="o">:</span> <span class="nt">20px</span><span class="o">;</span>&#x000A;<span class="nt">line-height</span><span class="o">:</span> <span class="nt">26px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout font-xxlarge">
+                          XX-Large Font Size and Leading
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">font-size</span><span class="o">:</span> <span class="nt">24px</span><span class="o">;</span>&#x000A;<span class="nt">line-height</span><span class="o">:</span> <span class="nt">30px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout font-xxxlarge">
+                          XXX-Large Font Size and Leading
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">font-size</span><span class="o">:</span> <span class="nt">28px</span><span class="o">;</span>&#x000A;<span class="nt">line-height</span><span class="o">:</span> <span class="nt">32px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>The framework uses the following height values to delineate the vertical size of boxed elements with a single line of text, such as buttons and text input fields. Each height value is the sum of the corresponding font leading, vertical padding and border values. They help create consistent vertical sizes across elements and browsers.</p>
+              <div class="example__container" id="heights">
+                <table class="adb-table__multiline">
+                  <thead>
+                    <tr>
+                      <th>
+                        Example
+                      </th>
+                      <th>
+                        CSS
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout height-xxsmall">
+                          XX-Small Height
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">height</span><span class="o">:</span> <span class="nt">14px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout height-xsmall">
+                          X-Small Height
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">height</span><span class="o">:</span> <span class="nt">20px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout height-small">
+                          Small Height
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">height</span><span class="o">:</span> <span class="nt">28px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout height-medium">
+                          Medium Height
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">height</span><span class="o">:</span> <span class="nt">36px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout height-large">
+                          Large Height
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">height</span><span class="o">:</span> <span class="nt">42px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout height-xlarge">
+                          X-Large Height
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">height</span><span class="o">:</span> <span class="nt">48px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="example--grid_layout height-xxlarge">
+                          XX-Large Height
+                        </div>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight css"><span class="nt">height</span><span class="o">:</span> <span class="nt">56px</span><span class="o">;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </article>
+        </section>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="design_principles.html">Core</a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Grid and Layout
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

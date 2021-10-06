@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Errors &amp; Validation</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="documentation documentation_modify documentation_modify_errors_and_validation">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Framework Foundations" data-toggle="tooltip" data-placement="bottom" href="../core/design_principles.html">Core
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Specialized Data" data-toggle="tooltip" data-placement="bottom" href="../display/alerts_and_messages.html">Display
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Menus and Buttons" data-toggle="tooltip" data-placement="bottom" href="../navigate/global_navigation.html">Navigate
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link adb-is-selected" title="Form Elements" data-toggle="tooltip" data-placement="bottom" href="text_inputs.html">Modify
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Layout Patterns" data-toggle="tooltip" data-placement="bottom" href="../arrange/containers.html">Arrange
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Application Pages" data-toggle="tooltip" data-placement="bottom" href="../../prototype/">Prototype
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-context_menu--trigger adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  <i class="adb-icon__cog"></i>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="https://github.com/ad-dc/base/releases">Release Notes</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../benchmarking.html">CSS/SASS Stats</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../components.html">Preview All Components</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <section class="adb-layout-row adb-headline">
+          <div class="adb-layout-default">
+            <h5>Base by AppDirect</h5>
+            <h1>
+              Modify
+            </h1>
+            <p class="tagline">
+              Help users add and edit data
+            </p>
+          </div>
+        </section>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="text_inputs.html">Text Inputs</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="option_selectors.html">Option Selectors</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="upload.html">Upload</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="form_layout.html">Form Layout</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="form_types.html">Form Types</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="errors_and_validation.html">Errors &amp; Validation</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <article class="adb-layout-content">
+            <h2>
+              Errors &amp; Validation
+            </h2>
+            <section class="adb-layout-content--section" id="form-validation">
+              <h3>Form Validation</h3>
+              <h4>Optional Labels</h4>
+              <p>In general, we should aim to minimize both the total number of fields and     the number of optional fields on a page or in a form. On a standard form,     show &quot;optional&quot; labels for optional fields. Do not show &quot;required&quot; labels     unless there are empty required fields upon submission. Single-option     selectors such as dropdowns and radio selectors are required and should     have default options selected.</p>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <form class="adb-form">
+                    <fieldset>
+                      <h3>
+                        <legend>Send a Message</legend>
+                      </h3>
+                      <div class="adb-form--field">
+                        <label for="label-optional-email">
+                          Email Address
+                        </label>
+                        <input id="label-optional-email" placeholder="email@address.com" type="email">
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="label-optional-subject">
+                          Subject
+                          <span class="adb-label--status">optional</span>
+                        </label>
+                        <input id="label-optional-subject" type="text">
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="label-optional-message">
+                          Message
+                        </label>
+                        <textarea id="label-optional-message"></textarea>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="label-optional-checkboxes">
+                          Recipients
+                          <span class="adb-label--status">optional</span>
+                        </label>
+                        <label class="adb-selector adb-js-checkbox" for="label-optional-checkbox1">
+                          <span class="adb-selector--input">
+                            <input checked id="label-optional-checkbox1" name="label-optional-checkboxes" type="checkbox">
+                          </span>
+                          <span class="adb-selector--value">
+                            Sales Department
+                          </span>
+                        </label>
+                        <label class="adb-selector adb-js-checkbox" for="label-optional-checkbox2">
+                          <span class="adb-selector--input">
+                            <input id="label-optional-checkbox2" name="label-optional-checkboxes" type="checkbox">
+                          </span>
+                          <span class="adb-selector--value">
+                            Engineering Department
+                          </span>
+                        </label>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="label-optional-radios">
+                          Delivery Time
+                        </label>
+                        <label class="adb-selector adb-js-radio" for="label-optional-radio1">
+                          <span class="adb-selector--input">
+                            <input checked id="label-optional-radio1" name="label-optional-radios" type="radio">
+                          </span>
+                          <span class="adb-selector--value">
+                            Now
+                          </span>
+                        </label>
+                        <label class="adb-selector adb-js-radio" for="label-optional-radio2">
+                          <span class="adb-selector--input">
+                            <input id="label-optional-radio2" name="label-optional-radios" type="radio">
+                          </span>
+                          <span class="adb-selector--value">
+                            Later
+                          </span>
+                        </label>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="label-optional-dropdown">
+                          Format
+                        </label>
+                        <div class="adb-js-dropdown adb-dropdown">
+                          <select id="label-optional-dropdown">
+                            <option>
+                              HTML
+                            </option>
+                            <option>
+                              Rich Text
+                            </option>
+                            <option>
+                              Plain Text
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <menu class="adb-toolbar">
+                      <button class="adb-button__primary adb-toolbar--item" type="button">
+                        Send
+                      </button>
+                      <button class="adb-button__secret adb-toolbar--item" type="button">
+                        Cancel
+                      </button>
+                    </menu>
+                  </form>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;adb-form&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;fieldset&gt;</span>&#x000A;    <span class="nt">&lt;h3&gt;</span>&#x000A;      <span class="nt">&lt;legend&gt;</span>Send a Message<span class="nt">&lt;/legend&gt;</span>&#x000A;    <span class="nt">&lt;/h3&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;label-optional-email&quot;</span><span class="nt">&gt;</span>&#x000A;        Email Address&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;label-optional-email&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;email@address.com&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;label-optional-subject&quot;</span><span class="nt">&gt;</span>&#x000A;        Subject&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-label--status&quot;</span><span class="nt">&gt;</span>optional<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;label-optional-subject&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;label-optional-message&quot;</span><span class="nt">&gt;</span>&#x000A;        Message&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">&quot;label-optional-message&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;label-optional-checkboxes&quot;</span><span class="nt">&gt;</span>&#x000A;        Recipients&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-label--status&quot;</span><span class="nt">&gt;</span>optional<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;label-optional-checkbox1&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;label-optional-checkbox1&quot;</span> <span class="na">name=</span><span class="s">&quot;label-optional-checkboxes&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Sales Department&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;label-optional-checkbox2&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;label-optional-checkbox2&quot;</span> <span class="na">name=</span><span class="s">&quot;label-optional-checkboxes&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Engineering Department&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;label-optional-radios&quot;</span><span class="nt">&gt;</span>&#x000A;        Delivery Time&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;label-optional-radio1&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;label-optional-radio1&quot;</span> <span class="na">name=</span><span class="s">&quot;label-optional-radios&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Now&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;label-optional-radio2&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;label-optional-radio2&quot;</span> <span class="na">name=</span><span class="s">&quot;label-optional-radios&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Later&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;label-optional-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;        Format&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;label-optional-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            HTML&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            Rich Text&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            Plain Text&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;        <span class="nt">&lt;/select&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/fieldset&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__primary adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Send&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__secret adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Cancel&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;<span class="nt">&lt;/form&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Required Labels</h4>
+              <p>For cases where we absolutely must show &quot;required&quot; labels for all     required fields, do not show &quot;optional&quot; labels.</p>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <form class="adb-form">
+                    <fieldset>
+                      <h3>
+                        <legend>Send a Message</legend>
+                      </h3>
+                      <div class="adb-form--field">
+                        <label class="adb-label__required" for="label-required-email">
+                          Email Address
+                        </label>
+                        <input id="label-required-email" placeholder="email@address.com" type="email">
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="label-required-subject">
+                          Subject
+                        </label>
+                        <input id="label-required-subject" type="text">
+                      </div>
+                      <div class="adb-form--field">
+                        <label class="adb-label__required" for="label-required-message">
+                          Message
+                        </label>
+                        <textarea id="label-required-message"></textarea>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="label-required-checkboxes">
+                          Recipients
+                        </label>
+                        <label class="adb-selector adb-js-checkbox" for="label-required-checkbox1">
+                          <span class="adb-selector--input">
+                            <input checked id="label-required-checkbox1" name="label-required-checkboxes" type="checkbox">
+                          </span>
+                          <span class="adb-selector--value">
+                            Sales Department
+                          </span>
+                        </label>
+                        <label class="adb-selector adb-js-checkbox" for="label-required-checkbox2">
+                          <span class="adb-selector--input">
+                            <input id="label-required-checkbox2" name="label-required-checkboxes" type="checkbox">
+                          </span>
+                          <span class="adb-selector--value">
+                            Engineering Department
+                          </span>
+                        </label>
+                      </div>
+                      <div class="adb-form--field">
+                        <label class="adb-label__required" for="label-required-radios">
+                          Delivery Time
+                        </label>
+                        <label class="adb-selector adb-js-radio" for="label-required-radio1">
+                          <span class="adb-selector--input">
+                            <input checked id="label-required-radio1" name="label-required-radios" type="radio">
+                          </span>
+                          <span class="adb-selector--value">
+                            Now
+                          </span>
+                        </label>
+                        <label class="adb-selector adb-js-radio" for="label-required-radio2">
+                          <span class="adb-selector--input">
+                            <input id="label-required-radio2" name="label-required-radios" type="radio">
+                          </span>
+                          <span class="adb-selector--value">
+                            Later
+                          </span>
+                        </label>
+                      </div>
+                      <div class="adb-form--field">
+                        <label class="adb-label__required" for="label-required-dropdown">
+                          Format
+                        </label>
+                        <div class="adb-js-dropdown adb-dropdown">
+                          <select id="label-required-dropdown">
+                            <option>
+                              HTML
+                            </option>
+                            <option>
+                              Rich Text
+                            </option>
+                            <option>
+                              Plain Text
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <menu class="adb-toolbar">
+                      <button class="adb-button__primary adb-toolbar--item" type="button">
+                        Send
+                      </button>
+                      <button class="adb-button__secret adb-toolbar--item" type="button">
+                        Cancel
+                      </button>
+                    </menu>
+                  </form>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;adb-form&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;fieldset&gt;</span>&#x000A;    <span class="nt">&lt;h3&gt;</span>&#x000A;      <span class="nt">&lt;legend&gt;</span>Send a Message<span class="nt">&lt;/legend&gt;</span>&#x000A;    <span class="nt">&lt;/h3&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-label__required&quot;</span> <span class="na">for=</span><span class="s">&quot;label-required-email&quot;</span><span class="nt">&gt;</span>&#x000A;        Email Address&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;label-required-email&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;email@address.com&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;label-required-subject&quot;</span><span class="nt">&gt;</span>&#x000A;        Subject&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;label-required-subject&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-label__required&quot;</span> <span class="na">for=</span><span class="s">&quot;label-required-message&quot;</span><span class="nt">&gt;</span>&#x000A;        Message&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">&quot;label-required-message&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;label-required-checkboxes&quot;</span><span class="nt">&gt;</span>&#x000A;        Recipients&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;label-required-checkbox1&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;label-required-checkbox1&quot;</span> <span class="na">name=</span><span class="s">&quot;label-required-checkboxes&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Sales Department&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;label-required-checkbox2&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;label-required-checkbox2&quot;</span> <span class="na">name=</span><span class="s">&quot;label-required-checkboxes&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Engineering Department&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-label__required&quot;</span> <span class="na">for=</span><span class="s">&quot;label-required-radios&quot;</span><span class="nt">&gt;</span>&#x000A;        Delivery Time&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;label-required-radio1&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;label-required-radio1&quot;</span> <span class="na">name=</span><span class="s">&quot;label-required-radios&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Now&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;label-required-radio2&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;label-required-radio2&quot;</span> <span class="na">name=</span><span class="s">&quot;label-required-radios&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Later&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-label__required&quot;</span> <span class="na">for=</span><span class="s">&quot;label-required-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;        Format&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;label-required-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            HTML&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            Rich Text&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            Plain Text&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;        <span class="nt">&lt;/select&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/fieldset&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__primary adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Send&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__secret adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Cancel&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;<span class="nt">&lt;/form&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Error Labels</h4>
+              <p>If a user submits a form without filling in a required field or submits     the form with invalid data, they should see form fields with error states     and explanatory error messages.</p>
+              
+              <ul>
+              <li>Error messages appear inline to the right of labels and above the field.     This also applies to for <a href="/documentation/modify/%20%20%20%20form_types.html#form-dialogs">Form Dialogs</a>.</li>
+              </ul>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <form class="adb-form">
+                    <fieldset>
+                      <h3>
+                        <legend>Send a Message</legend>
+                      </h3>
+                      <div class="adb-form--field">
+                        <label for="error-default-email">
+                          Email Address
+                          <span class="adb-label--error">Please enter a valid email address.</span>
+                        </label>
+                        <input class="adb-is-error" id="error-default-email" type="email" value="blah.com">
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="error-default-subject">
+                          Subject
+                          <span class="adb-label--status">optional</span>
+                        </label>
+                        <input id="error-default-subject" type="text">
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="error-default-message">
+                          Message
+                          <span class="adb-label--error">Please write a message.</span>
+                        </label>
+                        <textarea class="adb-is-error" id="error-default-message"></textarea>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="error-default-checkboxes">
+                          Recipients
+                          <span class="adb-label--status">optional</span>
+                        </label>
+                        <label class="adb-selector adb-js-checkbox" for="error-default-checkbox1">
+                          <span class="adb-selector--input">
+                            <input checked id="error-default-checkbox1" name="error-default-checkboxes" type="checkbox">
+                          </span>
+                          <span class="adb-selector--value">
+                            Sales Department
+                          </span>
+                        </label>
+                        <label class="adb-selector adb-js-checkbox" for="error-default-checkbox2">
+                          <span class="adb-selector--input">
+                            <input id="error-default-checkbox2" name="error-default-checkboxes" type="checkbox">
+                          </span>
+                          <span class="adb-selector--value">
+                            Engineering Department
+                          </span>
+                        </label>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="error-default-radios">
+                          Delivery Time
+                        </label>
+                        <label class="adb-selector adb-js-radio" for="error-default-radio1">
+                          <span class="adb-selector--input">
+                            <input checked id="error-default-radio1" name="error-default-radios" type="radio">
+                          </span>
+                          <span class="adb-selector--value">
+                            Now
+                          </span>
+                        </label>
+                        <label class="adb-selector adb-js-radio" for="error-default-radio2">
+                          <span class="adb-selector--input">
+                            <input id="error-default-radio2" name="error-default-radios" type="radio">
+                          </span>
+                          <span class="adb-selector--value">
+                            Later
+                          </span>
+                        </label>
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="error-default-dropdown">
+                          Format
+                        </label>
+                        <div class="adb-js-dropdown adb-dropdown">
+                          <select id="error-default-dropdown">
+                            <option>
+                              HTML
+                            </option>
+                            <option>
+                              Rich Text
+                            </option>
+                            <option>
+                              Plain Text
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <menu class="adb-toolbar">
+                      <button class="adb-button__primary adb-toolbar--item" type="button">
+                        Send
+                      </button>
+                      <button class="adb-button__secret adb-toolbar--item" type="button">
+                        Cancel
+                      </button>
+                    </menu>
+                  </form>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;adb-form&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;fieldset&gt;</span>&#x000A;    <span class="nt">&lt;h3&gt;</span>&#x000A;      <span class="nt">&lt;legend&gt;</span>Send a Message<span class="nt">&lt;/legend&gt;</span>&#x000A;    <span class="nt">&lt;/h3&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;error-default-email&quot;</span><span class="nt">&gt;</span>&#x000A;        Email Address&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-label--error&quot;</span><span class="nt">&gt;</span>Please enter a valid email address.<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-is-error&quot;</span> <span class="na">id=</span><span class="s">&quot;error-default-email&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span> <span class="na">value=</span><span class="s">&quot;blah.com&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;error-default-subject&quot;</span><span class="nt">&gt;</span>&#x000A;        Subject&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-label--status&quot;</span><span class="nt">&gt;</span>optional<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;error-default-subject&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;error-default-message&quot;</span><span class="nt">&gt;</span>&#x000A;        Message&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-label--error&quot;</span><span class="nt">&gt;</span>Please write a message.<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">&quot;adb-is-error&quot;</span> <span class="na">id=</span><span class="s">&quot;error-default-message&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;error-default-checkboxes&quot;</span><span class="nt">&gt;</span>&#x000A;        Recipients&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-label--status&quot;</span><span class="nt">&gt;</span>optional<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;error-default-checkbox1&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;error-default-checkbox1&quot;</span> <span class="na">name=</span><span class="s">&quot;error-default-checkboxes&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Sales Department&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;error-default-checkbox2&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;error-default-checkbox2&quot;</span> <span class="na">name=</span><span class="s">&quot;error-default-checkboxes&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Engineering Department&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;error-default-radios&quot;</span><span class="nt">&gt;</span>&#x000A;        Delivery Time&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;error-default-radio1&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;error-default-radio1&quot;</span> <span class="na">name=</span><span class="s">&quot;error-default-radios&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Now&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-radio&quot;</span> <span class="na">for=</span><span class="s">&quot;error-default-radio2&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;error-default-radio2&quot;</span> <span class="na">name=</span><span class="s">&quot;error-default-radios&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;          Later&#x000A;        <span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;error-default-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;        Format&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-dropdown adb-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;error-default-dropdown&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            HTML&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            Rich Text&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;          <span class="nt">&lt;option&gt;</span>&#x000A;            Plain Text&#x000A;          <span class="nt">&lt;/option&gt;</span>&#x000A;        <span class="nt">&lt;/select&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/fieldset&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__primary adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Send&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__secret adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Cancel&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;<span class="nt">&lt;/form&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Inline Validation</h4>
+              <p>In some cases, inline validation can ease the task of filling in forms and facilitate valid data entry. This is especially relevant for <a href="form_types.html#form-dialogs">Form Dialogs</a> and <a href="form_types.html#anchored-modals">Anchored Modals</a>. Inline validation only applies for text input fields. You can add extra context with tooltips on the error icon.</p>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <form class="adb-form">
+                    <fieldset>
+                      <h3>
+                        <legend>Edit Information</legend>
+                      </h3>
+                      <div class="adb-form--field">
+                        <label for="error-inline-email">
+                          Email Address
+                        </label>
+                        <input class="adb-is-error" data-error="Invalid format:&lt;br&gt;digits only" data-toggle="tooltip" data-validate="error" id="error-inline-email" type="email" value="http://www.blah.com">
+                      </div>
+                      <div class="adb-form--field">
+                        <label for="error-inline-url">
+                          URL
+                        </label>
+                        <input data-validate="valid" id="error-inline-url" type="url" value="http://www.blah.com">
+                      </div>
+                    </fieldset>
+                    <menu class="adb-toolbar">
+                      <button class="adb-button__primary adb-toolbar--item" type="button">
+                        Save
+                      </button>
+                      <button class="adb-button__secret adb-toolbar--item" type="button">
+                        Cancel
+                      </button>
+                    </menu>
+                  </form>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;adb-form&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;fieldset&gt;</span>&#x000A;    <span class="nt">&lt;h3&gt;</span>&#x000A;      <span class="nt">&lt;legend&gt;</span>Edit Information<span class="nt">&lt;/legend&gt;</span>&#x000A;    <span class="nt">&lt;/h3&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;error-inline-email&quot;</span><span class="nt">&gt;</span>&#x000A;        Email Address&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;adb-is-error&quot;</span> <span class="na">data-error=</span><span class="s">&quot;Invalid format:&amp;lt;br&amp;gt;digits only&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">data-validate=</span><span class="s">&quot;error&quot;</span> <span class="na">id=</span><span class="s">&quot;error-inline-email&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span> <span class="na">value=</span><span class="s">&quot;http://www.blah.com&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;error-inline-url&quot;</span><span class="nt">&gt;</span>&#x000A;        URL&#x000A;      <span class="nt">&lt;/label&gt;</span>&#x000A;      <span class="nt">&lt;input</span> <span class="na">data-validate=</span><span class="s">&quot;valid&quot;</span> <span class="na">id=</span><span class="s">&quot;error-inline-url&quot;</span> <span class="na">type=</span><span class="s">&quot;url&quot;</span> <span class="na">value=</span><span class="s">&quot;http://www.blah.com&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/fieldset&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__primary adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Save&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__secret adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Cancel&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;<span class="nt">&lt;/form&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+          </article>
+        </section>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="text_inputs.html">Modify</a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Errors &amp; Validation
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Base by AppDirect | Status &amp; Progress</title>
+    <meta content="Set your site description in /helpers/site_helpers.rb" name="description">
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon" type="image/ico">
+    <script src="../../javascripts/vendor/modernizr-custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+      window.base = window.base || {}
+      window.base.THEME_PATHS = {"Standard - Appdirect":"../../stylesheets/site-standard-appdirect.css","Standard - Default":"../../stylesheets/site-standard-default.css","Standard - Default Tinted":"../../stylesheets/site-standard-default-tinted.css","Standard - Deutsche":"../../stylesheets/site-standard-deutsche.css"};
+    </script>
+    <script src="../../javascripts/theming/theme_utils.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="documentation documentation_display documentation_display_status_and_progress">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="adb-page">
+      <header class="adb-page_header">
+        <nav class="adb-primary_nav">
+          <ul class="adb-primary_nav--items adb-layout-default">
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" href="/"><span class="adb-primary_nav--logo">Acme Marketplace</span>
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Framework Foundations" data-toggle="tooltip" data-placement="bottom" href="../core/design_principles.html">Core
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link adb-is-selected" title="Specialized Data" data-toggle="tooltip" data-placement="bottom" href="alerts_and_messages.html">Display
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Menus and Buttons" data-toggle="tooltip" data-placement="bottom" href="../navigate/global_navigation.html">Navigate
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Form Elements" data-toggle="tooltip" data-placement="bottom" href="../modify/text_inputs.html">Modify
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Layout Patterns" data-toggle="tooltip" data-placement="bottom" href="../arrange/containers.html">Arrange
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item">
+                    <a class="adb-primary_nav--link" title="Application Pages" data-toggle="tooltip" data-placement="bottom" href="../../prototype/">Prototype
+              </a>
+        
+            </li>
+            <li class="adb-primary_nav--item adb-primary_nav--item__right">
+              <div class="adb-js-context_menu adb-context_menu" data-placement="right">
+                <a class="adb-context_menu--trigger adb-js-context_menu--trigger adb-primary_nav--link" role="button">
+                  <i class="adb-icon__cog"></i>
+                </a>
+                <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+                  <ul class="adb-stack">
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="https://github.com/ad-dc/base/releases">Release Notes</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../benchmarking.html">CSS/SASS Stats</a>
+                    </li>
+                    <li class="adb-stack--item">
+                      <a class="adb-link__option adb-stack--item_content" href="../../components.html">Preview All Components</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <section class="adb-layout-row adb-headline">
+          <div class="adb-layout-default">
+            <h5>Base by AppDirect</h5>
+            <h1>
+              Display
+            </h1>
+            <p class="tagline">
+              Communicate specialized information
+            </p>
+          </div>
+        </section>
+      </header>
+      <div class="adb-page_content adb-page--footer_helper" id="main" role="main">
+        <section class="adb-layout-row adb-layout-default">
+          <div class="adb-layout-sidebar adb-layout-column__first">
+            <div class="adb-container">
+              <nav class="adb-stack">
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="alerts_and_messages.html">Alerts &amp; Messages</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="text_patterns.html">Text Patterns</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="tooltips.html">Tooltips</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="ratings.html">Ratings</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="badges.html">Badges</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content adb-is-selected" href="status_and_progress.html">Status &amp; Progress</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="logos_and_avatars.html">Avatars &amp; Logos</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="myapps.html">App Tiles</a>
+                </div>
+                <div class="adb-stack--item">
+                  <a class="adb-link__nav adb-stack--item_content" href="pricing.html">Numbers &amp; Pricing</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <article class="adb-layout-content">
+            <h2>
+              Status &amp; Progress
+            </h2>
+            <section class="adb-layout-content--section" id="statuses">
+              <h3>Statuses</h3>
+              <div class="example__container">
+                <table class="adb-table__multiline">
+                  <thead>
+                    <tr>
+                      <th>
+                        Example
+                      </th>
+                      <th>
+                        Class Name
+                      </th>
+                      <th>
+                        Code
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="example--table_view">
+                        <span class="adb-status adb-status__active">
+                          <span class="adb-status--gem"></span>
+                          Active
+                        </span>
+                      </td>
+                      <td class="example--table_class">
+                        <code>.adb-status__active</code>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__active&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;  Active&#x000A;<span class="nt">&lt;/span&gt;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <span class="adb-status adb-status__pending">
+                          <span class="adb-status--gem"></span>
+                          Pending
+                        </span>
+                      </td>
+                      <td class="example--table_class">
+                        <code>.adb-status__pending</code>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__pending&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;  Pending&#x000A;<span class="nt">&lt;/span&gt;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <span class="adb-status adb-status__error">
+                          <span class="adb-status--gem"></span>
+                          Failed
+                        </span>
+                      </td>
+                      <td class="example--table_class">
+                        <code>.adb-status__error</code>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__error&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;  Failed&#x000A;<span class="nt">&lt;/span&gt;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <span class="adb-status adb-status__disabled">
+                          <span class="adb-status--gem"></span>
+                          Canceled
+                        </span>
+                      </td>
+                      <td class="example--table_class">
+                        <code>.adb-status__disabled</code>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__disabled&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;  Canceled&#x000A;<span class="nt">&lt;/span&gt;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h4>Abbreviated</h4>
+              <p>If there is not enough space for the status word label, include it as a tooltip on the status gem.</p>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <span class="adb-status adb-status__error">
+                    <span class="adb-status--gem" data-toggle="tooltip" title="Failed"></span>
+                  </span>
+                  <span class="adb-status adb-status__pending">
+                    <span class="adb-status--gem" data-toggle="tooltip" title="Pending"></span>
+                  </span>
+                  <span class="adb-status adb-status__active">
+                    <span class="adb-status--gem" data-toggle="tooltip" title="Success"></span>
+                  </span>
+                  <span class="adb-status adb-status__disabled">
+                    <span class="adb-status--gem" data-toggle="tooltip" title="Disabled"></span>
+                  </span>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__error&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;Failed&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__pending&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;Pending&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__active&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;Success&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status adb-status__disabled&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-status--gem&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;Disabled&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/span&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="loading">
+              <h3>Loading Icons</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <button class="adb-button__large" disabled type="button">
+                    <span>Run Test</span>
+                    <span class="adb-loading">
+                      <span class="adb-loading--text">Loading ...</span>
+                    </span>
+                  </button>
+                  <button disabled type="button">
+                    <span>Run Test</span>
+                    <span class="adb-loading">
+                      <span class="adb-loading--text">Loading ...</span>
+                    </span>
+                  </button>
+                  <button class="adb-button__small" disabled type="button">
+                    <span>Run Test</span>
+                    <span class="adb-loading">
+                      <span class="adb-loading--text">Loading ...</span>
+                    </span>
+                  </button>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__large&quot;</span> <span class="na">disabled</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span&gt;</span>Run Test<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading--text&quot;</span><span class="nt">&gt;</span>Loading ...<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/button&gt;</span>&#x000A;<span class="nt">&lt;button</span> <span class="na">disabled</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span&gt;</span>Run Test<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading--text&quot;</span><span class="nt">&gt;</span>Loading ...<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/button&gt;</span>&#x000A;<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__small&quot;</span> <span class="na">disabled</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span&gt;</span>Run Test<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading--text&quot;</span><span class="nt">&gt;</span>Loading ...<span class="nt">&lt;/span&gt;</span>&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/button&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Colors</h4>
+              <div class="example__container">
+                <table class="adb-table__multiline">
+                  <thead>
+                    <tr>
+                      <th>
+                        Example
+                      </th>
+                      <th>
+                        Class Name
+                      </th>
+                      <th>
+                        Code
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="example--table_view" id="loading-default">
+                        <span class="adb-loading">
+                          <span class="adb-loading--text">Loading ...</span>
+                        </span>
+                      </td>
+                      <td class="example--table_class">
+                        <code>.adb-loading</code>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading--text&quot;</span><span class="nt">&gt;</span>Loading ...<span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/span&gt;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view" id="loading-light">
+                        <span class="adb-loading adb-loading__light">
+                          <span class="adb-loading--text">Loading ...</span>
+                        </span>
+                      </td>
+                      <td class="example--table_class">
+                        <code>.adb-loading__light</code>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading adb-loading__light&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-loading--text&quot;</span><span class="nt">&gt;</span>Loading ...<span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/span&gt;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="adb-footnote">
+                <p>See <a href="../navigate/buttons.html">Buttons</a> for loading states in buttons.</p>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="meter-bars">
+              <h3>Progress and Usage Meters</h3>
+              <div class="adb-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Attribute</th>
+                      <th></th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <code>data-percent</code>
+                      </td>
+                      <td></td>
+                      <td>Format is "<#>", where # is a number between 0 and 100.</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <code>data-state</code>
+                      </td>
+                      <td>Optional</td>
+                      <td>Possible values include empty, low, full and error.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h4>Sizes</h4>
+              <div class="example__container">
+                <table class="adb-table__multiline">
+                  <thead>
+                    <tr>
+                      <th>
+                        Example
+                      </th>
+                      <th>
+                        Class
+                      </th>
+                      <th>
+                        Code
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="adb-js-meter adb-meter" data-percent="65" data-toggle="tooltip" title="65%">
+                          <span class="adb-meter--percent">
+                            65%
+                          </span>
+                        </div>
+                      </td>
+                      <td class="example--table_class">
+                        <code>.adb-js-meter.adb-meter</code>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-meter adb-meter&quot;</span> <span class="na">data-percent=</span><span class="s">&quot;65&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;65%&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-meter--percent&quot;</span><span class="nt">&gt;</span>&#x000A;    65%&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="example--table_view">
+                        <div class="adb-js-meter adb-meter adb-meter__small" data-percent="65" data-toggle="tooltip" title="65%">
+                          <span class="adb-meter--percent">
+                            65%
+                          </span>
+                        </div>
+                      </td>
+                      <td class="example--table_class">
+                        <code>.adb-meter__small</code>
+                      </td>
+                      <td class="example--table_code">
+                        <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-meter adb-meter adb-meter__small&quot;</span> <span class="na">data-percent=</span><span class="s">&quot;65&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;65%&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-meter--percent&quot;</span><span class="nt">&gt;</span>&#x000A;    65%&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="adb-header">
+                <h4 class="adb-header--item">
+                  States
+                </h4>
+                <menu class="adb-header--item">
+                  <menu class="adb-toggle_buttons" data-toggle="buttons-radio">
+                    <button class="adb-toggle_buttons--button adb-button__small active" data-target="#meter-state1" data-toggle="pill" type="button">Empty</button>
+                    <button class="adb-toggle_buttons--button adb-button__small" data-target="#meter-state2" data-toggle="pill" type="button">Low</button>
+                    <button class="adb-toggle_buttons--button adb-button__small" data-target="#meter-state3" data-toggle="pill" type="button">Loading</button>
+                    <button class="adb-toggle_buttons--button adb-button__small" data-target="#meter-state4" data-toggle="pill" type="button">Full</button>
+                    <button class="adb-toggle_buttons--button adb-button__small" data-target="#meter-state5" data-toggle="pill" type="button">Unlimited</button>
+                    <button class="adb-toggle_buttons--button adb-button__small" data-target="#meter-state6" data-toggle="pill" type="button">Error</button>
+                  </menu>
+                </menu>
+              </div>
+              <div class="adb-js-pill-target active" id="meter-state1">
+                <div class="example__container">
+                  <div class="example__container--view">
+                    <div class="adb-js-meter adb-meter adb-meter" data-percent="0" data-state="empty" data-toggle="tooltip" title="0%">
+                      <span class="adb-meter--percent">
+                        0%
+                      </span>
+                    </div>
+                  </div>
+                  <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-meter adb-meter adb-meter&quot;</span> <span class="na">data-percent=</span><span class="s">&quot;0&quot;</span> <span class="na">data-state=</span><span class="s">&quot;empty&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;0%&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-meter--percent&quot;</span><span class="nt">&gt;</span>&#x000A;    0%&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                </div>
+              </div>
+              <div class="adb-js-pill-target" id="meter-state2">
+                <div class="example__container">
+                  <div class="example__container--view">
+                    <div class="adb-js-meter adb-meter" data-percent="10" data-state="low" data-toggle="tooltip" title="Low">
+                      <span class="adb-meter--percent">
+                        10%
+                      </span>
+                    </div>
+                  </div>
+                  <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-meter adb-meter&quot;</span> <span class="na">data-percent=</span><span class="s">&quot;10&quot;</span> <span class="na">data-state=</span><span class="s">&quot;low&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;Low&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-meter--percent&quot;</span><span class="nt">&gt;</span>&#x000A;    10%&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                </div>
+              </div>
+              <div class="adb-js-pill-target" id="meter-state3">
+                <div class="example__container">
+                  <div class="example__container--view">
+                    <div class="adb-js-meter adb-meter" data-percent="50" data-state="loading" data-toggle="tooltip" title="Pending">
+                      <span class="adb-meter--percent">50%</span>
+                    </div>
+                  </div>
+                  <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-meter adb-meter&quot;</span> <span class="na">data-percent=</span><span class="s">&quot;50&quot;</span> <span class="na">data-state=</span><span class="s">&quot;loading&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;Pending&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-meter--percent&quot;</span><span class="nt">&gt;</span>50%<span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                </div>
+              </div>
+              <div class="adb-js-pill-target" id="meter-state4">
+                <div class="example__container">
+                  <div class="example__container--view">
+                    <div class="adb-js-meter adb-meter" data-percent="100" data-state="full" data-toggle="tooltip" title="Full">
+                      <span class="adb-meter--percent">
+                        100%
+                      </span>
+                    </div>
+                  </div>
+                  <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-meter adb-meter&quot;</span> <span class="na">data-percent=</span><span class="s">&quot;100&quot;</span> <span class="na">data-state=</span><span class="s">&quot;full&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;Full&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-meter--percent&quot;</span><span class="nt">&gt;</span>&#x000A;    100%&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                </div>
+              </div>
+              <div class="adb-js-pill-target" id="meter-state5">
+                <div class="example__container">
+                  <div class="example__container--view">
+                    <div class="adb-js-meter adb-meter" data-percent="100" data-state="unlimited" data-toggle="tooltip" title="Unlimited">
+                      <span class="adb-meter--percent">
+                        100%
+                      </span>
+                    </div>
+                  </div>
+                  <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-meter adb-meter&quot;</span> <span class="na">data-percent=</span><span class="s">&quot;100&quot;</span> <span class="na">data-state=</span><span class="s">&quot;unlimited&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;Unlimited&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-meter--percent&quot;</span><span class="nt">&gt;</span>&#x000A;    100%&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                </div>
+              </div>
+              <div class="adb-js-pill-target" id="meter-state6">
+                <div class="example__container">
+                  <div class="example__container--view">
+                    <div class="adb-js-meter adb-meter" data-percent="0" data-state="error" data-toggle="tooltip" title="You need to add more users">
+                      <span class="adb-meter--percent">
+                        0%
+                      </span>
+                    </div>
+                  </div>
+                  <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-js-meter adb-meter&quot;</span> <span class="na">data-percent=</span><span class="s">&quot;0&quot;</span> <span class="na">data-state=</span><span class="s">&quot;error&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;You need to add more users&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-meter--percent&quot;</span><span class="nt">&gt;</span>&#x000A;    0%&#x000A;  <span class="nt">&lt;/span&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+                </div>
+              </div>
+            </section>
+            <section class="adb-layout-content--section" id="steps">
+              <h3>Step Progress</h3>
+              <div class="example__container">
+                <div class="example__container--view">
+                  <nav class="adb-steps">
+                    <ol class="adb-steps--items">
+                      <li class="adb-steps--item">
+                        <span class="adb-steps--content">1. Order Information</span>
+                      </li>
+                      <li class="adb-steps--item adb-steps--item__current">
+                        <span class="adb-steps--content">2. Payment Information</span>
+                      </li>
+                      <li class="adb-steps--item">
+                        <span class="adb-steps--content">3. Confirm Order</span>
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;adb-steps&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">&quot;adb-steps--items&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-steps--item&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-steps--content&quot;</span><span class="nt">&gt;</span>1. Order Information<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-steps--item adb-steps--item__current&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-steps--content&quot;</span><span class="nt">&gt;</span>2. Payment Information<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;adb-steps--item&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-steps--content&quot;</span><span class="nt">&gt;</span>3. Confirm Order<span class="nt">&lt;/span&gt;</span>&#x000A;    <span class="nt">&lt;/li&gt;</span>&#x000A;  <span class="nt">&lt;/ol&gt;</span>&#x000A;<span class="nt">&lt;/nav&gt;</span>&#x000A;</pre>
+              </div>
+              <h4>Step Sections</h4>
+              <div class="example">
+                <div class="example--view">
+                  <section class="adb-step_section">
+                    <h3>
+                      <span class="adb-step_section--number">1</span>
+                      Make sure your OpenID consumer reads the
+                      <code>{openid}</code>
+                      parameters
+                    </h3>
+                    <p>
+                      From now on, each AppDirect-powered marketplace will have its own OpenID provider instead of relying on
+                      <a>www.appdirect.com.</a>
+                      You will need to remove the hardcoded URL of AppDirect's OpenID provider in your consumer and replace it with the
+                      <code>{openid}</code>
+                      placeholder in your configuration to know which provider to query.
+                    </p>
+                    <p>Your consumer should accept:</p>
+                    <pre>http://www.example.com/login?openid_identifier={openid}</pre>
+                  </section>
+                  <section class="adb-step_section">
+                    <h3>
+                      <span class="adb-step_section--number">2</span>
+                      Update your event listener URLs
+                    </h3>
+                    <p>
+                      The events can now be triggered on any AppDirect-powered marketplace. Instead of passing the event
+                      <code>{token}</code>
+                      , we're now passing the
+                      <code>{eventUrl}</code>
+                      , so you'll need to update the logic in your event listener accordingly. When receiving a call on one of your event listener URLs, you'll need to:
+                    </p>
+                    <ul>
+                      <li>Verify the OAuth signature of the call to validate that it comes from an authorized AppDirect-powered marketplace</li>
+                      <li>
+                        Read the
+                        <code>{eventUrl}</code>
+                        (instead of reading the event
+                        <code>{token}</code>
+                        )
+                      </li>
+                      <li>Perform a GET to this URL signed with your OAuth credentials</li>
+                      <li>Process the event as appropriate</li>
+                      <li>Return a valid response to the event notification</li>
+                    </ul>
+                    <p>Example URL before:</p>
+                    <pre>http://www.example.com/foo?token={token}</pre>
+                    <p>Example URL after:</p>
+                    <pre>http://www.example.com/foo?url={eventUrl}</pre>
+                  </section>
+                  <section class="adb-step_section">
+                    <h3>
+                      <span class="adb-step_section--number">3</span>
+                      Update the OpenID URLs for your existing users
+                    </h3>
+                    <p>OpenID data for your current marketplace users must be updated in your product's database.</p>
+                    <h4>Update OpenID data via SQL</h4>
+                    <p>If you use a SQL-based database, the form below will generate SQL script that will update the OpenID for your existing users. Input the name of the table that stores these OpenIDs and the name of the column in which they are stored, and then execute the SQL on your database.</p>
+                    <form class="adb-form">
+                      <fieldset class="adb-container">
+                        <div class="adb-container_header">
+                          <h3 class="adb-container_header--title adb-container_header--item">
+                            <legend>Generate SQL to update OpenID URLs for existing users</legend>
+                          </h3>
+                        </div>
+                        <div class="adb-container_content">
+                          <div class="adb-form--field">
+                            <label for="table_name">
+                              SQL Table Name
+                            </label>
+                            <input id="table_name" type="text">
+                          </div>
+                          <div class="adb-form--field">
+                            <label for="column_name">
+                              SQL Column Name
+                            </label>
+                            <input id="column_name" type="text">
+                          </div>
+                          <div class="adb-form--field">
+                            <label class="adb-selector adb-js-checkbox" for="interactive-endpoint">
+                              <span class="adb-selector--input">
+                                <input checked id="interactive-endpoint" type="checkbox">
+                              </span>
+                              <span class="adb-selector--value">
+                                Show Comments
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="adb-container_footer adb-container_footer__actionable">
+                          <button class="adb-button__inset" type="button">
+                            Generate SQL
+                          </button>
+                        </div>
+                      </fieldset>
+                    </form>
+                    <h4>Update OpenID data via manual export</h4>
+                    <p>Alternatively, you can export the user account information we have collected and manually update their OpenID values:</p>
+                    <menu class="adb-toolbar">
+                      <button class="adb-toolbar--item" type="button">
+                        Export Development (Test) Users
+                      </button>
+                      <button class="adb-toolbar--item" type="button">
+                        Export Production Users
+                      </button>
+                    </menu>
+                  </section>
+                  <section class="adb-step_section">
+                    <h3>
+                      <span class="adb-step_section--number">4</span>
+                      Update Integration Report
+                    </h3>
+                    <p>
+                      Let us know you have completed this step of the integration by checking off the "Migrate to the distributed API" item in your
+                      <a href="../../prototype/developer/editor/integration_report.html">Integration Report.</a>
+                    </p>
+                    <menu class="adb-toolbar">
+                      <button class="adb-button__primary adb-toolbar--item" type="button">
+                        Update Integration Report
+                      </button>
+                      <button class="adb-toolbar--item" type="button">
+                        Edit Integration
+                      </button>
+                    </menu>
+                  </section>
+                </div>
+                <pre class="highlight html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;adb-step_section&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;h3&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-step_section--number&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>&#x000A;    Make sure your OpenID consumer reads the&#x000A;    <span class="nt">&lt;code&gt;</span>{openid}<span class="nt">&lt;/code&gt;</span>&#x000A;    parameters&#x000A;  <span class="nt">&lt;/h3&gt;</span>&#x000A;  <span class="nt">&lt;p&gt;</span>&#x000A;    From now on, each AppDirect-powered marketplace will have its own OpenID provider instead of relying on&#x000A;    <span class="nt">&lt;a&gt;</span>www.appdirect.com.<span class="nt">&lt;/a&gt;</span>&#x000A;    You will need to remove the hardcoded URL of AppDirect&#39;s OpenID provider in your consumer and replace it with the&#x000A;    <span class="nt">&lt;code&gt;</span>{openid}<span class="nt">&lt;/code&gt;</span>&#x000A;    placeholder in your configuration to know which provider to query.&#x000A;  <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;p&gt;</span>Your consumer should accept:<span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;pre&gt;</span>http://www.example.com/login?openid_identifier={openid}<span class="nt">&lt;/pre&gt;</span>&#x000A;<span class="nt">&lt;/section&gt;</span>&#x000A;<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;adb-step_section&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;h3&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-step_section--number&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>&#x000A;    Update your event listener URLs&#x000A;  <span class="nt">&lt;/h3&gt;</span>&#x000A;  <span class="nt">&lt;p&gt;</span>&#x000A;    The events can now be triggered on any AppDirect-powered marketplace. Instead of passing the event&#x000A;    <span class="nt">&lt;code&gt;</span>{token}<span class="nt">&lt;/code&gt;</span>&#x000A;    , we&#39;re now passing the&#x000A;    <span class="nt">&lt;code&gt;</span>{eventUrl}<span class="nt">&lt;/code&gt;</span>&#x000A;    , so you&#39;ll need to update the logic in your event listener accordingly. When receiving a call on one of your event listener URLs, you&#39;ll need to:&#x000A;  <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;ul&gt;</span>&#x000A;    <span class="nt">&lt;li&gt;</span>Verify the OAuth signature of the call to validate that it comes from an authorized AppDirect-powered marketplace<span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;li&gt;</span>&#x000A;      Read the&#x000A;      <span class="nt">&lt;code&gt;</span>{eventUrl}<span class="nt">&lt;/code&gt;</span>&#x000A;      (instead of reading the event&#x000A;      <span class="nt">&lt;code&gt;</span>{token}<span class="nt">&lt;/code&gt;</span>&#x000A;      )&#x000A;    <span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;li&gt;</span>Perform a GET to this URL signed with your OAuth credentials<span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;li&gt;</span>Process the event as appropriate<span class="nt">&lt;/li&gt;</span>&#x000A;    <span class="nt">&lt;li&gt;</span>Return a valid response to the event notification<span class="nt">&lt;/li&gt;</span>&#x000A;  <span class="nt">&lt;/ul&gt;</span>&#x000A;  <span class="nt">&lt;p&gt;</span>Example URL before:<span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;pre&gt;</span>http://www.example.com/foo?token={token}<span class="nt">&lt;/pre&gt;</span>&#x000A;  <span class="nt">&lt;p&gt;</span>Example URL after:<span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;pre&gt;</span>http://www.example.com/foo?url={eventUrl}<span class="nt">&lt;/pre&gt;</span>&#x000A;<span class="nt">&lt;/section&gt;</span>&#x000A;<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;adb-step_section&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;h3&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-step_section--number&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>&#x000A;    Update the OpenID URLs for your existing users&#x000A;  <span class="nt">&lt;/h3&gt;</span>&#x000A;  <span class="nt">&lt;p&gt;</span>OpenID data for your current marketplace users must be updated in your product&#39;s database.<span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;h4&gt;</span>Update OpenID data via SQL<span class="nt">&lt;/h4&gt;</span>&#x000A;  <span class="nt">&lt;p&gt;</span>If you use a SQL-based database, the form below will generate SQL script that will update the OpenID for your existing users. Input the name of the table that stores these OpenIDs and the name of the column in which they are stored, and then execute the SQL on your database.<span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;adb-form&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">&quot;adb-container&quot;</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_header&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;adb-container_header--title adb-container_header--item&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;legend&gt;</span>Generate SQL to update OpenID URLs for existing users<span class="nt">&lt;/legend&gt;</span>&#x000A;        <span class="nt">&lt;/h3&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_content&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;table_name&quot;</span><span class="nt">&gt;</span>&#x000A;            SQL Table Name&#x000A;          <span class="nt">&lt;/label&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;table_name&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;column_name&quot;</span><span class="nt">&gt;</span>&#x000A;            SQL Column Name&#x000A;          <span class="nt">&lt;/label&gt;</span>&#x000A;          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;column_name&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-form--field&quot;</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adb-selector adb-js-checkbox&quot;</span> <span class="na">for=</span><span class="s">&quot;interactive-endpoint&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--input&quot;</span><span class="nt">&gt;</span>&#x000A;              <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;interactive-endpoint&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-selector--value&quot;</span><span class="nt">&gt;</span>&#x000A;              Show Comments&#x000A;            <span class="nt">&lt;/span&gt;</span>&#x000A;          <span class="nt">&lt;/label&gt;</span>&#x000A;        <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adb-container_footer adb-container_footer__actionable&quot;</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__inset&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;          Generate SQL&#x000A;        <span class="nt">&lt;/button&gt;</span>&#x000A;      <span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;/fieldset&gt;</span>&#x000A;  <span class="nt">&lt;/form&gt;</span>&#x000A;  <span class="nt">&lt;h4&gt;</span>Update OpenID data via manual export<span class="nt">&lt;/h4&gt;</span>&#x000A;  <span class="nt">&lt;p&gt;</span>Alternatively, you can export the user account information we have collected and manually update their OpenID values:<span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Export Development (Test) Users&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Export Production Users&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;<span class="nt">&lt;/section&gt;</span>&#x000A;<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;adb-step_section&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;h3&gt;</span>&#x000A;    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;adb-step_section--number&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/span&gt;</span>&#x000A;    Update Integration Report&#x000A;  <span class="nt">&lt;/h3&gt;</span>&#x000A;  <span class="nt">&lt;p&gt;</span>&#x000A;    Let us know you have completed this step of the integration by checking off the &quot;Migrate to the distributed API&quot; item in your&#x000A;    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;../../prototype/developer/editor/integration_report.html&quot;</span><span class="nt">&gt;</span>Integration Report.<span class="nt">&lt;/a&gt;</span>&#x000A;  <span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;menu</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar&quot;</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-button__primary adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Update Integration Report&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;adb-toolbar--item&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>&#x000A;      Edit Integration&#x000A;    <span class="nt">&lt;/button&gt;</span>&#x000A;  <span class="nt">&lt;/menu&gt;</span>&#x000A;<span class="nt">&lt;/section&gt;</span>&#x000A;</pre>
+              </div>
+            </section>
+          </article>
+        </section>
+      </div>
+    </div>
+    <footer class="adb-page_footer adb-layout-default">
+      <nav class="adb-breadcrumbs adb-breadcrumbs__footer">
+        <ul class="adb-breadcrumbs--items">
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="../../">Framework
+            </a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item">
+                  <a class="adb-breadcrumbs--link" href="alerts_and_messages.html">Display</a>
+      
+          </li>
+          <li class="adb-breadcrumbs--item adb-is-selected">
+            <span class="adb-breadcrumbs--content">
+              Status &amp; Progress
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="adb-page_footer--content">
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link" href="/">
+                Powered by AppDirect &copy; 2009&ndash;2014
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <div class="adb-js-dropdown adb-dropdown adb-dropdown__small adb-dropdown__secret adb-footer_nav--content">
+                <select>
+                  <option>English</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Swedish</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="adb-footer_nav adb-page_footer--content_item">
+          <ul class="adb-footer_nav--items">
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Help Center
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <a class="adb-footer_nav--link">
+                Contact
+              </a>
+            </li>
+            <li class="adb-footer_nav--item">
+              <span class="adb-footer_nav--content">
+                Call us toll-free:
+                <strong>
+                  (877) 404-APPS
+                </strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <div class="adb-editor_controls">
+      <div class="adb-layout-default adb-editor_controls--content">
+        <menu class="adb-toolbar adb-toolbar__small">
+          <div class="adb-js-context_menu adb-context_menu adb-context_menu__small adb-toolbar--item" data-placement="top" id="theme-picker">
+            <button class="adb-button__inset_dark adb-js-context_menu--trigger adb-context_menu--trigger adb-button__small" type="button">
+              Themes
+            </button>
+            <div class="adb-container adb-context_menu--menu adb-js-context_menu--menu" role="menu">
+              <ul class="adb-stack adb-stack__small" id="theme-list"></ul>
+            </div>
+          </div>
+          <button class="adb-button__inset_dark adb-button__square_small adb-toolbar--item has_tooltip" data-active="adb-is-active" data-target="#grid" data-toggle="panel" type="button">
+            <i class="adb-icon__grid"></i>
+          </button>
+          <button class="adb-button__inset_dark adb-button__small adb-toolbar--item" data-active="adb-is-active" data-target="#resolution" data-toggle="panel" type="button">
+            Resolution
+          </button>
+          
+          <a class="adb-close adb-editor_controls--close">
+            Hide
+          </a>
+        </menu>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="grid">
+      <div class="utility_overlay--container adb-layout-default">
+        <div class="utility-grid--columns">
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+          <div class="utility-grid--column"></div>
+        </div>
+        <div class="utility-grid--rows">
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+          <div class="utility-grid--row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="utility_overlay adb-js-panel-target" id="resolution">
+      <div class="fauxld h768">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">4</div>
+            <div class="fauxlddata fauxldres">1366 &times; 768</div>
+            <div class="fauxlddata fauxldperc">10.51%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">9</div>
+            <div class="fauxlddata fauxldres">1024 &times; 768</div>
+            <div class="fauxlddata fauxldperc">4.02%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h800">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">3</div>
+            <div class="fauxlddata fauxldres">1280 &times; 800</div>
+            <div class="fauxlddata fauxldperc">11.08%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h900">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">1</div>
+            <div class="fauxlddata fauxldres">1440 &times; 900</div>
+            <div class="fauxlddata fauxldperc">16.09%</div>
+          </div>
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">7</div>
+            <div class="fauxlddata fauxldres">1600 &times; 900</div>
+            <div class="fauxlddata fauxldperc">5.59%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1024">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">6</div>
+            <div class="fauxlddata fauxldres">1280 &times; 1024</div>
+            <div class="fauxlddata fauxldperc">5.77%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1050">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">5</div>
+            <div class="fauxlddata fauxldres">1680 &times; 1050</div>
+            <div class="fauxlddata fauxldperc">7.48%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1080">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">2</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1080</div>
+            <div class="fauxlddata fauxldperc">15.99%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1200">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">8</div>
+            <div class="fauxlddata fauxldres">1920 &times; 1200</div>
+            <div class="fauxlddata fauxldperc">5.39%</div>
+          </div>
+        </div>
+      </div>
+      <div class="fauxld h1440">
+        <div class="fauxldlabels">
+          <div class="fauxldlabel">
+            <div class="fauxlddata fauxldrank">10</div>
+            <div class="fauxlddata fauxldres">2560 &times; 1440</div>
+            <div class="fauxlddata fauxldperc">3.23%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- = javascript_include_tag "jquery" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // Ensure that jQuery is installed even if the Google CDN is down.
+      if (typeof jQuery === "undefined"){
+          document.write("<script src='/javascripts/vendor/jquery-1.10.2.min.js'><\/script>");
+      }
+    </script>
+    <script src="../../javascripts/plugins.js" type="text/javascript"></script>
+    <script src="../../javascripts/main.js" type="text/javascript"></script>
+    <script src="../../javascripts/theming/theme_picker.js" type="text/javascript"></script>
+    
+  </body>
+</html>
